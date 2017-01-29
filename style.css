@@ -1,0 +1,50 @@
+.mm-flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-1 {
+    flex: 1;
+}
+.topbar {
+    background-color: #27292B;
+    color: white;
+    box-sizing: border-box;
+}
+.topbar-item {
+    padding: 16px;
+}
+.topbar-item.active {
+    text-decoration: underline;
+}
+.leftbar {
+    width: 30vw;
+    background-color: black;
+    color: white;
+}
+.main {
+    background-color: #F0F1F2;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+}
+.content {
+    width: 60vw;
+    background-color: white;
+    color: #27292B;
+    padding: 16px;
+    height: 75vh;
+}
+.linkedin {
+    width: 15px;;
+    height: auto;
+}
+.stackoverflow {
+    width: 15px;
+    height: auto;
+}
