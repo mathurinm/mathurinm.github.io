@@ -17,6 +17,7 @@
     background-color: #27292B;
     color: white;
     box-sizing: border-box;
+    max-height: 50px;
 }
 .topbar-item {
     padding: 16px;
@@ -42,12 +43,4 @@
     color: #27292B;
     padding: 16px;
     height: 75vh;
-}
-.linkedin {
-    width: 15px;;
-    height: auto;
-}
-.stackoverflow {
-    width: 15px;
-    height: auto;
 }
