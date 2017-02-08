@@ -56,6 +56,7 @@ html {
     padding: 32px;
     height: 50vh;
     box-sizing: border-box;
+    overflow: auto;
 }
 .beautiful-link {
     color: #336699;
