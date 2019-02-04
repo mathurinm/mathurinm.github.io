@@ -1,0 +1,48 @@
+# jemdoc: menu{MENU}{research.html}, nofooter
+
+
+== Papers
+
+- 2018
+--    M. Massias, A. Gramfort, J. Salmon,
+        [http://proceedings.mlr.press/v80/massias18a.html
+        Celer: a fast solver for the Lasso with dual extrapolation],
+        ICML 2018.
+        [https://drive.google.com/file/d/1doIoZ2dahVNhxFhLqHOwK_VfdOQrZjj6/view?usp=sharing slides]
+        [https://github.com/mathurinm/celer code]
+        [https://mathurinm.github.io/celer/ doc]
+--    M. Massias, O. Fercoq, A. Gramfort, J. Salmon,
+        [http://proceedings.mlr.press/v84/massias18a.html Generalized
+        concomitant multi-task Lasso for sparse multimodal regression],
+        AISTATS 2018.
+        [https://github.com/mathurinm/SHCL code]
+
+- 2017
+--    M. Massias, A. Gramfort, J. Salmon,
+        [https://arxiv.org/abs/1703.07285 From safe screening rules to working sets
+        for faster Lasso-type solvers],
+        OPTML workshop at NIPS 2017.
+        [https://github.com/mathurinm/A5G deprecated code]
+--    M. Massias, A. Gramfort, J. Salmon,
+        [https://arxiv.org/abs/1703.07285
+            Des règles de screening aux working sets],
+        GRETSI, Juan-les-Pins, France, 2017.
+--    M. Massias, J. Salmon, A. Gramfort,
+        [http://spars2017.lx.it.pt/index_files/papers/SPARS2017_Paper_77.pdf
+        Gap safe screening rules for faster complex-valued multi-task group Lasso],
+        SPARS, Lisbon, 2017.
+        [https://goo.gl/kW8EXy poster]
+
+== Slides
+
+-    [./assets/pdf/uw_mm.pdf
+        Celer: fast solver for the Lasso with dual extrapolation],
+        11\/05\/2018, Statistics Seminar at University of Washington.
+-    [https://goo.gl/hZRwqi
+        Generalized concomitant multi-task Lasso for sparse multimodal regression],
+        20\/10\/2017, Journées GDR MOA MIA (Bordeaux).
+        Also presented at PGMO days 2017, Saclay.
+-    [https://goo.gl/wACD2h Résolution rapide de problèmes de type Lasso: des règles de safe screening aux working sets] (in French), 05\/09\/2017, GRETSI.
+        Also presented at JDSE 2017 (best presentation award).
+-    [https://goo.gl/8m0a8s Faster solvers for sparse multi-task problems], 20/03/2017, IAP (Paris).
+        Also presented at CMStats 2017, London.

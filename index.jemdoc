@@ -1,0 +1,31 @@
+# jemdoc: menu{MENU}{index.html}, nofooter
+==Mathurin Massias
+
+~~~
+{}{img_left}{assets/photo.jpg}{alt text}{160}{160}
+PhD student \n
+INRIA\/Télécom ParisTech \n
+E-mail: /mathurin.massias/ \[@\] inria \[DOT\] fr
+~~~
+
+== About me
+I am a 3rd year PhD student in Machine Learning at Télécom ParisTech and Inria Saclay
+(in the [https://team.inria.fr/parietal/ Parietal Team]), under the supervision of
+    [https://josephsalmon.eu/ Joseph Salmon]
+and [http://alexandre.gramfort.net/ Alexandre Gramfort].
+My PhD aims at improving the efficiency of brain signals reconstruction algorithms
+(more details [http://www.theses.fr/s163051
+    here]), which involves optimization, parsimony and high dimensional statistics.
+
+I have a keen interest in the Python programming language: I am the maintainer
+of the [https://mathurinm.github.io/celer/ Celer] package,
+and a contributor to [http://scikit-learn.org/ scikit-learn]
+and [https://martinos.org/mne/stable/index.html MNE].
+
+\n
+You can find more details on my résumé
+    ([./assets/pdf/CV_Mathurin_MASSIAS.pdf French]\/[./assets/pdf/CV_Mathurin_MASSIAS_EN.pdf English]) and my
+ [research.html list of publications].
+
+== News
+- I'll be joining [http://ibis.t.u-tokyo.ac.jp/suzuki/ Taiji Suzuki's lab] in Tokyo for a 3 month internship from Feb. 2019 to early May 2019!
