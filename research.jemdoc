@@ -7,9 +7,9 @@
 --   *M. Massias*, S. Vaiter, A. Gramfort, J. Salmon,
         [https://arxiv.org/abs/1907.05830 Dual extrapolation for sparse Generalized Linear Models] (submitted)
 --   P. Ablin, T. Moreau, *M. Massias*, A. Gramfort,
-        [https://arxiv.org/abs/1905.11071 Learning step sizes for unfolded sparse coding] (under review)
+        [https://arxiv.org/abs/1905.11071 Learning step sizes for unfolded sparse coding], NeurIPS 2019.
 --   Q. Bertrand\*, *M. Massias*\*, A. Gramfort, J. Salmon,
-        [https://arxiv.org/abs/1902.02509 CLaR: Concomitant Lasso with repetitions] (under review)
+        [https://arxiv.org/abs/1902.02509 CLaR: Concomitant Lasso with repetitions], NeurIPS 2019.
         [https://github.com/QBE/clar code]
 
 - 2018
@@ -56,5 +56,5 @@
         Also presented at PGMO days 2017, Saclay.
 -    [https://goo.gl/wACD2h Résolution rapide de problèmes de type Lasso: des règles de safe screening aux working sets] (in French), 05\/09\/2017, GRETSI.
         Also presented at JDSE 2017 (best presentation award).
--    [https://goo.gl/8m0a8s Faster solvers for sparse multi-task problems], 20/03/2017, IAP (Paris).
+-    [https://goo.gl/8m0a8s Faster solvers for sparse multi-task problems], 20\/03\/2017, IAP (Paris).
         Also presented at CMStats 2017, London.
