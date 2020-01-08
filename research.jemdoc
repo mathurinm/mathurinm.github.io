@@ -2,6 +2,9 @@
 
 
 == Papers
+- 2020
+--    *M. Massias*\*, Q. Bertrand\*, A. Gramfort, J. Salmon,
+      Support recovery and sup-norm convergence rates for sparse pivotal estimation, AISTATS 2020.
 
 - 2019
 --   *M. Massias*, S. Vaiter, A. Gramfort, J. Salmon,
@@ -32,10 +35,6 @@
         for faster Lasso-type solvers],
         OPTML workshop at NIPS 2017.
         [https://github.com/mathurinm/A5G deprecated code]
---    *M. Massias*, A. Gramfort, J. Salmon,
-        [https://arxiv.org/abs/1703.07285
-            Des règles de screening aux working sets],
-        GRETSI, Juan-les-Pins, France, 2017.
 --    *M. Massias*, J. Salmon, A. Gramfort,
         [http://spars2017.lx.it.pt/index_files/papers/SPARS2017_Paper_77.pdf
         Gap safe screening rules for faster complex-valued multi-task group Lasso],
@@ -43,7 +42,7 @@
         [https://goo.gl/kW8EXy poster]
 
 == Slides
-
+-    [./assets/pdf/slides_defense.pdf PhD Defense], Inria, 04\/12\/2019.
 -    [./assets/pdf/AIP2019.pdf
         Dual extrapolation for sparse Generalized Linear Models],
         09\/07\/2019, Applied Inverse Problems conference, Grenoble.
