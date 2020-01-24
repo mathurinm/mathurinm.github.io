@@ -1,10 +1,15 @@
 # jemdoc: menu{MENU}{research.html}, nofooter
 
+== PhD. Thesis
+- *M. Massias*, Sparse high dimension linear regression in the presence of heteroscedastic noise: application to magnetoelectric source imaging. Defended on 04\/12\/2019.
+[https://tel.archives-ouvertes.fr/tel-02401628 manuscript]
+[./assets/pdf/slides_defense.pdf slides]
+
 
 == Papers
 - 2020
 --    *M. Massias*\*, Q. Bertrand\*, A. Gramfort, J. Salmon,
-      Support recovery and sup-norm convergence rates for sparse pivotal estimation, AISTATS 2020.
+        [https://arxiv.org/abs/2001.05401 Support recovery and sup-norm convergence rates for sparse pivotal estimation], AISTATS 2020.
 
 - 2019
 --   *M. Massias*, S. Vaiter, A. Gramfort, J. Salmon,
@@ -41,8 +46,9 @@
         SPARS, Lisbon, 2017.
         [https://goo.gl/kW8EXy poster]
 
-== Slides
--    [./assets/pdf/slides_defense.pdf PhD Defense], Inria, 04\/12\/2019.
+== Relevant slides
+-    [./assets/pdf/bounds_aistats20_slides.pdf LCSL group meeting], 23\/01\/2020, Università di Genova.
+-    [./assets/pdf/slides_defense.pdf PhD Defense], 04\/12\/2019, Inria.
 -    [./assets/pdf/AIP2019.pdf
         Dual extrapolation for sparse Generalized Linear Models],
         09\/07\/2019, Applied Inverse Problems conference, Grenoble.
