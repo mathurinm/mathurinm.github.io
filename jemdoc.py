@@ -619,6 +619,12 @@ def replacelinks(b):
     else:
       link = m1
 
+    if link[:2] == '\\/':
+      link = link[2:]
+      newtab = True
+    else:
+      newtab = False
+
     # first unquote any hashes (e.g. for in-page links).
     link = re.sub(r'\\#', '#', link)
 
@@ -633,7 +639,10 @@ def replacelinks(b):
       # remove any mailto before labelling.
       linkname = re.sub('^mailto:', '', link)
 
-    b = b[:m.start()] + r'<a href=\"%s\">%s<\/a>' % (link, linkname) + b[m.end():]
+    if not newtab:
+      b = b[:m.start()] + r'<a href=\"%s\">%s<\/a>' % (link, linkname) + b[m.end():]
+    else:
+      b = b[:m.start()] + r'<a target="_blank" rel="noopener noreferrer" href=\"%s\">%s<\/a>' % (link, linkname) + b[m.end():]
 
     m = r.search(b, m.start())
 
@@ -687,8 +696,8 @@ def br(b, f, tableblock=False):
   b = re.sub(r, r'<tt>\1</tt>', b)
 
   # Deal with "double quotes".
-  r = re.compile(r'(?<!\\)"(.*?)(?<!\\)"', re.M + re.S)
-  b = re.sub(r, r'&ldquo;\1&rdquo;', b)
+  # r = re.compile(r'(?<!\\)"(.*?)(?<!\\)"', re.M + re.S)
+  # b = re.sub(r, r'&ldquo;\1&rdquo;', b)
 
   # Deal with left quote `.
   r = re.compile(r"(?<!\\)`", re.M + re.S)
