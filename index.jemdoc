@@ -9,7 +9,7 @@ E-mail: /mathurin.massias/ \[@\] gmail \[DOT\] fr
 ~~~
 
 == About me
-I am a post-doc at University of Genova, working on implicit regularization with [\/http://web.mit.edu/lrosasco/www/ Lorenzo Rosasco] and [\/http://www.dima.unige.it/~villa/ Silvia Villa].
+I am a post-doc at University of Genova, working on implicit/iterative regularization with [\/http://web.mit.edu/lrosasco/www/ Lorenzo Rosasco] and [\/http://www.dima.unige.it/~villa/ Silvia Villa].
 
 I did my PhD at Télécom Paris and Inria Saclay
 (in the [\/https://team.inria.fr/parietal/ Parietal Team]), under the supervision of
@@ -30,7 +30,9 @@ You can find more details on my résumé
  [\/research.html list of publications].
 
 == News
-- I was awarded [\/https://www.telecom-paris.fr/fr/doctorat/grade/prix-de-these Telecom Paris' 2020 PhD prize]! A warm thank you to my advisors Alexandre Gramfort, Joseph Salmon and coauthor Quentin Bertrand.
+- I was awarded the [\/https://www.fondation-hadamard.fr/fr/pgmo/students/phdawards Programme Gaspard Monge Optimisation] PhD prize!
+- New [\/https://arxiv.org/abs/2006.09859 preprint] out with Cesare Molinari, Lorenzo Rosasco and Silvia Villa on Implicit regularization for non strongly-convex bias
+- I was awarded [\/https://www.telecom-paris.fr/fr/doctorat/grade/prix-de-these Telecom Paris' 2020 PhD prize]! A warm thank you to my advisors Alexandre Gramfort, Joseph Salmon and coauthor Quentin Bertrand
 - We recently started the [\/https://github.com/benchopt/benchopt benchopt] package to automate benchmarks of optimization algorithms on popular Machine Learning tasks
 - I defended my PhD! Slides are [./assets/pdf/slides_defense.pdf here], and [\/https://tel.archives-ouvertes.fr/tel-02401628 here] is the manuscript. Starting next January I'll be a postdoc in Lorenzo Rosasco's Lab in Genova
 - I joined [\/http://ibis.t.u-tokyo.ac.jp/suzuki/ Taiji Suzuki's lab] for an internship in Tokyo from Feb. 2019 to May 2019
