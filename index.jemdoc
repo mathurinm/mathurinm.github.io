@@ -20,9 +20,8 @@ My PhD aimed at improving the efficiency of brain signals reconstruction algorit
     here]), which involves optimization, sparsity and high dimensional statistics.
 
 I have a keen interest in the Python programming language: I am the lead developer
-of the [\/https://mathurinm.github.io/celer/ celer] package (solvers for L1-type regularized problems),
-and a contributor to [\/http://scikit-learn.org/ scikit-learn]
-and [\/https://martinos.org/mne/stable/index.html MNE].
+of [\/https://mathurinm.github.io/celer/ celer] (solvers for L1-type regularized problems) and [\/https://github.com/mathurinm/libsvmdata/ libsvmdata] (python util to fetch libsvm datasets) packages.\n
+I also contribute to [\/http://scikit-learn.org/ scikit-learn], [\/https://martinos.org/mne/stable/index.html MNE] and [\/https://github.com/benchopt/benchopt benchopt].
 
 \n
 You can find more details on my résumé
