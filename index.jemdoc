@@ -30,6 +30,7 @@ You can find more details on my résumé
  [\/research.html list of publications].
 
 == News
+- [\/https://github.com/mathurinm/celer celer 0.6] is released: along with the fast sklearn Group Lasso solver, the Lasso class now supports weights in the penalty, paving the way for an efficient Adaptive Lasso (iterative reweighted L1) which should be released in version 0.7.
 - Slides for my presentation [\/./assets/pdf/presentation_gaia.pdf Efficient approaches to regularized inverse problems] in the GAIA team of the GIPSA Lab
 - I was awarded the [\/https://www.fondation-hadamard.fr/fr/pgmo/students/phdawards Programme Gaspard Monge Optimisation] PhD prize!
 - New [\/https://arxiv.org/abs/2006.09859 preprint] out with Cesare Molinari, Lorenzo Rosasco and Silvia Villa on Implicit regularization for non strongly-convex bias
