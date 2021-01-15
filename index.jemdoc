@@ -26,12 +26,13 @@ I also contribute to [\/http://scikit-learn.org/ scikit-learn], [\/https://marti
 
 \n
 You can find more details on my résumé
-    ([\/./assets/pdf/CV_Mathurin_MASSIAS.pdf French (12\/2020)]\/[\/./assets/pdf/CV_Mathurin_MASSIAS_EN.pdf English (11\/2020)]) and my
+    ([\/./assets/pdf/CV_Mathurin_MASSIAS.pdf French (01\/2021)]\/[\/./assets/pdf/CV_Mathurin_MASSIAS_EN.pdf English (11\/2020)]) and my
  [\/research.html list of publications].
 
 == News
+- Slides for my presentation [\/./assets/pdf/presentation_dante.pdf Efficient approaches to regularized inverse problems] in the DANTE team (Lyon)
 - [\/https://github.com/mathurinm/celer celer 0.6] is released: along with the fast sklearn Group Lasso solver, the Lasso class now supports weights in the penalty, paving the way for an efficient Adaptive Lasso (iterative reweighted L1) which should be released in version 0.7.
-- Slides for my presentation [\/./assets/pdf/presentation_gaia.pdf Efficient approaches to regularized inverse problems] in the GAIA team of the GIPSA Lab
+- Slides for my presentation [\/./assets/pdf/presentation_gaia.pdf Efficient approaches to regularized inverse problems] in the GAIA team of the GIPSA-lab (Grenoble)
 - I was awarded the [\/https://www.fondation-hadamard.fr/fr/pgmo/students/phdawards Programme Gaspard Monge Optimisation] PhD prize!
 - New [\/https://arxiv.org/abs/2006.09859 preprint] out with Cesare Molinari, Lorenzo Rosasco and Silvia Villa on Implicit regularization for non strongly-convex bias
 - I was awarded [\/https://www.telecom-paris.fr/fr/doctorat/grade/prix-de-these Telecom Paris' 2020 PhD prize]! A warm thank you to my advisors Alexandre Gramfort, Joseph Salmon and coauthor Quentin Bertrand
