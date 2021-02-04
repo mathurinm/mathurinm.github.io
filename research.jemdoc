@@ -16,7 +16,7 @@
 --    *M. Massias*\*, Q. Bertrand\*, A. Gramfort, J. Salmon,
         [\/https://arxiv.org/abs/2001.05401 Support recovery and sup-norm convergence rates for sparse pivotal estimation], AISTATS 2020.
 --   *M. Massias*, S. Vaiter, A. Gramfort, J. Salmon,
-        [\/https://jmlr.org/papers/v21/19-587.html Dual extrapolation for sparse Generalized Linear Models], JMLR.
+        [\/https://jmlr.org/papers/v21/19-587.html Dual extrapolation for sparse Generalized Linear Models], JMLR. [\/https://github.com/mathurinm/celer celer library]
 
 - 2019
 --   P. Ablin, T. Moreau, *M. Massias*, A. Gramfort,
