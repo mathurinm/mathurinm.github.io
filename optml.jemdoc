@@ -1,0 +1,27 @@
+== Syllabus of the "Large scale optimization for machine learning" class
+
+The goal of the class is to cover theoretical aspects and practical Python implementations of popular optimization algorithms in machine learning.
+
+At the end of the class, the students will:
+- be familiar with essential convex analysis notions
+- be able to derive standard convergence proofs and convergence rates
+- know which algorithm to chose given the problem to solve
+- understand the implementation of these algorithms in Python
+
+
+== Syllabus
+- basics of convex analysis: convex sets, convex functions, strong convexity, smoothness, subdifferential
+- Fenchel-Legendre transform, infimal convolution, Moreau envelope
+- gradient descent and subgradient descent (Lab 1)
+- fixed point iterations, proximal point method
+- acceleration of first order methods
+- composite optimization: proximal gradient, applications to low complexity regularization (Lab 2)
+- Moreau-Rockafellar duality, duality gap
+- stochastic algorithms for empirical risk minimization: stochastic gradient descent, variance reduction methods (Lab 3)
+- eventually: Frank-Wolfe algorithm, coordinate descent, primal-dual algorithms
+
+== Schedule
+15 x 2 h of class/labs, 2 h written examination
+
+== Validation
+3 Labs and one written exam
