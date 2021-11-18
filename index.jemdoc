@@ -11,34 +11,34 @@ E-mail: /mathurin.massias/ \[@\] gmail \[DOT\] com
 == About me
 
 I am a Junior researcher (Chargé de recherche) in Inria Lyon, in the OCKHAM (ex-DANTE) team led by Rémi Gribonval.
-From January 2020 to October 2021, I was a post-doc at University of Genova, working on implicit/iterative regularization with [\/http://web.mit.edu/lrosasco/www/ Lorenzo Rosasco] and [\/http://www.dima.unige.it/~villa/ Silvia Villa].
+From January 2020 to October 2021, I was a post-doc at University of Genova, working on implicit/iterative regularization with [http://web.mit.edu/lrosasco/www/ Lorenzo Rosasco] and [http://www.dima.unige.it/~villa/ Silvia Villa].
 
 I hold a PhD from Télécom Paris and Inria Saclay
-(in the [\/https://team.inria.fr/parietal/ Parietal Team]), under the supervision of
-    [\/https://josephsalmon.eu/ Joseph Salmon]
-and [\/http://alexandre.gramfort.net/ Alexandre Gramfort].
+(in the [https://team.inria.fr/parietal/ Parietal Team]), under the supervision of
+    [https://josephsalmon.eu/ Joseph Salmon]
+and [http://alexandre.gramfort.net/ Alexandre Gramfort].
 My PhD aimed at improving the efficiency of brain signals reconstruction algorithms
-(more details [\/http://www.theses.fr/s163051
+(more details [http://www.theses.fr/s163051
     here]), which involves optimization, sparsity and high dimensional statistics.
 
 I have a keen interest in the Python programming language: I am the lead developer
-of [\/https://mathurinm.github.io/celer/ celer] (solvers for L1-type regularized problems) and [\/https://github.com/mathurinm/libsvmdata/ libsvmdata] (python util to fetch libsvm datasets) packages. To foster scientific reproducibility, my papers usually come with Python packages to reproduce my experiments and make my code available to the community (e.g. [\/https://mathurinm.github.io/andersoncd/auto_examples/index.html Anderson acceleration for coordinate descent] or [\/https://LCSL.github.io/iterreg/auto_examples/index.html Iterative regularization for convex regularizers])
+of [https://mathurinm.github.io/celer/ celer] (solvers for L1-type regularized problems) and [https://github.com/mathurinm/libsvmdata/ libsvmdata] (python util to fetch libsvm datasets) packages. To foster scientific reproducibility, my papers usually come with Python packages to reproduce my experiments and make my code available to the community (e.g. [https://mathurinm.github.io/andersoncd/auto_examples/index.html Anderson acceleration for coordinate descent] or [https://LCSL.github.io/iterreg/auto_examples/index.html Iterative regularization for convex regularizers])
 \n
-I also contribute to [\/http://scikit-learn.org/ scikit-learn], [\/https://martinos.org/mne/stable/index.html MNE], [\/https://github.com/benchopt/benchopt benchopt] and [\/https://github.com/qb3/sparse-ho sparse-ho].
+I also contribute to [http://scikit-learn.org/ scikit-learn], [https://martinos.org/mne/stable/index.html MNE], [https://github.com/benchopt/benchopt benchopt] and [https://github.com/qb3/sparse-ho sparse-ho].
 
 \n
 You can find more details on my résumé
-    ([\/./assets/pdf/CV_Mathurin_MASSIAS.pdf French (01\/2021)]\/[\/./assets/pdf/CV_Mathurin_MASSIAS_EN.pdf English (03\/2021)]) and my
- [\/research.html list of publications].
+    ([./assets/pdf/CV_Mathurin_MASSIAS.pdf French (01\/2021)]\/[./assets/pdf/CV_Mathurin_MASSIAS_EN.pdf English (03\/2021)]) and my
+ [research.html list of publications].
 
 == News
-- I have a potential funding for a one year research engineer contract to work on fast optimization solvers to be integrated into scikit-learn. Details [\/./assets/pdf/offer_anderson.pdf here]
+- I have a potential funding for a one year research engineer contract to work on fast optimization solvers to be integrated into scikit-learn. Details [./assets/pdf/offer_anderson.pdf here]
 - Our two papers on Iterative regularization for convex regularizers (w. C. Molinari, L. Rosasco and S. Villa) and Anderson acceleration of coordinate descent (w. Q. Bertrand) got accepted to AISTATS 2021.
-- Slides for my presentation [\/./assets/pdf/presentation_dante.pdf Efficient approaches to regularized inverse problems] in the DANTE team (Lyon)
-- [\/https://github.com/mathurinm/celer celer 0.6] is released: along with the fast sklearn Group Lasso solver, the Lasso class now supports weights in the penalty, paving the way for an efficient Adaptive Lasso (iterative reweighted L1) which should be released in version 0.7.
-- Slides for my presentation [\/./assets/pdf/presentation_gaia.pdf Efficient approaches to regularized inverse problems] in the GAIA team of the GIPSA-lab (Grenoble)
-- I was awarded the [\/https://www.fondation-hadamard.fr/fr/pgmo/students/phdawards Programme Gaspard Monge Optimisation] PhD prize!
-- I was awarded [\/https://www.telecom-paris.fr/fr/doctorat/grade/prix-de-these Telecom Paris' 2020 PhD prize]! A warm thank you to my advisors Alexandre Gramfort, Joseph Salmon and coauthor Quentin Bertrand
-- We recently started the [\/https://github.com/benchopt/benchopt benchopt] package to automate benchmarks of optimization algorithms on popular Machine Learning tasks
-- I defended my PhD! Slides are [./assets/pdf/slides_defense.pdf here], and [\/https://tel.archives-ouvertes.fr/tel-02401628 here] is the manuscript. Starting next January I'll be a postdoc in Lorenzo Rosasco's Lab in Genova
-- I joined [\/http://ibis.t.u-tokyo.ac.jp/suzuki/ Taiji Suzuki's lab] for an internship in Tokyo from Feb. 2019 to May 2019
+- Slides for my presentation [./assets/pdf/presentation_dante.pdf Efficient approaches to regularized inverse problems] in the DANTE team (Lyon)
+- [https://github.com/mathurinm/celer celer 0.6] is released: along with the fast sklearn Group Lasso solver, the Lasso class now supports weights in the penalty, paving the way for an efficient Adaptive Lasso (iterative reweighted L1) which should be released in version 0.7.
+- Slides for my presentation [./assets/pdf/presentation_gaia.pdf Efficient approaches to regularized inverse problems] in the GAIA team of the GIPSA-lab (Grenoble)
+- I was awarded the [https://www.fondation-hadamard.fr/fr/pgmo/students/phdawards Programme Gaspard Monge Optimisation] PhD prize!
+- I was awarded [https://www.telecom-paris.fr/fr/doctorat/grade/prix-de-these Telecom Paris' 2020 PhD prize]! A warm thank you to my advisors Alexandre Gramfort, Joseph Salmon and coauthor Quentin Bertrand
+- We recently started the [https://github.com/benchopt/benchopt benchopt] package to automate benchmarks of optimization algorithms on popular Machine Learning tasks
+- I defended my PhD! Slides are [./assets/pdf/slides_defense.pdf here], and [https://tel.archives-ouvertes.fr/tel-02401628 here] is the manuscript. Starting next January I'll be a postdoc in Lorenzo Rosasco's Lab in Genova
+- I joined [http://ibis.t.u-tokyo.ac.jp/suzuki/ Taiji Suzuki's lab] for an internship in Tokyo from Feb. 2019 to May 2019
