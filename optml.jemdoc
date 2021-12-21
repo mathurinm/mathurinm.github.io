@@ -25,3 +25,14 @@ At the end of the class, the students will:
 
 == Validation
 3 Labs and one written exam
+
+== Ressources
+- Introductory lectures on convex optimization: a basic course, Y. Nesterov, 2004. A reference book in optimization.
+- First order methods in optimization, A. Beck, 2019. Maybe a bit more modern than Nesterov.
+- Convex optimization: algorithms and complexity, S. Bubeck, 2015. A short monograph (100 pages) covering basic topics.
+
+
+== Prerequisite
+- Differential calculus: gradient, Hessian
+- Notions of convexity
+- Linear algebra: eigenvalue decomposition, singular value decomposition
