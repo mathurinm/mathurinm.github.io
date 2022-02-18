@@ -9,9 +9,13 @@
 
 == Papers
 - 2021
---     Q. Bertrand, *M. Massias*, [https://arxiv.org/abs/2011.10065 Anderson acceleration of coordinate descent], to appear in AISTATS 2021. [https://mathurinm.github.io/andersoncd code]
+--    Q. Bertrand, Q. Klopfenstein, *M. Massias*, M. Blondel, S. Vaiter, A. Gramfort, J. Salmon,
+        [https://arxiv.org/abs/2105.01637
+        Implicit differentiation for fast hyperparameter selection in non-smooth convex learning], accepted conditioned on minor revisions in JMLR.
+        [https://github.com/QB3/sparse-ho code]
+--     Q. Bertrand, *M. Massias*, [https://arxiv.org/abs/2011.10065 Anderson acceleration of coordinate descent], AISTATS 2021. [https://mathurinm.github.io/andersoncd code]
 --     C. Molinari, *M. Massias*, L. Rosasco, S. Villa,
-        [https://arxiv.org/abs/2006.09859 Iterative regularization for convex regularizers], to appear in AISTATS 2021. [https://LCSL.github.io/iterreg code]
+        [https://arxiv.org/abs/2006.09859 Iterative regularization for convex regularizers], AISTATS 2021. [https://LCSL.github.io/iterreg code]
 
 - 2020
 --    *M. Massias*\*, Q. Bertrand\*, A. Gramfort, J. Salmon,
