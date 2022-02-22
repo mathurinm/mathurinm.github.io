@@ -32,6 +32,7 @@ You can find more details on my résumé
  [research.html list of publications].
 
 == News
+- Internship offer with Rémi Gribonval on Anderson acceleration for sparse matrix factorization. Details [./assets/pdf/stage_anderson_faust.pdf here]
 - I have a potential funding for a one year research engineer contract to work on fast optimization solvers to be integrated into scikit-learn. Details [./assets/pdf/offer_anderson.pdf here]
 - Our two papers on Iterative regularization for convex regularizers (w. C. Molinari, L. Rosasco and S. Villa) and Anderson acceleration of coordinate descent (w. Q. Bertrand) got accepted to AISTATS 2021.
 - Slides for my presentation [./assets/pdf/presentation_dante.pdf Efficient approaches to regularized inverse problems] in the DANTE team (Lyon)
