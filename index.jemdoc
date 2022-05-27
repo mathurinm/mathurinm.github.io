@@ -10,21 +10,23 @@ E-mail: /mathurin.massias/ \[@\] gmail \[DOT\] com
 
 == About me
 
-I am a Junior researcher (Chargé de recherche) in Inria Lyon, in the OCKHAM (ex-DANTE) team led by Rémi Gribonval.
-From January 2020 to October 2021, I was a post-doc at University of Genova, working on implicit/iterative regularization with [http://web.mit.edu/lrosasco/www/ Lorenzo Rosasco] and [http://www.dima.unige.it/~villa/ Silvia Villa].
+I am a Junior researcher (Chargé de recherche) in Inria Lyon, in the OCKHAM (ex-DANTE) team led by Rémi Gribonval, working in optimization for Machine Learning.
 
+From January 2020 to October 2021, I was a post-doc at University of Genova, where I worked with [http://web.mit.edu/lrosasco/www/ Lorenzo Rosasco] and [http://www.dima.unige.it/~villa/ Silvia Villa] to develop new algorithms for implicit regularization.
 I hold a PhD from Télécom Paris and Inria Saclay
-(in the [https://team.inria.fr/parietal/ Parietal Team]), under the supervision of
+([https://team.inria.fr/parietal/ Parietal Team]), under the supervision of
     [https://josephsalmon.eu/ Joseph Salmon]
 and [http://alexandre.gramfort.net/ Alexandre Gramfort].
-My PhD aimed at improving the efficiency of brain signals reconstruction algorithms
+In my PhD, I improved the efficiency of brain signals reconstruction algorithms
 (more details [http://www.theses.fr/s163051
     here]), which involves optimization, sparsity and high dimensional statistics.
 
 I have a keen interest in the Python programming language: I am the lead developer
-of [https://mathurinm.github.io/celer/ celer] (solvers for L1-type regularized problems) and [https://github.com/mathurinm/libsvmdata/ libsvmdata] (python util to fetch libsvm datasets) packages. To foster scientific reproducibility, my papers usually come with Python packages to reproduce my experiments and make my code available to the community (e.g. [https://mathurinm.github.io/andersoncd/auto_examples/index.html Anderson acceleration for coordinate descent] or [https://LCSL.github.io/iterreg/auto_examples/index.html Iterative regularization for convex regularizers])
+of [https://mathurinm.github.io/celer/ celer] (fastest Lasso solver) and [https://contrib.scikit-learn.org/skglm/ skglm] (fast and flexible sklearn GLMs). I am also a core developer of [https://github.com/benchopt/benchopt benchopt], a benchmarking suite that makes optimization benchmarks easy, transparent and reproducible.
 \n
-I also contribute to [http://scikit-learn.org/ scikit-learn], [https://martinos.org/mne/stable/index.html MNE], [https://github.com/benchopt/benchopt benchopt] and [https://github.com/qb3/sparse-ho sparse-ho].
+To foster scientific reproducibility, my papers usually come with Python packages to reproduce my experiments and make my code available to the community (e.g. [https://mathurinm.github.io/andersoncd/auto_examples/index.html Anderson acceleration for coordinate descent] or [https://LCSL.github.io/iterreg/auto_examples/index.html Iterative regularization for convex regularizers])
+\n
+I also contribute to [http://scikit-learn.org/ scikit-learn], [https://martinos.org/mne/stable/index.html MNE], and [https://github.com/qb3/sparse-ho sparse-ho].
 
 \n
 You can find more details on my résumé
@@ -33,7 +35,6 @@ You can find more details on my résumé
 
 == News
 - [./assets/pdf/slides_mlmtp.pdf Slides ] for my talk at ML-MTP (Montpellier)
-- Internship offer with Rémi Gribonval on Anderson acceleration for sparse matrix factorization. Details [./assets/pdf/stage_anderson_faust.pdf here]
 - I have a potential funding for a one year research engineer contract to work on fast optimization solvers to be integrated into scikit-learn. Details [./assets/pdf/offer_anderson.pdf here]
 - Our two papers on Iterative regularization for convex regularizers (w. C. Molinari, L. Rosasco and S. Villa) and Anderson acceleration of coordinate descent (w. Q. Bertrand) got accepted to AISTATS 2021.
 - Slides for my presentation [./assets/pdf/presentation_dante.pdf Efficient approaches to regularized inverse problems] in the DANTE team (Lyon)
