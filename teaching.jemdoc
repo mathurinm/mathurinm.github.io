@@ -3,7 +3,9 @@
 
 == Convex optimization @Computation and Modelling summer school,WUST 2022
 
-[./assets/2022_wust/slides_intro.pdf Intro slides ] and [./assets/2022_wust/exos.pdf exercises]
+- [./assets/2022_wust/slides_intro.pdf intro slides ]
+- [./assets/2022_wust/exos.pdf exercises] (updated every day)
+- [./assets/2022_wust/Lecture1_gd_ols.ipynb notebook 1]
 
 == Resources
 
