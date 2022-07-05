@@ -5,7 +5,8 @@
 
 - [./assets/2022_wust/slides_intro.pdf intro slides ]
 - [./assets/2022_wust/exos.pdf exercises] (updated every day)
-- [./assets/2022_wust/Lecture1_gd_ols.ipynb notebook 1]
+- [./assets/2022_wust/Lecture1_gd_ols.ipynb notebook 1 (GD on least squares)]
+- [./assets/2022_wust/Lecture2_generic_GD.ipynb notebook 2 (Generic GD)]
 
 == Resources
 
