@@ -5,9 +5,10 @@
 
 - [./assets/2022_wust/slides_intro.pdf intro slides ]
 - [./assets/2022_wust/exos.pdf exercises] (updated every day)
-- [./assets/2022_wust/Lecture1_gd_ols.ipynb notebook 1 (GD on least squares)]
-- [./assets/2022_wust/Lecture2_generic_GD.ipynb notebook 2 (Generic GD)]
-- [./assets/2022_wust/Lecture3_nonsmooth.ipynb notebook 3 (Non smooth optimization)]
+- [./assets/2022_wust/Lecture1_gd_ols.ipynb notebook 1 (Introduction to gradient descent on least squares)]
+- [./assets/2022_wust/Lecture2_generic_GD.ipynb notebook 2 (Gradient descent on generic functions)]
+- [./assets/2022_wust/Lecture3_nonsmooth.ipynb notebook 3 (Non smooth optimization: the proximal gradient algorithm)]
+- [./assets/2022/wust/Lecture4_Newton_CD.ipynb notebook 4 (Alternatives to gradient descent)]
 
 == Resources
 
