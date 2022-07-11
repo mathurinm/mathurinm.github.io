@@ -34,6 +34,9 @@ You can find more details on my résumé
  [research.html list of publications].
 
 == News
+- I gave a course on convex optimization at the [https://wmat.pwr.edu.pl/en/cm2022 Computation and Modelling school] in Wrocław; resources are on my teaching page.
+- [https://github.com/mathurinm/celer celer 0.7] is released, with a fast ElasticNet solver thanks to [https://github.com/Badr-MOUFAD Badr Moufad]!
+- We have integrated [https://contrib.scikit-learn.org/skglm skglm] into scikit-learn, providing a customizable and accelerated solver for sparse GLMs in python.
 - [./assets/pdf/slides_mlmtp.pdf Slides ] for my talk at ML-MTP (Montpellier)
 - I have a potential funding for a one year research engineer contract to work on fast optimization solvers to be integrated into scikit-learn. Details [./assets/pdf/offer_anderson.pdf here]
 - Our two papers on Iterative regularization for convex regularizers (w. C. Molinari, L. Rosasco and S. Villa) and Anderson acceleration of coordinate descent (w. Q. Bertrand) got accepted to AISTATS 2021.
