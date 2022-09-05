@@ -1,7 +1,31 @@
 # jemdoc: menu{MENU}{teaching.html}, nofooter
 == Teaching
 
-== Convex optimization @Computation and Modelling summer school,WUST 2022
+
+== Optimization for large scale Machine Learning, M2 ENS 2022-2023
+
+The goal of the class is to cover theoretical aspects and practical Python implementations of popular optimization algorithms in machine learning.
+
+At the end of the class, the students will:
+- be familiar with essential optimization notions
+- be able to derive standard convergence proofs and convergence rates
+- know which algorithm to chose given the problem to solve
+- understand the implementation of these algorithms in Python
+
+
+*Notes for the class* are [./assets/2022_ens/class.pdf here] and exercises are [./assets/2022_ens/exos.pdf here]
+
+*Schedule*: Thursday 15 h 45, Friday 10 h 15 (room B1).
+
+*Validation*: theoretical homeworks, labs and paper presentation at the end of the class.
+
+*Ressources*:
+- /Introductory lectures on convex optimization: a basic course/, Y. Nesterov, 2004. A reference book in optimization, updated in 2018: /Lectures on Convex Optimization/.
+- /First order methods in optimization/, A. Beck, 2019.
+- /Convex optimization: algorithms and complexity/, S. Bubeck, 2015. A short monograph (100 pages) covering basic topics.
+
+
+== Convex optimization @Computation and Modelling summer school, WUST 2022
 
 - [./assets/2022_wust/slides_intro.pdf intro slides ]
 - [./assets/2022_wust/exos.pdf exercises] (updated every day)
