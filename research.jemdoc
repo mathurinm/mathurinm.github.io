@@ -9,15 +9,15 @@
 
 == Papers
 - 2022
--- T. Moreau, *M. Massias*, A. Gramfort and others, [https://arxiv.org/abs/2206.13424 Benchopt: Reproducible, efficient and collaborative optimization benchmarks ], submitted.
--- Q. Bertrand, Q. Klopfenstein, P.-A. Bannier, G. Gidel, *M. Massias*, [https://arxiv.org/abs/2204.07826, Beyond L1: Fast and better sparse models with skglm], submitted.
+-- T. Moreau, *M. Massias*, A. Gramfort and others, [https://arxiv.org/abs/2206.13424 Benchopt: Reproducible, efficient and collaborative optimization benchmarks ], NeuRIPS 2022.
+-- Q. Bertrand, Q. Klopfenstein, P.-A. Bannier, G. Gidel, *M. Massias*, [https://arxiv.org/abs/2204.07826, Beyond L1: Fast and better sparse models with skglm], NeuRIPS 2022.
 -- B. Muzellec, K. Sato, *M. Massias*, T. Suzuki, [https://arxiv.org/abs/2003.00306 Dimension-free convergence rates for gradient Langevin dynamics in RKHS], COLT 2022.
 -- C. Molinari, *M. Massias*, L. Rosasco, S. Villa, [https://arxiv.org/abs/2202.00420 Iterative regularization for low-complexity regularizers], submitted.
 
 - 2021
 --    Q. Bertrand, Q. Klopfenstein, *M. Massias*, M. Blondel, S. Vaiter, A. Gramfort, J. Salmon,
         [https://arxiv.org/abs/2105.01637
-        Implicit differentiation for fast hyperparameter selection in non-smooth convex learning], to appear in JMLR.
+        Implicit differentiation for fast hyperparameter selection in non-smooth convex learning], JMLR.
         [https://github.com/QB3/sparse-ho code]
 --     Q. Bertrand, *M. Massias*, [https://arxiv.org/abs/2011.10065 Anderson acceleration of coordinate descent], AISTATS 2021. [https://mathurinm.github.io/andersoncd code]
 --     C. Molinari, *M. Massias*, L. Rosasco, S. Villa,
