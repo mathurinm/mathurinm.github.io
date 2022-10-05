@@ -15,7 +15,9 @@ At the end of the class, the students will:
 
 *Notes for the class* are [./assets/2022_ens/class.pdf here] and exercises are [./assets/2022_ens/exos.pdf here]
 
-[./assets/2022_ens/Lab1_subgradient_gradient_prox.ipynb Jupyter notebook for Lab 1] (right click, save link as)
+[./assets/2022_ens/Lab1_subgradient_gradient_prox.ipynb Jupyter notebook for Lab 1 (first order)] (right click, save link as)
+
+[./assets/2022_ens/Lab2_logistic_regression_Newton.ipynb Jupyter notebook for Lab 2 (2nd order)] (right click, save link as)
 
 *Schedule*: Thursday 15 h 45, Friday 10 h 15 (room B1).
 
