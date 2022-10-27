@@ -10,7 +10,7 @@
 == Papers
 - 2022
 -- T. Moreau, *M. Massias*, A. Gramfort and others, [https://arxiv.org/abs/2206.13424 Benchopt: Reproducible, efficient and collaborative optimization benchmarks ], NeuRIPS 2022.
--- Q. Bertrand, Q. Klopfenstein, P.-A. Bannier, G. Gidel, *M. Massias*, [https://arxiv.org/abs/2204.07826, Beyond L1: Fast and better sparse models with skglm], NeuRIPS 2022.
+-- Q. Bertrand, Q. Klopfenstein, P.-A. Bannier, G. Gidel, *M. Massias*, [https://arxiv.org/abs/2204.07826 Beyond L1: Fast and better sparse models with skglm], NeuRIPS 2022.
 -- B. Muzellec, K. Sato, *M. Massias*, T. Suzuki, [https://arxiv.org/abs/2003.00306 Dimension-free convergence rates for gradient Langevin dynamics in RKHS], COLT 2022.
 -- C. Molinari, *M. Massias*, L. Rosasco, S. Villa, [https://arxiv.org/abs/2202.00420 Iterative regularization for low-complexity regularizers], submitted.
 
