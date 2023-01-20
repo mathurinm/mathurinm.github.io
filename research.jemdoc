@@ -1,17 +1,13 @@
 # jemdoc: menu{MENU}{research.html}, nofooter
 == Research
 
-== PhD. Thesis
-- *M. Massias*, Sparse high dimension linear regression in the presence of heteroscedastic noise: application to magnetoelectric source imaging. Defended on 04122019.
-[https://tel.archives-ouvertes.fr/tel-02401628 manuscript]
-[./assets/pdf/slides_defense.pdf slides]
-
-
 == Papers
+- 2023
+-- J. Larsson, Q. Klopfenstein, *M. Massias*, J. Wallin, [https://arxiv.org/abs/2210.14780 Coordinate descent for SLOPE], AISTATS 2023.
+
 - 2022
--- J. Larsson, Q. Klopfenstein, *M. Massias*, J. Wallin, [https://arxiv.org/abs/2210.14780 Coordinate descent for SLOPE], submitted.
 -- T. Moreau, *M. Massias*, A. Gramfort and others, [https://arxiv.org/abs/2206.13424 Benchopt: Reproducible, efficient and collaborative optimization benchmarks ], NeuRIPS 2022.
--- Q. Bertrand, Q. Klopfenstein, P.-A. Bannier, G. Gidel, *M. Massias*, [https://arxiv.org/abs/2204.07826 Beyond L1: Fast and better sparse models with skglm], NeuRIPS 2022.
+-- Q. Bertrand, Q. Klopfenstein, P.-A. Bannier, G. Gidel, *M. Massias*, [https://arxiv.org/abs/2204.07826 Beyond L1: Faster and better sparse models with skglm], NeuRIPS 2022.
 -- B. Muzellec, K. Sato, *M. Massias*, T. Suzuki, [https://arxiv.org/abs/2003.00306 Dimension-free convergence rates for gradient Langevin dynamics in RKHS], COLT 2022.
 -- C. Molinari, *M. Massias*, L. Rosasco, S. Villa, [https://arxiv.org/abs/2202.00420 Iterative regularization for low-complexity regularizers], submitted.
 
@@ -61,7 +57,12 @@
         [http://spars2017.lx.it.pt/index_files/papers/SPARS2017_Paper_77.pdf
         Gap safe screening rules for faster complex-valued multi-task group Lasso],
         SPARS, Lisbon, 2017.
-        [https://goo.gl/kW8EXy poster]
+
+== PhD. Thesis
+- *M. Massias*, Sparse high dimension linear regression in the presence of heteroscedastic noise: application to magnetoelectric source imaging. Defended on 04/12/2019.
+[https://tel.archives-ouvertes.fr/tel-02401628 manuscript]
+[./assets/pdf/slides_defense.pdf slides]
+
 
 == Relevant slides
 -    [./assets/pdf/cirm_mathurin.pdf Dual extrapolation], 09032020, Optimization for Machine Learning workshop at CIRM, Luminy.

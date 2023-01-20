@@ -22,7 +22,7 @@ In my PhD, I improved the efficiency of brain signals reconstruction algorithms
     here]), which involves optimization, sparsity and high dimensional statistics.
 
 I have a keen interest in the Python programming language: I am the lead developer
-of [https://mathurinm.github.io/celer/ celer] (fastest Lasso solver) and [https://contrib.scikit-learn.org/skglm/ skglm] (fast and flexible sklearn GLMs). I am also a core developer of [https://github.com/benchopt/benchopt benchopt], a benchmarking suite that makes optimization benchmarks easy, transparent and reproducible.
+of [https://mathurinm.github.io/celer/ celer] (fastest Lasso solver) and [https://contrib.scikit-learn.org/skglm/ skglm] (fast and flexible sklearn GLMs). I am also a core developer of [https://github.com/benchopt/benchopt benchopt], a benchmarking framework that makes optimization benchmarks easy, transparent and reproducible.
 \n
 To foster scientific reproducibility, my papers usually come with Python packages to reproduce my experiments and make my code available to the community (e.g. [https://mathurinm.github.io/andersoncd/auto_examples/index.html Anderson acceleration for coordinate descent] or [https://LCSL.github.io/iterreg/auto_examples/index.html Iterative regularization for convex regularizers])
 \n
@@ -34,10 +34,12 @@ You can find more details on my résumé
  [research.html list of publications].
 
 == Job offers
-- M2 internship offer on improving sparse penalties with Emmanuel Soubiès [./assets/pdf/sujet_stage_M2_nonconvexity.pdf here]
+- None currently available, but do contact me if you're interested.
 
 
 == News
+- Our paper on Coordinate descent for SLOPE was accepted to AISTATS'23! [./assets/pdf/slides_slope.pdf Slides of the paper] presented at the Statistical Learning Seminar
+- 2 papers accepted at Neurips'22, on benchopt and skglm.
 - I gave a course on convex optimization at the [https://wmat.pwr.edu.pl/en/cm2022 Computation and Modelling school] in Wrocław; resources are on my teaching page.
 - [https://github.com/mathurinm/celer celer 0.7] is released, with a fast ElasticNet solver thanks to [https://github.com/Badr-MOUFAD Badr Moufad]!
 - We have integrated [https://contrib.scikit-learn.org/skglm skglm] into scikit-learn, providing a customizable and accelerated solver for sparse GLMs in python.
