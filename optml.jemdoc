@@ -1,34 +1,29 @@
-== Syllabus of the "Large scale optimization for machine learning" class
+== Syllabus of the "Large scale optimization for machine and deep learning" class
 
-The goal of the class is to cover theoretical aspects and practical Python implementations of popular optimization algorithms in machine learning.
 
-At the end of the class, the students will:
-- be familiar with essential convex analysis notions
-- be able to derive standard convergence proofs and convergence rates
-- know which algorithm to chose given the problem to solve
-- understand the implementation of these algorithms in Python
+The class studies the success of algorithms for large scale deep learning problems, covering both recent theoretical results as well as practical Python implementations of popular optimization algorithms.
 
 
 == Syllabus
-- basics of convex analysis: convex sets, convex functions, strong convexity, smoothness, subdifferential
-- Fenchel-Legendre transform, infimal convolution, Moreau envelope
-- gradient descent and subgradient descent (Lab 1)
-- fixed point iterations, proximal point method
-- acceleration of first order methods
-- composite optimization: proximal gradient, applications to low complexity regularization (Lab 2)
-- Moreau-Rockafellar duality, duality gap
-- stochastic algorithms for empirical risk minimization: stochastic gradient descent, variance reduction methods (Lab 3)
-- eventually: Frank-Wolfe algorithm, coordinate descent, primal-dual algorithms
+- basics of convex analysis: convex sets, convex functions, strong convexity, smoothness, subdifferential, Fenchel-Legendre transform, infimal convolution, Moreau envelope
+- gradient descent and subgradient descent, fixed point iterations, proximal point method (Lab 1)
+- acceleration of first order methods: Nesterov and momentum
+- algorithms for Deep Learning: stochastic gradient descent, ADAM, Adagrad (Lab 2)
+- automatic differentiation
+- second order algorithms: Newton and quasi-Newton methods
+- implicit regularization, duality, Bregman geometry, mirror descent
+- recent results in non convex optimization
+- other algorithms: Frank-Wolfe, primal-dual algorithms, extragradient.
 
 == Schedule
-15 x 2 h of class/labs, 2 h written examination
+15 x 2 h of class/labs, oral presentation
 
 == Validation
-3 Labs and one written exam
+2 Labs, homeworks and one oral written exam
 
 == Ressources
-- Introductory lectures on convex optimization: a basic course, Y. Nesterov, 2004. A reference book in optimization.
-- First order methods in optimization, A. Beck, 2019. Maybe a bit more modern than Nesterov.
+-  Lectures on Convex Optimization: Y. Nesterov, 2018. An updated version of one of the reference books in optimization.
+- First order methods in optimization, A. Beck, 2019.
 - Convex optimization: algorithms and complexity, S. Bubeck, 2015. A short monograph (100 pages) covering basic topics.
 
 
