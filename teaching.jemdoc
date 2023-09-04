@@ -10,14 +10,26 @@ Slides are [./assets/2023_olissipo/olissipo_slides.pdf here].
 
 The goal of the class is to cover theoretical aspects and practical Python implementations of popular optimization algorithms in machine learning, with a focus on modern topics: huge scale models, automatic differentiation, deep learning, implicit bias, etc.
 
-
 *Notes for the class* in their 2022 version are [./assets/2022_ens/class.pdf here] and exercises are [./assets/2022_ens/exos.pdf here]
 
 *Schedule*: From November 21st onwards: Tuesday 08 h 00, Friday 13 h 30 (room B1).
 
 *Validation*: weekly theoretical homeworks, labs and paper presentation at the end of the class.
 
-*Ressources*:
+*Syllabus*:
+- basics of convex analysis: convex sets, convex functions, strong convexity, smoothness, subdifferential, Fenchel-Legendre transform, infimal convolution, Moreau envelope
+- gradient descent and subgradient descent, fixed point iterations, proximal point method (Lab 1)
+- acceleration of first order methods: Nesterov and momentum
+- algorithms for Deep Learning: stochastic gradient descent, ADAM, Adagrad (Lab 2)
+- automatic differentiation
+- second order algorithms: Newton and quasi-Newton methods
+- duality in ML
+- implicit regularization, Bregman geometry, mirror descent
+- recent results in non convex optimization
+- online learning
+- other algorithms: Frank-Wolfe, primal-dual algorithms, variational inclusions, extragradient.
+
+*Resources*:
 - /Introductory lectures on convex optimization: a basic course/, Y. Nesterov, 2004. A reference book in optimization, updated in 2018: /Lectures on Convex Optimization/.
 - /First order methods in optimization/, A. Beck, 2019.
 - /Convex optimization: algorithms and complexity/, S. Bubeck, 2015. A short monograph (100 pages) covering basic topics.
