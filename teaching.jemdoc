@@ -1,39 +1,28 @@
 # jemdoc: menu{MENU}{teaching.html}, nofooter
 == Teaching
 
-== OLISSIPO Winter school: dimensionality reduction (02/2023)
 
 Material for the two labs can be downloaded [https://filesender.renater.fr/?s=download&token=1d569af5-6651-43d3-9e5f-c35db82b0e5b from here].
 Slides are [./assets/2023_olissipo/olissipo_slides.pdf here].
 
 
-== Optimization for large scale Machine Learning, M2 ENS 2022-2023
+== Optimization for large scale Machine Learning, M2 ENS 2022-2023 & 2023-2024
 
-The goal of the class is to cover theoretical aspects and practical Python implementations of popular optimization algorithms in machine learning.
-
-At the end of the class, the students will:
-- be familiar with essential optimization notions
-- be able to derive standard convergence proofs and convergence rates
-- know which algorithm to chose given the problem to solve
-- understand the implementation of these algorithms in Python
+The goal of the class is to cover theoretical aspects and practical Python implementations of popular optimization algorithms in machine learning, with a focus on modern topics: huge scale models, automatic differentiation, deep learning, implicit bias, etc.
 
 
-*Notes for the class* are [./assets/2022_ens/class.pdf here] and exercises are [./assets/2022_ens/exos.pdf here]
+*Notes for the class* in their 2022 version are [./assets/2022_ens/class.pdf here] and exercises are [./assets/2022_ens/exos.pdf here]
 
-[./assets/2022_ens/Lab1_subgradient_gradient_prox.ipynb Jupyter notebook for Lab 1 (first order)] (right click, save link as)
+*Schedule*: From November 21st onwards: Tuesday 08 h 00, Friday 13 h 30 (room B1).
 
-[./assets/2022_ens/Lab2_logistic_regression_Newton.ipynb Jupyter notebook for Lab 2 (2nd order)] (right click, save link as)
-
-[./assets/2022_ens/Lab3_logistic_regression_Stochastic.ipynb Jupyter notebook for Lab 3 (stochastic methods)] (right click, save link as)
-
-*Schedule*: Thursday 14 h 30, Friday 10 h 15 (room B1).
-
-*Validation*: theoretical homeworks, labs and paper presentation at the end of the class.
+*Validation*: weekly theoretical homeworks, labs and paper presentation at the end of the class.
 
 *Ressources*:
 - /Introductory lectures on convex optimization: a basic course/, Y. Nesterov, 2004. A reference book in optimization, updated in 2018: /Lectures on Convex Optimization/.
 - /First order methods in optimization/, A. Beck, 2019.
 - /Convex optimization: algorithms and complexity/, S. Bubeck, 2015. A short monograph (100 pages) covering basic topics.
+
+== OLISSIPO Winter school: dimensionality reduction (02/2023)
 
 
 == Convex optimization @Computation and Modelling summer school, WUST 2022
