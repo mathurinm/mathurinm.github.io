@@ -10,7 +10,7 @@ E-mail: /mathurin.massias/ \[@\] gmail \[DOT\] com
 
 == About me
 
-I am a Junior researcher (Chargé de recherche) in Inria Lyon, in the OCKHAM (ex-DANTE) team led by Rémi Gribonval, working in optimization for Machine Learning.
+I am a researcher (Chargé de recherche) in Inria Lyon, in the OCKHAM (ex-DANTE) team led by Rémi Gribonval, working in optimization for Machine Learning.
 
 From January 2020 to October 2021, I was a post-doc at University of Genova, where I worked with [http://web.mit.edu/lrosasco/www/ Lorenzo Rosasco] and [http://www.dima.unige.it/~villa/ Silvia Villa] to develop new algorithms for implicit regularization.
 I hold a PhD from Télécom Paris and Inria Saclay
@@ -33,11 +33,14 @@ You can find more details on my résumé
     ([./assets/pdf/CV_Mathurin_MASSIAS.pdf French (01\/2021)]\/[./assets/pdf/CV_Mathurin_MASSIAS_EN.pdf English (06\/2023)]) and my
  [research.html list of publications].
 
+\n
+I co-organize the [https://www.ens-lyon.fr/PHYSIQUE/seminars/machine-learning-and-signal-processing Machine Learning and Signal Processing seminar] at ENS Lyon, send me a message if you want to present your work there!
+
 
 == Team
 - [https://github.com/Badr-MOUFAD/ Badr Moufad], research engineer, since April 2022.
 - [https://perceptronium.github.io Can Pouliquen], PhD student with Titouan Vayer and Paulo Gonçalves, since November 2022
-- Anne Gagneux, M2 intern from MVA co-supervised with Emmanuel Soubiès, since April 2023
+- [https://annegnx.github.io Anne Gagneux], PhD student from MVA co-supervised with Emmanuel Soubiès and Rémi Gribonval, since April 2023
 
 
 == Job offers
@@ -45,6 +48,7 @@ You can find more details on my résumé
 
 
 == News
+- With Titouan Vayer and the help of GDR MIA we're organizing a thematic day on dimension reduction at ENS Lyon. More details [https://gdr-mia.math.cnrs.fr/events/dimreduc here].
 - [./assets/pdf/presentation_cep.pdf Slides] for my presentation at Inria Comité des Equipes Projets
 - Our paper on Coordinate descent for SLOPE was accepted to AISTATS'23! [./assets/pdf/slides_slope.pdf Slides of the paper] presented at the Statistical Learning Seminar
 - 2 papers accepted at Neurips'22, on benchopt and skglm.
