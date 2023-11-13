@@ -44,11 +44,12 @@ I co-organize the [https://www.ens-lyon.fr/PHYSIQUE/seminars/machine-learning-an
 
 
 == Job offers
+- New [./assets/pdf/sujet_stage_spectrum.pdf M2 internship offer] on "Theoretical and practical aspects of spectral estimation for optimal optimization algorithms design" with Rémi Gribonval at Inria Lyon
 - None currently available, but do contact me if you're interested.
 
 
 == News
-- With Titouan Vayer and the help of GDR MIA we're organizing a thematic day on dimension reduction at ENS Lyon. More details [https://gdr-mia.math.cnrs.fr/events/dimreduc here].
+- With Titouan Vayer and the help of GDR MIA we organized a thematic day on dimension reduction at ENS Lyon. The final planning is available [https://gdr-mia.math.cnrs.fr/events/dimreduc here].
 - [./assets/pdf/presentation_cep.pdf Slides] for my presentation at Inria Comité des Equipes Projets
 - Our paper on Coordinate descent for SLOPE was accepted to AISTATS'23! [./assets/pdf/slides_slope.pdf Slides of the paper] presented at the Statistical Learning Seminar
 - 2 papers accepted at Neurips'22, on benchopt and skglm.
