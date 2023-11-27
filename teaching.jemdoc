@@ -10,11 +10,11 @@ Slides are [./assets/2023_olissipo/olissipo_slides.pdf here].
 
 The goal of the class is to cover theoretical aspects and practical Python implementations of popular optimization algorithms in machine learning, with a focus on modern topics: huge scale models, automatic differentiation, deep learning, implicit bias, etc.
 
-*Notes for the class* in their 2022 version are [./assets/2022_ens/class.pdf here] and exercises are [./assets/2022_ens/exos.pdf here]
+*Notes for the class* are [./assets/2022_ens/class.pdf here] and exercises are [./assets/2022_ens/exos.pdf here]
 
-*Schedule*: From November 21st onwards: Tuesday 08 h 00, Friday 13 h 30 (room B1).
+*Schedule*: From November 21st onwards: Tuesday 08 h 00, Wednesday 13 h 30 (room B1) **except Wednesday 6th which is moved to Friday 8th**.
 
-*Validation*: weekly theoretical homeworks, labs and paper presentation at the end of the class.
+*Validation*: some theoretical homeworks, and paper presentation at the end of the class.
 
 *Syllabus*:
 - basics of convex analysis: convex sets, convex functions, strong convexity, smoothness, subdifferential, Fenchel-Legendre transform, infimal convolution, Moreau envelope
@@ -28,6 +28,8 @@ The goal of the class is to cover theoretical aspects and practical Python imple
 - recent results in non convex optimization
 - online learning
 - other algorithms: Frank-Wolfe, primal-dual algorithms, variational inclusions, extragradient.
+
+[./assets/2022_ens/Lab_logistic_regression.ipynb Lab 1 on logistic regression is here]
 
 *Resources*:
 - /Introductory lectures on convex optimization: a basic course/, Y. Nesterov, 2004. A reference book in optimization, updated in 2018: /Lectures on Convex Optimization/.
