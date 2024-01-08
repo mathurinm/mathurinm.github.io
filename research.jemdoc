@@ -4,6 +4,7 @@
 == Papers
 - 2023
 -- J. Larsson, Q. Klopfenstein, *M. Massias*, J. Wallin, [https://arxiv.org/abs/2210.14780 Coordinate descent for SLOPE], AISTATS 2023.
+-- B. Moufad, P.-A. Bannier, Q. Bertrand, Q. Klopfenstein, *M. Massias*, [./assets/pdf/skglm_mloss.pdf skglm: improving scikit-learn for regularized Generalized Linear Models], submitted to JMLR OSS.
 
 - 2022
 -- T. Moreau, *M. Massias*, A. Gramfort and others, [https://arxiv.org/abs/2206.13424 Benchopt: Reproducible, efficient and collaborative optimization benchmarks ], NeuRIPS 2022.
