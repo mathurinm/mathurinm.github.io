@@ -32,6 +32,8 @@ The goal of the class is to cover theoretical aspects and practical Python imple
 
 [./assets/2022_ens/Lab_logistic_regression.ipynb Lab 1 on logistic regression is here]
 
+[./assets/2022_ens/Lab_3_DL_empty.ipynb Lab 3 on Deep Learning is here]
+
 *Resources*:
 - /Introductory lectures on convex optimization: a basic course/, Y. Nesterov, 2004. A reference book in optimization, updated in 2018: /Lectures on Convex Optimization/.
 - /First order methods in optimization/, A. Beck, 2019.
