@@ -26,7 +26,7 @@ of [https://mathurinm.github.io/celer/ celer] (fastest Lasso solver) and [https:
 \n
 To foster scientific reproducibility, my papers usually come with Python packages to reproduce my experiments and make my code available to the community (e.g. [https://mathurinm.github.io/andersoncd/auto_examples/index.html Anderson acceleration for coordinate descent] or [https://LCSL.github.io/iterreg/auto_examples/index.html Iterative regularization for convex regularizers])
 \n
-I also contribute to [http://scikit-learn.org/ scikit-learn], [https://martinos.org/mne/stable/index.html MNE], and [https://github.com/qb3/sparse-ho sparse-ho].
+I am an associate editor for [https://computo.sfds.asso.fr/ Computo], a journal promoting reproducibility through a novel publication format, and for TMLR.
 
 \n
 You can find more details on my résumé
