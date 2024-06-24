@@ -40,8 +40,9 @@ I co-organize the [https://www.ens-lyon.fr/PHYSIQUE/seminars/machine-learning-an
 == Team and alumni
 - [https://perceptronium.github.io Can Pouliquen], PhD student with Titouan Vayer and Paulo Gonçalves, since November 2022
 - [https://annegnx.github.io Anne Gagneux], PhD student from MVA co-supervised with Emmanuel Soubiès and Rémi Gribonval, since April 2023
+- [https://www.linkedin.com/in/ma%C3%ABl-chaumette Maël Chaumette], M2 intern from ENSAI co-supervised with Rémi Gribonval, April 2023 - Sept. 2024.
 - [https://github.com/Badr-MOUFAD/ Badr Moufad], research engineer, April 2022 - Dec. 2023. Now Phd student at Ecole Polytechnique.
-- [https://github.com/PABannier Pierre-Antoine Bannier], Master thesis, May 2022.
+- [https://github.com/PABannier Pierre-Antoine Bannier], Master thesis for Polytechnique/HEC, May 2022.
 - Célio Léonard-Collado, Master thesis, with D. Perrot, May 2024.
 
 == Job offers
@@ -49,7 +50,9 @@ I co-organize the [https://www.ens-lyon.fr/PHYSIQUE/seminars/machine-learning-an
 
 
 == News
-- We organize the SMAI MODE days in Lyon, from march 27th to march 29th. A minicourse on optimal transport by Gabriel Peyré and Yann Brenier will be held at ENS de Lyon on the 25th and 26th.
+- I am happy to have joined the committee of SMAI's MODE group (optimization-related group of the French Society for Applied and Industrial Mathematics).
+- With Elsa Cazelles, Thomas Moreau, Aymeric Dieuleveut and Lorenzo Rosasco we organized LOL 2024 (Learning and optimization in Luminy) in CIRM. It was a blast, we are planning to hold the 4th edition in the first semester of 2026: stay tuned!
+- We organized the SMAI MODE days in Lyon, from march 27th to march 29th. A minicourse on optimal transport by Gabriel Peyré and Yann Brenier was held at ENS de Lyon on the 25th and 26th.
 - With Titouan Vayer and the help of GDR MIA we organized a thematic day on dimension reduction at ENS Lyon. The final planning is available [https://gdr-mia.math.cnrs.fr/events/dimreduc here].
 - [./assets/pdf/presentation_cep.pdf Slides] for my presentation at Inria Comité des Equipes Projets
 - Our paper on Coordinate descent for SLOPE was accepted to AISTATS'23! [./assets/pdf/slides_slope.pdf Slides of the paper] presented at the Statistical Learning Seminar
