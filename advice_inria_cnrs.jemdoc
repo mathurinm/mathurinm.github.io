@@ -34,6 +34,8 @@ You should still work on your integration and know what the people in the team a
 INRIA is very different: you have one application file per Inria center (there are 9 in France). Inside a center, you apply for a team (you have the possibility to not specify one, but it makes a bad impression: it means that there is no team for which you are a perfect fit).
 Your application file is thus very different from CNRS: the targeted team must appear frequently in it. In your whole research project, you must show what you will bring them, what they can help you with, why you are similar but complementary, who you'll interact with, etc.
 
+Finally, for INRIA, since you apply in a team, its support of the team is essential. Even more that for CNRS, you should contact the hosting team early.
+
 == Document 1: Summary of past research
 Show that there is coherence in your past works, that you took initiatives, that all your works interact nicely in a grand schemes that defines your identity and uniqueness as a researcher.
 Do not be too technical, summarize in layman's term. Show that you understood what were the big challenges of your field, and how you contributed to solve them.
@@ -65,7 +67,7 @@ As a personal example: all optimizers (me included) tend to mention that they wa
 
 In your project: why are you legitimate for this? What have you accomplished that proves you'll be able to do all this? Which tools do you master that others don't?
 
-Give illustrations, give orders of magnitude, do periodic recaps.  **Never underestimate how little someone, even expert, can lose track of what you say**. It is not the time to be subtle: write stuff in bold for members of the jury that will cross-read your project before the presentation.
+Give illustrations, give orders of magnitude, do periodic recaps in your talk.  **Never underestimate how quickly someone, even expert, can lose track of what you say**. It is not the time to be subtle: write stuff in bold for members of the jury that will cross-read your research project while you're talking.
 
 Do not write too much maths, it's very hard to parse in a short presentation. Show that you are able to popularize your research, to speak to many. *Technicality is the enemy here, you're not writing a research article, not even an abstract*.
 
@@ -122,6 +124,17 @@ Be prepared to speak exactly for the amount of time you're allowed; if it's too 
 
 Do not try to force as much content as possible; on the contrary, taking breaks to summarize what you just said (e.g. after your past works, and before diving into your project) allows jury members outside of your area of expertise to catch up. Remember, it is very important not to lose them.
 
+
+=== Questions
+Answer precisely and concisely. It's very frustrating for the jury to not be able to ask all their questions for lack of time.
+It's OK to say that you don't know.
+
+One frequent question is: if you got funding for a PhD student when you arrive, what would they work on. Show that you have thought about it, and that you have a plan (in particular, you don't have HDR, so you'll need to take cosupervize the student: with which team member?).
+
+== Learn the many implicit rules
+This is a major reason why you should discuss with people: there are many little unwritten things to know. For example, the year I applied to CNRS, in addition to section 7, I applied for section 41, but in the "mathematics" track. Little did I know that, as an optimizer, I belonged to the "mathematics and applications" track (I did not get auditioned in section 41 :).
+
+For some projects, it's important to show that you handle applications; for some it's not, etc. You can only learn of all this by talking to experienced people.
 
 # Depart from what you did previously. it gave you tools and techniques to address a bigger problem, but avoid at all cost giving the impression that you find a nice little niche domain to work on, that you'll continue exploiting for a few years and then run out of ideas.
 
