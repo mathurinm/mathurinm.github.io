@@ -8,22 +8,28 @@ INRIA has issued a very useful guide: [https://www.inria.fr/sites/default/files/
 for a Young Graduate Scientist Position at Inria].
 
 == Most important advice: talk to many people
-Those selection processes are very peculiar and very different from what you've been used to in your PhD and postdoc. You need to talk to as many people as possible!
-- target senior researchers having been involved in the process for several years. Talking to past members of the jury is priceless: they will tell you what the jury wants to hear! Current members of the jury will rightfully decline speaking with you, as this is not ethical. Do not put them in an uncomfortable position by contacting them.
-- the various teams you apply to should give you feedback on your application, and organize rehearsals with you. If they don't, it's not a very good sign.
-- talk to past candidates in your network too: they will tell you what worked and what didn't for them. Gather as much advice as possible, even if they disagree: you'll make your own choices when the time comes.
+Those selection processes are very peculiar and very different from what you've been used to in your PhD and postdoc. *You need to talk to as many people as possible!* There are three categories of person to contact:
+- senior researchers having been involved in the process for several years. Talking to past members of the jury is priceless: they will tell you what the jury wants to hear! Current members of the jury will rightfully decline speaking with you, as this is not ethical. Do not put them in an uncomfortable position by contacting them.
+- heads and members of the various teams you apply to. They should give you feedback on your application file, and organize rehearsals with you. If they don't, it's not a very good sign.
+- successful past candidates. They will tell you what worked and what didn't for them. The yearly results are public and for example available on [https://www.coudert.name/concours_cnrs_2024.html FX Coudert's website].
 
-Do not be afraid of contacting people, even if you don't know them. Most people are happy to help. Worst can happen is people don't answer your email. If they don't, send at least two follow-up emails (maybe waiting ~2 weeks between each).
+Gather as much advice as possible, even if they end up disagreeing: you'll make your own choices when the time comes.
+
+Do not be afraid of contacting people, even if you don't know them. Most people are happy to help. Worst can happen is people don't answer your email. If they don't, send at least two follow-up emails (maybe waiting ~2 weeks between each), this is typical practice and will not be interpreted as pushy if you are polite in your mail (and concise! go to the point to save people's time).
+
 Have your PhD and postdoc advisors help you too.
 
 == Global timeline: start in October!
-The CNRS deadline is usually around the beginning of January, the Inria one is end of January/February. *You need to contact the potential hosting teams around October* of the previous year, not after. The teams will ask you to come do a presentation to evaluate your compatibility and discuss a common project, and they will give feedback on your research project.
+The CNRS deadline is usually around the beginning of January (in 2024 it was more end of January, we'll see if it's a permanent change), the Inria one is end of January/February. *You need to contact the potential hosting teams around October* of the previous year, not after. The teams will ask you to come do a presentation to evaluate your compatibility and discuss a common project, and they will give feedback on your research project.
 All this takes time, so do not wait for December to do it. A team may be interested by your profile, but already have candidates.
 
 
 == CNRS/INRIA differences
+Disclaimer: I know INRIA better.
+
 In CNRS the recruitment is national, and you _suggest_ 2 or 3 teams for your integration (if you get accepted, CNRS decides where to send you, which may or may not be one of those teams).
-You mention the teams, each in a paragraph, at the end of your research project, and spend 30 seconds per team at the end of your oral presentation, to explain why they'd be a good match. But the philosophy is, very roughly, that you should be able to lead your research in any lab, and that the surrounding people do not matter this much (my 2 cents from gathered feedbacks).
+You mention the teams, each in a paragraph, at the end of your research project, and spend 30 seconds per team at the end of your oral presentation, to explain why they'd be a good match.
+You should still work on your integration and know what the people in the team are doing, and how you'd like to work with them, but the philosophy is, very roughly, that you should be able to lead your research in any lab, and that the surrounding people do not matter this much (my 2 cents from gathered feedbacks). This may differ between section 7 (computer science) and 41 (maths).
 
 INRIA is very different: you have one application file per Inria center (there are 9 in France). Inside a center, you apply for a team (you have the possibility to not specify one, but it makes a bad impression: it means that there is no team for which you are a perfect fit).
 Your application file is thus very different from CNRS: the targeted team must appear frequently in it. In your whole research project, you must show what you will bring them, what they can help you with, why you are similar but complementary, who you'll interact with, etc.
@@ -48,7 +54,7 @@ You should avoid at all cost giving the impression that you'll continue working 
 
 
 === Composition of the jury: speak to everybody
-Your application will be read in details by 1 or 2 expert reviewers, that know your field very well. But, beware that the rest of the jury will be much less familiar with your line of work, and most probably only skim through the introduction. Having a look at the composition of the jury (it is public) is a good idea to realize the diversity of your audience - and to guess who your reviewer will be. They are usually the one that ask the first questions during the audition, so knowing their interests helps you prepare.
+Your application will be read in details by 1 or 2 expert reviewers, that know your field very well. But, beware that the rest of the jury will be much less familiar with your line of work, and most probably only skim through the introduction. Having a look at the composition of the jury (it is public, for example [https://section7.cnrs.fr/#composition here for Section 7 of CNRS]) is a good idea to realize the diversity of your audience - and to guess who your reviewer will be. They are usually the one that ask the first questions during the audition, so knowing their interests helps you prepare.
 
 To speak to everybody: why is your problem important? which locks do you unlock? how is this different from what everybody does in the field? what are the current barriers in the field and why are you, with your experience, drive and ideas, the perfect person to lift them?
 You need to display maturity, global vision of your field: basically that you're ready to be an independent, permanent researcher, no longer someone following a mentor.
