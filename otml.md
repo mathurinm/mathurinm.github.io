@@ -1,12 +1,17 @@
-=== Computational Optimal Transport for Machine and Deep Learning
+---
+layout: page
+title: Computational Optimal Transport for Machine and Deep Learning
+permalink: /otml/
+---
+
 
 In the last decade, optimal transport has rapidly emerged as a versatile to compare distributions and clouds of points. As such, it has found numerous successful applications in Statistics, Signal Processing, Machine Learning and Deep Learning.
 This class introduces the theoretical and numerical bases of numerical transport, and reviews its latest developments.
 
-== Teachers
+## Teachers
 Mathurin Massias, Titouan Vayer, Quentin Bertrand.
 
-== Syllabus
+## Syllabus
 - Discrete optimal transport: optimal assignment, Kantorovich problem, simplex/max flow algorithm
 - Duality of OT: C-transforms, dual ascent,
 - Entropic regularization of OT: Sinkhorn algorithm, interpretation as mirror descent, practical implementations
@@ -18,23 +23,23 @@ Mathurin Massias, Titouan Vayer, Quentin Bertrand.
 - Optimal transport for generative modelling: introduction to generative models, Wasserstein generative adversarial networks (WGANs), Wasserstein flows, Schödinger bridge, optimal transport conditional flow matching, and evaluation of generative models
 
 - Potential extensions: learning Monge maps, Wasserstein spaces, sliced Wasserstein, etc.
-#- Brenier?
+<!-- #- Brenier?
 #!-- - Wasserstein spaces, Wasserstein barycenters
 #- sliced Wasserstein
 #- Statistical view of OT
 #- Gromov, fused? -->
 
-== Schedule
+## Schedule
 15 x 2 h of class/labs, oral presentation
 
-== Validation
+## Validation
 Paper presentation and extension of a selected research article and the associated code applied on real data.
 
-== Ressources
+## Ressources
 Computational optimal transport: With applications to data science, G. Peyré and M. Cuturi (2019)
 
 
-== Prerequisite
+## Prerequisite
 - Differential calculus: gradient, Hessian
 - Notions of convexity
 - Linear algebra: eigenvalue decomposition, singular value decomposition
