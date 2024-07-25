@@ -20,8 +20,10 @@ layout: default
                 <a class="post-link" href="{{ post.url | relative_url }}">
                     {{ post.title | escape }}
                 </a>
-                {{ post.excerpt }}
             </h3>
+            <h4>
+                {{ post.excerpt }}
+            </h4>
             <!-- MM: not show even without if, can't understand why -->
             <!-- {%- if site.show_excerpts -%}
             {{ post.excerpt }}
