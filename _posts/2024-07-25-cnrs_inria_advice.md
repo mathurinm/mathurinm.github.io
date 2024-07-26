@@ -10,7 +10,7 @@ INRIA and CNRS "chargé de recherche" positions offer unique conditions of freed
 It only reflects my particular opinion and limited experience of going through it, and helping people with it for the last 3 years.
 Feedback is most welcome!
 
-INRIA has issued a very useful guide: [Advice for Applicants for a Young Graduate Scientist Position at Inria](https://www.inria.fr/sites/default/files/2021-01/CE_guide-applicant-CRCN.pdf).
+INRIA has issued a very useful guide: [Advice for Applicants for a Young Graduate Scientist Position at INRIA](https://www.inria.fr/sites/default/files/2021-01/CE_guide-applicant-CRCN.pdf).
 
 TLDR:
 - the application requires lots of work and communication with the teams you apply to: start in october
@@ -33,7 +33,7 @@ Do not be afraid of contacting people, even if you don't know them. Most people 
 Have your PhD and postdoc advisors help you too.
 
 ### Global timeline: start in October!
-The CNRS deadline is usually around the beginning of January (in 2024 it was more end of January, we'll see if it's a permanent change), the Inria one is end of January/February. **You must contact the potential hosting teams around October** of the previous year, not after. The teams will ask you to come do a presentation to evaluate your compatibility and discuss a common project, and they will give feedback on your research project.
+The CNRS deadline is usually around the beginning of January (in 2024 it was more end of January, we'll see if it's a permanent change), the INRIA one is end of January/February. **You must contact the potential hosting teams around October** of the previous year, not after. The teams will ask you to come do a presentation to evaluate your compatibility and discuss a common project, and they will give feedback on your research project.
 All this takes time, so do not wait for December to do it. A team may be interested by your profile, but already have candidates.
 
 **Laying out a full research project for 5/10 years requires several months of intensive work**, so you should start writing around October too.
@@ -41,14 +41,16 @@ All this takes time, so do not wait for December to do it. A team may be interes
 ### CNRS/INRIA differences
 Disclaimer: I know INRIA better.
 
-In CNRS the recruitment is national, and you _suggest_ 2 or 3 teams for your integration (if you get accepted, CNRS decides where to send you, which may or may not be one of those teams).
-You mention the teams, each in a paragraph, at the end of your research project, and spend 30 seconds per team at the end of your oral presentation, to explain why they'd be a good match.
-You should still work on your integration and know what the people in the team are doing, and how you'd like to work with them, but the philosophy is, very roughly, that you should be able to lead your research in any lab, and that the surrounding people do not matter this much (my 2 cents from gathered feedbacks). This may differ between section 7 (computer science) and 41 (maths).
-
-INRIA is very different: you have one application file per Inria center (there are 9 in France). Inside a center, you apply for a team (you have the possibility to not specify one, but it makes a bad impression: it means that there is no team for which you are a perfect fit).
-Your application file is thus very different from CNRS: the targeted team must appear frequently in it. In your whole research project, you must show what you will bring them, what they can help you with, why you are similar but complementary, who you'll interact with, etc.
-
-Finally, for INRIA, since you apply in a team, its support is essential. Even more that for CNRS, you should contact the hosting team early.
+- **research project format**:
+    - INRIA provides a template, your research project should be exactly 3 pages long. Your presentation of 3 selected works is also 3x 1 page long, with a predefined structure for each work (description of work, personal contribution, originality and difficulty, impact, diffusion)
+    - CNRS does not provide a template; the research project is, from the ones I've seen, 10 to 15 pages long, and the summary of past works is around 5 pages. I wrote the CNRS application file and contracted it + adapted it to my integration team for INRIA.
+- **affectation and integration into hosting team**:
+    - For CNRS the recruitment is national, and you _suggest_ 2 or 3 teams for your integration (if you get accepted, CNRS decides where to send you, which may or may not be one of those teams).
+    You mention the teams, each in a paragraph, at the end of your research project, and spend 30 seconds per team at the end of your oral presentation, to explain why they'd be a good match.
+    You should still work on your integration and know what the people in the team are doing, and how you'd like to work with them, but the philosophy is, very roughly, that you should be able to lead your research in any lab, and that the surrounding people do not matter this much (my 2 cents from gathered feedbacks). This may differ between section 7 (computer science) and 41 (maths).
+    - INRIA is very different: you have one application file per INRIA center (there are 9 in France). Inside a center, you apply for a team (you have the possibility to not specify one, but it makes a bad impression: it means that there is no team for which you are a perfect fit).
+    Your application file is thus very different from CNRS: the targeted team must appear frequently in it. In your whole research project, you must show what you will bring them, what they can help you with, why you are similar but complementary, who you'll interact with, etc.
+    Finally, for INRIA, since you apply in a team, its support is essential. Even more that for CNRS, you should contact the hosting team early.
 
 ### Document 1: Summary of past research
 Show that there is coherence in your past works, that you took initiatives, that all your works interact nicely in a grand scheme that defines your identity and uniqueness as a researcher. it should not be perceived as a sequence of unrelated works that were proposed by your PhD advisors.
@@ -63,14 +65,14 @@ Understand that CNRS and INRIA chargé de recherche are lifelong positions. In y
 - be ambitious: show that you have a direction for roughly the next 10 years
 - be realistic: show why you have the tools to solve the problems you'll consider
 
-Ideally, you give big directions in which you want to go, and descriptions of concrete ways with which you would start. People usually divide their project into 3 liked axis; each axis should start with something simple (one research idea that you could start working on as soon as you get the position), and then aim for something more distant, that has the right to be less precise.
+Ideally, you give big directions in which you want to go, and descriptions of concrete ways with which you would start. People usually divide their project into 3 linked axis; each axis should start with something simple (one research idea that you could start working on as soon as you get the position), and then aim for something more distant, that has the right to be less precise.
 The jury knows that research is hard to predict (you won't probably do everything in your project), but they want to see that you have a plan.
 
 **You should avoid at all cost giving the impression that you'll continue working exactly on what you did during your PhD**. This would make the jury fear that once this line of work dries up, you'll be left without ideas. You should show thematic mobility, while remaining coherent with your past research...
 
 
 #### Composition of the jury: speak to everybody
-Your application will be read in details by 1 or 2 expert reviewers, that know your field very well. But, beware that the rest of the jury will be much less familiar with your line of work, and most probably only skim through the introduction. Having a look at the composition of the jury (it is public, for example [here for Section 7 of CNRS](https://section7.cnrs.fr/#composition)) is a good idea to realize the diversity of your audience - and to guess who your reviewer will be. They are usually the one that ask the first questions during the audition, so knowing their interests helps you prepare.
+Your application will be read in details by 1 or 2 expert reviewers, that know your field very well. But, beware that the rest of the jury will be much less familiar with your line of work, and most probably only skim through the introduction. Having a look at the composition of the jury (it is public, for example [here for Section 7 of CNRS](https://section7.cnrs.fr/#composition)) is a good idea to realize the diversity of your audience - and to guess who your reviewer will be. The reviewer is usually the one that asks the first questions during the audition, so knowing their interests helps you prepare.
 
 In short: **be precise, for the specialists, but be understandable, for the rest of the jury**. We tend to focus on the first part and ignore the second.
 
@@ -90,7 +92,7 @@ Do not write too much maths, it's very hard to parse in a short presentation. Sh
 
 ### The oral
 #### Timing
-Presentations are short (15 min for CNRS section 7, 20 min for Inria). There is no room for approximation or hesitation, your presentation must be meticulously prepared.
+Presentations are short (15 min for CNRS section 7, 20 min for INRIA). There is no room for approximation or hesitation, your presentation must be meticulously prepared.
 
 The usual plan is:
 - 1 slide of career summary (place and topics for PhD and Postdocs)
