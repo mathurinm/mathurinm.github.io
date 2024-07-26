@@ -7,11 +7,24 @@ permalink: /
 title: Home
 ---
 
+<!-- ## About me -->
 
 
-## About me
+<div class="container">
+  <div class="image-container">
+    <img src="/assets/photo.jpg" alt="moi" style="width: 200px">
+  </div>
+  <div class="text-container">
+        <p>
+        E-mail: firstname.lastname [@] gmail [DOT] com <br>
+        <a href="https://github.com/mathurinm/" target="_blank">GitHub</a> <br>
+        <a href="https://twitter.com/mathusmassias" target="_blank">Twitter</a>
+        </p>
+  </div>
+</div>
 
-I am a researcher (Chargé de recherche) in Inria Lyon, in the OCKHAM (ex-DANTE) team led by Rémi Gribonval, working in optimization for Machine Learning.
+<br>
+I am a tenured researcher (Chargé de recherche) in Inria Lyon, in the OCKHAM (ex-DANTE) team led by Rémi Gribonval, working in optimization for Machine Learning.
 
 From January 2020 to October 2021, I was a post-doc at University of Genova, where I worked with [Lorenzo Rosasco](http://web.mit.edu/lrosasco/www/) and [Silvia Villa](http://www.dima.unige.it/~villa/) to develop new algorithms for implicit regularization.
 I hold a PhD from Télécom Paris and Inria Saclay
@@ -38,9 +51,9 @@ I co-organize the [Machine Learning and Signal Processing seminar](https://www.e
 
 
 ## Team and alumni
-- [Can Pouliquen](https://perceptronium.github.io), PhD student with Titouan Vayer and Paulo Gonçalves, since November 2022
+- [Maël Chaumette](https://www.linkedin.com/in/ma%C3%ABl-chaumette), M2 intern from ENSAI co-supervised with Rémi Gribonval, April 2024 - Sept. 2024.
 - [Anne Gagneux](https://annegnx.github.io), PhD student from MVA co-supervised with Emmanuel Soubiès and Rémi Gribonval, since April 2023
-- [Maël Chaumette](https://www.linkedin.com/in/ma%C3%ABl-chaumette), M2 intern from ENSAI co-supervised with Rémi Gribonval, April 2023 - Sept. 2024.
+- [Can Pouliquen](https://perceptronium.github.io), PhD student with Titouan Vayer and Paulo Gonçalves, since November 2022
 - [Badr Moufad](https://github.com/Badr-MOUFAD/), research engineer, April 2022 - Dec. 2023. Now Phd student at Ecole Polytechnique.
 - [Pierre-Antoine Bannier](https://github.com/PABannier), Master thesis for Polytechnique/HEC, May 2022.
 - Célio Léonard-Collado, Master thesis, with D. Perrot, May 2024.

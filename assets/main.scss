@@ -7,3 +7,22 @@
 .page-content {
     text-align: justify;
 }
+
+
+.container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-container {
+    flex-shrink: 0;
+  }
+  
+  .image-container img {
+    max-width: 1000px; /* Adjust the size as needed */
+    height: auto;
+  }
+  
+  .text-container {
+    margin-left: 15px; /* Adjust the space between image and text as needed */
+  }
