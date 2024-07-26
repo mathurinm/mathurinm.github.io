@@ -56,9 +56,9 @@ $$
     % &= \frac{2 u_k}{u_k + 2 (1 + u_k^2/8 + o(u_k^2))} \\
     &= \frac{u_k}{1 + u_k/2 + o(u_k)} \\
     &= u_k (1 - u_k/2 + o(u_k)) \\
-    u_{k+1}^\alpha &= u_k^\alpha (1 - \alpha u_k/2 + o(u_k))
-    u_{k+1}^\alpha &= u_k^\alpha - \alpha u_k^{\alpha + 2}/2 + o(u_k^{\alpha + 1})
+    u_{k+1}^\alpha &= u_k^\alpha (1 - \alpha u_k/2 + o(u_k)) \\
+    u_{k+1}^\alpha &= u_k^\alpha - \alpha u_k^{\alpha + 1}/2 + o(u_k^{\alpha + 1})
 \end{align}
 $$
 
-Hence picking $$\alpha = -1$$, $$u_{k+1}^{-1} - u_k^{-1} \to 1/2$$ and so $$u_k \sim 2/k$$, $$t_k \sim k/2$$.
+Hence picking $$\alpha = -1$$, $$u_{k+1}^{-1} - u_k^{-1} \to 1/2$$ and so $$u_k \sim 2/k$$ and finally $$t_k \sim k/2$$.
