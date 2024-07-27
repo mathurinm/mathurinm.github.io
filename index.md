@@ -12,7 +12,7 @@ title: Home
 
 <div class="container">
   <div class="image-container">
-    <img src="/assets/photo.jpg" alt="moi" style="width: 200px">
+    <img src="./assets/photo.jpg" alt="moi" style="width: 200px">
   </div>
   <div class="text-container">
         <p>
@@ -67,7 +67,7 @@ I co-organize the [Machine Learning and Signal Processing seminar](https://www.e
 - With Elsa Cazelles, Thomas Moreau, Aymeric Dieuleveut and Lorenzo Rosasco we organized LOL 2024 (Learning and optimization in Luminy) in CIRM. It was a blast, we are planning to hold the 4th edition in the first semester of 2026: stay tuned!
 - We organized the SMAI MODE days in Lyon, from march 27th to march 29th. A minicourse on optimal transport by Gabriel Peyré and Yann Brenier was held at ENS de Lyon on the 25th and 26th.
 - With Titouan Vayer and the help of GDR MIA we organized a thematic day on dimension reduction at ENS Lyon. The final planning is available [here](https://gdr-mia.math.cnrs.fr/events/dimreduc).
-- Our paper on Coordinate descent for SLOPE was accepted to AISTATS'23! [./assets/pdf/slides_slope.pdf Slides of the paper] presented at the Statistical Learning Seminar
+- Our paper on Coordinate descent for SLOPE was accepted to AISTATS'23! [Slides of the paper](./assets/pdf/slides_slope.pdf) presented at the Statistical Learning Seminar
 - 2 papers accepted at Neurips'22, on benchopt and skglm.
 - I gave a course on convex optimization at the [Computation and Modelling school](https://wmat.pwr.edu.pl/en/cm2022 ) in Wrocław; resources are on my teaching page.
 - [celer 0.7](https://github.com/mathurinm/celer) is released, with a fast ElasticNet solver thanks to [Badr Moufad](https://github.com/Badr-MOUFAD )!
