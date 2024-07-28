@@ -14,7 +14,6 @@ Class details are [here](/otml).
 The goal of the class is to cover theoretical aspects and practical Python implementations of popular optimization algorithms in machine learning, with a focus on modern topics: huge scale models, automatic differentiation, deep learning, implicit bias, etc.
 
 [**Notes for the class are here**]({{ site.baseurl }}{% link /assets/2022_ens/class.pdf  %}){:target="_blank"}{:rel="noopener noreferrer"}.
-[**Notes for the class are here**](./assets/2022_ens/class.pdf).
 
 **Schedule**: From November 21st onwards: Tuesday 08 h 00, Wednesday 13 h 30 (room B1) ****except Wednesday 6th which is moved to Friday 8th****.
 
@@ -33,9 +32,9 @@ The goal of the class is to cover theoretical aspects and practical Python imple
 - online learning
 - other algorithms: Frank-Wolfe, primal-dual algorithms, variational inclusions, extragradient.
 
-Lab 1 on logistic regression is [here](./assets/2022_ens/Lab_logistic_regression.ipynb)
+Lab 1 on logistic regression is [here](/assets/2022_ens/Lab_logistic_regression.ipynb)
 
-Lab 3 on Deep Learning is [here](./assets/2022_ens/Lab_3_DL_empty.ipynb)
+Lab 3 on Deep Learning is [here](/assets/2022_ens/Lab_3_DL_empty.ipynb)
 
 **Resources**:
 - _Introductory lectures on convex optimization: a basic course_, Y. Nesterov, 2004. A reference book in optimization, updated in 2018: _Lectures on Convex Optimization_.
@@ -47,7 +46,7 @@ Lab 3 on Deep Learning is [here](./assets/2022_ens/Lab_3_DL_empty.ipynb)
 
 Summer schools:
 - OLISSIPO Winter school: dimensionality reduction with Titouan Vayer (02/2023)
-- Convex optimization @Computation and Modelling summer school, WUST 2022 ([intro slides](./assets/2022_wust/slides_intro.pdf) and [exercises](./assets/2022_wust/exos.pdf))
+- Convex optimization @Computation and Modelling summer school, WUST 2022 ([intro slides](/assets/2022_wust/slides_intro.pdf) and [exercises](/assets/2022_wust/exos.pdf))
 
 Since my arrival at ENS de Lyon (Nov. 2021):
 - 36 h on large scale optimization for machine and deep learning (2022-2024), M2 level.

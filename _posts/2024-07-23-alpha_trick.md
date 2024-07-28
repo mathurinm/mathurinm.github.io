@@ -11,7 +11,7 @@ When trying to find an equivalent to the sequence defined by $$u_{k+1} = f(u_k)$
 -  first show that $$u_k$$ converges (say to 0)
 - then do a limited development
 - raise it to a power $$\alpha$$ such that $$u_{k+1}^\alpha - u_k^\alpha$$ converges to a non zero limit, say $$\ell$$
-- apply Cesaro to obtain that $$u_{k+1}^\alpha \sim \ell n$$.
+- apply Cesaro to obtain that $$u_{k+1}^\alpha \sim \ell k$$.
 
 
 ### First example: gradient descent on the exponential
