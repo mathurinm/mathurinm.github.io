@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-07-28T10:00:29+00:00</updated><id>/feed.xml</id><title type="html">Mathurin Massias’ webpage</title><subtitle>Mathurin Massias</subtitle><entry><title type="html">Advice for CNRS and INRIA recruitment</title><link href="/cnrs_inria_advice/" rel="alternate" type="text/html" title="Advice for CNRS and INRIA recruitment" /><published>2024-07-25T09:41:41+00:00</published><updated>2024-07-25T09:41:41+00:00</updated><id>/cnrs_inria_advice</id><content type="html" xml:base="/cnrs_inria_advice/"><![CDATA[<p>INRIA and CNRS “chargé de recherche” positions offer unique conditions of freedom to do first-grade research: lifelong contract, no teaching involved. The application process is  challenging, but it’s definitely worth it! The goal of this guide is to make the application process as easy as possible.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-07-29T09:21:45+00:00</updated><id>/feed.xml</id><title type="html">Mathurin Massias’ webpage</title><subtitle>Mathurin Massias</subtitle><entry><title type="html">Advice for CNRS and INRIA recruitment</title><link href="/cnrs_inria_advice/" rel="alternate" type="text/html" title="Advice for CNRS and INRIA recruitment" /><published>2024-07-25T09:41:41+00:00</published><updated>2024-07-25T09:41:41+00:00</updated><id>/cnrs_inria_advice</id><content type="html" xml:base="/cnrs_inria_advice/"><![CDATA[<p>INRIA and CNRS “chargé de recherche” positions offer unique conditions of freedom to do first-grade research: lifelong contract, no teaching involved. The application process is  challenging, but it’s definitely worth it! The goal of this guide is to make the application process as easy as possible.</p>
 
 <p>It only reflects my particular opinion and limited experience of going through it, and helping people with it for the last 3 years.
 Feedback is most welcome!</p>
@@ -174,45 +174,63 @@ It’s OK to say that you don’t know, don’t lie.</p>
 <p>Show that you have been proactive in your preparation: instead of saying “this is something I plan on discussing with member of X of the team”, do it before the audition. If, when you arrive in the team, you plan to go to somebody to obtain data, contact them before the oral. This way you can show the jury that you’ve already done stuff.</p>
 
 <!-- epart from what you did previously. it gave you tools and techniques to address a bigger problem, but avoid at all cost giving the impression that you find a nice little niche domain to work on, that you'll continue exploiting for a few years and then run out of ideas.
- -->]]></content><author><name></name></author><summary type="html"><![CDATA[INRIA and CNRS “chargé de recherche” positions offer unique conditions of freedom to do first-grade research: lifelong contract, no teaching involved. The application process is challenging, but it’s definitely worth it! The goal of this guide is to make the application process as easy as possible.]]></summary></entry><entry><title type="html">Finding equivalent for sequences: the alpha trick</title><link href="/alpha_trick/" rel="alternate" type="text/html" title="Finding equivalent for sequences: the alpha trick" /><published>2024-07-21T22:00:00+00:00</published><updated>2024-07-21T22:00:00+00:00</updated><id>/alpha_trick</id><content type="html" xml:base="/alpha_trick/"><![CDATA[<p>A very cute and efficient trick to find equivalent to sequences defined recursively as \(x_{k+1} = f(x_k)\).</p>
+ -->]]></content><author><name></name></author><summary type="html"><![CDATA[INRIA and CNRS “chargé de recherche” positions offer unique conditions of freedom to do first-grade research: lifelong contract, no teaching involved. The application process is challenging, but it’s definitely worth it! The goal of this guide is to make the application process as easy as possible.]]></summary></entry><entry><title type="html">Finding equivalent for sequences: the alpha trick</title><link href="/alpha_trick/" rel="alternate" type="text/html" title="Finding equivalent for sequences: the alpha trick" /><published>2024-07-21T22:00:00+00:00</published><updated>2024-07-21T22:00:00+00:00</updated><id>/alpha_trick</id><content type="html" xml:base="/alpha_trick/"><![CDATA[<p>The alpha trick is a very cute and efficient trick to find equivalent to sequences defined recursively as \(x_{k+1} = f(x_k)\).</p>
 
-<p>When trying to find an equivalent to the sequence defined by \(u_{k+1} = f(u_k)\)</p>
+<p>When trying to find an equivalent to the sequence defined by \(x_{k+1} = f(x_k)\), proceed as follows:</p>
 <ul>
-  <li>first show that \(u_k\) converges (say to 0)</li>
-  <li>then do a limited development</li>
-  <li>raise it to a power \(\alpha\) such that \(u_{k+1}^\alpha - u_k^\alpha\) converges to a non zero limit, say \(\ell\)</li>
-  <li>apply Cesaro to obtain that \(u_{k+1}^\alpha \sim \ell k\).</li>
+  <li>first show that \(x_k\) converges, and find a transformation of \(x_k\) into \(u_k\) (e.g. \(u_k = 1 / x_k\), etc) such that \(u_k \to 0\)</li>
+  <li>then do a limited development of the recursive equation satisfied by \(u_k\) around 0</li>
+  <li><strong>the key part</strong>: raise the limited development equation to a power \(\alpha\) such that \(u_{k+1}^\alpha - u_k^\alpha\) converges to a non zero limit, say \(\ell\):</li>
+</ul>
+
+\[u^\alpha_{k + 1} - u^\alpha_{k} = \ell + o(1)\]
+
+<ul>
+  <li>apply Cesaro to obtain that \(\frac{\sum_{k=1}^n u^\alpha_{k + 1} - u^\alpha_{k}}{n} \to \ell\), which means that \(u_{k}^\alpha \sim \ell k\).</li>
+  <li>convert this back to an equivalent in \(x_k\)</li>
 </ul>
 
 <h3 id="first-example-gradient-descent-on-the-exponential">First example: gradient descent on the exponential</h3>
-<p>The iterates of gradient descent with stepsize 1 on \(\mapsto \exp(-x)\), started at 0, are:</p>
+<p>The best application I know of this trick is to study the iterates of gradient descent on \(F: x \mapsto \exp(-x)\).
+My motivation to to study this was that a minimizer does not exist (\(F &gt; 0\) but \(F\) goes to 0 at infinity), so the classical convergence rates results in \(\mathcal{O}(1/k)\) do not apply.
+I wondered if we could say anything about the convergence speed anyways?</p>
+
+<p>Consider gradient descent iterates on \(f\), started at 0.
+We easily see that such iterates will remain positive; when restricted to \(\mathbb{R}_+\), \(f\) is 1-smooth, so we take a stepsize of 1.
+Our iterates are thus:</p>
 
 \[x_{k+1} = x_k - \exp(-x_k) \, .\]
 
-<p>Writing \(u_k = \exp(-x_k)\), one obtains:
-\(u_{k+1} = u_k \exp(-u_k)\), with \(u_0 &gt; 0\).</p>
+<p>Writing \(u_k = f(x_k) = \exp(-x_k)\), one obtains from the above equation:
+\(u_{k+1} = u_k \exp(-u_k)\), with \(u_0 = 1 &gt; 0\).</p>
 
 <p>The sequence \((u_k)\) remains positive, hence \(\exp(-u_k) \leq 1\) and \(u_k\) decreases.
 Being in addition lower bounded, \(u_k\) converges; the limit must be a fixed point: it is 0.
-Hence</p>
+Hence, by doing a limited development of \(u_{k} \exp(-u_k)\) around 0:</p>
 
-\[\begin{align}
+<p>\(\begin{align}
     u_{k+1} &amp;= u_k (1 - u_k + o(u_k)) \\
     u_{k+1}^\alpha &amp;= u_k^\alpha (1 - u_k + o(u_k))^\alpha \\
         &amp;= u_k^\alpha (1 - \alpha u_k + o(u_k))\\
         &amp;= u_k^\alpha - \alpha u_k^{\alpha + 1} + o(u_k^{\alpha + 1})
-\end{align}\]
+\end{align}\)
+We see the power of the trick here: by raising the equation to the power \(\alpha\), we will be able to transform the \(-\alpha u_k^{\alpha + 1}\) into a constant!
+Indeed, picking \(\alpha=-1\) allows us to obtain \(u_{k+1}^{-1} - u_k^{-1} \to 1\).
+Hence \(\frac{\sum_0^n u_{k+1}^{-1} - u_k^{-1}}{n+1} \to 1\), and \(u_k \sim 1/k\).</p>
 
-<p>Pick \(\alpha=-1\) to obtain \(u_{k+1}^{-1} - u_k^{-1} \to 1\).
-Hence \(\frac{\sum_0^n u_{k+1}^{-1} - u_k^{-1}}{n+1} \to 1\), and \(u_n \sim 1/n\).</p>
+<p>So we retain the convergence rate in \(1/k\), which I find very nice!</p>
+
+<p>One may wonder at which speed \(x_k\) goes to infinity; here \(u_k \to 0\) so it stays bounded away from 1 at infinity, and thus we can compose the equivalent by the log function: \(\log u_k \sim \log(1/k)\), and since \(\log u_k = -x_k\), the GD iterates \(x_k\) are equivalent to \(\log k\).</p>
 
 <h2 id="second-example-nesterovs-sequence">Second example: Nesterov’s sequence</h2>
-<p>Let \(t_{k+1} = \frac{1 + \sqrt{1 + 4 t_k^2}}{2}\), the sequence appearing in Nesterov’s original accelerated algorithm.
+<p>Let \(t_{k+1} = \frac{1 + \sqrt{1 + 4 t_k^2}}{2}\), the infamous sequence appearing in Nesterov’s original accelerated algorithm.
+Let’s use the alpha trick to find an equivalent to \(t_k\).
 One has \(t_{k+1} \geq t_k +1/2\) so we cannot hope for convergence; consider \(u_k = 1/t_k\) instead:</p>
 
 \[u_{k+1} = \frac{2}{1 + \sqrt{1 + 4 / u_k^2}}\]
 
-<p>This sequence is positive and decreasing, so it converges, and its limit is a fixed point, so it’s 0.</p>
+<!-- This sequence is positive and decreasing, so it converges, and its limit is a fixed point, so it's 0. -->
+<p>SInce \(t_k \to + \infty\), \(u_k \to 0\), and</p>
 
 \[\begin{align}
     u_{k+1} &amp;= \frac{2}{1 + \sqrt{1 + 4/u_k^2}} \\
@@ -224,4 +242,6 @@ One has \(t_{k+1} \geq t_k +1/2\) so we cannot hope for convergence; consider \(
     u_{k+1}^\alpha &amp;= u_k^\alpha - \alpha u_k^{\alpha + 1}/2 + o(u_k^{\alpha + 1})
 \end{align}\]
 
-<p>Hence picking \(\alpha = -1\), \(u_{k+1}^{-1} - u_k^{-1} \to 1/2\) and so \(u_k \sim 2/k\) and finally \(t_k \sim k/2\).</p>]]></content><author><name></name></author><summary type="html"><![CDATA[A very cute and efficient trick to find equivalent to sequences defined recursively as \(x_{k+1} = f(x_k)\).]]></summary></entry></feed>
+<p>Hence picking \(\alpha = -1\), \(u_{k+1}^{-1} - u_k^{-1} \to 1/2\) and so \(u_k \sim 2/k\) and finally \(t_k \sim k/2\).</p>
+
+<!-- This shows why people often study the momentum in Nesterov/FISTA as $$\frac{k - 1}{k + 2}$$.  -->]]></content><author><name></name></author><summary type="html"><![CDATA[The alpha trick is a very cute and efficient trick to find equivalent to sequences defined recursively as \(x_{k+1} = f(x_k)\).]]></summary></entry></feed>
