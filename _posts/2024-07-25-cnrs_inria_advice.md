@@ -12,8 +12,8 @@ Feedback is most welcome!
 
 INRIA has issued a very useful guide: [Advice for Applicants for a Young Graduate Scientist Position at INRIA](https://www.inria.fr/sites/default/files/2021-01/CE_guide-applicant-CRCN.pdf).
 
-TLDR:
-- the application requires lots of work and communication with the teams you apply to: start in october
+The key points are:
+- the application requires lots of work and communication with the teams you apply to: start as soon as possible, no later than October
 - show 5 to 10 years ambition in your research project, depart from your PhD works
 - do not be too technical, neither in the research project, nor in the audition
 - keep in mind that most members of the jury are not expert in your research area
@@ -24,36 +24,41 @@ TLDR:
 Those selection processes are very peculiar and very different from what you've been used to in your PhD and postdoc. **You need to talk to as many people as possible!** There are three categories of person to contact:
 - senior researchers having been involved in the process for several years. Talking to past members of the jury is priceless: they will tell you what the jury is looking for in candidates! Current members of the jury will rightfully decline speaking with you, as this is not ethical. Do not put them in an uncomfortable position by contacting them.
 - heads and members of the various teams you apply to. They should give you feedback on your application file, and organize rehearsals with you. If they don't, it's not a very good sign.
-- successful past candidates. They will tell you what worked and what didn't for them. The yearly results are public and for example available on [FX Coudert's website](https://www.coudert.name/concours_cnrs_2024.html).
+- successful past candidates. They will tell you what worked and what didn't for them. The yearly results are public; for example CNRS ones are available on [FX Coudert's website](https://www.coudert.name/concours_cnrs_2024.html).
 
 Gather as much advice as possible, even if they end up disagreeing: you'll make your own choices when the time comes.
+**Negative (but constructive) feedback is very precious**: the auditions are very selective, and your project needs to be perfect.
+Negative feedback will help you improve a lot, but hearing negative stuff about projects that you care deeply about is unpleasant and takes its toll, so being surrounded by kind people is also very important.
 
 Do not be afraid of contacting people, even if you don't know them. Most people are happy to help. Worst can happen is people don't answer your email. If they don't, send at least two follow-up emails, waiting around 2 weeks between each. This is typical practice and will not be interpreted as pushy if you are polite in your mail (and concise! go to the point to save people's time).
 
-Have your PhD and postdoc advisors help you too.
+Have your PhD and postdoc advisors help you too; beware though that they are very familiar with your work and are not representative of a typical jury member.
 
-### Global timeline: start in October!
+### Global timeline: start before October!
+**Laying out a full research project for 5/10 years requires several months of intensive work**.
 The CNRS deadline is usually around the beginning of January (in 2024 it was more end of January, we'll see if it's a permanent change), the INRIA one is end of January/February. **You must contact the potential hosting teams around October** of the previous year, not after. The teams will ask you to come do a presentation to evaluate your compatibility and discuss a common project, and they will give feedback on your research project.
 All this takes time, so do not wait for December to do it. A team may be interested by your profile, but already have candidates.
 
-**Laying out a full research project for 5/10 years requires several months of intensive work**, so you should start writing around October too.
+If you read this soon enough, I encourage you to **start writing a rough draft of a few pages as soon as you start your postdoc**, and begin working on it research-wise right away: it's much better if, the day of the audition, the jury sees that your project is grounded in concrete work, that you have already started working on.
+Starting as early as possible will make it  easier to get publications on the topics of your research project, which helps tremendously.
 
 ### CNRS/INRIA differences
 Disclaimer: I know INRIA better.
 
 - **research project format**:
-    - INRIA provides a template, your research project should be exactly 3 pages long. Your presentation of 3 selected works is also 3x 1 page long, with a predefined structure for each work (description of work, personal contribution, originality and difficulty, impact, diffusion)
-    - CNRS does not provide a template; the research project is, from the ones I've seen, 10 to 15 pages long, and the summary of past works is around 5 pages. I wrote the CNRS application file and contracted it + adapted it to my integration team for INRIA.
+    - INRIA provides a template, your research project should be exactly 3 pages long. Your presentation of 3 selected works is also 3x1 page long, with a predefined structure for each work (description of work, personal contribution, originality and difficulty, impact, diffusion)
+    - CNRS does not provide a template; the research project is, from the ones I've seen, 10 to 15 pages long, and the summary of past works is around 5 pages.
+    I wrote the CNRS application file first and contracted it + adapted it to my integration team for INRIA.
 - **affectation and integration into hosting team**:
     - For CNRS the recruitment is national, and you _suggest_ 2 or 3 teams for your integration (if you get accepted, CNRS decides where to send you, which may or may not be one of those teams).
     You mention the teams, each in a paragraph, at the end of your research project, and spend 30 seconds per team at the end of your oral presentation, to explain why they'd be a good match.
-    You should still work on your integration and know what the people in the team are doing, and how you'd like to work with them, but the philosophy is, very roughly, that you should be able to lead your research in any lab, and that the surrounding people do not matter this much (my 2 cents from gathered feedbacks). This may differ between section 7 (computer science) and 41 (maths).
+    You should still work on your integration and know what the people in the team are doing, and how you'd like to work with them, but the philosophy is, very roughly, that you should be able to lead your research in any lab, and that the surrounding people do not matter this much (my 2 cents from gathered feedbacks). This may differ between section 7 (computer science) and section 41 (maths).
     - INRIA is very different: you have one application file per INRIA center (there are 9 in France). Inside a center, you apply for a team (you have the possibility to not specify one, but it makes a bad impression: it means that there is no team for which you are a perfect fit).
     Your application file is thus very different from CNRS: the targeted team must appear frequently in it. In your whole research project, you must show what you will bring them, what they can help you with, why you are similar but complementary, who you'll interact with, etc.
     Finally, for INRIA, since you apply in a team, its support is essential. Even more that for CNRS, you should contact the hosting team early.
 
 ### Document 1: Summary of past research
-Show that there is coherence in your past works, that you took initiatives, that all your works interact nicely in a grand scheme that defines your identity and uniqueness as a researcher. it should not be perceived as a sequence of unrelated works that were proposed by your PhD advisors.
+Show that there is coherence in your past works, that you took initiatives, that all your works interact nicely in a grand scheme that defines your identity and uniqueness as a researcher. It should not be perceived as a sequence of unrelated works that were proposed by your PhD advisors.
 **Do not be too technical**, summarize in layman's term. Show that you understood what were the big challenges of your field, and how you contributed to solving them.
 
 ### Document 2: The research project
@@ -63,16 +68,19 @@ Writing the research project is the hardest (but also very interesting) part of 
 Writing the research project is a very different exercise from what we're used to in PhD/postdoc research statement.
 Understand that CNRS and INRIA chargé de recherche are lifelong positions. In your project, you must show that you have research ideas for your whole life, and not just for the next 3 years. The difficulty is that your project should:
 - be ambitious: show that you have a direction for roughly the next 10 years
-- be realistic: show why you have the tools to solve the problems you'll consider
+- be realistic: show that you know where to start, and why you have the tools to solve the problems you'll consider.
 
-Ideally, you give big directions in which you want to go, and descriptions of concrete ways with which you would start. People usually divide their project into 3 linked axis; each axis should start with something simple (one research idea that you could start working on as soon as you get the position), and then aim for something more distant, that has the right to be less precise.
+Ideally, you give big directions in which you want to go, and descriptions of concrete ways with which you would start (even better: how you have already started). People usually divide their project into 3 linked axis; each axis should start with something simple (one research idea that you could start working on as soon as you get the position), and then aim for something more distant, that has the right to be less precise.
 The jury knows that research is hard to predict (you won't probably do everything in your project), but they want to see that you have a plan.
 
-**You should avoid at all cost giving the impression that you'll continue working exactly on what you did during your PhD**. This would make the jury fear that once this line of work dries up, you'll be left without ideas. You should show thematic mobility, while remaining coherent with your past research...
+**You should avoid at all cost giving the impression that you'll continue working exactly on what you did during your PhD**. This would make the jury fear that once this line of work dries up, you'll be left without ideas.
+You should show thematic mobility, while remaining coherent with your past research...
 
+On the other hand, to avoid giving the impression that your project is just wishful thinking, **show the jury that you have already started tackling some of the first steps in your research project** (ideally you have already published it, but if not, it could be by contacting other researchers, by knowing the related literature, by organizing reading groups, etc).
+**In general, if you have only worked on continuation of your PhD project, it sends the jury a very bad signal regarding your autonomy in terms of generating new ideas and directions**.
 
 #### Composition of the jury: speak to everybody
-Your application will be read in details by 1 or 2 expert reviewers, that know your field very well. But, beware that the rest of the jury will be much less familiar with your line of work, and most probably only skim through the introduction. Having a look at the composition of the jury (it is public, for example [here for Section 7 of CNRS](https://section7.cnrs.fr/#composition)) is a good idea to realize the diversity of your audience - and to guess who your reviewer will be. The reviewer is usually the one that asks the first questions during the audition, so knowing their interests helps you prepare.
+Your application will be read in details by 1 or 2 expert reviewers, that know your field very well. But, beware that the rest of the jury will be much less familiar with your line of work, and most probably only skim through the introduction. Having a look at the composition of the jury (it is public, for example [here for Section 7 of CNRS](https://section7.cnrs.fr/#composition) and [here for INRIA in 2024](https://www.inria.fr/fr/chargees-et-charges-de-recherche-de-classe-normale-crcn)) is a good idea to realize the diversity of your audience - and to guess who your reviewer will be. The reviewer is usually the one that asks the first questions during the audition, so knowing their interests helps you prepare.
 
 In short: **be precise, for the specialists, but be understandable, for the rest of the jury**. We tend to focus on the first part and ignore the second.
 
@@ -99,7 +107,7 @@ The usual plan is:
 - introduction to research field through selected past works (preferably 2)
 - research project
 - for CNRS, 1 slide integration details (1 min)
-- finish with 1 slide of recap that you leave displayed after the presentation, summarizing who you are
+- finish with 1 slide of recap that you leave displayed after the presentation, summarizing who you are (with a catchy, easy to remember project name that summarizes everything)
 
 **The research project is the critical part of the presentation and should take around two-thirds of the presentation.**
 On the contrary, presentation of your career and past works basically only serves to justify why you are the ideal person to carry on this research project.
@@ -107,10 +115,10 @@ Be quick on these parts, don't brag too much. **See it as a stepping stone for t
 
 #### Practical organization of the audition and its consequences for you
 
-For CNRS: the jury gathers for 1 week, hears roughly 35 candidates (7/8 per day). Then the weekend passes, and they meet for 3 days to rank them. That is a lot, and draining.
+For CNRS: the jury gathers for 1 week, hears roughly 35 candidates (7/8 per day). Then the weekend passes, and they meet for 3 other days to rank the candidates. That is a lot, and draining.
 When they meet on day 6, one week has passed since they heard the first candidates. They do take notes, but **your goal is to help them remember you**.
 
-They should think: "ah yes, X is the girl who wanted to do this, with those tools, and had done Z in the past". To achieve this, **it should be very clear for you who you are as a researcher** (which problems you like to work on, what is your methodology to solve them, do you like theory, or practice, or both? Do you want applications?). Then, your goal is to communicate that to the jury.
+They should think: "ah yes, X is the girl who wanted to do this, with those tools, and had done Z in the past". To achieve this, **it should be very clear for you who you are as a researcher** (which problems you like to work on, what is your methodology to solve them, do you like theory, or practice, or both? Do you want applications? How do you summarize your project in one sentence?). Then, your goal is to communicate that to the jury.
 
 You need to tell a story, that should be reflected in your research project's name.
 This is a step back on your research that is probably new, but mandatory.
@@ -153,6 +161,7 @@ Some frequent questions:
 - "if you got funding for a PhD student when you arrive, what would they work on?". Show that you have thought about it, and that you have a plan (in particular, you don't have HDR, so you'll need to take cosupervise the student: with which team member?).
 - "what is THE big problem that you'd want to solve in the next 10 years" this is clearly related to the big question "who are you as a researcher?" whose answer must be crystal clear for you
 - "what is the work that you're the most proud of": show that you are able to evaluate your own work, to take a step back on it. It also defines who you are: you like this work because of its practical impact, because it solved a theoretical question, etc.
+- questions about your publication strategy: why this conference vs this journal, open access vs paywalled journal, etc. Show that you are aware of the various things at stake (open access research, publication delays, different audience) and that you did not just follow blindly what your advisors said. Show that you are ready to choose where to publish by yourself.
 
 ### Learn the many implicit rules
 This is a major reason why you should discuss with people: there are many little unwritten things to know. For example, the year I applied to CNRS, in addition to section 7, I applied for section 41, but in the "mathematics" track. Little did I know that, as an optimizer, I belonged to the "mathematics and applications" track (I did not get auditioned in section 41 :).
@@ -164,6 +173,9 @@ For CNRS, know the different culture and expectations between Sections 6, 7 and 
 For INRIA, know that the jury likes to see that your project has an applicative part, and a methodological part.
 
 Show that you have been proactive in your preparation: instead of saying "this is something I plan on discussing with member of X of the team", do it before the audition. If, when you arrive in the team, you plan to go to somebody to obtain data, contact them before the oral. This way you can show the jury that you've already done stuff.
+
+
+Thanks to the various people that gave me advice when I was preparing: R. Gribonval, P. Goncalves, A. Gamfort, L. Rosasco, F. Iutzeler, A. Garivier, J. Malick, R. Flamary and apologies to anyone I forgot.
 
 <!-- epart from what you did previously. it gave you tools and techniques to address a bigger problem, but avoid at all cost giving the impression that you find a nice little niche domain to work on, that you'll continue exploiting for a few years and then run out of ideas.
  -->
