@@ -175,7 +175,7 @@ For INRIA, know that the jury likes to see that your project has an applicative 
 Show that you have been proactive in your preparation: instead of saying "this is something I plan on discussing with member of X of the team", do it before the audition. If, when you arrive in the team, you plan to go to somebody to obtain data, contact them before the oral. This way you can show the jury that you've already done stuff.
 
 
-Thanks to the various people that gave me advice when I was preparing: R. Gribonval, P. Goncalves, A. Gamfort, L. Rosasco, F. Iutzeler, A. Garivier, J. Malick, R. Flamary and apologies to anyone I forgot.
+Thanks to all the people that gave me advice when I was preparing: R. Gribonval, P. Goncalves, A. Gramfort, L. Rosasco, S. Villa, F. Iutzeler, A. Garivier, J. Malick, R. Flamary, O. Cappé, I. Waldspurger, S. Barthelmé, N. Le Bihan and apologies to anyone I forgot.
 
 <!-- epart from what you did previously. it gave you tools and techniques to address a bigger problem, but avoid at all cost giving the impression that you find a nice little niche domain to work on, that you'll continue exploiting for a few years and then run out of ideas.
  -->
