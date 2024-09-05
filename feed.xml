@@ -1,4 +1,71 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-08-05T13:31:38+00:00</updated><id>/feed.xml</id><title type="html">Mathurin Massias’ webpage</title><subtitle>Mathurin Massias</subtitle><entry><title type="html">Advice for CNRS and INRIA recruitment</title><link href="/cnrs_inria_advice/" rel="alternate" type="text/html" title="Advice for CNRS and INRIA recruitment" /><published>2024-07-25T09:41:41+00:00</published><updated>2024-07-25T09:41:41+00:00</updated><id>/cnrs_inria_advice</id><content type="html" xml:base="/cnrs_inria_advice/"><![CDATA[<p>INRIA and CNRS “chargé de recherche” positions offer unique conditions of freedom to do first-grade research: lifelong contract, no teaching involved. The application process is  challenging, but it’s definitely worth it! The goal of this guide is to make the application process as easy as possible.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-09-05T13:34:57+00:00</updated><id>/feed.xml</id><title type="html">Mathurin Massias’ webpage</title><subtitle>Mathurin Massias</subtitle><entry><title type="html">Advice for presentations or how to avoid losing your audience</title><link href="/presentation_advice/" rel="alternate" type="text/html" title="Advice for presentations or how to avoid losing your audience" /><published>2024-09-03T22:00:00+00:00</published><updated>2024-09-03T22:00:00+00:00</updated><id>/presentation_advice</id><content type="html" xml:base="/presentation_advice/"><![CDATA[<p>Summary advice given wrote after attending a day of M1 internship presentations at ENS.</p>
+
+<p><strong>TLDR</strong>: Never underestimate how easily you can lose the audience, and how hard it is then for them to catch up.
+<strong>Technicalities like equations with heavy notation, tables, complex figures are the enemy.</strong></p>
+
+<h2 id="content">Content</h2>
+<ul>
+  <li>Choose what you put focus on; you do not want to horseshoe all the technical content of your paper/report.
+People can refer to your paper if they want more details.
+Have backup slides (after the conclusion) with more details about some point, if you feel that you may need it during the questions.</li>
+  <li>Make the presentation asking yourself: what do I want somebody completely unaware of my research to remember?</li>
+  <li>Rule fo thumb: Use at most 10 lines per slide, and spend 1 min/slide</li>
+</ul>
+
+<h2 id="form">Form</h2>
+<ul>
+  <li>In your first slide, identify yourself and your structure clearly, but also acknowledge the people you’ve worked with.</li>
+  <li>Announcing your plan is usually not very interesting (introduction, state-of-the-art, presentation of method, results…).
+  Instead, it is useful to periodic recap when transitioning between parts.
+  Even if you’ve lost someone, you allow them to catch up at this point.</li>
+  <li>Avoid at all cost writing complete sentence: the audience will read them instead of listening to you.
+  Write only the important parts, to support your talk.
+  The real content of the talk is your speech, not the slides.
+  somehow, if one can understand the slides just by reading them, it means you do not really provide additional value being there to introduce them.</li>
+  <li>Make your slides as light as possible: do not number figures (do not even put them in a figure environment), do not number equations, remove the weird navigation bar that latex puts by default.</li>
+  <li>Colors are very helpful; for example if you display a variation of a previous formula, colorized what has changed.</li>
+  <li>Figures: those are very important, as a good figure carries a lot of information easily. It’s often necessary to <strong>redo the figure specifically for your presentation</strong> (e.g. at least changing the ratio to better fit the slide).
+  Editing the figure, previously saved as pdf, with inkscape or some other tool is often useful in that case.
+  <strong>Put xlabels, ylabels, and big enough</strong>. Take one presentation of yours, project it on the screen on a slide with a figure, go to the back of the room and check if you’re able to parse it (you won’t).
+  On the other hand, title and captions are often not needed.
+  However a 1-line sentence to interpret the figure is appreciated</li>
+  <li>Use bold and boxes to show the audience the critical content of the slide, play with font size to distinguish the key part from the rest.</li>
+</ul>
+
+<h2 id="presenting-style">Presenting style</h2>
+<ul>
+  <li>Make break, emphasize the important parts (such as “if there is one think to remember from the talk it is this result/slide/figure…)</li>
+  <li>Give orders of magnitude, everything that helps grasp the problem (instead of sentences such as “this costs a lot”, “there are many parameters”, “the dimension is high”, “the algorithm takes a lot of time to run”, etc.)</li>
+  <li>Look at the audience rather than your computer or the screen. Having a pointer (its costs 10€) helps.</li>
+</ul>
+
+<h2 id="small-but-useful-stuff">Small but useful stuff</h2>
+<ul>
+  <li>Number your slides for easier communication (one may note its number to ask a question later), but avoid the “3/n” format: if n is big this is bad for the audience morale.
+  Similarly I find the progress bar on top of the slide, present in default templates, to be utterly depressing (my 2 cents).</li>
+</ul>
+
+<p>Use all the space in the slide (not by putting more content, but by putting enough space between each item. this is a pain in beamer but it’s mandatory, dull slides will lose your audience faster than anything else). If there is a single figure in your slide it should take the whole space, etc.</p>
+
+<p>Avoid tables, they are really hard to parse</p>
+
+<p>Use a conclusion: what should somebody that did not understand remember about your talk?
+Why is it interesting?</p>
+
+<p>Rehearse: your slides should be the support for your talk; rehearsing will help you realize if something is missing.</p>
+
+<p>You can have backup slides with additional content.
+EXAMPLES</p>
+
+<p>ALgorithms are also very hard to parse; the comments are usually more useful than the formulas themsevles. Present them saying “those are the important steps, here is what they do” in layman terms; the main difference with existing algorithms is… the most costly part is this… but do not ever go step by step through an algorithm</p>
+
+<p>Avoid long enumerations.
+You have the right to be informal and handwavy, to make oversimplification to gain clarity.</p>
+
+<p>References: contrary
+Title of slide is precious</p>
+
+<p>Beware of colors in graph, many videoproj are old, using markers</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Summary advice given wrote after attending a day of M1 internship presentations at ENS.]]></summary></entry><entry><title type="html">Advice for CNRS and INRIA recruitment</title><link href="/cnrs_inria_advice/" rel="alternate" type="text/html" title="Advice for CNRS and INRIA recruitment" /><published>2024-07-25T09:41:41+00:00</published><updated>2024-07-25T09:41:41+00:00</updated><id>/cnrs_inria_advice</id><content type="html" xml:base="/cnrs_inria_advice/"><![CDATA[<p>INRIA and CNRS “chargé de recherche” positions offer unique conditions of freedom to do first-grade research: lifelong contract, no teaching involved. The application process is  challenging, but it’s definitely worth it! The goal of this guide is to make the application process as easy as possible.</p>
 
 <p>It only reflects my particular opinion and limited experience of going through it, and helping people with it for the last 3 years.
 Feedback is most welcome!</p>
@@ -183,7 +250,7 @@ It’s OK to say that you don’t know, don’t lie.</p>
 
 <p>Show that you have been proactive in your preparation: instead of saying “this is something I plan on discussing with member of X of the team”, do it before the audition. If, when you arrive in the team, you plan to go to somebody to obtain data, contact them before the oral. This way you can show the jury that you’ve already done stuff.</p>
 
-<p>Thanks to the various people that gave me advice when I was preparing: R. Gribonval, P. Goncalves, A. Gamfort, L. Rosasco, F. Iutzeler, A. Garivier, J. Malick, R. Flamary and apologies to anyone I forgot.</p>
+<p>Thanks to all the people that gave me advice when I was preparing: R. Gribonval, P. Goncalves, A. Gramfort, L. Rosasco, S. Villa, F. Iutzeler, A. Garivier, J. Malick, R. Flamary, O. Cappé, I. Waldspurger, S. Barthelmé, N. Le Bihan and apologies to anyone I forgot.</p>
 
 <!-- epart from what you did previously. it gave you tools and techniques to address a bigger problem, but avoid at all cost giving the impression that you find a nice little niche domain to work on, that you'll continue exploiting for a few years and then run out of ideas.
  -->]]></content><author><name></name></author><summary type="html"><![CDATA[INRIA and CNRS “chargé de recherche” positions offer unique conditions of freedom to do first-grade research: lifelong contract, no teaching involved. The application process is challenging, but it’s definitely worth it! The goal of this guide is to make the application process as easy as possible.]]></summary></entry><entry><title type="html">Finding equivalent for sequences: the alpha trick</title><link href="/alpha_trick/" rel="alternate" type="text/html" title="Finding equivalent for sequences: the alpha trick" /><published>2024-07-21T22:00:00+00:00</published><updated>2024-07-21T22:00:00+00:00</updated><id>/alpha_trick</id><content type="html" xml:base="/alpha_trick/"><![CDATA[<p>The alpha trick is a very cute and efficient trick to find equivalent to sequences defined recursively as \(x_{k+1} = f(x_k)\).</p>
