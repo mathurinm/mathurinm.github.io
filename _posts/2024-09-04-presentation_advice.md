@@ -10,9 +10,9 @@ Summary advice given after attending one day of M1 internship presentations at E
 
 **TLDR**: Never underestimate how easily and quickly you can lose the audience, and how hard it is for them to catch up afterwards.
 A presentation is very different from writing a paper or report.
-Your slide should only be a visual support for what you say.
+Your slides should only be a visual support for what you say.
 **Technicalities like equations with heavy notation, tables, complex figures are the enemy.**
-Use plenty of examples, figures, simple terms and explanations.
+Instead, use plenty of examples, figures, simple terms and explanations.
 
 
 
@@ -20,7 +20,7 @@ Use plenty of examples, figures, simple terms and explanations.
 First, select what you want to include in your presentation, and how you want to structure it.
 
 - Choose what you put focus on; you do not want to shoehorn all the technical content of your paper/report.
-People can refer to your paper if they want more details, the presentation is here to highlight the most significant points, to make them want to read the paper.
+People can refer to your paper if they want more details, **the presentation is here to highlight the most significant points only**, to make them want to read the paper.
 Have backup slides (after the conclusion) with more details about some point, if you feel that you may need it during the questions.
 - Contrary to a paper, slides do not need to be self-contained, you can (and should!) be fuzzy, informal, have handwavy notation: all this, as long as it serves **clarity**.
 - When working on the presentation, ask yourself: what do I want somebody completely unaware of my research to remember at the end of the talk? What's my big message? What are the points that really matter, and what is more of a technical detail (that should be omitted)?
