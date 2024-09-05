@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-09-05T16:02:30+00:00</updated><id>/feed.xml</id><title type="html">Mathurin Massias’ webpage</title><subtitle>Mathurin Massias</subtitle><entry><title type="html">Advice for presentations or how to avoid losing your audience</title><link href="/presentation_advice/" rel="alternate" type="text/html" title="Advice for presentations or how to avoid losing your audience" /><published>2024-09-03T22:00:00+00:00</published><updated>2024-09-03T22:00:00+00:00</updated><id>/presentation_advice</id><content type="html" xml:base="/presentation_advice/"><![CDATA[<p>Summary advice given after attending one day of M1 internship presentations at ENS.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-09-05T16:17:10+00:00</updated><id>/feed.xml</id><title type="html">Mathurin Massias’ webpage</title><subtitle>Mathurin Massias</subtitle><entry><title type="html">Advice for presentations or how to avoid losing your audience</title><link href="/presentation_advice/" rel="alternate" type="text/html" title="Advice for presentations or how to avoid losing your audience" /><published>2024-09-03T22:00:00+00:00</published><updated>2024-09-03T22:00:00+00:00</updated><id>/presentation_advice</id><content type="html" xml:base="/presentation_advice/"><![CDATA[<p>Summary advice given after attending one day of M1 internship presentations at ENS.</p>
 
 <p><strong>TLDR</strong>: Never underestimate how easily and quickly you can lose the audience, and how hard it is for them to catch up afterwards.
 A presentation is very different from writing a paper or report.
-Your slide should only be a visual support for what you say.
+Your slides should only be a visual support for what you say.
 <strong>Technicalities like equations with heavy notation, tables, complex figures are the enemy.</strong>
-Use plenty of examples, figures, simple terms and explanations.</p>
+Instead, use plenty of examples, figures, simple terms and explanations.</p>
 
 <h2 id="content-choose-what-to-include">Content: choose what to include</h2>
 <p>First, select what you want to include in your presentation, and how you want to structure it.</p>
 
 <ul>
   <li>Choose what you put focus on; you do not want to shoehorn all the technical content of your paper/report.
-People can refer to your paper if they want more details, the presentation is here to highlight the most significant points, to make them want to read the paper.
+People can refer to your paper if they want more details, <strong>the presentation is here to highlight the most significant points only</strong>, to make them want to read the paper.
 Have backup slides (after the conclusion) with more details about some point, if you feel that you may need it during the questions.</li>
   <li>Contrary to a paper, slides do not need to be self-contained, you can (and should!) be fuzzy, informal, have handwavy notation: all this, as long as it serves <strong>clarity</strong>.</li>
   <li>When working on the presentation, ask yourself: what do I want somebody completely unaware of my research to remember at the end of the talk? What’s my big message? What are the points that really matter, and what is more of a technical detail (that should be omitted)?</li>
