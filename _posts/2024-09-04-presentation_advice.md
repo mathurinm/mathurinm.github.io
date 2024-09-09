@@ -78,3 +78,5 @@ Those are very important, as a good figure conveys a lot of information quickly.
 - Citations in slide are tricky: if the format is [ABC24] or [1] then they provide no info to the audience; I strongly recommend "Author et al (2024)", and to put them in smaller font when they are not critical.
 - Beware of colors in graphs, many projectors are old and render them incorrectly.
 
+
+*Thanks to Quentin Bertrand for his input on this post!*

@@ -109,8 +109,8 @@ The usual plan is:
 - for CNRS, 1 slide integration details (1 min)
 - finish with 1 slide of recap that you leave displayed after the presentation, summarizing who you are (with a catchy, easy to remember project name that summarizes everything)
 
-**The research project is the critical part of the presentation and should take around two-thirds of the presentation.**
-On the contrary, presentation of your career and past works basically only serves to justify why you are the ideal person to carry on this research project.
+**The research project is the critical part of the presentation and should take around two-thirds of it.**
+On the contrary, the summary of your career and past works basically only serves to justify why you are the ideal person to carry on this research project.
 Be quick on these parts, don't brag too much. **See it as a stepping stone for the real deal: your project**.
 
 #### Practical organization of the audition and its consequences for you
@@ -175,7 +175,12 @@ For INRIA, know that the jury likes to see that your project has an applicative 
 Show that you have been proactive in your preparation: instead of saying "this is something I plan on discussing with member of X of the team", do it before the audition. If, when you arrive in the team, you plan to go to somebody to obtain data, contact them before the oral. This way you can show the jury that you've already done stuff.
 
 
-Thanks to all the people that gave me advice when I was preparing: R. Gribonval, P. Goncalves, A. Gramfort, L. Rosasco, S. Villa, F. Iutzeler, A. Garivier, J. Malick, R. Flamary, O. Cappé, I. Waldspurger, S. Barthelmé, N. Le Bihan and apologies to anyone I forgot.
+*Thanks to all the people that gave me advice when I was preparing: R. Gribonval, P. Goncalves, A. Gramfort, J. Salmon, L. Rosasco, S. Villa, F. Iutzeler, A. Garivier, J. Malick, R. Flamary, O. Cappé, I. Waldspurger, S. Barthelmé, N. Le Bihan and apologies to anyone I forgot.*
 
 <!-- epart from what you did previously. it gave you tools and techniques to address a bigger problem, but avoid at all cost giving the impression that you find a nice little niche domain to work on, that you'll continue exploiting for a few years and then run out of ideas.
  -->
+
+
+
+<!-- Yann Traonmilin:
+ would specify that for CNRS section 41 (maths), there should be explicit maths in your project; i.e. what theorems are you going to prove,  explained in a way understandable by a wide audience of mathematicians. -->
