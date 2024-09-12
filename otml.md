@@ -32,6 +32,9 @@ Mathurin Massias, Titouan Vayer, Quentin Bertrand.
 ## Schedule
 15 x 2 h of class/labs, oral presentation
 
+Classes on Wednesday 15 h 45 (room 029) and Thursday 15 h 45 (room B1), the following weeks:
+Nov 18 - 25, Dec 2 - 9 - 16, Jan 6 - 13 - 20 -27
+
 ## Validation
 Paper presentation and extension of a selected research article and the associated code applied on real data.
 
