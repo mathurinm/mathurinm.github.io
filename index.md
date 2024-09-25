@@ -24,7 +24,7 @@ title: Home
 </div>
 
 <br>
-I am a tenured researcher (Chargé de recherche) in Inria Lyon, in the OCKHAM (ex-DANTE) team led by Rémi Gribonval, working in optimization for Machine Learning.
+I am a tenured researcher (Chargé de recherche) in Inria Lyon, in the OCKHAM team, working in optimization for Machine Learning. I am also a part-time lecturer (Professeur chargé de cours) at Ecole Polytechnique.
 
 From January 2020 to October 2021, I was a post-doc at University of Genova, where I worked with [Lorenzo Rosasco](http://web.mit.edu/lrosasco/www/) and [Silvia Villa](http://www.dima.unige.it/~villa/) to develop new algorithms for implicit regularization.
 I hold a PhD from Télécom Paris and Inria Saclay
@@ -43,7 +43,7 @@ I am an associate editor for [Computo](https://computo.sfds.asso.fr/), a journal
 
 
 You can find more details on my résumé
-    ([French (01/2021)](assets/pdf/CV_Mathurin_MASSIAS.pdf), [English (02/2024)](./assets/pdf/CV_Mathurin_MASSIAS_EN.pdf)) and my
+    ([French (01/2021)](assets/pdf/CV_Mathurin_MASSIAS.pdf), [English (09/2024)](./assets/pdf/CV_Mathurin_MASSIAS_EN.pdf)) and my
  [list of publications](/research).
 
 
