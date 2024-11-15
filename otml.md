@@ -5,8 +5,8 @@ permalink: /otml/
 ---
 
 
-In the last decade, optimal transport has rapidly emerged as a versatile to compare distributions and clouds of points. As such, it has found numerous successful applications in Statistics, Signal Processing, Machine Learning and Deep Learning.
-This class introduces the theoretical and numerical bases of numerical transport, and reviews its latest developments.
+In the last decade, optimal transport has rapidly emerged as a versatile tool to compare distributions and clouds of points. As such, it has found numerous successful applications in Statistics, Signal Processing, Machine Learning and Deep Learning.
+This class introduces the theoretical and numerical bases of optimal transport, and reviews its latest developments.
 
 ## Teachers
 Mathurin Massias, Titouan Vayer, Quentin Bertrand.
