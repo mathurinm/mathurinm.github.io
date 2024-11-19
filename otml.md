@@ -36,11 +36,15 @@ Classes on Wednesday 15 h 45 (room 029) and Thursday 15 h 45 (room B1), the foll
 Nov 18 - 25, Dec 2 - 9 - 16, Jan 6 - 13 - 20 -27
 
 ## Validation
-Paper presentation and extension of a selected research article and the associated code applied on real data.
+- 50%: Homeworks (small weekly exercises + 3 labs)
+- 50%: Paper presentation and extension of a selected research article and the associated code applied on real data.
+- possibility to get one bonus point by scribing a lecture (taking notes and typing them in Latex). The associated .tex must be sent by the next Monday to make it available to other students. Rules: only 1 scribe per lecture, max 2 bonus points per person for the whole class.
 
-## Ressources
-Computational optimal transport: With applications to data science, G. Peyré and M. Cuturi (2019)
-
+## Additional ressources
+- Computational optimal transport: With applications to data science, G. Peyré and M. Cuturi (2019)
+- Tutorial at Neurips 2017: https://media.nips.cc/Conferences/NIPS2017/Eventmedia/nips-2017-marco-cuturi-tutorial.pdf
+- Course notes in French: https://perso.math.u-pem.fr/samson.paul-marie/pdf/coursM2transport.pdf
+- [Mathurin Massias M2 optimization notes]({{ site.baseurl }}{% link /assets/2022_ens/class.pdf  %}){:target="_blank"}{:rel="noopener noreferrer"}  (especially sections on Convexity, Duality, Gradient descent, Mirror descent)
 
 ## Prerequisite
 - Differential calculus: gradient, Hessian
