@@ -56,10 +56,13 @@ $$
 \end{align*}
 $$
 
-
+et voilà!
 
 ### Why is it useful?
-For a neural network $$f$$, the full Jacobian is out of reach: with backpropagation one can only compute Jacobian-vector products, aka $$\jac_f(x) v$$ for $$v \in \bbR^d$$.
+The numerical benefit is not obvious at first: if one has access to $$A \in \bbR^{d \times d}$$, computing its trace costs $$\mathcal{O}(d)$$, while the above formula requires $$\mathcal{O}(d^2)$$ to compute $$z^\top A z$$, not to mention multiple Monte-Carlo samples for the expectation. But there are cases in which one wants to compute the trace of a matrix, without having explicit access to said matrix!
+
+The flagship example is the full Jacobian of a neural network $$f$$.
+Explicitely computing it is out of reach: with backpropagation one can only compute Jacobian-vector products, aka $$\jac_f(x) v$$ for $$v \in \bbR^d$$.
 To compute the full Jacobian means computing $$\jac_f(x) e_i$$ for all canonical vectors $$e_i$$, hence calling backpropagation $$d$$ times.
 But, to compute the *trace* of the Jacobian, one can sample a single $$z$$, and then approximate the expectation in \eqref{eq:hutchinson} by a (single) Monte-Carlo estimate:
 
@@ -67,7 +70,7 @@ $$
 \tr J_f(x) \approx z^\top \left(J_f(x) z \right)
 $$
 
-where $$J_f(x) z$$ is computed with a single backpropagation pass. This is what is done in Conitnuous normalizing flows, in the Ordinary Differential Equation required to evaluate the log likelihood loss. Very clever and elegant!
+where $$J_f(x) z$$ is computed with a single backpropagation pass. This is what is done in Continuous normalizing flows, in the Ordinary Differential Equation required to evaluate the log likelihood loss. Very clever and elegant!
 
 
 ### Is it a good estimator?
@@ -143,7 +146,7 @@ The value 1 is achieved for $z_i$ being Rademacher.
 In hindsight, this optimality result makes sense: if $$A$$ is diagonal, then for any draw of a Rademacher $$z$$, $$z^\top A z = \tr A$$ !
 With a small numerical experiment (entries of $$A \in \bbR^{20 \times 20}$$ i.i.d. standard Gaussian) we can check that Rademacher gives a slightly smaller variance.
 <div style="text-align: center;">
-<img src="/assets/img/hutchinson.png" style="width:100%; max-width:600px;">
+<img src="/assets/img/hutchinson.svg" style="width:100%; max-width:600px;">
 </div>
 
 If we increase the diagonal entries of $$A$$ (by 5 here), we see the variance for Gaussian $$z$$ increase as predicted by Proposition 1, while the performance for Rademacher $$z$$ is unaffected (coherent with Proposition 2)
@@ -161,4 +164,4 @@ $$
 \bbE_z [(Az) \odot z] = \diag(A)
 $$
 
-The proof is very similar to the first one. This technique allows to evaluate the diagonal of the Hessian of a neural network $$g \bbR \to \bbR$$, using Hessian-vector product (see [this great blog post](https://iclr-blogposts.github.io/2024/blog/bench-hvp/)), which has applications in neural network pruning for example.
+The proof is very similar to the first one. This technique allows evaluating the diagonal of the Hessian of a neural network $$g: \bbR \to \bbR$$, using Hessian-vector product (see [this great blog post](https://iclr-blogposts.github.io/2024/blog/bench-hvp/)), which has applications in neural network pruning for example.
