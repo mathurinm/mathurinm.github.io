@@ -20,7 +20,7 @@ Mathurin Massias, Titouan Vayer, Quentin Bertrand.
 - Comparing distributions from different spaces: Gromov-Wasserstein and its extensions: Franck Wolfe and entropic regularization, and Bregman algorithms for the Gromov and fused-Gromov-Wasserstein problems
 - Application of Gromov-Wasserstein to graphs
 - Towards deep learning: how to differentiate through the Wasserstein distance? Introduction to automatic differentation, forward, and backward differentiation of Sinkhorn, implicit diferentiation and Danskin theorem
-- Optimal transport for generative modelling: introduction to generative models, Wasserstein generative adversarial networks (WGANs), Wasserstein flows, Schödinger bridge, optimal transport conditional flow matching, and evaluation of generative models
+- Optimal transport for generative modelling: introduction to generative models, Wasserstein generative adversarial networks (WGANs), Wasserstein flows, Schrödinger bridge, optimal transport conditional flow matching, and evaluation of generative models
 
 - Potential extensions: learning Monge maps, Wasserstein spaces, sliced Wasserstein, etc.
 <!-- #- Brenier?
