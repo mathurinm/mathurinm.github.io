@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-11-20T19:36:33+00:00</updated><id>/feed.xml</id><title type="html">Mathurin Massias’ webpage</title><subtitle>Mathurin Massias</subtitle><entry><title type="html">The Hutchinson trick</title><link href="/hutchinson/" rel="alternate" type="text/html" title="The Hutchinson trick" /><published>2024-11-18T22:00:00+00:00</published><updated>2024-11-18T22:00:00+00:00</updated><id>/hutchinson</id><content type="html" xml:base="/hutchinson/"><![CDATA[<p>The Hutchinson trick: a cheap way to evaluate the trace of a Jacobian, without computing the Jacobian itself!</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-11-20T19:38:48+00:00</updated><id>/feed.xml</id><title type="html">Mathurin Massias’ webpage</title><subtitle>Mathurin Massias</subtitle><entry><title type="html">The Hutchinson trick</title><link href="/hutchinson/" rel="alternate" type="text/html" title="The Hutchinson trick" /><published>2024-11-18T22:00:00+00:00</published><updated>2024-11-18T22:00:00+00:00</updated><id>/hutchinson</id><content type="html" xml:base="/hutchinson/"><![CDATA[<p>The Hutchinson trick: a cheap way to evaluate the trace of a Jacobian, without computing the Jacobian itself!</p>
 
 <div class="preamble">
 $$
@@ -123,12 +123,12 @@ The value 1 is achieved for $z_i$ being Rademacher.
 In hindsight, this optimality result makes sense: if \(A\) is diagonal, then for any draw of a Rademacher \(z\), \(z^\top A z = \tr A\) !
 With a small numerical experiment (entries of \(A \in \bbR^{20 \times 20}\) i.i.d. standard Gaussian) we can check that Rademacher gives a slightly smaller variance.</p>
 <div style="text-align: center;">
-<img src="/assets/img/hutchinson.png" alt="Description of the image" style="width:100%; max-width:600px;" />
+<img src="/assets/img/hutchinson.png" style="width:100%; max-width:600px;" />
 </div>
 
 <p>If we increase the diagonal entries of \(A\) (by 5 here), we see the variance for Gaussian \(z\) increase as predicted by Proposition 1, while the performance for Rademacher \(z\) is unaffected (coherent with Proposition 2)</p>
 <div style="text-align: center;">
-<img src="/assets/img/hutchinson2.png" alt="Description of the image" style="width:100%; max-width:600px;" />
+<img src="/assets/img/hutchinson2.svg" style="width:100%; max-width:600px;" />
 </div>
 
 <p><br /></p>
