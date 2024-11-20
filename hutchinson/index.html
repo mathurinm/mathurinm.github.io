@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The Hutchinson trick | Mathurin Massias’ webpage</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="The Hutchinson trick" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The Hutchinson trick: a cheap way to evaluate the trace of a Jacobian, without computing the Jacobian itself!" />
+<meta property="og:description" content="The Hutchinson trick: a cheap way to evaluate the trace of a Jacobian, without computing the Jacobian itself!" />
+<link rel="canonical" href="/hutchinson/" />
+<meta property="og:url" content="/hutchinson/" />
+<meta property="og:site_name" content="Mathurin Massias’ webpage" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-11-18T22:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The Hutchinson trick" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-11-18T22:00:00+00:00","datePublished":"2024-11-18T22:00:00+00:00","description":"The Hutchinson trick: a cheap way to evaluate the trace of a Jacobian, without computing the Jacobian itself!","headline":"The Hutchinson trick","mainEntityOfPage":{"@type":"WebPage","@id":"/hutchinson/"},"url":"/hutchinson/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Mathurin Massias&apos; webpage" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Mathurin Massias&#39; webpage</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/">Home</a><a class="page-link" href="/research/">Research</a><a class="page-link" href="/teaching/">Teaching</a><a class="page-link" href="/blog/">Blog</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+    type="text/javascript"></script>
+
+<script type="text/javascript">
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEnvironments: true,  // Ensure environments like align are processed
+            processRefs: true
+        }
+    };
+</script>
+
+<!--MM: ChatGPt generated, to cite equations with numbers -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      TeX: {
+        equationNumbers: {
+          autoNumber: "AMS",
+          useLabelIds: true
+        }
+      }
+    });
+</script>
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title p-name" itemprop="name headline">The Hutchinson trick</h1>
+        <p class="post-meta">
+            <time class="dt-published" datetime="2024-11-18T22:00:00+00:00" itemprop="datePublished">Nov 18, 2024
+            </time></p>
+    </header>
+
+    <div class="post-content e-content" itemprop="articleBody">
+        <p>The Hutchinson trick: a cheap way to evaluate the trace of a Jacobian, without computing the Jacobian itself!</p>
+
+<div class="preamble">
+$$
+\DeclareMathOperator{\DIV}{div}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\jac}{J}
+\newcommand{\Id}{\mathrm{Id}}
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\bbE}{\mathbb{E}}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\diag}{diag}
+\newcommand{\norm}[1]{\Vert #1 \Vert}
+$$
+</div>
+
+<p>Continuous normalizing flows (more in a blog post to come) heavily rely on the computation of the divergence of a network \(f: \bbR^d \to \bbR^d\), aka the trace of its Jacobian:</p>
+
+\[\begin{equation}
+\DIV f (x) = \tr \jac_f(x) \triangleq \sum_{i=1}^d \frac{\mathrm{d} f_i}{\mathrm{d} x_i} (x)
+\end{equation}\]
+
+<p>Computing this quantity would require evaluating the full Jacobian, which can be done at the prohibitive cost of \(d\) backpropagations (more details below).
+It turns out, the trace/divergence can be approximated reasonably well <strong>with a single call to backpropagation</strong>.</p>
+
+<p>For that, let’s forget about Jacobians for a second and take a generic matrix \(A \in \bbR^{d \times d}\).
+The Hutchinson trick states that for any random variable \(z \in \bbR^d\) such that \(\bbE[zz^\top] = \Id_d\),</p>
+
+\[\begin{equation}\label{eq:hutchinson}
+\tr(A) = \bbE_z [z^\top A z]
+\end{equation}\]
+
+<p>The proof is very simple:</p>
+
+\[\begin{align*}
+\bbE_z [z^\top A z]
+&amp;= \bbE_z [\tr(z^\top A z)]  \quad &amp;\text{(a scalar equals its trace)} \\
+&amp;= \bbE_z [\tr (A z z^\top)] \quad  &amp;(\tr(MN) = \tr(NM))  \\
+&amp;= \tr \left(\bbE_z [A z z^\top]\right)  \quad &amp;\text{(trace and expectation commute)}  \\
+&amp;= \tr \left(A \bbE_z [z z^\top] \right)  \quad &amp;\text{(linearity of expectation)}  \\
+&amp;= \tr \left(A \Id_d \right)  \quad &amp;\text{(assumption on $z$ )}  \\
+&amp;= \tr \left(A  \right)  \quad &amp;
+\end{align*}\]
+
+<h3 id="why-is-it-useful">Why is it useful?</h3>
+<p>For a neural network \(f\), the full Jacobian is out of reach: with backpropagation one can only compute Jacobian-vector products, aka \(\jac_f(x) v\) for \(v \in \bbR^d\).
+To compute the full Jacobian means computing \(\jac_f(x) e_i\) for all canonical vectors \(e_i\), hence calling backpropagation \(d\) times.
+But, to compute the <em>trace</em> of the Jacobian, one can sample a single \(z\), and then approximate the expectation in \eqref{eq:hutchinson} by a (single) Monte-Carlo estimate:</p>
+
+\[\tr J_f(x) \approx z^\top \left(J_f(x) z \right)\]
+
+<p>where \(J_f(x) z\) is computed with a single backpropagation pass. This is what is done in Conitnuous normalizing flows, in the Ordinary Differential Equation required to evaluate the log likelihood loss. Very clever and elegant!</p>
+
+<h3 id="is-it-a-good-estimator">Is it a good estimator?</h3>
+
+<p>The Hutchinson estimator is a very elegant trick with a short proof, but it has a drawback: its variance is terrible.</p>
+
+<p><strong>Proposition 1</strong>: For standard Gaussian \(z\) the variance of the estimator \(z^\top A z\) is \(2 \norm{A}_F^2\).</p>
+<details><summary>Click to expand the proof </summary>
+    Wlog assume that \(A\) is symmetric: we can do so because \(A\) has same trace as its symmetric part, and \(z^\top A z = z^\top (A^\top + A) z / 2 \).
+    We can use that a Gaussian \(z \) is still Gaussian under orthogonal transform to assume \(A\) is diagonal.
+    Then for $A = \Lambda = \diag(\lambda_1, \ldots, \lambda_d)$,
+    \begin{align}
+        \bbE[(z^\top \Lambda z)^2]
+        &amp;= \bbE [(\sum_i \lambda_i z_i^2)^2] \\
+        &amp;= \bbE [(\sum_i \lambda_i^2  z_i^4 + \sum_{i \neq j} \lambda_i \lambda_j z_i^2 z_j^2)] \\
+        &amp;= 3\sum_i \lambda_i^2  + \sum_{i \neq j} \lambda_i \lambda_j  \\
+        &amp;= 2\sum_i \lambda_i^2  + \sum_i \lambda_i^2 + \sum_{i \neq j} \lambda_i \lambda_j  \\
+        &amp;= 2\sum_i \lambda_i^2  + \sum_{i, j} \lambda_i \lambda_j  \\
+        &amp;= 2 \norm{A}^2_F + (\tr A)^2
+    \end{align}
+    using that expectation of $z_i^4 = 3 \sigma^2 = 3$, and $z_i^2$ and $z_j^2$ are independent for $i \neq j$ (with expectation equal to 1)
+
+    Since $\bbE[z^\top A z] = \tr A$, the final variance is $2 \norm{A}^2_F$.
+</details>
+<p><br />
+This result is quite disappointing: the variance scales like \(\mathcal{O}(d^2)\), while the trace scales like \(d\). Can we improve this with other random variables? Yes, but not by much!</p>
+
+<p><strong>Proposition 2</strong>: For uniform sign \(z\) (aka Rademacher variables, taking values +1 or -1 with probability 1/2), the variance of the estimator is $2 \sum_{i \neq j} A_{ij}^2$.
+It is the law of \(z\) that minimizes the variance of the Hutchinson estimator.</p>
+
+<details><summary> Click to expand the proof </summary>
+
+Again assume that $A$ is symmetric wlog. Since $z_i^2 = 1$,
+\begin{align}
+    z^\top A z - \bbE[z^\top A z]
+    &amp;= \sum_{i \neq j} A_{ij} z_i z_j \\
+    &amp;= 2 \sum_{i &lt; j} A_{ij} z_i z_j
+\end{align}
+The variables $z_i z_j$ $(i &lt; j)$ are independent; they are also independent Rademacher variables, and so $\Var(z_i z_j) = 1$.
+The variance to compute is thus
+\begin{align}
+    \Var \left(2 \sum_{i &lt; j} A_{ij} z_i z_j\right) = 4 \sum_{i &lt; j} A_{ij}^2 \Var(z_i z_j) = 2 \sum_{i \neq j} A_{ij}^2 \enspace.
+\end{align}
+For the minimal variance result: for any $z$ (not necessarily Rademacher)
+\begin{align}
+    \bbE[(z^\top A z)^2]
+        &amp;= \bbE[\sum_{ijkl}z_i z_j z_k z_l A_{ij} A_{kl}]
+        % &amp;= \bbE[\sum_i A_{ii}^2 z_i^4 + \sum_{i, j} z_i^2 z_j^2 (A_{ii}^2 + 2 A_{ij}^2)]
+\end{align}
+Now the expectation is 0 as soon as one index is not equal to any of the others ($\bbE[z_i] = 0$ + independence).
+So we have four cases to consider:
+<ul>
+<li> $i=j=k=l$, yielding $\sum_i z_i^4A_{ii}^2$ </li>
+<li> $i=j$, $k=l$, $i \neq k$, yielding $\sum_{i \neq k} z_i^2 z_k^2 A_{ii} A_{kk}$ </li>
+<li> $i=k$, $j=l$, $i \neq j$, yielding $\sum_{i \neq j} z_i^2 z_j^2 A_{ij}^2$</li>
+<li> $i=l$, $j=k$, $i \neq j$, yielding $\sum_{i \neq j} z_i^2 z_j^2 A_{ij}^2$ too</li>
+</ul>
+
+Hence by renaming $k$ into $j$ in the second case
+\begin{align}
+    \bbE[(z^\top A z)^2]
+        &amp;= \bbE[\sum_i A_{ii}^2 z_i^4 + \sum_{i \neq j} z_i^2 z_j^2 (A_{ii} A_{jj} + 2 A_{ij}^2)] \\
+        &amp;= \sum_i A_{ii}^2 \bbE[z_i^4] + \sum_{i \neq j} (A_{ii} A_{jj} + 2 A_{ij}^2)
+\end{align}
+since $\bbE[z_i^2 z_j^2] = \bbE[z_i^2] \bbE[z_j^2] = 1$ when $i \neq j$.
+To minimize $\bbE[(z^\top A z)^2]$ we should thus minimize $\bbE[z_i^4]$, which by Jensen inequality is lower bounded by $\bbE[z_i^2]^2 = 1$.
+The value 1 is achieved for $z_i$ being Rademacher.
+
+</details>
+
+<p><br />
+In hindsight, this optimality result makes sense: if \(A\) is diagonal, then for any draw of a Rademacher \(z\), \(z^\top A z = \tr A\) !
+With a small numerical experiment (entries of \(A \in \bbR^{20 \times 20}\) i.i.d. standard Gaussian) we can check that Rademacher gives a slightly smaller variance.</p>
+<div style="text-align: center;">
+<img src="/assets/img/hutchinson.png" alt="Description of the image" style="width:100%; max-width:600px;" />
+</div>
+
+<p>If we increase the diagonal entries of \(A\) (by 5 here), we see the variance for Gaussian \(z\) increase as predicted by Proposition 1, while the performance for Rademacher \(z\) is unaffected (coherent with Proposition 2)</p>
+<div style="text-align: center;">
+<img src="/assets/img/hutchinson2.png" alt="Description of the image" style="width:100%; max-width:600px;" />
+</div>
+
+<p><br /></p>
+<h3 id="beyond-trace-computing-the-full-diagonal">Beyond trace: computing the full diagonal</h3>
+
+<p>As my colleague <a href="https://agonon.github.io/">Antoine Gonon</a> pointed to me, the Hutchinson trick can be used to compute all the entries of the diagonal:</p>
+
+\[\bbE_z [(Az) \odot z] = \diag(A)\]
+
+<p>The proof is very similar to the first one. This technique allows to evaluate the diagonal of the Hessian of a neural network \(g \bbR \to \bbR\), using Hessian-vector product (see <a href="https://iclr-blogposts.github.io/2024/blog/bench-hvp/">this great blog post</a>), which has applications in neural network pruning for example.</p>
+
+    </div><a class="u-url" href="/hutchinson/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+    <data class="u-url" href="/%20/"></data>
+
+    <!-- <div class="wrapper">
+
+        <h2 class="footer-heading">Mathurin Massias&#39; webpage</h2>
+
+        <div class="footer-col-wrapper">
+            <div class="footer-col footer-col-1">
+                <ul class="contact-list">
+                    <li class="p-name">Mathurin Massias&#39; webpage</li></ul>
+            </div>
+            <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/mathurinm"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">mathurinm</span></a></li><li><a href="https://www.twitter.com/mathusmassias"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">mathusmassias</span></a></li></ul>
+</div>
+
+            <div class="footer-col footer-col-3">
+                <p>Mathurin Massias</p>
+            </div>
+    </div>
+
+    </div> -->
+
+</footer>
+</body>
+
+</html>
