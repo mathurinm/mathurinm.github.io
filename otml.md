@@ -11,6 +11,10 @@ This class introduces the theoretical and numerical bases of optimal transport, 
 ## Teachers
 Mathurin Massias, Titouan Vayer, Quentin Bertrand.
 
+## Material
+- [slides for 1st lecture (20/11/2014)](/assets/2024_ens_ot/course_intro.pdf )
+- [1st homework](/assets/2024_ens_ot/homework1.pdf) (due 27/11/2024)
+
 ## Syllabus
 - Discrete optimal transport: optimal assignment, Kantorovich problem, simplex/max flow algorithm
 - Duality of OT: C-transforms, dual ascent,
