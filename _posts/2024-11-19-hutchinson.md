@@ -35,13 +35,13 @@ It turns out, the trace/divergence can be approximated reasonably well **with a 
 
 For that, let's forget about Jacobians for a second and take a generic matrix $$A \in \bbR^{d \times d}$$.
 The Hutchinson trick states that for any random variable $$z \in \bbR^d$$ such that $$\bbE[zz^\top] = \Id_d$$,
-
 $$
 \begin{equation}\label{eq:hutchinson}
 \tr(A) = \bbE_z [z^\top A z]
 \end{equation}
 $$
 
+It is typically used for $$z$$ having iid entries of mean zero and variance, classically standard Gaussian or Rademacher.
 The proof is very simple:
 
 $$
