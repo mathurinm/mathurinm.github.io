@@ -4,12 +4,16 @@ title: Teaching
 permalink: /teaching/
 ---
 
-### Computation Optimal Transport for Machine and Deep Learning
+### Generative models
+
+Class details are [here](/genmodels).
+
+### Computation Optimal Transport for Machine and Deep Learning, M2 ENS 2024-2026
 
 Class details are [here](/otml).
 
 
-### Optimization for large scale Machine Learning, M2 ENS 2022-2023 & 2023-2024
+### Optimization for large scale Machine Learning, M2 ENS 2022-2024
 
 The goal of the class is to cover theoretical aspects and practical Python implementations of popular optimization algorithms in machine learning, with a focus on modern topics: huge scale models, automatic differentiation, deep learning, implicit bias, etc.
 
@@ -49,7 +53,8 @@ Summer schools:
 - Convex optimization @Computation and Modelling summer school, WUST 2022 ([intro slides](/assets/2022_wust/slides_intro.pdf) and [exercises](/assets/2022_wust/exos.pdf))
 
 Since my arrival at ENS de Lyon (Nov. 2021):
-- 36 h on large scale optimization for machine and deep learning (2022-2024), M2 level.
+- 36 h on optimal transport (2024-2026), M2 level, with Titouan Vayer and Quentin Bertrand.
+- 2x36 h on large scale optimization for machine and deep learning (2022-2024), M2 level.
 - 12 h on optimization and approximation (2023-2024), M1 level.
 
 Since 2019, I teach the Python for datascience class (42 h per year) in the X/HEC "Datascience for business" Master, using live coding  inspired by the Software Carpentry workshops. I designed the course from scratch, collaborating  with Joan Massich in 2019, Quentin Bertrand in 2020, Hicham Janati in 2021, Sylvain Combettes in 2022 and Badr Moufad in 2023.
@@ -57,5 +62,5 @@ Since 2019, I teach the Python for datascience class (42 h per year) in the X/HE
 Since 2020 I teach and handle practical sessions and data camps in Ecole Polytechnique's [https://portail.polytechnique.edu/datascience/en/programs/data-science-starter-program-dssp Executive education].
 Topics involved dimension reduction, clustering, scaling computations, visualization and datacamp. I designed 2 full python labs with Erwan Le Pennec on these topics.
 
-From 2017 to 2019, as a grad student, my main teaching activity was the Optimization for datascience class of the [Datascience Master](https://www.universite-paris-saclay.fr/formation/master/mathematiques-et-applications/m2-data-sciences), totalling 2*40 h including 4 h as lecturer.
-Amongst others, this involved refactoring of the practical sessions, tutoring of students during office hours, and partaking in the design of the final exam.
+<!-- From 2017 to 2019, as a grad student, my main teaching activity was the Optimization for datascience class of the [Datascience Master](https://www.universite-paris-saclay.fr/formation/master/mathematiques-et-applications/m2-data-sciences), totalling 2*40 h including 4 h as lecturer.
+Amongst others, this involved refactoring of the practical sessions, tutoring of students during office hours, and partaking in the design of the final exam. -->
