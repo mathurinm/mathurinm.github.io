@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: distill
 title:  "The Hutchinson trick"
 date:   2024-11-19 00:00:00 +0200
 permalink: /:title/
+bibliography: biblio.bib
 ---
 
 The Hutchinson trick: a cheap way to evaluate the trace of a Jacobian, without computing the Jacobian itself!
@@ -35,11 +36,13 @@ It turns out, the trace/divergence can be approximated reasonably well **with a 
 
 For that, let's forget about Jacobians for a second and take a generic matrix $$A \in \bbR^{d \times d}$$.
 The Hutchinson trick states that for any random variable $$z \in \bbR^d$$ such that $$\bbE[zz^\top] = \Id_d$$,
+
 $$
 \begin{equation}\label{eq:hutchinson}
 \tr(A) = \bbE_z [z^\top A z]
 \end{equation}
 $$
+
 
 It is typically used for $$z$$ having iid entries of mean zero and variance, classically standard Gaussian or Rademacher.
 The proof is very simple:
@@ -63,7 +66,7 @@ The numerical benefit is not obvious at first: if one has access to $$A \in \bbR
 
 The flagship example is the full Jacobian of a neural network $$f$$.
 Explicitely computing it is out of reach: with backpropagation one can only compute Jacobian-vector products, aka $$\jac_f(x) v$$ for $$v \in \bbR^d$$.
-To compute the full Jacobian means computing $$\jac_f(x) e_i$$ for all canonical vectors $$e_i$$, hence calling backpropagation $$d$$ times.
+To compute the full Jacobian means computing $$\jac_f(x) e_i$$ for all canonical vectors $$e_i$$, hence calling backpropagation $$d$$ times (though it can be done [in a vectorized fashion](https://pytorch.org/tutorials/intermediate/jacobians_hessians.html)).
 But, to compute the *trace* of the Jacobian, one can sample a single $$z$$, and then approximate the expectation in \eqref{eq:hutchinson} by a (single) Monte-Carlo estimate:
 
 $$
@@ -110,7 +113,7 @@ Again assume that $A$ is symmetric wlog. Since $z_i^2 = 1$,
     &= \sum_{i \neq j} A_{ij} z_i z_j \\
     &= 2 \sum_{i < j} A_{ij} z_i z_j
 \end{align}
-The variables $z_i z_j$ $(i < j)$ are independent; they are also independent Rademacher variables, and so $\Var(z_i z_j) = 1$.
+The variables $z_i z_j$ $(i < j)$ are independent Rademacher variables, and so $\Var(z_i z_j) = 1$.
 The variance to compute is thus
 \begin{align}
     \Var \left(2 \sum_{i < j} A_{ij} z_i z_j\right) = 4 \sum_{i < j} A_{ij}^2 \Var(z_i z_j) = 2 \sum_{i \neq j} A_{ij}^2 \enspace.
@@ -164,4 +167,4 @@ $$
 \bbE_z [(Az) \odot z] = \diag(A)
 $$
 
-The proof is very similar to the first one. This technique allows evaluating the diagonal of the Hessian of a neural network $$g: \bbR \to \bbR$$, using Hessian-vector product (see [this great blog post](https://iclr-blogposts.github.io/2024/blog/bench-hvp/)), which has applications in neural network pruning for example.
+The proof is very similar to the first one. This technique allows evaluating the diagonal of the Hessian of a neural network $$g: \bbR \to \bbR$$, using Hessian-vector product (see [this great blog post](https://iclr-blogposts.github.io/2024/blog/bench-hvp/)), which has applications in neural network pruning for example. See more in Section 9.3 of <d-cite key="blondel2024elements"/>.

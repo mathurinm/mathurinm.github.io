@@ -1,14 +1,16 @@
 ---
 layout: page
-title: Teaching
+title: teaching
 permalink: /teaching/
+nav: true
+nav_order: 3
 ---
 
 ### Generative models
 
 Class details are [here](/genmodels).
 
-### Computation Optimal Transport for Machine and Deep Learning, M2 ENS 2024-2026
+### Computational Optimal Transport for Machine and Deep Learning, M2 ENS 2024-2026
 
 Class details are [here](/otml).
 
@@ -19,7 +21,7 @@ The goal of the class is to cover theoretical aspects and practical Python imple
 
 [**Notes for the class are here**]({{ site.baseurl }}{% link /assets/2022_ens/class.pdf  %}){:target="_blank"}{:rel="noopener noreferrer"}.
 
-**Schedule**: From November 21st onwards: Tuesday 08 h 00, Wednesday 13 h 30 (room B1) ****except Wednesday 6th which is moved to Friday 8th****.
+**Schedule**: From November 21st onwards: Tuesday 08 h 00, Wednesday 13 h 30 (room B1).
 
 **Validation**: some theoretical homeworks, and paper presentation at the end of the class.
 
@@ -36,9 +38,9 @@ The goal of the class is to cover theoretical aspects and practical Python imple
 - online learning
 - other algorithms: Frank-Wolfe, primal-dual algorithms, variational inclusions, extragradient.
 
-Lab 1 on logistic regression is [here](/assets/2022_ens/Lab_logistic_regression.ipynb)
+<!-- Lab 1 on logistic regression is [here](/assets/2022_ens/Lab_logistic_regression.ipynb) -->
 
-Lab 3 on Deep Learning is [here](/assets/2022_ens/Lab_3_DL_empty.ipynb)
+<!-- Lab 3 on Deep Learning is [here](/assets/2022_ens/Lab_3_DL_empty.ipynb) -->
 
 **Resources**:
 - _Introductory lectures on convex optimization: a basic course_, Y. Nesterov, 2004. A reference book in optimization, updated in 2018: _Lectures on Convex Optimization_.
@@ -59,7 +61,7 @@ Since my arrival at ENS de Lyon (Nov. 2021):
 
 Since 2019, I teach the Python for datascience class (42 h per year) in the X/HEC "Datascience for business" Master, using live coding  inspired by the Software Carpentry workshops. I designed the course from scratch, collaborating  with Joan Massich in 2019, Quentin Bertrand in 2020, Hicham Janati in 2021, Sylvain Combettes in 2022 and Badr Moufad in 2023.
 
-Since 2020 I teach and handle practical sessions and data camps in Ecole Polytechnique's [https://portail.polytechnique.edu/datascience/en/programs/data-science-starter-program-dssp Executive education].
+Since 2020 I teach and handle practical sessions and data camps in Ecole Polytechnique's [Executive education](https://portail.polytechnique.edu/datascience/en/programs/data-science-starter-program-dssp).
 Topics involved dimension reduction, clustering, scaling computations, visualization and datacamp. I designed 2 full python labs with Erwan Le Pennec on these topics.
 
 <!-- From 2017 to 2019, as a grad student, my main teaching activity was the Optimization for datascience class of the [Datascience Master](https://www.universite-paris-saclay.fr/formation/master/mathematiques-et-applications/m2-data-sciences), totalling 2*40 h including 4 h as lecturer.
