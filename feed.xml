@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-11-25T09:32:10+00:00</updated><id>/feed.xml</id><title type="html">Mathurin Massias’ webpage</title><subtitle>Mathurin Massias</subtitle><entry><title type="html">The Hutchinson trick</title><link href="/hutchinson/" rel="alternate" type="text/html" title="The Hutchinson trick" /><published>2024-11-18T22:00:00+00:00</published><updated>2024-11-18T22:00:00+00:00</updated><id>/hutchinson</id><content type="html" xml:base="/hutchinson/"><![CDATA[<p>The Hutchinson trick: a cheap way to evaluate the trace of a Jacobian, without computing the Jacobian itself!</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-11-25T17:56:51+00:00</updated><id>/feed.xml</id><title type="html">Mathurin Massias’ webpage</title><subtitle>Mathurin Massias</subtitle><entry><title type="html">The Hutchinson trick</title><link href="/hutchinson/" rel="alternate" type="text/html" title="The Hutchinson trick" /><published>2024-11-18T22:00:00+00:00</published><updated>2024-11-18T22:00:00+00:00</updated><id>/hutchinson</id><content type="html" xml:base="/hutchinson/"><![CDATA[<p>The Hutchinson trick: a cheap way to evaluate the trace of a Jacobian, without computing the Jacobian itself!</p>
 
 <div class="preamble">
 $$
@@ -24,10 +24,11 @@ $$
 It turns out, the trace/divergence can be approximated reasonably well <strong>with a single call to backpropagation</strong>.</p>
 
 <p>For that, let’s forget about Jacobians for a second and take a generic matrix \(A \in \bbR^{d \times d}\).
-The Hutchinson trick states that for any random variable \(z \in \bbR^d\) such that \(\bbE[zz^\top] = \Id_d\),
-\(\begin{equation}\label{eq:hutchinson}
+The Hutchinson trick states that for any random variable \(z \in \bbR^d\) such that \(\bbE[zz^\top] = \Id_d\),</p>
+
+\[\begin{equation}\label{eq:hutchinson}
 \tr(A) = \bbE_z [z^\top A z]
-\end{equation}\)</p>
+\end{equation}\]
 
 <p>It is typically used for \(z\) having iid entries of mean zero and variance, classically standard Gaussian or Rademacher.
 The proof is very simple:</p>
@@ -49,7 +50,7 @@ The proof is very simple:</p>
 
 <p>The flagship example is the full Jacobian of a neural network \(f\).
 Explicitely computing it is out of reach: with backpropagation one can only compute Jacobian-vector products, aka \(\jac_f(x) v\) for \(v \in \bbR^d\).
-To compute the full Jacobian means computing \(\jac_f(x) e_i\) for all canonical vectors \(e_i\), hence calling backpropagation \(d\) times.
+To compute the full Jacobian means computing \(\jac_f(x) e_i\) for all canonical vectors \(e_i\), hence calling backpropagation \(d\) times (though it can be done <a href="https://pytorch.org/tutorials/intermediate/jacobians_hessians.html">in a vectorized fashion</a>).
 But, to compute the <em>trace</em> of the Jacobian, one can sample a single \(z\), and then approximate the expectation in \eqref{eq:hutchinson} by a (single) Monte-Carlo estimate:</p>
 
 \[\tr J_f(x) \approx z^\top \left(J_f(x) z \right)\]
@@ -92,7 +93,7 @@ Again assume that $A$ is symmetric wlog. Since $z_i^2 = 1$,
     &amp;= \sum_{i \neq j} A_{ij} z_i z_j \\
     &amp;= 2 \sum_{i &lt; j} A_{ij} z_i z_j
 \end{align}
-The variables $z_i z_j$ $(i &lt; j)$ are independent; they are also independent Rademacher variables, and so $\Var(z_i z_j) = 1$.
+The variables $z_i z_j$ $(i &lt; j)$ are independent Rademacher variables, and so $\Var(z_i z_j) = 1$.
 The variance to compute is thus
 \begin{align}
     \Var \left(2 \sum_{i &lt; j} A_{ij} z_i z_j\right) = 4 \sum_{i &lt; j} A_{ij}^2 \Var(z_i z_j) = 2 \sum_{i \neq j} A_{ij}^2 \enspace.
@@ -143,7 +144,7 @@ With a small numerical experiment (entries of \(A \in \bbR^{20 \times 20}\) i.i.
 
 \[\bbE_z [(Az) \odot z] = \diag(A)\]
 
-<p>The proof is very similar to the first one. This technique allows evaluating the diagonal of the Hessian of a neural network \(g: \bbR \to \bbR\), using Hessian-vector product (see <a href="https://iclr-blogposts.github.io/2024/blog/bench-hvp/">this great blog post</a>), which has applications in neural network pruning for example.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[The Hutchinson trick: a cheap way to evaluate the trace of a Jacobian, without computing the Jacobian itself!]]></summary></entry><entry><title type="html">Advice for presentations or how to avoid losing your audience</title><link href="/presentation_advice/" rel="alternate" type="text/html" title="Advice for presentations or how to avoid losing your audience" /><published>2024-09-04T22:00:00+00:00</published><updated>2024-09-04T22:00:00+00:00</updated><id>/presentation_advice</id><content type="html" xml:base="/presentation_advice/"><![CDATA[<p>Summary advice given after attending one day of M1 internship presentations at ENS.</p>
+<p>The proof is very similar to the first one. This technique allows evaluating the diagonal of the Hessian of a neural network \(g: \bbR \to \bbR\), using Hessian-vector product (see <a href="https://iclr-blogposts.github.io/2024/blog/bench-hvp/">this great blog post</a>), which has applications in neural network pruning for example. See more in Section 9.3 of <d-cite key="blondel2024elements"></d-cite>.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[The Hutchinson trick: a cheap way to evaluate the trace of a Jacobian, without computing the Jacobian itself!]]></summary></entry><entry><title type="html">Advice for presentations or how to avoid losing your audience</title><link href="/presentation_advice/" rel="alternate" type="text/html" title="Advice for presentations or how to avoid losing your audience" /><published>2024-09-04T22:00:00+00:00</published><updated>2024-09-04T22:00:00+00:00</updated><id>/presentation_advice</id><content type="html" xml:base="/presentation_advice/"><![CDATA[<p>Summary advice given after attending one day of M1 internship presentations at ENS.</p>
 
 <p><strong>TLDR</strong>: Never underestimate how easily and quickly you can lose the audience, and how hard it is for them to catch up afterwards.
 <!-- A presentation is very different from writing a paper or report. -->

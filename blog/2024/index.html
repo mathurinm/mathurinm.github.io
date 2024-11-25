@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Generative models | Mathurin Massias' webpage</title>
+    <title>2024 | Mathurin Massias' webpage</title>
     <meta name="author" content="Mathurin  Massias">
     <meta name="description" content="Mathurin Massias">
 
@@ -30,7 +30,7 @@
     <!-- Styles -->
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="/genmodels/">
+    <link rel="canonical" href="/blog/2024/">
     
     <!-- Dark Mode -->
     
@@ -60,7 +60,7 @@
             <span class="icon-bar bottom-bar"></span>
           </button>
 
-          <!-- [#&lt;Jekyll::Page @relative_path=&quot;404.html&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/about.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/genmodels.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;index.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;assets/css/main.scss&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/optml.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/otml.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/research.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/teaching.md&quot;&gt;, #&lt;Jekyll:Archive @type=year @title={:year=&gt;&quot;2024&quot;} @data={&quot;layout&quot;=&gt;&quot;archive-year&quot;}&gt;, #&lt;JekyllRedirectFrom::PageWithoutAFile @relative_path=&quot;redirects.json&quot;&gt;, #&lt;JekyllFeed::PageWithoutAFile @relative_path=&quot;feed.xml&quot;&gt;, #&lt;Jekyll::PaginateV2::Generator::PaginationPage @relative_path=&quot;.html&quot;&gt;, #&lt;Jekyll::PageWithoutAFile @relative_path=&quot;sitemap.xml&quot;&gt;, #&lt;Jekyll::PageWithoutAFile @relative_path=&quot;robots.txt&quot;&gt;] -->
+          <!-- [#&lt;Jekyll::Page @relative_path=&quot;404.html&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/about.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/genmodels.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;index.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;assets/css/main.scss&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/optml.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/otml.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/research.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/teaching.md&quot;&gt;, #&lt;Jekyll:Archive @type=year @title={:year=&gt;&quot;2024&quot;} @data={&quot;layout&quot;=&gt;&quot;archive-year&quot;}&gt;, #&lt;JekyllRedirectFrom::PageWithoutAFile @relative_path=&quot;redirects.json&quot;&gt;, #&lt;JekyllFeed::PageWithoutAFile @relative_path=&quot;feed.xml&quot;&gt;, #&lt;Jekyll::PaginateV2::Generator::PaginationPage @relative_path=&quot;.html&quot;&gt;, #&lt;Jekyll::PageWithoutAFile @relative_path=&quot;sitemap.xml&quot;&gt;, #&lt;Jekyll::PageWithoutAFile @relative_path=&quot;robots.txt&quot;&gt;, #&lt;Jekyll::SourceMapPage @name=&quot;main.css.map&quot;&gt;] -->
 
           <div class="collapse navbar-collapse text-right" id="navbarNav">
             <ul class="navbar-nav ml-auto flex-nowrap">
@@ -95,65 +95,47 @@
     <!-- Content -->
     <div class="container mt-5">
       <div class="post">
-  <h1 id="generative-modelling">Generative modelling</h1>
 
-<p>In the wake of models like Dall-E and ChatGPT, generative models have had a massive impact on text and image applications. The goal of this class is to present their mathematical and algorithmical foundations.</p>
+  <header class="post-header">
+    <h1 class="post-title"> <i class="fas fa-calendar fa-sm"></i> 2024 </h1>
+    <p class="post-description"> an archive of posts from this year </p>
+  </header>
 
-<figure>
-  <div class="l-page" style="--ar: calc(218 / 161)">
-    <iframe style="aspect-ratio: 1; width: calc(100% / ( 1 + 2 * var(--ar)));" src="/assets/2025_ens_genmodels/ot-flow-1d.html#loop9" frameborder="0" scrolling="no"></iframe>
-    <img style="vertical-align: top; width: calc(100% * var(--ar) / ( 1 + 2 * var(--ar)));" src="/assets/2025_ens_genmodels/pbackground.svg">
-    <iframe style="aspect-ratio: var(--ar); margin: 0 -5px; width: calc(100% * var(--ar) / ( 1 + 2 * var(--ar)));" src="/assets/2025_ens_genmodels/u-anim.html" frameborder="0" scrolling="no"></iframe>
-  </div>
-</figure>
-
-<h3 id="teachers">Teachers:</h3>
-<ul>
-  <li>Quentin Bertrand (CR Inria, MALICE team)</li>
-  <li>Rémi Emonet (IUF, Associate professor, Jean Monnet University, MALICE Team)</li>
-  <li>Mathurin Massias (CR Inria, OCKHAM team)</li>
-</ul>
-
-<h3 id="syllabus">Syllabus</h3>
-<!-- - Intro, analysis reminder, supervised vs generative modeling perspective-->
-
-<p>Generative modelling for images:</p>
-<ul>
-  <li>Normalizing flows, Continuous normalizing flows</li>
-  <li>Flow matching</li>
-  <li>Diffusion models (DDPM, DDIM, Stochastic differential equations), latent diffusion</li>
-  <li>GANs</li>
-</ul>
-
-<p>Models for text:</p>
-<ul>
-  <li>Autoregressive models, text-to-text models</li>
-  <li>Transformers (the ChatGPT architecture)</li>
-  <li>Mamba and State space models</li>
-  <li>Text-to-image, conditional generation</li>
-</ul>
-
-<p>Additional topics:</p>
-<ul>
-  <li>Variational inference</li>
-  <li>Sampling as optimization/energy-based model</li>
-  <li>Evaluation of Generative Models</li>
-</ul>
-
-<h3 id="validation">Validation</h3>
-<ul>
-  <li>50 % weekly homeworks + 3 Labs in python</li>
-  <li>50 % paper presentation and extension of a selected research article and the associated code applied on real data.</li>
-</ul>
-
-<h3 id="prerequisite">Prerequisite</h3>
-<ul>
-  <li>probabilities (densities, change of variable formula)</li>
-  <li>linear algebra (PSD matrices, eigenvalue decomposition, spectral theorem)</li>
-  <li>calculus (gradient, Hessian, Jacobian, chain rule, ordinary differential equations)</li>
-</ul>
-
-  
+  <article>
+    <div class="table-responsive">
+      <table class="table table-sm table-borderless">
+        
+        <tr>
+          <th scope="row">Nov 18, 2024</th>
+          <td>
+              <a class="post-link" href="/hutchinson/">The Hutchinson trick</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <th scope="row">Sep 4, 2024</th>
+          <td>
+              <a class="post-link" href="/presentation_advice/">Advice for presentations or how to avoid losing your audience</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <th scope="row">Jul 25, 2024</th>
+          <td>
+              <a class="post-link" href="/cnrs_inria_advice/">Advice for CNRS and INRIA recruitment</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <th scope="row">Jul 21, 2024</th>
+          <td>
+              <a class="post-link" href="/alpha_trick/">Finding equivalent for sequences: the alpha trick</a>
+          </td>
+        </tr>
+      
+      </table>
+    </div>
+  </article>
 
 </div>
 
