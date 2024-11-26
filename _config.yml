@@ -109,6 +109,11 @@ permalink: /:title/
 # Pagination
 pagination:
   enabled: true
+  per_page: 5
+  permalink: /blog/page/:num/
+  collection: posts
+  sort_field: "date"
+  sort_reverse: true
 
 # Comments
 disqus_shortname: # put your disqus shortname

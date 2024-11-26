@@ -33,7 +33,12 @@ list 2
     <li>{{ post.title }}</li>
   {% endfor %}
 </ul>
-done:
+more debug:
+<pre>
+  Paginator page: {{ paginator.page }}
+  Total pages: {{ paginator.total_pages }}
+  Posts on this page: {{ paginator.posts | size }}
+</pre>
   {% if site.display_tags %}
   <div class="tag-list">
     <ul class="p-0 m-0">
