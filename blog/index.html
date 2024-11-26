@@ -21,9 +21,15 @@ pagination:
     <h1>{{ site.blog_name }}</h1>
     <h2>{{ site.blog_description }}</h2>
   </div> -->
- trucs à jour
+ trucs à jour debug
  <ul>
   {% for post in paginator.posts %}
+    <li>{{ post.title }}</li>
+  {% endfor %}
+</ul>
+
+<ul>
+  {% for post in site.posts %}
     <li>{{ post.title }}</li>
   {% endfor %}
 </ul>
