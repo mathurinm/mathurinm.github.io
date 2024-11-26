@@ -726,6 +726,7 @@ d-byline a:hover, d-article d-byline a:hover {
 }
 
 d-article {
+  text-align: justify;
   border-top-color: var(--global-divider-color) !important;
 }
 d-article a, d-article p, d-article h1, d-article h2, d-article h3, d-article h4, d-article h5, d-article h6, d-article li, d-article table {
