@@ -27,13 +27,13 @@ pagination:
     <li>{{ post.title }}</li>
   {% endfor %}
 </ul>
-
+list 2
 <ul>
   {% for post in site.posts %}
     <li>{{ post.title }}</li>
   {% endfor %}
 </ul>
-
+done:
   {% if site.display_tags %}
   <div class="tag-list">
     <ul class="p-0 m-0">
@@ -50,7 +50,7 @@ pagination:
   {% endif %}
 
   <ul class="post-list">
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
 
     {% if post.external_source == blank %}
       {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
