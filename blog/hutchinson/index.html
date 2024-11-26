@@ -60,6 +60,14 @@
   <script src="/assets/js/distillpub/transforms.v2.js"></script>
   <script src="/assets/js/distillpub/overrides.js"></script>
   
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {
+        {
+        page._styles
+      }
+    }
+  </style>
 </head>
 
 <!-- <d-front-matter>
@@ -104,7 +112,7 @@
             <span class="icon-bar bottom-bar"></span>
           </button>
 
-          <!-- [#&lt;Jekyll::Page @relative_path=&quot;404.html&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/about.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/blog.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/genmodels.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;index.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;assets/css/main.scss&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/optml.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/otml.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/research.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/teaching.md&quot;&gt;, #&lt;Jekyll:Archive @type=category @title=blog @data={&quot;layout&quot;=&gt;&quot;archive-category&quot;}&gt;, #&lt;Jekyll:Archive @type=year @title={:year=&gt;&quot;2024&quot;} @data={&quot;layout&quot;=&gt;&quot;archive-year&quot;}&gt;, #&lt;JekyllRedirectFrom::PageWithoutAFile @relative_path=&quot;redirects.json&quot;&gt;, #&lt;JekyllFeed::PageWithoutAFile @relative_path=&quot;feed.xml&quot;&gt;, #&lt;Jekyll::PageWithoutAFile @relative_path=&quot;sitemap.xml&quot;&gt;, #&lt;Jekyll::PageWithoutAFile @relative_path=&quot;robots.txt&quot;&gt;] -->
+          <!-- [#&lt;Jekyll::Page @relative_path=&quot;404.html&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/about.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/blog.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/genmodels.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;index.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;assets/css/main.scss&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/optml.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/otml.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/research.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/teaching.md&quot;&gt;, #&lt;Jekyll:Archive @type=year @title={:year=&gt;&quot;2024&quot;} @data={&quot;layout&quot;=&gt;&quot;archive-year&quot;}&gt;, #&lt;JekyllRedirectFrom::PageWithoutAFile @relative_path=&quot;redirects.json&quot;&gt;, #&lt;JekyllFeed::PageWithoutAFile @relative_path=&quot;feed.xml&quot;&gt;, #&lt;Jekyll::PageWithoutAFile @relative_path=&quot;sitemap.xml&quot;&gt;, #&lt;Jekyll::PageWithoutAFile @relative_path=&quot;robots.txt&quot;&gt;] -->
 
           <div class="collapse navbar-collapse text-right" id="navbarNav">
             <ul class="navbar-nav ml-auto flex-nowrap">
@@ -291,7 +299,7 @@ With a small numerical experiment (entries of \(A \in \bbR^{20 \times 20}\) i.i.
 
 \[\bbE_z [(Az) \odot z] = \diag(A)\]
 
-<p>The proof is very similar to the first one. This technique allows evaluating the diagonal of the Hessian of a neural network \(g: \bbR \to \bbR\), using Hessian-vector product (see <a href="https://iclr-blogposts.github.io/2024/blog/bench-hvp/" target="_blank" rel="noopener noreferrer">this great blog post</a>), which has applications in neural network pruning for example. See more in Section 9.3 of <d-cite key="blondel2024elements"></d-cite>.</p>
+<p>The proof is very similar to the first one. This technique allows evaluating the diagonal of the Hessian of a neural network \(g: \bbR \to \bbR\), using Hessian-vector product (see <a href="https://iclr-blogposts.github.io/2024/blog/bench-hvp/" target="_blank" rel="noopener noreferrer">this great blog post</a>), which has applications in neural network pruning for example. See more in Section 9.8 of <d-cite key="blondel2024elements"></d-cite>.</p>
 
     </d-article>
 
