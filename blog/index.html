@@ -113,7 +113,319 @@
     <li>
       <h3>
         
-          <a class="post-title" href="/hutchinson/">The Hutchinson trick</a>
+          <a class="post-title" href="/blog/hutchinson/">The Hutchinson trick</a>
+          
+<!-- _layouts/distill.html -->
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Hutchinson trick | Mathurin Massias' webpage</title>
+    <meta name="author" content="Mathurin  Massias">
+    <meta name="description" content="Mathurin Massias">
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    <!-- Styles -->
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="/blog/hutchinson/">
+    
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+  <!-- Distill js -->
+  <script src="/assets/js/distillpub/template.v2.js"></script>
+  <script src="/assets/js/distillpub/transforms.v2.js"></script>
+  <script src="/assets/js/distillpub/overrides.js"></script>
+  
+
+
+<!-- <d-front-matter>
+  <script async type="text/json">{
+      "title": "The Hutchinson trick",
+      "description": "",
+      "published": "November 18, 2024",
+      "authors": [
+        
+      ],
+      "katex": {
+        "delimiters": [
+          {
+            "left": "$",
+            "right": "$",
+            "display": false
+          },
+          {
+            "left": "$$",
+            "right": "$$",
+            "display": true
+          }
+        ]
+      }
+    }</script>
+</d-front-matter> -->
+
+
+
+  <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/">Mathurin Massias' webpage</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <!-- [#&lt;Jekyll::Page @relative_path=&quot;404.html&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/about.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/blog.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/genmodels.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;index.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;assets/css/main.scss&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/optml.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/otml.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/research.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/teaching.md&quot;&gt;, #&lt;Jekyll:Archive @type=category @title=blog @data={&quot;layout&quot;=&gt;&quot;archive-category&quot;}&gt;, #&lt;Jekyll:Archive @type=year @title={:year=&gt;&quot;2024&quot;} @data={&quot;layout&quot;=&gt;&quot;archive-year&quot;}&gt;, #&lt;JekyllRedirectFrom::PageWithoutAFile @relative_path=&quot;redirects.json&quot;&gt;, #&lt;JekyllFeed::PageWithoutAFile @relative_path=&quot;feed.xml&quot;&gt;, #&lt;Jekyll::PageWithoutAFile @relative_path=&quot;sitemap.xml&quot;&gt;, #&lt;Jekyll::PageWithoutAFile @relative_path=&quot;robots.txt&quot;&gt;] -->
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+              <li class="nav-item ">
+                <a class="nav-link" href="/about/">about</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/research/">research</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/teaching/">teaching</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/blog/">blog</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+  <!-- Content -->
+  <div class="post distill">
+
+    <d-title>
+      <h1>The Hutchinson trick</h1>
+      <p></p>
+    </d-title>
+
+    <d-article>
+      
+
+      <p>The Hutchinson trick: a cheap way to evaluate the trace of a Jacobian, without computing the Jacobian itself!</p>
+
+<div class="preamble">
+$$
+\DeclareMathOperator{\DIV}{div}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\jac}{J}
+\newcommand{\Id}{\mathrm{Id}}
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\bbE}{\mathbb{E}}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\diag}{diag}
+\newcommand{\norm}[1]{\Vert #1 \Vert}
+$$
+</div>
+
+<p>Continuous normalizing flows (more in a blog post to come) heavily rely on the computation of the divergence of a network \(f: \bbR^d \to \bbR^d\), aka the trace of its Jacobian:</p>
+
+\[\begin{equation}
+\DIV f (x) = \tr \jac_f(x) \triangleq \sum_{i=1}^d \frac{\mathrm{d} f_i}{\mathrm{d} x_i} (x)
+\end{equation}\]
+
+<p>Computing this quantity would require evaluating the full Jacobian, which can be done at the prohibitive cost of \(d\) backpropagations (more details below).
+It turns out, the trace/divergence can be approximated reasonably well <strong>with a single call to backpropagation</strong>.</p>
+
+<p>For that, let’s forget about Jacobians for a second and take a generic matrix \(A \in \bbR^{d \times d}\).
+The Hutchinson trick states that for any random variable \(z \in \bbR^d\) such that \(\bbE[zz^\top] = \Id_d\),</p>
+
+\[\begin{equation}\label{eq:hutchinson}
+\tr(A) = \bbE_z [z^\top A z]
+\end{equation}\]
+
+<p>It is typically used for \(z\) having iid entries of mean zero and variance, classically standard Gaussian or Rademacher.
+The proof is very simple:</p>
+
+\[\begin{align*}
+\bbE_z [z^\top A z]
+&amp;= \bbE_z [\tr(z^\top A z)]  \quad &amp;\text{(a scalar equals its trace)} \\
+&amp;= \bbE_z [\tr (A z z^\top)] \quad  &amp;(\tr(MN) = \tr(NM))  \\
+&amp;= \tr \left(\bbE_z [A z z^\top]\right)  \quad &amp;\text{(trace and expectation commute)}  \\
+&amp;= \tr \left(A \bbE_z [z z^\top] \right)  \quad &amp;\text{(linearity of expectation)}  \\
+&amp;= \tr \left(A \Id_d \right)  \quad &amp;\text{(assumption on $z$ )}  \\
+&amp;= \tr \left(A  \right)  \quad &amp;
+\end{align*}\]
+
+<p>et voilà!</p>
+
+<h3 id="why-is-it-useful">Why is it useful?</h3>
+<p>The numerical benefit is not obvious at first: if one has access to \(A \in \bbR^{d \times d}\), computing its trace costs \(\mathcal{O}(d)\), while the above formula requires \(\mathcal{O}(d^2)\) to compute \(z^\top A z\), not to mention multiple Monte-Carlo samples for the expectation. But there are cases in which one wants to compute the trace of a matrix, without having explicit access to said matrix!</p>
+
+<p>The flagship example is the full Jacobian of a neural network \(f\).
+Explicitely computing it is out of reach: with backpropagation one can only compute Jacobian-vector products, aka \(\jac_f(x) v\) for \(v \in \bbR^d\).
+To compute the full Jacobian means computing \(\jac_f(x) e_i\) for all canonical vectors \(e_i\), hence calling backpropagation \(d\) times (though it can be done <a href="https://pytorch.org/tutorials/intermediate/jacobians_hessians.html" target="_blank" rel="noopener noreferrer noopener noreferrer">in a vectorized fashion</a>).
+But, to compute the <em>trace</em> of the Jacobian, one can sample a single \(z\), and then approximate the expectation in \eqref{eq:hutchinson} by a (single) Monte-Carlo estimate:</p>
+
+\[\tr J_f(x) \approx z^\top \left(J_f(x) z \right)\]
+
+<p>where \(J_f(x) z\) is computed with a single backpropagation pass. This is what is done in Continuous normalizing flows, in the Ordinary Differential Equation required to evaluate the log likelihood loss. Very clever and elegant!</p>
+
+<h3 id="is-it-a-good-estimator">Is it a good estimator?</h3>
+
+<p>The Hutchinson estimator is a very elegant trick with a short proof, but it has a drawback: its variance is terrible.</p>
+
+<p><strong>Proposition 1</strong>: For standard Gaussian \(z\) the variance of the estimator \(z^\top A z\) is \(2 \norm{A}_F^2\).</p>
+<details><summary>Click to expand the proof </summary>
+    Wlog assume that \(A\) is symmetric: we can do so because \(A\) has same trace as its symmetric part, and \(z^\top A z = z^\top (A^\top + A) z / 2 \).
+    We can use that a Gaussian \(z \) is still Gaussian under orthogonal transform to assume \(A\) is diagonal.
+    Then for $A = \Lambda = \diag(\lambda_1, \ldots, \lambda_d)$,
+    \begin{align}
+        \bbE[(z^\top \Lambda z)^2]
+        &amp;= \bbE [(\sum_i \lambda_i z_i^2)^2] \\
+        &amp;= \bbE [(\sum_i \lambda_i^2  z_i^4 + \sum_{i \neq j} \lambda_i \lambda_j z_i^2 z_j^2)] \\
+        &amp;= 3\sum_i \lambda_i^2  + \sum_{i \neq j} \lambda_i \lambda_j  \\
+        &amp;= 2\sum_i \lambda_i^2  + \sum_i \lambda_i^2 + \sum_{i \neq j} \lambda_i \lambda_j  \\
+        &amp;= 2\sum_i \lambda_i^2  + \sum_{i, j} \lambda_i \lambda_j  \\
+        &amp;= 2 \norm{A}^2_F + (\tr A)^2
+    \end{align}
+    using that expectation of $z_i^4 = 3 \sigma^2 = 3$, and $z_i^2$ and $z_j^2$ are independent for $i \neq j$ (with expectation equal to 1)
+
+    Since $\bbE[z^\top A z] = \tr A$, the final variance is $2 \norm{A}^2_F$.
+</details>
+<p><br>
+This result is quite disappointing: the variance scales like \(\mathcal{O}(d^2)\), while the trace scales like \(d\). Can we improve this with other random variables? Yes, but not by much!</p>
+
+<p><strong>Proposition 2</strong>: For uniform sign \(z\) (aka Rademacher variables, taking values +1 or -1 with probability 1/2), the variance of the estimator is $2 \sum_{i \neq j} A_{ij}^2$.
+It is the law of \(z\) that minimizes the variance of the Hutchinson estimator.</p>
+
+<details><summary> Click to expand the proof </summary>
+
+Again assume that $A$ is symmetric wlog. Since $z_i^2 = 1$,
+\begin{align}
+    z^\top A z - \bbE[z^\top A z]
+    &amp;= \sum_{i \neq j} A_{ij} z_i z_j \\
+    &amp;= 2 \sum_{i &lt; j} A_{ij} z_i z_j
+\end{align}
+The variables $z_i z_j$ $(i &lt; j)$ are independent Rademacher variables, and so $\Var(z_i z_j) = 1$.
+The variance to compute is thus
+\begin{align}
+    \Var \left(2 \sum_{i &lt; j} A_{ij} z_i z_j\right) = 4 \sum_{i &lt; j} A_{ij}^2 \Var(z_i z_j) = 2 \sum_{i \neq j} A_{ij}^2 \enspace.
+\end{align}
+For the minimal variance result: for any $z$ (not necessarily Rademacher)
+\begin{align}
+    \bbE[(z^\top A z)^2]
+        &amp;= \bbE[\sum_{ijkl}z_i z_j z_k z_l A_{ij} A_{kl}]
+        % &amp;= \bbE[\sum_i A_{ii}^2 z_i^4 + \sum_{i, j} z_i^2 z_j^2 (A_{ii}^2 + 2 A_{ij}^2)]
+\end{align}
+Now the expectation is 0 as soon as one index is not equal to any of the others ($\bbE[z_i] = 0$ + independence).
+So we have four cases to consider:
+<ul>
+<li> $i=j=k=l$, yielding $\sum_i z_i^4A_{ii}^2$ </li>
+<li> $i=j$, $k=l$, $i \neq k$, yielding $\sum_{i \neq k} z_i^2 z_k^2 A_{ii} A_{kk}$ </li>
+<li> $i=k$, $j=l$, $i \neq j$, yielding $\sum_{i \neq j} z_i^2 z_j^2 A_{ij}^2$</li>
+<li> $i=l$, $j=k$, $i \neq j$, yielding $\sum_{i \neq j} z_i^2 z_j^2 A_{ij}^2$ too</li>
+</ul>
+
+Hence by renaming $k$ into $j$ in the second case
+\begin{align}
+    \bbE[(z^\top A z)^2]
+        &amp;= \bbE[\sum_i A_{ii}^2 z_i^4 + \sum_{i \neq j} z_i^2 z_j^2 (A_{ii} A_{jj} + 2 A_{ij}^2)] \\
+        &amp;= \sum_i A_{ii}^2 \bbE[z_i^4] + \sum_{i \neq j} (A_{ii} A_{jj} + 2 A_{ij}^2)
+\end{align}
+since $\bbE[z_i^2 z_j^2] = \bbE[z_i^2] \bbE[z_j^2] = 1$ when $i \neq j$.
+To minimize $\bbE[(z^\top A z)^2]$ we should thus minimize $\bbE[z_i^4]$, which by Jensen inequality is lower bounded by $\bbE[z_i^2]^2 = 1$.
+The value 1 is achieved for $z_i$ being Rademacher.
+
+</details>
+
+<p><br>
+In hindsight, this optimality result makes sense: if \(A\) is diagonal, then for any draw of a Rademacher \(z\), \(z^\top A z = \tr A\) !
+With a small numerical experiment (entries of \(A \in \bbR^{20 \times 20}\) i.i.d. standard Gaussian) we can check that Rademacher gives a slightly smaller variance.</p>
+<div style="text-align: center;">
+<img src="/assets/img/hutchinson.svg" style="width:100%; max-width:600px;">
+</div>
+
+<p>If we increase the diagonal entries of \(A\) (by 5 here), we see the variance for Gaussian \(z\) increase as predicted by Proposition 1, while the performance for Rademacher \(z\) is unaffected (coherent with Proposition 2)</p>
+<div style="text-align: center;">
+<img src="/assets/img/hutchinson2.svg" style="width:100%; max-width:600px;">
+</div>
+
+<p><br></p>
+<h3 id="beyond-trace-computing-the-full-diagonal">Beyond trace: computing the full diagonal</h3>
+
+<p>As my colleague <a href="https://agonon.github.io/" target="_blank" rel="noopener noreferrer noopener noreferrer">Antoine Gonon</a> pointed to me, the Hutchinson trick can be used to compute all the entries of the diagonal:</p>
+
+\[\bbE_z [(Az) \odot z] = \diag(A)\]
+
+<p>The proof is very similar to the first one. This technique allows evaluating the diagonal of the Hessian of a neural network \(g: \bbR \to \bbR\), using Hessian-vector product (see <a href="https://iclr-blogposts.github.io/2024/blog/bench-hvp/" target="_blank" rel="noopener noreferrer noopener noreferrer">this great blog post</a>), which has applications in neural network pruning for example. See more in Section 9.3 of <d-cite key="blondel2024elements"></d-cite>.</p>
+
+    </d-article>
+
+    <d-appendix>
+      <d-footnote-list></d-footnote-list>
+      <d-citation-list></d-citation-list>
+    </d-appendix>
+
+  </div>
+
+  <d-bibliography src="/assets/bibliography/biblio.bib"></d-bibliography>
+
+
+
+
+
+
+
         
       </h3>
       <p></p>
@@ -134,6 +446,174 @@
       <h3>
         
           <a class="post-title" href="/test2/">Test post</a>
+          
+<!-- _layouts/distill.html -->
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Test post | Mathurin Massias' webpage</title>
+    <meta name="author" content="Mathurin  Massias">
+    <meta name="description" content="Mathurin Massias">
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    <!-- Styles -->
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="/test2/">
+    
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+  <!-- Distill js -->
+  <script src="/assets/js/distillpub/template.v2.js"></script>
+  <script src="/assets/js/distillpub/transforms.v2.js"></script>
+  <script src="/assets/js/distillpub/overrides.js"></script>
+  
+
+
+<!-- <d-front-matter>
+  <script async type="text/json">{
+      "title": "Test post",
+      "description": "",
+      "published": "November 18, 2024",
+      "authors": [
+        
+      ],
+      "katex": {
+        "delimiters": [
+          {
+            "left": "$",
+            "right": "$",
+            "display": false
+          },
+          {
+            "left": "$$",
+            "right": "$$",
+            "display": true
+          }
+        ]
+      }
+    }</script>
+</d-front-matter> -->
+
+
+
+  <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/">Mathurin Massias' webpage</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <!-- [#&lt;Jekyll::Page @relative_path=&quot;404.html&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/about.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/blog.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/genmodels.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;index.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;assets/css/main.scss&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/optml.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/otml.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/research.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/teaching.md&quot;&gt;, #&lt;Jekyll:Archive @type=category @title=blog @data={&quot;layout&quot;=&gt;&quot;archive-category&quot;}&gt;, #&lt;Jekyll:Archive @type=year @title={:year=&gt;&quot;2024&quot;} @data={&quot;layout&quot;=&gt;&quot;archive-year&quot;}&gt;, #&lt;JekyllRedirectFrom::PageWithoutAFile @relative_path=&quot;redirects.json&quot;&gt;, #&lt;JekyllFeed::PageWithoutAFile @relative_path=&quot;feed.xml&quot;&gt;, #&lt;Jekyll::PageWithoutAFile @relative_path=&quot;sitemap.xml&quot;&gt;, #&lt;Jekyll::PageWithoutAFile @relative_path=&quot;robots.txt&quot;&gt;] -->
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+              <li class="nav-item ">
+                <a class="nav-link" href="/about/">about</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/research/">research</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/teaching/">teaching</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/blog/">blog</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+  <!-- Content -->
+  <div class="post distill">
+
+    <d-title>
+      <h1>Test post</h1>
+      <p></p>
+    </d-title>
+
+    <d-article>
+      
+
+      <p>The Hutchinson trick: a cheap way to evaluate the trace of a Jacobian, without computing the Jacobian itself!</p>
+
+<p>dfsfsd</p>
+
+    </d-article>
+
+    <d-appendix>
+      <d-footnote-list></d-footnote-list>
+      <d-citation-list></d-citation-list>
+    </d-appendix>
+
+  </div>
+
+  <d-bibliography src="/assets/bibliography/biblio.bib"></d-bibliography>
+
+
+
+
+
+
+
         
       </h3>
       <p></p>
@@ -154,6 +634,174 @@
       <h3>
         
           <a class="post-title" href="/blog/test/">Test post</a>
+          
+<!-- _layouts/distill.html -->
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Test post | Mathurin Massias' webpage</title>
+    <meta name="author" content="Mathurin  Massias">
+    <meta name="description" content="Mathurin Massias">
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    <!-- Styles -->
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="/blog/test/">
+    
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+  <!-- Distill js -->
+  <script src="/assets/js/distillpub/template.v2.js"></script>
+  <script src="/assets/js/distillpub/transforms.v2.js"></script>
+  <script src="/assets/js/distillpub/overrides.js"></script>
+  
+
+
+<!-- <d-front-matter>
+  <script async type="text/json">{
+      "title": "Test post",
+      "description": "",
+      "published": "November 18, 2024",
+      "authors": [
+        
+      ],
+      "katex": {
+        "delimiters": [
+          {
+            "left": "$",
+            "right": "$",
+            "display": false
+          },
+          {
+            "left": "$$",
+            "right": "$$",
+            "display": true
+          }
+        ]
+      }
+    }</script>
+</d-front-matter> -->
+
+
+
+  <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/">Mathurin Massias' webpage</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <!-- [#&lt;Jekyll::Page @relative_path=&quot;404.html&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/about.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/blog.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/genmodels.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;index.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;assets/css/main.scss&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/optml.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/otml.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/research.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/teaching.md&quot;&gt;, #&lt;Jekyll:Archive @type=category @title=blog @data={&quot;layout&quot;=&gt;&quot;archive-category&quot;}&gt;, #&lt;Jekyll:Archive @type=year @title={:year=&gt;&quot;2024&quot;} @data={&quot;layout&quot;=&gt;&quot;archive-year&quot;}&gt;, #&lt;JekyllRedirectFrom::PageWithoutAFile @relative_path=&quot;redirects.json&quot;&gt;, #&lt;JekyllFeed::PageWithoutAFile @relative_path=&quot;feed.xml&quot;&gt;, #&lt;Jekyll::PageWithoutAFile @relative_path=&quot;sitemap.xml&quot;&gt;, #&lt;Jekyll::PageWithoutAFile @relative_path=&quot;robots.txt&quot;&gt;] -->
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+              <li class="nav-item ">
+                <a class="nav-link" href="/about/">about</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/research/">research</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/teaching/">teaching</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/blog/">blog</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+  <!-- Content -->
+  <div class="post distill">
+
+    <d-title>
+      <h1>Test post</h1>
+      <p></p>
+    </d-title>
+
+    <d-article>
+      
+
+      <p>The Hutchinson trick: a cheap way to evaluate the trace of a Jacobian, without computing the Jacobian itself!</p>
+
+<p>dfsfsd</p>
+
+    </d-article>
+
+    <d-appendix>
+      <d-footnote-list></d-footnote-list>
+      <d-citation-list></d-citation-list>
+    </d-appendix>
+
+  </div>
+
+  <d-bibliography src="/assets/bibliography/biblio.bib"></d-bibliography>
+
+
+
+
+
+
+
         
       </h3>
       <p></p>
@@ -174,6 +822,263 @@
       <h3>
         
           <a class="post-title" href="/presentation_advice/">Advice for presentations or how to avoid losing your audience</a>
+          
+
+
+  <!-- Head -->
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Advice for presentations or how to avoid losing your audience | Mathurin Massias' webpage</title>
+    <meta name="author" content="Mathurin  Massias">
+    <meta name="description" content="Mathurin Massias">
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    <!-- Styles -->
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="/presentation_advice/">
+    
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+  
+
+  <!-- Body -->
+  
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/">Mathurin Massias' webpage</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <!-- [#&lt;Jekyll::Page @relative_path=&quot;404.html&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/about.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/blog.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/genmodels.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;index.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;assets/css/main.scss&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/optml.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/otml.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/research.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/teaching.md&quot;&gt;, #&lt;Jekyll:Archive @type=category @title=blog @data={&quot;layout&quot;=&gt;&quot;archive-category&quot;}&gt;, #&lt;Jekyll:Archive @type=year @title={:year=&gt;&quot;2024&quot;} @data={&quot;layout&quot;=&gt;&quot;archive-year&quot;}&gt;, #&lt;JekyllRedirectFrom::PageWithoutAFile @relative_path=&quot;redirects.json&quot;&gt;, #&lt;JekyllFeed::PageWithoutAFile @relative_path=&quot;feed.xml&quot;&gt;, #&lt;Jekyll::PageWithoutAFile @relative_path=&quot;sitemap.xml&quot;&gt;, #&lt;Jekyll::PageWithoutAFile @relative_path=&quot;robots.txt&quot;&gt;] -->
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+              <li class="nav-item ">
+                <a class="nav-link" href="/about/">about</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/research/">research</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/teaching/">teaching</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/blog/">blog</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="header-background"><div class="img"></div></div>      
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <!-- _layouts/post.html -->
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Advice for presentations or how to avoid losing your audience</h1>
+    <p class="post-meta">September 4, 2024</p>
+    <p class="post-tags">
+      <a href="/blog/2024"> <i class="fas fa-calendar fa-sm"></i> 2024
+      </a>
+
+    </p>
+  </header>
+
+  <article class="post-content">
+    <p>Summary advice given after attending one day of M1 internship presentations at ENS.</p>
+
+<p><strong>TLDR</strong>: Never underestimate how easily and quickly you can lose the audience, and how hard it is for them to catch up afterwards.
+<!-- A presentation is very different from writing a paper or report. -->
+Your slides should only be a visual support for what you say.
+<strong>Technicalities like equations with heavy notation, tables, complex figures are the enemy.</strong>
+Instead, use plenty of examples, figures, simple terms and explanations.</p>
+
+<h2 id="content-choose-the-appropriate-level-of-detail">Content: choose the appropriate level of detail</h2>
+<p>First, select what you want to include in your presentation, and how you want to structure it.</p>
+
+<ul>
+  <li>Choose what you include in the presentation; you do not want to shoehorn all the technical content of your paper/report.
+<strong>The presentation  is not the paper, it is here to highlight the most significant points only</strong>, to make people want to read the paper for more details.
+If you want, have backup slides (after the conclusion) with more details about some point, that you may use during the questions.</li>
+  <li>Contrary to a paper, <strong>slides do not need to be 100% rigorous</strong>, you can (and should!) be fuzzy, informal, have handwavy notation: all this, in order to gain clarity and concision.</li>
+  <li>When working on the presentation, ask yourself: what do I want somebody completely unaware of my research to remember at the end of the talk? What’s my big message? <strong>What are the points that really matter, and what is more of a technical detail</strong> (that should be omitted)?
+  Instead of a “Questions?” slides, end with a recap slide that contains the 3/4 high-level takeaways.</li>
+  <li>Rule of thumb: use at most 10 lines per slide, and spend 1 min/slide. Going over these limits often means that you put too much; you will rush over the slides and lose everyone on slide 2.</li>
+  <li>Announcing your plan is usually not very interesting (introduction, state-of-the-art, presentation of method, results…).
+  Instead, starting with a simplified motivating example allows to get the point quickly. Do not start by introducing all your notation.</li>
+  <li>“A mathematical presentation should content one proof and one joke, and the two should never be the same thing”.
+  If you show proofs, just show an overview, or detail the key innovative step or whatever, but <strong>avoid writing down many lines of complex computations with heavy notation</strong>.</li>
+  <li>Avoid including results tables, they are really hard to parse. Most people that include them end up saying “and this table contains too much to read, but it shows that…”</li>
+  <li>Algorithms are also very hard to parse; the comments are usually more useful than the formulas themselves. Present them saying “those are the important steps, here is what they do” in layman terms; “the main difference with existing algorithms is…”, “the most costly part is this…” but do not ever go step by step through an algorithm</li>
+</ul>
+
+<h2 id="pay-attention-to-form">Pay attention to form</h2>
+<p>Beyond its raw content, the visual aspect of your slide is a powerful tool to convey information easily.</p>
+
+<ul>
+  <li>In your first slide, identify yourself and your lab/structure/school clearly, but also acknowledge the people you’ve worked with (joint work with…/internship under the supervision of…).</li>
+  <li>
+<strong>Avoid at all cost writing long complete sentences</strong>: the audience will read them instead of listening to you.
+  Write only the important parts, to support your talk.
+  The real content of the talk is your speech, not the slides.
+  Somehow, if one can understand the slides just by reading them, it means you do not really provide additional value being there to introduce them.</li>
+  <li>
+<strong>Hierarchize content visually</strong>: use bold and boxes to show the audience the critical content of the slide, play with font size to distinguish the key part from the rest (typically, citations can be made smaller, enumerations too).</li>
+  <li>Make your slides as light as possible: do not number figures (do not even put them in a figure environment), do not number equations, remove the weird navigation bar that latex puts by default. <strong>Every useless information is a distraction from the interesting content</strong>.</li>
+  <li>Colors are very helpful; for example if you display a variation of a previous formula, colorize what has changed.</li>
+  <li>Use all the space in the slide (not by putting more content, but by putting enough space between each item).
+  This is a pain in beamer but it’s mandatory, dull slides will lose your audience faster than anything else.
+  If there is a single figure in your slide it should take the whole space, etc.</li>
+</ul>
+
+<h2 id="spend-time-on-figures">Spend time on figures</h2>
+<p>Those are very important, as a good figure conveys a lot of information quickly.</p>
+<ul>
+  <li>It’s often necessary to <strong>redo the figure specifically for your presentation</strong> (e.g. at least changing the ratio to better fit the slide).
+  Editing the figure, previously saved as pdf, with inkscape or some other tool is often useful in that case.</li>
+  <li>
+<strong>Put xlabels, ylabels, and big enough</strong>. As an exercise, take one presentation of yours, project it on the screen on a slide with a figure, go to the back of the room and check if you’re able to parse it (you won’t).</li>
+  <li>Title and captions are often not needed.</li>
+  <li>A 1-line sentence to interpret the figure, below it (or in the slide title) is summarizes the message.</li>
+</ul>
+
+<h2 id="presenting-style">Presenting style</h2>
+<ul>
+  <li>
+<strong>Rehearse</strong>: your slides should be the support for your speech; if when rehearsing you realize that you’re talking about something that needs visual support, it helps you improve your slides.</li>
+  <li>
+<strong>Start slow</strong> in the introduction/motivating example so that the people completely unfamiliar with your line of work at least get something out of it.
+  We often underestimate how a significant fraction of the audience can be unfamiliar with our line of work.
+  They’ll appreciate being walked through in the first 3/5 min.</li>
+  <li>
+<strong>Make breaks</strong>, emphasize the important parts (such as “if there is one think to remember from the talk it is this result/slide/figure…”)</li>
+  <li>
+<strong>Do some recaps when moving from one part to another</strong>, summarizing in simple terms: “so we’ve seen that the big problem when trying to do X is Y and now we’re going to see how to solve it”.</li>
+  <li>Give orders of magnitude, everything that helps grasp the problem (instead of vague sentences such as “this costs a lot”, “there are many parameters”, “the dimension is high”, “the algorithm takes a lot of time to run”, etc.)</li>
+  <li>Look at the audience rather than your computer or the slides.
+  Having a pointer (its costs 10€) helps.
+  Avoid remaining perfectly still for the whole presentation.</li>
+</ul>
+
+<h2 id="small-but-useful-stuff">Small but useful stuff</h2>
+<ul>
+  <li>Number your slides for easier communication (a member of the audience may note its number to ask a question later), but avoid the “3/n” format: if n is big this is bad for the audience morale.
+  Similarly I find the progress bar on top of the slide, present in default templates, to be utterly depressing (my 2 cents).</li>
+  <li>Citations in slide are tricky: if the format is [ABC24] or [1] then they provide no info to the audience; I strongly recommend “Author et al (2024)”, and to put them in smaller font when they are not critical.</li>
+  <li>Beware of colors in graphs, many projectors are old and render them incorrectly.</li>
+</ul>
+
+<p><em>Thanks to Quentin Bertrand for his input on this post!</em></p>
+
+  </article>
+
+
+  <div id="bibtex-container" class="related">
+    For attribution in academic contexts, please cite this work as
+    <pre id="bibtex-academic-attribution">
+
+  </pre>
+
+    BibTeX citation
+    <pre id="bibtex-box">
+
+  </pre>
+  </div>
+
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <!--    
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        &copy; Copyright 2024 Mathurin  Massias. 
+      </div>
+    </footer> -->
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script defer src="/assets/js/common.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    
+  
+
+
         
       </h3>
       <p></p>
@@ -194,6 +1099,374 @@
       <h3>
         
           <a class="post-title" href="/cnrs_inria_advice/">Advice for CNRS and INRIA recruitment</a>
+          
+
+
+  <!-- Head -->
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Advice for CNRS and INRIA recruitment | Mathurin Massias' webpage</title>
+    <meta name="author" content="Mathurin  Massias">
+    <meta name="description" content="Mathurin Massias">
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    <!-- Styles -->
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="/cnrs_inria_advice/">
+    
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+  
+
+  <!-- Body -->
+  
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/">Mathurin Massias' webpage</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <!-- [#&lt;Jekyll::Page @relative_path=&quot;404.html&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/about.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/blog.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/genmodels.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;index.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;assets/css/main.scss&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/optml.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/otml.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/research.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/teaching.md&quot;&gt;, #&lt;Jekyll:Archive @type=category @title=blog @data={&quot;layout&quot;=&gt;&quot;archive-category&quot;}&gt;, #&lt;Jekyll:Archive @type=year @title={:year=&gt;&quot;2024&quot;} @data={&quot;layout&quot;=&gt;&quot;archive-year&quot;}&gt;, #&lt;JekyllRedirectFrom::PageWithoutAFile @relative_path=&quot;redirects.json&quot;&gt;, #&lt;JekyllFeed::PageWithoutAFile @relative_path=&quot;feed.xml&quot;&gt;, #&lt;Jekyll::PageWithoutAFile @relative_path=&quot;sitemap.xml&quot;&gt;, #&lt;Jekyll::PageWithoutAFile @relative_path=&quot;robots.txt&quot;&gt;] -->
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+              <li class="nav-item ">
+                <a class="nav-link" href="/about/">about</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/research/">research</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/teaching/">teaching</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/blog/">blog</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="header-background"><div class="img"></div></div>      
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <!-- _layouts/post.html -->
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Advice for CNRS and INRIA recruitment</h1>
+    <p class="post-meta">July 25, 2024</p>
+    <p class="post-tags">
+      <a href="/blog/2024"> <i class="fas fa-calendar fa-sm"></i> 2024
+      </a>
+
+    </p>
+  </header>
+
+  <article class="post-content">
+    <p>INRIA and CNRS “chargé de recherche” positions offer unique conditions of freedom to do first-grade research: lifelong contract, no teaching involved. The application process is  challenging, but it’s definitely worth it! The goal of this guide is to make the application process as easy as possible.</p>
+
+<p>It only reflects my particular opinion and limited experience of going through it, and helping people with it for the last 3 years.
+Feedback is most welcome!</p>
+
+<p>INRIA has issued a very useful guide: <a href="https://www.inria.fr/sites/default/files/2021-01/CE_guide-applicant-CRCN.pdf" target="_blank" rel="noopener noreferrer noopener noreferrer">Advice for Applicants for a Young Graduate Scientist Position at INRIA</a>.</p>
+
+<p>The key points are:</p>
+<ul>
+  <li>the application requires lots of work and communication with the teams you apply to: start as soon as possible, no later than October</li>
+  <li>show 5 to 10 years ambition in your research project, depart from your PhD works</li>
+  <li>do not be too technical, neither in the research project, nor in the audition</li>
+  <li>keep in mind that most members of the jury are not expert in your research area</li>
+  <li>ask for a lot of feedback on every part of your application (project discussion and proofreading, audition rehearsals)</li>
+</ul>
+
+<h3 id="most-important-advice-talk-to-many-people">Most important advice: talk to many people</h3>
+<p>Those selection processes are very peculiar and very different from what you’ve been used to in your PhD and postdoc. <strong>You need to talk to as many people as possible!</strong> There are three categories of person to contact:</p>
+<ul>
+  <li>senior researchers having been involved in the process for several years. Talking to past members of the jury is priceless: they will tell you what the jury is looking for in candidates! Current members of the jury will rightfully decline speaking with you, as this is not ethical. Do not put them in an uncomfortable position by contacting them.</li>
+  <li>heads and members of the various teams you apply to. They should give you feedback on your application file, and organize rehearsals with you. If they don’t, it’s not a very good sign.</li>
+  <li>successful past candidates. They will tell you what worked and what didn’t for them. The yearly results are public; for example CNRS ones are available on <a href="https://www.coudert.name/concours_cnrs_2024.html" target="_blank" rel="noopener noreferrer noopener noreferrer">FX Coudert’s website</a>.</li>
+</ul>
+
+<p>Gather as much advice as possible, even if they end up disagreeing: you’ll make your own choices when the time comes.
+<strong>Negative (but constructive) feedback is very precious</strong>: the auditions are very selective, and your project needs to be perfect.
+Negative feedback will help you improve a lot, but hearing negative stuff about projects that you care deeply about is unpleasant and takes its toll, so being surrounded by kind people is also very important.</p>
+
+<p>Do not be afraid of contacting people, even if you don’t know them. Most people are happy to help. Worst can happen is people don’t answer your email. If they don’t, send at least two follow-up emails, waiting around 2 weeks between each. This is typical practice and will not be interpreted as pushy if you are polite in your mail (and concise! go to the point to save people’s time).</p>
+
+<p>Have your PhD and postdoc advisors help you too; beware though that they are very familiar with your work and are not representative of a typical jury member.</p>
+
+<h3 id="global-timeline-start-before-october">Global timeline: start before October!</h3>
+<p><strong>Laying out a full research project for 5/10 years requires several months of intensive work</strong>.
+The CNRS deadline is usually around the beginning of January (in 2024 it was more end of January, we’ll see if it’s a permanent change), the INRIA one is end of January/February. <strong>You must contact the potential hosting teams around October</strong> of the previous year, not after. The teams will ask you to come do a presentation to evaluate your compatibility and discuss a common project, and they will give feedback on your research project.
+All this takes time, so do not wait for December to do it. A team may be interested by your profile, but already have candidates.</p>
+
+<p>If you read this soon enough, I encourage you to <strong>start writing a rough draft of a few pages as soon as you start your postdoc</strong>, and begin working on it research-wise right away: it’s much better if, the day of the audition, the jury sees that your project is grounded in concrete work, that you have already started working on.
+Starting as early as possible will make it  easier to get publications on the topics of your research project, which helps tremendously.</p>
+
+<h3 id="cnrsinria-differences">CNRS/INRIA differences</h3>
+<p>Disclaimer: I know INRIA better.</p>
+
+<ul>
+  <li>
+<strong>research project format</strong>:
+    <ul>
+      <li>INRIA provides a template, your research project should be exactly 3 pages long. Your presentation of 3 selected works is also 3x1 page long, with a predefined structure for each work (description of work, personal contribution, originality and difficulty, impact, diffusion)</li>
+      <li>CNRS does not provide a template; the research project is, from the ones I’ve seen, 10 to 15 pages long, and the summary of past works is around 5 pages.
+  I wrote the CNRS application file first and contracted it + adapted it to my integration team for INRIA.</li>
+    </ul>
+  </li>
+  <li>
+<strong>affectation and integration into hosting team</strong>:
+    <ul>
+      <li>For CNRS the recruitment is national, and you <em>suggest</em> 2 or 3 teams for your integration (if you get accepted, CNRS decides where to send you, which may or may not be one of those teams).
+  You mention the teams, each in a paragraph, at the end of your research project, and spend 30 seconds per team at the end of your oral presentation, to explain why they’d be a good match.
+  You should still work on your integration and know what the people in the team are doing, and how you’d like to work with them, but the philosophy is, very roughly, that you should be able to lead your research in any lab, and that the surrounding people do not matter this much (my 2 cents from gathered feedbacks). This may differ between section 7 (computer science) and section 41 (maths).</li>
+      <li>INRIA is very different: you have one application file per INRIA center (there are 9 in France). Inside a center, you apply for a team (you have the possibility to not specify one, but it makes a bad impression: it means that there is no team for which you are a perfect fit).
+  Your application file is thus very different from CNRS: the targeted team must appear frequently in it. In your whole research project, you must show what you will bring them, what they can help you with, why you are similar but complementary, who you’ll interact with, etc.
+  Finally, for INRIA, since you apply in a team, its support is essential. Even more that for CNRS, you should contact the hosting team early.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="document-1-summary-of-past-research">Document 1: Summary of past research</h3>
+<p>Show that there is coherence in your past works, that you took initiatives, that all your works interact nicely in a grand scheme that defines your identity and uniqueness as a researcher. It should not be perceived as a sequence of unrelated works that were proposed by your PhD advisors.
+<strong>Do not be too technical</strong>, summarize in layman’s term. Show that you understood what were the big challenges of your field, and how you contributed to solving them.</p>
+
+<h3 id="document-2-the-research-project">Document 2: The research project</h3>
+<p>Writing the research project is the hardest (but also very interesting) part of the application. <strong>Ask at least 3 successful candidates from past years their research project, to see what worked</strong>.</p>
+
+<h4 id="the-right-balance-ambitious-but-realistic">The right balance: ambitious but realistic</h4>
+<p>Writing the research project is a very different exercise from what we’re used to in PhD/postdoc research statement.
+Understand that CNRS and INRIA chargé de recherche are lifelong positions. In your project, you must show that you have research ideas for your whole life, and not just for the next 3 years. The difficulty is that your project should:</p>
+<ul>
+  <li>be ambitious: show that you have a direction for roughly the next 10 years</li>
+  <li>be realistic: show that you know where to start, and why you have the tools to solve the problems you’ll consider.</li>
+</ul>
+
+<p>Ideally, you give big directions in which you want to go, and descriptions of concrete ways with which you would start (even better: how you have already started). People usually divide their project into 3 linked axis; each axis should start with something simple (one research idea that you could start working on as soon as you get the position), and then aim for something more distant, that has the right to be less precise.
+The jury knows that research is hard to predict (you won’t probably do everything in your project), but they want to see that you have a plan.</p>
+
+<p><strong>You should avoid at all cost giving the impression that you’ll continue working exactly on what you did during your PhD</strong>. This would make the jury fear that once this line of work dries up, you’ll be left without ideas.
+You should show thematic mobility, while remaining coherent with your past research…</p>
+
+<p>On the other hand, to avoid giving the impression that your project is just wishful thinking, <strong>show the jury that you have already started tackling some of the first steps in your research project</strong> (ideally you have already published it, but if not, it could be by contacting other researchers, by knowing the related literature, by organizing reading groups, etc).
+<strong>In general, if you have only worked on continuation of your PhD project, it sends the jury a very bad signal regarding your autonomy in terms of generating new ideas and directions</strong>.</p>
+
+<h4 id="composition-of-the-jury-speak-to-everybody">Composition of the jury: speak to everybody</h4>
+<p>Your application will be read in details by 1 or 2 expert reviewers, that know your field very well. But, beware that the rest of the jury will be much less familiar with your line of work, and most probably only skim through the introduction. Having a look at the composition of the jury (it is public, for example <a href="https://section7.cnrs.fr/#composition" target="_blank" rel="noopener noreferrer noopener noreferrer">here for Section 7 of CNRS</a> and <a href="https://www.inria.fr/fr/chargees-et-charges-de-recherche-de-classe-normale-crcn" target="_blank" rel="noopener noreferrer noopener noreferrer">here for INRIA in 2024</a>) is a good idea to realize the diversity of your audience - and to guess who your reviewer will be. The reviewer is usually the one that asks the first questions during the audition, so knowing their interests helps you prepare.</p>
+
+<p>In short: <strong>be precise, for the specialists, but be understandable, for the rest of the jury</strong>. We tend to focus on the first part and ignore the second.</p>
+
+<p>To speak to everybody: why is your problem important? which locks do you unlock? how is this different from what everybody does in the field? what are the current barriers in the field and why are you, with your experience, drive and ideas, the perfect person to lift them?
+You need to display maturity, global vision of your field: basically that you’re ready to be an independent, permanent researcher, no longer someone following a mentor.
+Show that what you’re working on has impact, that it’s not a small niche that you plan to exploit all your life: your work should unlock new research venues, be important to others too. Show that these questions are interesting for others, beyond you (using citations for example).</p>
+
+<p>People not so familiar with your field should understand why you’re unique.
+As a personal example: all optimizers (me included) tend to mention that they want to develop faster algorithms, with better guarantees, and less data-hungry. But do some people look for slow algorithms that don’t work and need more data? This does not characterize you at all. Be more precise.</p>
+
+<p>In your project: why are you legitimate for this? What have you accomplished that proves you’ll be able to do all this? Which tools do you master that others don’t?</p>
+
+<p>Give illustrations, give orders of magnitude, do periodic recaps in your talk.  <strong>Never underestimate how quickly someone, even expert, can lose track of what you say</strong>. It is not the time to be subtle: write stuff in bold for members of the jury that will cross-read your research project while you’re talking.</p>
+
+<p>Do not write too much maths, it’s very hard to parse in a short presentation. Show that you are able to popularize your research, to speak to many. <strong>Technicality is the enemy here, you’re not writing a research article, not even an abstract</strong>.</p>
+
+<h3 id="the-oral">The oral</h3>
+<h4 id="timing">Timing</h4>
+<p>Presentations are short (15 min for CNRS section 7, 20 min for INRIA). There is no room for approximation or hesitation, your presentation must be meticulously prepared.</p>
+
+<p>The usual plan is:</p>
+<ul>
+  <li>1 slide of career summary (place and topics for PhD and Postdocs)</li>
+  <li>introduction to research field through selected past works (preferably 2)</li>
+  <li>research project</li>
+  <li>for CNRS, 1 slide integration details (1 min)</li>
+  <li>finish with 1 slide of recap that you leave displayed after the presentation, summarizing who you are (with a catchy, easy to remember project name that summarizes everything)</li>
+</ul>
+
+<p><strong>The research project is the critical part of the presentation and should take around two-thirds of it.</strong>
+On the contrary, the summary of your career and past works basically only serves to justify why you are the ideal person to carry on this research project.
+Be quick on these parts, don’t brag too much. <strong>See it as a stepping stone for the real deal: your project</strong>.</p>
+
+<h4 id="practical-organization-of-the-audition-and-its-consequences-for-you">Practical organization of the audition and its consequences for you</h4>
+
+<p>For CNRS: the jury gathers for 1 week, hears roughly 35 candidates (7/8 per day). Then the weekend passes, and they meet for 3 other days to rank the candidates. That is a lot, and draining.
+When they meet on day 6, one week has passed since they heard the first candidates. They do take notes, but <strong>your goal is to help them remember you</strong>.</p>
+
+<p>They should think: “ah yes, X is the girl who wanted to do this, with those tools, and had done Z in the past”. To achieve this, <strong>it should be very clear for you who you are as a researcher</strong> (which problems you like to work on, what is your methodology to solve them, do you like theory, or practice, or both? Do you want applications? How do you summarize your project in one sentence?). Then, your goal is to communicate that to the jury.</p>
+
+<p>You need to tell a story, that should be reflected in your research project’s name.
+This is a step back on your research that is probably new, but mandatory.</p>
+
+<h4 id="adapted-content">Adapted content</h4>
+<p>The composition of the jury is very important. Out of roughly 15 persons, maybe 2 or 3 only work in your domain.
+Even more than in the research project (that, I think, many members of the jury do not read), it is very important that you <strong>speak to everybody</strong>, at least in the introduction and in your first 2-3 slides.
+You should aim at getting questions from more than 5 persons in the audience, not just the 2-3 experts.</p>
+
+<p>In order not to lose the other members of the jury:</p>
+<ul>
+  <li>your introduction slides should speak to them in general terms</li>
+  <li>having applied examples and drawings helps</li>
+  <li>periodically (especially, when moving from past research to project), remind the audience what you’ve said, and where you’re going, in layman’s term</li>
+</ul>
+
+<p>Various stuff:</p>
+<ul>
+  <li>avoid being too technical (heavy notation, figures that are hard to parse). It’s already very hard to convey information in 15 minutes, be simple.</li>
+  <li><strong>avoid long sentences and heavy slides</strong></li>
+  <li>it’s advised to have 1 slide per minute. If you have more, you probably have too much content.</li>
+  <li>using clear color codes help (e.g. using the same color for a variable in an equation and the corresponding words in the associated sentence); you can also use repeatedly the same color code (green/orange) for short term/long term goals, etc</li>
+  <li>
+<strong>pretty slides matter</strong>. It is not uncommon to spend 2 full weeks on them. Dry slides are to avoid at all costs, they lose the jury’s attention. Use colors, illustrations, boxes around important content.</li>
+  <li>have backup technical slides if you want</li>
+</ul>
+
+<h4 id="rhythm">Rhythm</h4>
+
+<p>You should know your presentation by heart, especially because you’re likely to be stressed in the beginning.
+Then hopefully after a few seconds you get into the presentation; knowing the intro by heart helps getting through this hard phase.
+Be prepared to speak exactly for the amount of time you’re allowed; if it’s too short you missed an opportunity to convey messages, if it’s too long you may get interrupted and appear unprepared.</p>
+
+<p>Do not try to force as much content as possible; on the contrary, taking breaks to summarize what you just said (e.g. after your past works, and before diving into your project) allows jury members outside of your area of expertise to catch up. Remember, you can lose them more easily than you think.</p>
+
+<h4 id="questions">Questions</h4>
+<p>The questions session lasts between 15 min (CNRS) and 20 (INRIA). Answer precisely and concisely. It’s very frustrating for the jury to not be able to ask all their questions for lack of time, because the candidate took too much time to answer some questions.
+It’s OK to say that you don’t know, don’t lie.</p>
+
+<p>Some frequent questions:</p>
+<ul>
+  <li>“if you got funding for a PhD student when you arrive, what would they work on?”. Show that you have thought about it, and that you have a plan (in particular, you don’t have HDR, so you’ll need to take cosupervise the student: with which team member?).</li>
+  <li>“what is THE big problem that you’d want to solve in the next 10 years” this is clearly related to the big question “who are you as a researcher?” whose answer must be crystal clear for you</li>
+  <li>“what is the work that you’re the most proud of”: show that you are able to evaluate your own work, to take a step back on it. It also defines who you are: you like this work because of its practical impact, because it solved a theoretical question, etc.</li>
+  <li>questions about your publication strategy: why this conference vs this journal, open access vs paywalled journal, etc. Show that you are aware of the various things at stake (open access research, publication delays, different audience) and that you did not just follow blindly what your advisors said. Show that you are ready to choose where to publish by yourself.</li>
+</ul>
+
+<h3 id="learn-the-many-implicit-rules">Learn the many implicit rules</h3>
+<p>This is a major reason why you should discuss with people: there are many little unwritten things to know. For example, the year I applied to CNRS, in addition to section 7, I applied for section 41, but in the “mathematics” track. Little did I know that, as an optimizer, I belonged to the “mathematics and applications” track (I did not get auditioned in section 41 :).</p>
+
+<p>For some projects, it’s important to show that you handle applications; for some it’s not, etc. You can only learn of all this by talking to experienced people.</p>
+
+<p>For CNRS, know the different culture and expectations between Sections 6, 7 and 41.</p>
+
+<p>For INRIA, know that the jury likes to see that your project has an applicative part, and a methodological part.</p>
+
+<p>Show that you have been proactive in your preparation: instead of saying “this is something I plan on discussing with member of X of the team”, do it before the audition. If, when you arrive in the team, you plan to go to somebody to obtain data, contact them before the oral. This way you can show the jury that you’ve already done stuff.</p>
+
+<p><em>Thanks to all the people that gave me advice when I was preparing: R. Gribonval, P. Goncalves, A. Gramfort, J. Salmon, L. Rosasco, S. Villa, F. Iutzeler, A. Garivier, J. Malick, R. Flamary, O. Cappé, I. Waldspurger, S. Barthelmé, N. Le Bihan and apologies to anyone I forgot.</em></p>
+
+<!-- epart from what you did previously. it gave you tools and techniques to address a bigger problem, but avoid at all cost giving the impression that you find a nice little niche domain to work on, that you'll continue exploiting for a few years and then run out of ideas.
+ -->
+
+<!-- Yann Traonmilin:
+ would specify that for CNRS section 41 (maths), there should be explicit maths in your project; i.e. what theorems are you going to prove,  explained in a way understandable by a wide audience of mathematicians. -->
+
+  </article>
+
+
+  <div id="bibtex-container" class="related">
+    For attribution in academic contexts, please cite this work as
+    <pre id="bibtex-academic-attribution">
+
+  </pre>
+
+    BibTeX citation
+    <pre id="bibtex-box">
+
+  </pre>
+  </div>
+
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <!--    
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        &copy; Copyright 2024 Mathurin  Massias. 
+      </div>
+    </footer> -->
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script defer src="/assets/js/common.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    
+  
+
+
         
       </h3>
       <p></p>
@@ -214,6 +1487,251 @@
       <h3>
         
           <a class="post-title" href="/blog/alpha_trick/">Finding equivalent for sequences: the alpha trick</a>
+          
+
+
+  <!-- Head -->
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Finding equivalent for sequences: the alpha trick | Mathurin Massias' webpage</title>
+    <meta name="author" content="Mathurin  Massias">
+    <meta name="description" content="Mathurin Massias">
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    <!-- Styles -->
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="/blog/alpha_trick/">
+    
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+  
+
+  <!-- Body -->
+  
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/">Mathurin Massias' webpage</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <!-- [#&lt;Jekyll::Page @relative_path=&quot;404.html&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/about.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/blog.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/genmodels.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;index.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;assets/css/main.scss&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/optml.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/otml.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/research.md&quot;&gt;, #&lt;Jekyll::Page @relative_path=&quot;_pages/teaching.md&quot;&gt;, #&lt;Jekyll:Archive @type=category @title=blog @data={&quot;layout&quot;=&gt;&quot;archive-category&quot;}&gt;, #&lt;Jekyll:Archive @type=year @title={:year=&gt;&quot;2024&quot;} @data={&quot;layout&quot;=&gt;&quot;archive-year&quot;}&gt;, #&lt;JekyllRedirectFrom::PageWithoutAFile @relative_path=&quot;redirects.json&quot;&gt;, #&lt;JekyllFeed::PageWithoutAFile @relative_path=&quot;feed.xml&quot;&gt;, #&lt;Jekyll::PageWithoutAFile @relative_path=&quot;sitemap.xml&quot;&gt;, #&lt;Jekyll::PageWithoutAFile @relative_path=&quot;robots.txt&quot;&gt;] -->
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+              <li class="nav-item ">
+                <a class="nav-link" href="/about/">about</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/research/">research</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/teaching/">teaching</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/blog/">blog</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="header-background"><div class="img"></div></div>      
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <!-- _layouts/post.html -->
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Finding equivalent for sequences: the alpha trick</h1>
+    <p class="post-meta">July 21, 2024</p>
+    <p class="post-tags">
+      <a href="/blog/2024"> <i class="fas fa-calendar fa-sm"></i> 2024
+      </a>
+
+    </p>
+  </header>
+
+  <article class="post-content">
+    <p>The alpha trick is a very cute and efficient trick to find equivalent to sequences defined recursively as \(x_{k+1} = f(x_k)\).</p>
+
+<p>When trying to find an equivalent to the sequence defined by \(x_{k+1} = f(x_k)\), proceed as follows:</p>
+<ul>
+  <li>first show that \(x_k\) converges, and find a transformation of \(x_k\) into \(u_k\) (e.g. \(u_k = 1 / x_k\), etc) such that \(u_k \to 0\)</li>
+  <li>then do a limited development of the recursive equation satisfied by \(u_k\) around 0</li>
+  <li>
+<strong>the key part</strong>: raise the limited development equation to a power \(\alpha\) such that \(u_{k+1}^\alpha - u_k^\alpha\) converges to a non zero limit, say \(\ell\):</li>
+</ul>
+
+\[u^\alpha_{k + 1} - u^\alpha_{k} = \ell + o(1)\]
+
+<ul>
+  <li>apply Cesaro to obtain that \(\frac{\sum_{k=1}^n u^\alpha_{k + 1} - u^\alpha_{k}}{n} \to \ell\), which means that \(u_{k}^\alpha \sim \ell k\).</li>
+  <li>convert this back to an equivalent in \(x_k\)</li>
+</ul>
+
+<h3 id="first-example-gradient-descent-on-the-exponential">First example: gradient descent on the exponential</h3>
+<p>The best application I know of this trick is to study the iterates of gradient descent on \(F: x \mapsto \exp(-x)\).
+My motivation to to study this was that a minimizer does not exist (\(F &gt; 0\) but \(F\) goes to 0 at infinity), so the classical convergence rates results in \(\mathcal{O}(1/k)\) do not apply.
+I wondered if we could say anything about the convergence speed anyways?</p>
+
+<p>Consider gradient descent iterates on \(f\), started at 0.
+We easily see that such iterates will remain positive; when restricted to \(\mathbb{R}_+\), \(f\) is 1-smooth, so we take a stepsize of 1.
+Our iterates are thus:</p>
+
+\[x_{k+1} = x_k - \exp(-x_k) \, .\]
+
+<p>Writing \(u_k = f(x_k) = \exp(-x_k)\), one obtains from the above equation:
+\(u_{k+1} = u_k \exp(-u_k)\), with \(u_0 = 1 &gt; 0\).</p>
+
+<p>The sequence \((u_k)\) remains positive, hence \(\exp(-u_k) \leq 1\) and \(u_k\) decreases.
+Being in addition lower bounded, \(u_k\) converges; the limit must be a fixed point: it is 0.
+Hence, by doing a limited development of \(u_{k} \exp(-u_k)\) around 0:</p>
+
+<p>\(\begin{align}
+    u_{k+1} &amp;= u_k (1 - u_k + o(u_k)) \\
+    u_{k+1}^\alpha &amp;= u_k^\alpha (1 - u_k + o(u_k))^\alpha \\
+        &amp;= u_k^\alpha (1 - \alpha u_k + o(u_k))\\
+        &amp;= u_k^\alpha - \alpha u_k^{\alpha + 1} + o(u_k^{\alpha + 1})
+\end{align}\)
+We see the power of the trick here: by raising the equation to the power \(\alpha\), we will be able to transform the \(-\alpha u_k^{\alpha + 1}\) into a constant!
+Indeed, picking \(\alpha=-1\) allows us to obtain \(u_{k+1}^{-1} - u_k^{-1} \to 1\).
+Hence \(\frac{\sum_0^n u_{k+1}^{-1} - u_k^{-1}}{n+1} \to 1\), and \(u_k \sim 1/k\).</p>
+
+<p>So we retain the convergence rate in \(1/k\), which I find very nice!</p>
+
+<p>One may wonder at which speed \(x_k\) goes to infinity; here \(u_k \to 0\) so it stays bounded away from 1 at infinity, and thus we can compose the equivalent by the log function: \(\log u_k \sim \log(1/k)\), and since \(\log u_k = -x_k\), the GD iterates \(x_k\) are equivalent to \(\log k\).</p>
+
+<h2 id="second-example-nesterovs-sequence">Second example: Nesterov’s sequence</h2>
+<p>Let \(t_{k+1} = \frac{1 + \sqrt{1 + 4 t_k^2}}{2}\), the infamous sequence appearing in Nesterov’s original accelerated algorithm.
+Let’s use the alpha trick to find an equivalent to \(t_k\).
+One has \(t_{k+1} \geq t_k +1/2\) so we cannot hope for convergence; consider \(u_k = 1/t_k\) instead:</p>
+
+\[u_{k+1} = \frac{2}{1 + \sqrt{1 + 4 / u_k^2}}\]
+
+<!-- This sequence is positive and decreasing, so it converges, and its limit is a fixed point, so it's 0. -->
+<p>SInce \(t_k \to + \infty\), \(u_k \to 0\), and</p>
+
+\[\begin{align}
+    u_{k+1} &amp;= \frac{2}{1 + \sqrt{1 + 4/u_k^2}} \\
+    &amp;= \frac{2 u_k}{u_k + 2 \sqrt{u_k^2/4 + 1}} \\
+    % &amp;= \frac{2 u_k}{u_k + 2 (1 + u_k^2/8 + o(u_k^2))} \\
+    &amp;= \frac{u_k}{1 + u_k/2 + o(u_k)} \\
+    &amp;= u_k (1 - u_k/2 + o(u_k)) \\
+    u_{k+1}^\alpha &amp;= u_k^\alpha (1 - \alpha u_k/2 + o(u_k)) \\
+    u_{k+1}^\alpha &amp;= u_k^\alpha - \alpha u_k^{\alpha + 1}/2 + o(u_k^{\alpha + 1})
+\end{align}\]
+
+<p>Hence picking \(\alpha = -1\), \(u_{k+1}^{-1} - u_k^{-1} \to 1/2\) and so \(u_k \sim 2/k\) and finally \(t_k \sim k/2\).</p>
+
+<!-- This shows why people often study the momentum in Nesterov/FISTA as $$\frac{k - 1}{k + 2}$$.  -->
+
+  </article>
+
+
+  <div id="bibtex-container" class="related">
+    For attribution in academic contexts, please cite this work as
+    <pre id="bibtex-academic-attribution">
+
+  </pre>
+
+    BibTeX citation
+    <pre id="bibtex-box">
+
+  </pre>
+  </div>
+
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <!--    
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        &copy; Copyright 2024 Mathurin  Massias. 
+      </div>
+    </footer> -->
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script defer src="/assets/js/common.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    
+  
+
+
         
       </h3>
       <p></p>
