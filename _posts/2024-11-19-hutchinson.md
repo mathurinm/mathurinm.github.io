@@ -4,6 +4,13 @@ title:  "The Hutchinson trick"
 date:   2024-11-19 00:00:00 +0200
 permalink: blog/hutchinson/
 bibliography: biblio.bib
+_styles: >
+  /* JUSTIFY MOST OF THE DOCUMENT */
+  body .preamble ~ * {
+    &:not(.definition, .theorem, .boxed) {
+      text-align: justify;
+    }
+  }
 ---
 
 The Hutchinson trick: a cheap way to evaluate the trace of a Jacobian, without computing the Jacobian itself!
@@ -167,4 +174,4 @@ $$
 \bbE_z [(Az) \odot z] = \diag(A)
 $$
 
-The proof is very similar to the first one. This technique allows evaluating the diagonal of the Hessian of a neural network $$g: \bbR \to \bbR$$, using Hessian-vector product (see [this great blog post](https://iclr-blogposts.github.io/2024/blog/bench-hvp/)), which has applications in neural network pruning for example. See more in Section 9.3 of <d-cite key="blondel2024elements"/>.
+The proof is very similar to the first one. This technique allows evaluating the diagonal of the Hessian of a neural network $$g: \bbR \to \bbR$$, using Hessian-vector product (see [this great blog post](https://iclr-blogposts.github.io/2024/blog/bench-hvp/)), which has applications in neural network pruning for example. See more in Section 9.8 of <d-cite key="blondel2024elements"/>.
