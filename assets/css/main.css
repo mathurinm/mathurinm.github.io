@@ -16,7 +16,7 @@
   --global-footer-text-color: #e8e8e8;
   --global-footer-link-color: #ffffff;
   --global-distill-app-color: #828282;
-  --global-divider-color: rgba(0,0,0,.1);
+  --global-divider-color: rgba(0, 0, 0, .1);
   --global-card-bg-color: #ffffff;
 }
 :root .fa-sun {
@@ -32,16 +32,6 @@
 }
 :root .repo-img-dark {
   display: none;
-}
-
-.header-background .img {
-  background-image: url("../img/ICLR-logo.png");
-  background-repeat: no-repeat;
-  background-size: 400px;
-  background-position: center bottom;
-  height: 12em;
-  margin-bottom: 0em;
-  margin-top: -2.7em;
 }
 
 html[data-theme=dark] {
@@ -90,8 +80,21 @@ body {
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
 }
-body h1, body h2, body h3, body h4, body h5, body h6 {
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
   scroll-margin-top: 66px;
+}
+
+.page-content {
+  text-align: justify;
+}
+
+.body {
+  text-align: justify;
 }
 
 body.fixed-top-nav {
@@ -119,7 +122,18 @@ body.sticky-bottom-footer {
 /*******************************************************************************
  * Styles for the base elements of the theme.
  ******************************************************************************/
-p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+div,
+li,
+span,
+strong {
   color: var(--global-text-color);
 }
 
@@ -127,25 +141,30 @@ hr {
   border-top: 1px solid var(--global-divider-color);
 }
 
-table td, table th {
+table td,
+table th {
   color: var(--global-text-color);
 }
 table td {
   font-size: 1rem;
 }
 
-a, table.table a {
+a,
+table.table a {
   color: var(--global-theme-color);
 }
-a:hover, table.table a:hover {
+a:hover,
+table.table a:hover {
   color: var(--global-theme-color);
   text-decoration: underline;
 }
-a:hover:after :not(.nav-item.dropdown), table.table a:hover:after :not(.nav-item.dropdown) {
+a:hover:after :not(.nav-item.dropdown),
+table.table a:hover:after :not(.nav-item.dropdown) {
   width: 100%;
 }
 
-figure, img {
+figure,
+img {
   max-width: 90vw;
 }
 
@@ -187,12 +206,13 @@ blockquote {
   align-items: center;
 }
 
-.citation, .citation-number {
+.citation,
+.citation-number {
   color: var(--global-theme-color);
 }
 
 .profile {
-  width: 100%;
+  width: 50%;
 }
 .profile .address {
   margin-bottom: 5px;
@@ -206,6 +226,7 @@ blockquote {
 
 .profile.float-right {
   margin-left: 1rem;
+  width: 20%;
 }
 
 .profile.float-left {
@@ -416,7 +437,8 @@ footer.sticky-bottom {
   justify-content: center;
   display: flow-root;
 }
-.tag-list ul p, .tag-list ul li {
+.tag-list ul p,
+.tag-list ul li {
   list-style: none;
   display: inline-block;
   padding: 1rem 0.5rem;
@@ -431,18 +453,18 @@ footer.sticky-bottom {
 .post-list li {
   border-bottom: 1px solid var(--global-divider-color);
   list-style: none;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0rem;
 }
 .post-list li .post-meta {
   color: var(--global-text-color-light);
   font-size: 0.875rem;
-  margin-bottom: 0;
+  margin-bottom: 0.2rem;
 }
 .post-list li .post-tags {
   color: var(--global-text-color-light);
   font-size: 0.875rem;
-  padding-top: 0.25rem;
+  padding-top: 0rem;
   padding-bottom: 0;
 }
 .post-list li a {
@@ -489,7 +511,8 @@ footer.sticky-bottom {
   display: flex;
   align-items: center;
 }
-.projects .grid-sizer, .projects .grid-item {
+.projects .grid-sizer,
+.projects .grid-item {
   width: 250px;
   margin-bottom: 10px;
 }
@@ -639,7 +662,8 @@ pre {
   border-radius: 6px;
   padding: 6px 12px;
 }
-pre pre, pre code {
+pre pre,
+pre code {
   background-color: transparent;
   border-radius: 0;
   padding: 0;
@@ -799,6 +823,13 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
   d-article d-contents nav {
     grid-column: none;
   }
+}
+.page-content {
+  text-align: justify;
+}
+
+.body {
+  text-align: justify;
 }
 
 /*# sourceMappingURL=main.css.map */
