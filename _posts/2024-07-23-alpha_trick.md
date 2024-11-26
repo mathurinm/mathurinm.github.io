@@ -2,6 +2,7 @@
 layout: post
 title:  "Finding equivalent for sequences: the alpha trick"
 date:   2024-07-22 00:00:00 +0200
+categories: blog
 ---
 
 The alpha trick is a very cute and efficient trick to find equivalent to sequences defined recursively as $$x_{k+1} = f(x_k)$$.

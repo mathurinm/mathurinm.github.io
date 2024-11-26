@@ -10,9 +10,6 @@ pagination:
   permalink: /page/:num/
   per_page: 12
   sort_reverse: true
-  trail:
-    before: 1 # The number of links before the current page
-    after: 3  # The number of links after the current page
 ---
 
 <div class="post">
@@ -21,6 +18,8 @@ pagination:
     <h1>{{ site.blog_name }}</h1>
     <h2>{{ site.blog_description }}</h2>
   </div> -->
+  inspect paginator
+  {{ paginator | inspect }}
  trucs à jour debug
  <ul>
   {% for post in paginator.posts %}
