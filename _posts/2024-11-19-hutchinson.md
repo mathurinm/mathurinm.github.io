@@ -2,7 +2,7 @@
 layout: distill
 title:  "The Hutchinson trick"
 date:   2024-11-19 00:00:00 +0200
-permalink: /:title/
+permalink: blog/hutchinson/
 bibliography: biblio.bib
 ---
 
