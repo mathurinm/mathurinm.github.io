@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: distill
 title:  "Advice for CNRS and INRIA recruitment"
 date:   2024-07-25 11:41:41 +0200
 permalink:  /:title/

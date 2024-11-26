@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: distill
 title:  "Advice for presentations or how to avoid losing your audience"
 date:   2024-09-05 00:00:00 +0200
 permalink:  /:title/

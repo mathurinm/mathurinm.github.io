@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: distill
 title:  "Finding equivalent for sequences: the alpha trick"
 date:   2024-07-22 00:00:00 +0200
 ---
