@@ -28,6 +28,9 @@
 <loc>/about/</loc>
 </url>
 <url>
+<loc>/blog/</loc>
+</url>
+<url>
 <loc>/genmodels/</loc>
 </url>
 <url>
@@ -47,8 +50,5 @@
 </url>
 <url>
 <loc>/blog/2024/</loc>
-</url>
-<url>
-<loc>/blog/</loc>
 </url>
 </urlset>
