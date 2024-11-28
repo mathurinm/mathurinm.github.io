@@ -13,7 +13,13 @@ Mathurin Massias, Titouan Vayer, Quentin Bertrand.
 
 ## Material
 - [slides for 1st lecture (20/11/2014)](/assets/2024_ens_ot/course_intro.pdf )
+- [course notes on Hungarian algorithm](/assets/2024_ens_ot/hungarian.pdf)
+- [course notes on the Simplex algorithm](/assets/2024_ens_ot/simplex.pdf)
+
+Homeworks:
 - [1st homework](/assets/2024_ens_ot/homework1.pdf) (due 27/11/2024)
+- [2nd homework (long one)](/assets/2024_ens_ot/homework2_auction.pdf) (due 20/12/2024)
+- [3rd homework](/assets/2024_ens_ot/homework3_bregman.pdf) (due 04/12/2024)
 
 ## Syllabus
 - Discrete optimal transport: optimal assignment, Kantorovich problem, simplex/max flow algorithm
