@@ -25,8 +25,8 @@ Homeworks:
 
 ## Syllabus
 - Discrete optimal transport: optimal assignment, Kantorovich problem, simplex/max flow algorithm
-- Duality of OT: C-transforms, dual ascent,
-- Entropic regularization of OT: Sinkhorn algorithm, interpretation as mirror descent, practical implementations
+- Duality of OT: C-transforms, dual ascent
+- Entropic regularization of OT: Sinkhorn-Knopp algorithm, various interpretations, practical implementations, Sinkhorn divergence
 - Applications to domain adaptation, introduction to other regularizations (Laplacian), unbalanced optimal transport and its connexions with sparse optimization
 - Applications to color transfer
 - Comparing distributions from different spaces: Gromov-Wasserstein and its extensions: Franck Wolfe and entropic regularization, and Bregman algorithms for the Gromov and fused-Gromov-Wasserstein problems
