@@ -23,7 +23,7 @@ Homeworks:
 - [2nd homework (long one)](/assets/2024_ens_ot/homework2_auction.pdf) (due 20/12/2024)
 - [3rd homework](/assets/2024_ens_ot/homework3_bregman.pdf) (due 04/12/2024)
 - [lab 1](/assets/2024_ens_ot/lab1.pdf) (done on 05/12/2024)
-- [lab 1](/assets/2024_ens_ot/lab2.pdf) (done on 12/12/2024)
+- [lab 2](/assets/2024_ens_ot/lab2.pdf) (done on 12/12/2024)
 
 ## Syllabus
 - Discrete optimal transport: optimal assignment, Kantorovich problem, simplex/max flow algorithm
