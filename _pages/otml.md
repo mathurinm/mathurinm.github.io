@@ -17,6 +17,7 @@ Mathurin Massias, Titouan Vayer, Quentin Bertrand.
 - [course notes on Hungarian algorithm](/assets/2024_ens_ot/hungarian.pdf)
 - [course notes on entropic optimal transport](/assets/2024_ens_ot/entropic.pdf)
 - [slides for domain adaptation lecture (11/12/2014)](/assets/2024_ens_ot/course_da.pdf )
+- [slides for Gromov-Wasserstain lecture (19/12/2014)](/assets/2024_ens_ot/course_gromov.pdf)
 
 Homeworks:
 - [1st homework](/assets/2024_ens_ot/homework1.pdf) (due 27/11/2024)
