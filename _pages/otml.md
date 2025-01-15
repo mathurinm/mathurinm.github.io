@@ -17,7 +17,7 @@ Mathurin Massias, Titouan Vayer, Quentin Bertrand.
 - [course notes on Hungarian algorithm](/assets/2024_ens_ot/hungarian.pdf)
 - [course notes on entropic optimal transport](/assets/2024_ens_ot/entropic.pdf)
 - [slides for domain adaptation lecture (11/12/2014)](/assets/2024_ens_ot/course_da.pdf )
-- [slides for Gromov-Wasserstain lecture (19/12/2014)](/assets/2024_ens_ot/course_gromov.pdf)
+- [slides for Gromov-Wasserstein lecture (19/12/2014)](/assets/2024_ens_ot/course_gromov.pdf)
 
 Homeworks:
 - [1st homework](/assets/2024_ens_ot/homework1.pdf) (due 27/11/2024)
@@ -25,6 +25,7 @@ Homeworks:
 - [3rd homework](/assets/2024_ens_ot/homework3_bregman.pdf) (due 04/12/2024)
 - [lab 1](/assets/2024_ens_ot/lab1.pdf) (done on 05/12/2024)
 - [lab 2](/assets/2024_ens_ot/lab2.pdf) (done on 12/12/2024)
+- [lab 3](/assets/2024_ens_ot/lab3.pdf) (done on 15/01/2025)
 
 ## Syllabus
 - Discrete optimal transport: optimal assignment, Kantorovich problem, simplex/max flow algorithm
