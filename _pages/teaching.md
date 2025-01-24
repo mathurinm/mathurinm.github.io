@@ -19,7 +19,7 @@ Class details are [here](/otml).
 
 The goal of the class is to cover theoretical aspects and practical Python implementations of popular optimization algorithms in machine learning, with a focus on modern topics: huge scale models, automatic differentiation, deep learning, implicit bias, etc.
 
-[**Notes for the class are here**]({{ site.baseurl }}{% link /assets/2022_ens/class.pdf  %}){:target="_blank"}{:rel="noopener noreferrer"}.
+[Notes for the class are here]({{ site.baseurl }}{% link /assets/2022_ens/class.pdf  %}){:target="_blank"}{:rel="noopener noreferrer"}.
 
 **Schedule**: From November 21st onwards: Tuesday 08 h 00, Wednesday 13 h 30 (room B1).
 
