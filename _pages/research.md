@@ -9,10 +9,11 @@ nav_order: 2
 ## Papers
 - 2025
     - A. Gagneux, M. Massias, E. Soubies, R. Gribonval, [Convexity in ReLU Neural Networks: beyond ICNNs?](https://arxiv.org/abs/2501.03017), submitted.
+    - C. Pouliquen, M. Massias, T. Vayer, [Schur's Positive-Definite Network: Deep Learning in the SPD cone with structure](https://arxiv.org/abs/2406.09023), ICLR 2025.
 
 - 2024
-    - A. Gagneux, M. Massias, E. Soubies, Automated and Unbiased Coefficient Clustering with Non Convex SLOPE, submitted.
-    - C. Pouliquen, M. Massias, T. Vayer, [Schur's Positive-Definite Network: Deep Learning in the SPD cone with structure](https://arxiv.org/abs/2406.09023), submitted.
+    - A. Gagneux, M. Massias, E. Soubies, Proximal Operators of Non Convex SLOPE, submitted.
+
 - 2023
     - J. Larsson, Q. Klopfenstein, M. Massias, J. Wallin, [Coordinate descent for SLOPE](https://arxiv.org/abs/2210.14780), AISTATS 2023.
     - B. Moufad, P.-A. Bannier, Q. Bertrand, Q. Klopfenstein, M. Massias, [skglm: improving scikit-learn for regularized Generalized Linear Models](/assets/pdf/skglm_mloss.pdf), submitted to JMLR OSS.
@@ -34,7 +35,7 @@ nav_order: 2
         [Iterative regularization for convex regularizers](https://arxiv.org/abs/2006.09859), AISTATS 2021. [code](https://LCSL.github.io/iterreg)
 
 - 2020
-    -    M. Massias\**, Q. Bertrand\**, A. Gramfort, J. Salmon,
+    -    M. Massias\*, Q. Bertrand\*, A. Gramfort, J. Salmon,
         [Support recovery and sup-norm convergence rates for sparse pivotal estimation](https://arxiv.org/abs/2001.05401), AISTATS 2020.
     -   M. Massias, S. Vaiter, A. Gramfort, J. Salmon,
         [Dual extrapolation for sparse Generalized Linear Models](https://jmlr.org/papers/v21/19-587.html), JMLR. [celer library](https://github.com/mathurinm/celer)
@@ -42,7 +43,7 @@ nav_order: 2
 - 2019
     -   P. Ablin, T. Moreau, M. Massias, A. Gramfort,
         [Learning step sizes for unfolded sparse coding](https://arxiv.org/abs/1905.11071), NeurIPS 2019.
-    -   Q. Bertrand\**, M. Massias\**, A. Gramfort, J. Salmon,
+    -   Q. Bertrand\*, M. Massias\*, A. Gramfort, J. Salmon,
         [Handling correlated and repeated measurements with the smoothed multivariate square-root Lasso](https://arxiv.org/abs/1902.02509), NeurIPS 2019.
         [code](https://github.com/QBE/clar)
 
