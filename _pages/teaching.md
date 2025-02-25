@@ -14,6 +14,10 @@ Class details are [here](/genmodels).
 
 Class details are [here](/otml).
 
+### Fundamentals of Machine Learning, M1 ENS 2024-2025
+
+- Material for the *Ensemble method* class (26/02/2025) is [here](/assets/2025_ens_fml/ensemble_methods.zip).
+
 
 ### Optimization for large scale Machine Learning, M2 ENS 2022-2024
 
