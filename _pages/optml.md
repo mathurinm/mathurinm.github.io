@@ -24,15 +24,17 @@ The class studies the success of algorithms for large scale deep learning proble
 15 x 2 h of class/labs, oral presentation
 
 ## Validation
-2 Labs, homeworks and one oral written exam
+2 Labs, weekly homeworks and one oral written exam
 
 ## Ressources
--  Lectures on Convex Optimization: Y. Nesterov, 2018. An updated version of one of the reference books in optimization.
-- First order methods in optimization, A. Beck, 2019.
-- Convex optimization: algorithms and complexity, S. Bubeck, 2015. A short monograph (100 pages) covering basic topics.
-
+- _Introductory lectures on convex optimization: a basic course_, Y. Nesterov, 2004. A reference book in optimization, updated in 2018: _Lectures on Convex Optimization_.
+- _First order methods in optimization_, A. Beck, 2019.
+- _Convex optimization: algorithms and complexity_, S. Bubeck, 2015. A short monograph (100 pages) covering basic topics.
 
 ## Prerequisite
 - Differential calculus: gradient, Hessian
 - Notions of convexity
 - Linear algebra: eigenvalue decomposition, singular value decomposition
+
+
+
