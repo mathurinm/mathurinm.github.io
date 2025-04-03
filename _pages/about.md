@@ -39,7 +39,7 @@ and [Alexandre Gramfort](http://alexandre.gramfort.net/).
 In my PhD, I improved the efficiency of brain signals reconstruction algorithms
 (more details [here](http://www.theses.fr/s163051)), which involves optimization, sparsity and high dimensional statistics. I received the PGMO PhD prize for this work.
 You can find more details on my résumé
-    ([French (01/2021)](assets/pdf/CV_Mathurin_MASSIAS.pdf), [English (09/2024)](./assets/pdf/CV_Mathurin_MASSIAS_EN.pdf)) and my
+    ([French (01/2021)](/assets/pdf/CV_Mathurin_MASSIAS.pdf), [English (09/2024)](/assets/pdf/CV_Mathurin_MASSIAS_EN.pdf)) and my
  [list of publications](/research).
 
 ## Team and alumni
@@ -61,7 +61,7 @@ You can find more details on my résumé
 - 06/24: With Elsa Cazelles, Thomas Moreau, Aymeric Dieuleveut and Lorenzo Rosasco we organized LOL 2024 (Learning and optimization in Luminy) in CIRM. It was a blast, we are planning to hold the 4th edition in the first semester of 2026: stay tuned!
 - 03/24: We organized the SMAI MODE days in Lyon, from march 27th to march 29th. A minicourse on optimal transport by Gabriel Peyré and Yann Brenier was held at ENS de Lyon on the 25th and 26th.
 - 10/23 With Titouan Vayer and the help of GDR MIA we organized a [thematic day on dimension reduction](https://gdr-mia.math.cnrs.fr/events/dimreduc) at ENS Lyon.
-- Our paper on Coordinate descent for SLOPE was accepted to AISTATS'23! [Slides of the paper](./assets/pdf/slides_slope.pdf) presented at the Statistical Learning Seminar
+- Our paper on Coordinate descent for SLOPE was accepted to AISTATS'23! [Slides of the paper](/assets/pdf/slides_slope.pdf) presented at the Statistical Learning Seminar
 - 2 papers accepted at Neurips'22, on benchopt and skglm.
 - I gave a course on convex optimization at the [Computation and Modelling school](https://wmat.pwr.edu.pl/en/cm2022 ) in Wrocław; resources are on my teaching page.
 - [celer 0.7](https://github.com/mathurinm/celer) is released, with a fast ElasticNet solver thanks to [Badr Moufad](https://github.com/Badr-MOUFAD )!
