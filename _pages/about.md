@@ -43,9 +43,10 @@ You can find more details on my résumé
  [list of publications](/research).
 
 ## Team and alumni
+- [Anne Gagneux](https://annegnx.github.io), PhD student from Ponts/MVA co-supervised with Emmanuel Soubies and Rémi Gribonval, since April 2023
+- [Can Pouliquen](https://perceptronium.github.io), PhD student cosupervised with Titouan Vayer and Paulo Gonçalves, since November 2022
 - [Maël Chaumette](https://www.linkedin.com/in/ma%C3%ABl-chaumette), M2 intern from ENSAI co-supervised with Rémi Gribonval, April 2024 - Sept. 2024.
-- [Anne Gagneux](https://annegnx.github.io), PhD student from MVA co-supervised with Emmanuel Soubiès and Rémi Gribonval, since April 2023
-- [Can Pouliquen](https://perceptronium.github.io), PhD student with Titouan Vayer and Paulo Gonçalves, since November 2022
+- [Florian Kozikowski](https://www.linkedin.com/in/florian-kozikowski/), M1 Intern from Polytechnique, April 2025 - Aug. 2025.
 - [Badr Moufad](https://github.com/Badr-MOUFAD/), research engineer, April 2022 - Dec. 2023. Now Phd student at Ecole Polytechnique.
 - [Pierre-Antoine Bannier](https://github.com/PABannier), Master thesis for Polytechnique/HEC, May 2022.
 - Célio Léonard-Collado, Master thesis, with D. Perrot, May 2024.
@@ -55,6 +56,7 @@ You can find more details on my résumé
 
 
 ## News
+- 04/25: With Quentin Bertrand we will organize a minisymposium on generative modelling and optimal transport at SMAI 2025, see you in Bordeaux!
 - 03/25: We organized a [thematic day on bilevel optimization](https://gdr-iasis.cnrs.fr/reunions/bilevel-optimization-and-hyperparameter-learning/) at ENS Lyon with Jordan Frécon and Quentin Bertrand
 - 02/25: With Anne Gagneux, Ségolène Martin, Rémi Emonet and Quentin Bertrand, our [blog post on Flow matching](https://dl.heeere.com/cfm/) was accepted at ICLR 2025's blog post track.
 - 06/24: I am happy to have joined the committee of SMAI's MODE group (optimization-related group of the French Society for Applied and Industrial Mathematics).
