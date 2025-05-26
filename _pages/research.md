@@ -6,10 +6,11 @@ nav: true
 nav_order: 2
 ---
 
-## Papers
+## Publications
 - 2025
-    - A. Gagneux, M. Massias, E. Soubies, R. Gribonval, [Convexity in ReLU Neural Networks: beyond ICNNs?](https://arxiv.org/abs/2501.03017), submitted.
+    - A. Gagneux, M. Massias, E. Soubies, R. Gribonval, [Convexity in ReLU Neural Networks: beyond ICNNs?](https://arxiv.org/abs/2501.03017), Journal of Mathematical Imaging and Vision, 2025.
     - C. Pouliquen, M. Massias, T. Vayer, [Schur's Positive-Definite Network: Deep Learning in the SPD cone with structure](https://arxiv.org/abs/2406.09023), ICLR 2025.
+    - A. Gagneux, S. Martin, R. Emonet, Q. Bertrand, M. Massias [A Visual Dive into Conditional Flow Matching](https://iclr-blogposts.github.io/2025/blog/conditional-flow-matching/), blogpost track @ICLR2025.
 
 - 2024
     - A. Gagneux, M. Massias, E. Soubies, Proximal Operators of Non Convex SLOPE, submitted.

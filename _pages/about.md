@@ -22,11 +22,11 @@ social: false  # includes social icons at the bottom of the page
 
 I am a tenured researcher (*Chargé de recherche*) in Inria Lyon, in the OCKHAM team, working in Machine Learning. I am also a part-time lecturer (Professeur chargé de cours) at Ecole Polytechnique (Python for datasciences, statistics), and I teach in ENS de Lyon (machine and deep learning, optimization, optimal transport, generative models).
 
-I have a keen interest in the Python programming language: I am the lead developer
-of [celer](https://mathurinm.github.io/celer/) (fastest Lasso solver) and  [skglm](https://contrib.scikit-learn.org/skglm) (fast and flexible sklearn GLMs). I am also a core developer of [benchopt](https://github.com/benchopt/benchopt), a benchmarking framework that makes optimization benchmarks easy, transparent and reproducible.
-To foster scientific reproducibility, my papers usually come with Python packages to reproduce my experiments and make my code available to the community (e.g. [Anderson acceleration for coordinate descent](https://mathurinm.github.io/andersoncd/auto_examples/index.html) or [Iterative regularization for convex regularizers](https://LCSL.github.io/iterreg/auto_examples/index.html))
+I have a keen interest in the Python programming language: I am the lead developer of [skglm](https://contrib.scikit-learn.org/skglm) (fast and flexible sklearn GLMs) and [celer](https://mathurinm.github.io/celer/) (fastest Lasso solver).
+I am also a core developer of [benchopt](https://github.com/benchopt/benchopt), a benchmarking framework that makes optimization benchmarks easy, transparent and reproducible.
+<!-- To foster scientific reproducibility, my papers usually come with Python packages to reproduce my experiments and make my code available to the community (e.g. [Anderson acceleration for coordinate descent](https://mathurinm.github.io/andersoncd/auto_examples/index.html) or [Iterative regularization for convex regularizers](https://LCSL.github.io/iterreg/auto_examples/index.html)) -->
 
-I am an associate editor for [Computo](https://computo.sfds.asso.fr/), a journal promoting reproducibility through a novel publication format, and for TMLR; I am also an Area Chair for NeurIPS and ICML.
+I am an Area Chair for NeurIPS and ICML, and an associate editor for TMLR; I was previously involved as associated editor for [Computo](https://computo.sfds.asso.fr/), a journal promoting reproducibility through a novel publication format.
 
 I co-organize the [Machine Learning and Signal Processing seminar](https://www.ens-lyon.fr/PHYSIQUE/seminars/machine-learning-and-signal-processing) at ENS Lyon, send me a message if you want to present your work there!
 
@@ -37,26 +37,29 @@ I hold a PhD from Télécom Paris and Inria Saclay
     [Joseph Salmon](https://josephsalmon.eu/)
 and [Alexandre Gramfort](http://alexandre.gramfort.net/).
 In my PhD, I improved the efficiency of brain signals reconstruction algorithms
-(more details [here](http://www.theses.fr/s163051)), which involves optimization, sparsity and high dimensional statistics. I received the PGMO PhD prize for this work.
+(more details [here](http://www.theses.fr/s163051)), which involved optimization, sparsity and high dimensional statistics. I received the PGMO PhD prize for this work.
 You can find more details on my résumé
     ([French (01/2021)](/assets/pdf/CV_Mathurin_MASSIAS.pdf), [English (09/2024)](/assets/pdf/CV_Mathurin_MASSIAS_EN.pdf)) and my
  [list of publications](/research).
+
+
+## Job offers
+- We have a Research engineer position (1 or 2 years) to work on machine learning, imaging and benchmarking in Lyon. It may be of interest for M2 students willing to try the research environment for a year before deciding to pursue a PhD, or PhD holders willing to strengthen their coding skills before moving to industry.
 
 ## Team and alumni
 - [Anne Gagneux](https://annegnx.github.io), PhD student from Ponts/MVA co-supervised with Emmanuel Soubies and Rémi Gribonval, since April 2023
 - [Can Pouliquen](https://perceptronium.github.io), PhD student cosupervised with Titouan Vayer and Paulo Gonçalves, since November 2022
 - [Maël Chaumette](https://www.linkedin.com/in/ma%C3%ABl-chaumette), M2 intern from ENSAI co-supervised with Rémi Gribonval, April 2024 - Sept. 2024.
 - [Florian Kozikowski](https://www.linkedin.com/in/florian-kozikowski/), M1 Intern from Polytechnique, April 2025 - Aug. 2025.
+- Iliass Bouhss, L3 Intern from ENS Paris-Saclay, June 2025 - July 2025.
 - [Badr Moufad](https://github.com/Badr-MOUFAD/), research engineer, April 2022 - Dec. 2023. Now Phd student at Ecole Polytechnique.
 - [Pierre-Antoine Bannier](https://github.com/PABannier), Master thesis for Polytechnique/HEC, May 2022.
 - Célio Léonard-Collado, Master thesis, with D. Perrot, May 2024.
 
-## Job offers
-- None currently available, but please contact me if interested.
 
 
 ## News
-- 04/25: With Quentin Bertrand we will organize a minisymposium on generative modelling and optimal transport at SMAI 2025, see you in Bordeaux!
+- 04/25: With Quentin Bertrand we will organize a [minisymposium on generative modelling, optimal transport and image restauration](https://smai2025.math.cnrs.fr/en/programme/minisymposia/) at SMAI 2025, June 2nd-6th. See you in Bordeaux!
 - 03/25: We organized a [thematic day on bilevel optimization](https://gdr-iasis.cnrs.fr/reunions/bilevel-optimization-and-hyperparameter-learning/) at ENS Lyon with Jordan Frécon and Quentin Bertrand
 - 02/25: With Anne Gagneux, Ségolène Martin, Rémi Emonet and Quentin Bertrand, our [blog post on Flow matching](https://dl.heeere.com/cfm/) was accepted at ICLR 2025's blog post track.
 - 06/24: I am happy to have joined the committee of SMAI's MODE group (optimization-related group of the French Society for Applied and Industrial Mathematics).
