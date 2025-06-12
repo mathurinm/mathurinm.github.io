@@ -8,6 +8,7 @@ nav_order: 2
 
 ## Publications
 - 2025
+    - Q. Bertrand, A. Gagneux, M. Massias, R. Emonet, [On the Closed-Form of Flow Matching: Generalization Does Not Arise from Target Stochasticity](https://www.arxiv.org/abs/2506.03719), preprint.
     - A. Gagneux, M. Massias, E. Soubies, R. Gribonval, [Convexity in ReLU Neural Networks: beyond ICNNs?](https://arxiv.org/abs/2501.03017), Journal of Mathematical Imaging and Vision, 2025.
     - C. Pouliquen, M. Massias, T. Vayer, [Schur's Positive-Definite Network: Deep Learning in the SPD cone with structure](https://arxiv.org/abs/2406.09023), ICLR 2025.
     - A. Gagneux, S. Martin, R. Emonet, Q. Bertrand, M. Massias [A Visual Dive into Conditional Flow Matching](https://iclr-blogposts.github.io/2025/blog/conditional-flow-matching/), blogpost track @ICLR2025.
