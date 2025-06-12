@@ -48,10 +48,10 @@ You can find more details on my résumé
 
 ## Team and alumni
 - [Anne Gagneux](https://annegnx.github.io), PhD student from Ponts/MVA co-supervised with Emmanuel Soubies and Rémi Gribonval, since April 2023
-- [Can Pouliquen](https://perceptronium.github.io), PhD student cosupervised with Titouan Vayer and Paulo Gonçalves, since November 2022
+- [Can Pouliquen](https://perceptronium.github.io), PhD student from Polytech Montpellier cosupervised with Titouan Vayer and Paulo Gonçalves, since November 2022
 - [Maël Chaumette](https://www.linkedin.com/in/ma%C3%ABl-chaumette), M2 intern from ENSAI co-supervised with Rémi Gribonval, April 2024 - Sept. 2024.
 - [Florian Kozikowski](https://www.linkedin.com/in/florian-kozikowski/), M1 Intern from Polytechnique, April 2025 - Aug. 2025.
-- Iliass Bouhss, L3 Intern from ENS Paris-Saclay, June 2025 - July 2025.
+- Ilias Bouhss, L3 Intern from ENS Paris-Saclay, June 2025 - July 2025.
 - [Badr Moufad](https://github.com/Badr-MOUFAD/), research engineer, April 2022 - Dec. 2023. Now Phd student at Ecole Polytechnique.
 - [Pierre-Antoine Bannier](https://github.com/PABannier), Master thesis for Polytechnique/HEC, May 2022.
 - Célio Léonard-Collado, Master thesis, with D. Perrot, May 2024.
