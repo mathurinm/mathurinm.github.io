@@ -39,7 +39,7 @@ and [Alexandre Gramfort](http://alexandre.gramfort.net/).
 In my PhD, I improved the efficiency of brain signals reconstruction algorithms
 (more details [here](http://www.theses.fr/s163051)), which involved optimization, sparsity and high dimensional statistics. I received the PGMO PhD prize for this work.
 You can find more details on my résumé
-    ([French (01/2021)](/assets/pdf/CV_Mathurin_MASSIAS.pdf), [English (09/2024)](/assets/pdf/CV_Mathurin_MASSIAS_EN.pdf)) and my
+    ([French (01/2021)](/assets/pdf/CV_Mathurin_MASSIAS.pdf), [English (06/2025)](/assets/pdf/CV_Mathurin_MASSIAS_EN.pdf)) and my
  [list of publications](/research).
 
 
