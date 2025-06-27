@@ -59,7 +59,8 @@ You can find more details on my résumé
 
 
 ## News
-- 04/25: With Quentin Bertrand we will organize a [minisymposium on generative modelling, optimal transport and image restauration](https://smai2025.math.cnrs.fr/en/programme/minisymposia/) at SMAI 2025, June 2nd-6th. See you in Bordeaux!
+- 06/25: I am now the Secretary of the MODE groupe of SMAI (which is the Optimization group of the French Society for Applied and Industrial Maths)
+- 06/25: With Quentin Bertrand we organized a [minisymposium on generative modelling, optimal transport and image restauration](https://smai2025.math.cnrs.fr/en/programme/minisymposia/) at SMAI 2025, June 2nd-6th.
 - 03/25: We organized a [thematic day on bilevel optimization](https://gdr-iasis.cnrs.fr/reunions/bilevel-optimization-and-hyperparameter-learning/) at ENS Lyon with Jordan Frécon and Quentin Bertrand
 - 02/25: With Anne Gagneux, Ségolène Martin, Rémi Emonet and Quentin Bertrand, our [blog post on Flow matching](https://dl.heeere.com/cfm/) was accepted at ICLR 2025's blog post track.
 - 06/24: I am happy to have joined the committee of SMAI's MODE group (optimization-related group of the French Society for Applied and Industrial Mathematics).

@@ -14,7 +14,7 @@ nav_order: 2
     - A. Gagneux, S. Martin, R. Emonet, Q. Bertrand, M. Massias [A Visual Dive into Conditional Flow Matching](https://iclr-blogposts.github.io/2025/blog/conditional-flow-matching/), blogpost track @ICLR2025.
 
 - 2024
-    - A. Gagneux, M. Massias, E. Soubies, Proximal Operators of Non Convex SLOPE, submitted.
+    - A. Gagneux, M. Massias, E. Soubies, [Proximal Operators of Sorted Nonconvex Penalties](https://arxiv.org/abs/2506.15315), submitted.
 
 - 2023
     - J. Larsson, Q. Klopfenstein, M. Massias, J. Wallin, [Coordinate descent for SLOPE](https://arxiv.org/abs/2210.14780), AISTATS 2023.
