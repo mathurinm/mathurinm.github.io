@@ -51,7 +51,7 @@ You can find more details on my résumé
 - [Can Pouliquen](https://perceptronium.github.io), PhD student from Polytech Montpellier cosupervised with Titouan Vayer and Paulo Gonçalves, since November 2022
 - [Maël Chaumette](https://www.linkedin.com/in/ma%C3%ABl-chaumette), M2 intern from ENSAI co-supervised with Rémi Gribonval, April 2024 - Sept. 2024.
 - [Florian Kozikowski](https://www.linkedin.com/in/florian-kozikowski/), M1 Intern from Polytechnique, April 2025 - Aug. 2025.
-- Ilias Bouhss, L3 Intern from ENS Paris-Saclay, June 2025 - July 2025.
+- Ilias Bouhss, L3 Intern from ENS Paris-Saclay co-supervised with Ségolène Martin and Anne Gagneux, June 2025 - July 2025.
 - [Wassim Mazouz](https://www.linkedin.com/in/wassimmazouz/), M1 Intern from Centrale Lyon co-supervised with N. Pustelnik, May 2024 – Aug. 2024.
 - [Badr Moufad](https://github.com/Badr-MOUFAD/), research engineer, April 2022 - Dec. 2023. Now Phd student at Ecole Polytechnique.
 - [Pierre-Antoine Bannier](https://github.com/PABannier), Master thesis for Polytechnique/HEC, May 2022.
@@ -60,16 +60,15 @@ You can find more details on my résumé
 
 
 ## News
+- 10/25: I will organize a 1 day workshop on [generative modelling, diffusion and flow matching](https://gdr-iasis.cnrs.fr/reunions/modeles-generatifs-diffusion-flow-matching-et-leurs-applications/) on October the 24th at ENS de Lyon, contact me if you want to present.
 - 06/25: I am now the Secretary of the MODE groupe of SMAI (which is the Optimization group of the French Society for Applied and Industrial Maths)
 - 06/25: With Quentin Bertrand we organized a [minisymposium on generative modelling, optimal transport and image restauration](https://smai2025.math.cnrs.fr/en/programme/minisymposia/) at SMAI 2025, June 2nd-6th.
 - 03/25: We organized a [thematic day on bilevel optimization](https://gdr-iasis.cnrs.fr/reunions/bilevel-optimization-and-hyperparameter-learning/) at ENS Lyon with Jordan Frécon and Quentin Bertrand
 - 02/25: With Anne Gagneux, Ségolène Martin, Rémi Emonet and Quentin Bertrand, our [blog post on Flow matching](https://dl.heeere.com/cfm/) was accepted at ICLR 2025's blog post track.
 - 06/24: I am happy to have joined the committee of SMAI's MODE group (optimization-related group of the French Society for Applied and Industrial Mathematics).
-- 06/24: With Elsa Cazelles, Thomas Moreau, Aymeric Dieuleveut and Lorenzo Rosasco we organized LOL 2024 (Learning and optimization in Luminy) in CIRM. It was a blast, we are planning to hold the 4th edition in the first semester of 2026: stay tuned!
+- 06/24: With Elsa Cazelles, Thomas Moreau, Aymeric Dieuleveut and Lorenzo Rosasco we organized [LOL 2024 (Learning and optimization in Luminy)](https://conferences.cirm-math.fr/3003.html) in CIRM. It was a blast, we will hold the 4th edition in June 2026: stay tuned!
 - 03/24: We organized the SMAI MODE days in Lyon, from march 27th to march 29th. A minicourse on optimal transport by Gabriel Peyré and Yann Brenier was held at ENS de Lyon on the 25th and 26th.
-- 10/23 With Titouan Vayer and the help of GDR MIA we organized a [thematic day on dimension reduction](https://gdr-mia.math.cnrs.fr/events/dimreduc) at ENS Lyon.
-- Our paper on Coordinate descent for SLOPE was accepted to AISTATS'23! [Slides of the paper](/assets/pdf/slides_slope.pdf) presented at the Statistical Learning Seminar
-- 2 papers accepted at Neurips'22, on benchopt and skglm.
+- 10/23: With Titouan Vayer and the help of GDR MIA we organized a [thematic day on dimension reduction](https://gdr-mia.math.cnrs.fr/events/dimreduc) at ENS Lyon.
 - I gave a course on convex optimization at the [Computation and Modelling school](https://wmat.pwr.edu.pl/en/cm2022 ) in Wrocław; resources are on my teaching page.
 - [celer 0.7](https://github.com/mathurinm/celer) is released, with a fast ElasticNet solver thanks to [Badr Moufad](https://github.com/Badr-MOUFAD )!
 - We have integrated [skglm](https://contrib.scikit-learn.org/skglm) into scikit-learn, providing a customizable and accelerated solver for sparse GLMs in python.
