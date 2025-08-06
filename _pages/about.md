@@ -52,6 +52,7 @@ You can find more details on my résumé
 - [Maël Chaumette](https://www.linkedin.com/in/ma%C3%ABl-chaumette), M2 intern from ENSAI co-supervised with Rémi Gribonval, April 2024 - Sept. 2024.
 - [Florian Kozikowski](https://www.linkedin.com/in/florian-kozikowski/), M1 Intern from Polytechnique, April 2025 - Aug. 2025.
 - Ilias Bouhss, L3 Intern from ENS Paris-Saclay, June 2025 - July 2025.
+- [Wassim Mazouz](https://www.linkedin.com/in/wassimmazouz/), M1 Intern from Centrale Lyon co-supervised with N. Pustelnik, May 2024 – Aug. 2024.
 - [Badr Moufad](https://github.com/Badr-MOUFAD/), research engineer, April 2022 - Dec. 2023. Now Phd student at Ecole Polytechnique.
 - [Pierre-Antoine Bannier](https://github.com/PABannier), Master thesis for Polytechnique/HEC, May 2022.
 - Célio Léonard-Collado, Master thesis, with D. Perrot, May 2024.
