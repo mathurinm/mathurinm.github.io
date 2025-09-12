@@ -24,29 +24,29 @@ In the wake of models like Dall-E and ChatGPT, generative models have had a mass
 - Rémi Emonet (IUF, Associate professor, Jean Monnet University, MALICE Team)
 - Mathurin Massias (CR Inria, OCKHAM team)
 
-### Syllabus
+### Tentative program
 <!-- - Intro, analysis reminder, supervised vs generative modeling perspective-->
 
-Generative modelling for images:
-- Normalizing flows, Continuous normalizing flows
-- Flow matching
-- Diffusion models (DDPM, DDIM, Stochastic differential equations), latent diffusion
-- GANs
-
-Models for text:
-- Autoregressive models, text-to-text models
-- Transformers (the ChatGPT architecture)
-- Mamba and State space models
-- Text-to-image, conditional generation
-
-Additional topics:
-- Variational inference
-- Sampling as optimization/energy-based model
-- Evaluation of Generative Models
+- 10/09 Class cancelled
+- 11/09		Introduction to GenAI, MLE, Bayes + Base Models, Mixtures of Gaussian (EM if time)
+- 17/09	Maximum a posteriori vs max likelihood, PCA, PPCA, VAE
+- at home: LAB 1 : simple generative models: PCA, mixture of Gaussian, pretrained models, VAE
+- 18/09	GAN/WGAN
+- 24/09		Lab 2: GAN/WGAN
+- 25/09		Normalizing Flows + Continuous NF +DM
+- 01/10		Flow Matching (OT, ReFlow)
+- 02/10		LAB 3 Lab Flows Matching
+- 08/10		Diffusion + link with flow matching
+- 09/10		**Project progress evaluation**
+- 15/10		Conditional Generative Models
+- 16/10		Intro to sequence modeling, tokenizer, base model, Autoregressive models bigrams
+- 22/10		Attention, transformers
+- 23/10		Evaluation metrics (OT + FID)
+- 12/11  Project defense
 
 ### Validation
-- 50 % weekly homeworks + 3 Labs in python
-- 50 % paper presentation and extension of a selected research article and the associated code applied on real data.
+- weekly homeworks + quizzes + 3 Labs in python
+- paper presentation and extension of a selected research article and the associated code applied on real data.
 
 
 ### Prerequisite
