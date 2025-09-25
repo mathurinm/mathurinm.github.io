@@ -31,11 +31,11 @@ In the wake of models like Dall-E and ChatGPT, generative models have had a mass
 - 11/09		Introduction to GenAI, MLE, Bayes + Base Models, Mixtures of Gaussian (EM if time)
 - 17/09	Maximum a posteriori vs max likelihood, PCA, PPCA, VAE
 - at home: LAB 1 : simple generative models: PCA, mixture of Gaussian, pretrained models, VAE
-- 18/09	GAN/WGAN
-- 24/09		Lab 2: GAN/WGAN
-- 25/09		Normalizing Flows + Continuous NF +DM
-- 01/10		Flow Matching (OT, ReFlow)
-- 02/10		LAB 3 Lab Flows Matching
+- 18/09	[cancelled due to ENS being closed] GAN/WGAN
+- 24/09		Flow matching
+- 25/09		[Lab on Flow Matching](/assets/2025_ens_genmodels/flow_matching_lab.py)
+- 01/10		TBD
+- 02/10		TBD
 - 08/10		Diffusion + link with flow matching
 - 09/10		**Project progress evaluation**
 - 15/10		Conditional Generative Models
