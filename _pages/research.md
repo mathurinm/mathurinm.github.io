@@ -8,17 +8,18 @@ nav_order: 2
 
 ## Publications
 - 2025
-    - Q. Bertrand, A. Gagneux, M. Massias, R. Emonet, [On the Closed-Form of Flow Matching: Generalization Does Not Arise from Target Stochasticity](https://www.arxiv.org/abs/2506.03719), preprint.
+    - A. Gagneux, S. Martin, R. Gribonval, M. Massias, A Denoising Perspective on the Phases of Flow Matching
+    - Q. Bertrand, A. Gagneux, M. Massias, R. Emonet, [On the Closed-Form of Flow Matching: Generalization Does Not Arise from Target Stochasticity](https://www.arxiv.org/abs/2506.03719), Neurips 2025 (oral).
     - A. Gagneux, M. Massias, E. Soubies, R. Gribonval, [Convexity in ReLU Neural Networks: beyond ICNNs?](https://arxiv.org/abs/2501.03017), Journal of Mathematical Imaging and Vision, 2025.
     - C. Pouliquen, M. Massias, T. Vayer, [Schur's Positive-Definite Network: Deep Learning in the SPD cone with structure](https://arxiv.org/abs/2406.09023), ICLR 2025.
-    - A. Gagneux, S. Martin, R. Emonet, Q. Bertrand, M. Massias [A Visual Dive into Conditional Flow Matching](https://iclr-blogposts.github.io/2025/blog/conditional-flow-matching/), blogpost track @ICLR2025.
+    - A. Gagneux, S. Martin, R. Emonet, Q. Bertrand, M. Massias, [A Visual Dive into Conditional Flow Matching](https://iclr-blogposts.github.io/2025/blog/conditional-flow-matching/), blogpost track @ICLR2025.
 
 - 2024
     - A. Gagneux, M. Massias, E. Soubies, [Proximal Operators of Sorted Nonconvex Penalties](https://arxiv.org/abs/2506.15315), submitted.
 
 - 2023
     - J. Larsson, Q. Klopfenstein, M. Massias, J. Wallin, [Coordinate descent for SLOPE](https://arxiv.org/abs/2210.14780), AISTATS 2023.
-    - B. Moufad, P.-A. Bannier, Q. Bertrand, Q. Klopfenstein, M. Massias, [skglm: improving scikit-learn for regularized Generalized Linear Models](/assets/pdf/skglm_mloss.pdf), submitted to JMLR OSS.
+    - B. Moufad, P.-A. Bannier, Q. Bertrand, Q. Klopfenstein, M. Massias, [skglm: improving scikit-learn for regularized Generalized Linear Models](/assets/pdf/skglm_mloss.pdf), JMLR Open Source Software.
     - C. Molinari, M. Massias, L. Rosasco, S. Villa, [Iterative regularization for low-complexity regularizers](https://arxiv.org/abs/2202.00420), Numerische Mathematike.
     - C. Pouliquen, P. Gonçalves, M. Massias, T. Vayer, [Implicit Differentiation for Hyperparameter Tuning the Weighted Graphical Lasso](https://arxiv.org/abs/2307.02130), GRETSI 2023.
 
