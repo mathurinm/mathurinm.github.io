@@ -28,13 +28,13 @@ In the wake of models like Dall-E and ChatGPT, generative models have had a mass
 <!-- - Intro, analysis reminder, supervised vs generative modeling perspective-->
 
 - 10/09 Class cancelled
-- 11/09		Introduction to GenAI, MLE, Bayes + Base Models, Mixtures of Gaussian (EM if time)
-- 17/09	Maximum a posteriori vs max likelihood, PCA, PPCA, VAE
+- 11/09		Introduction to GenAI, MLE, Bayes + Base Models, Mixtures of Gaussian, EM ([notes by Y. Dziki](/assets/2025_ens_genmodels/scribe_lecture01.pdf))
+- 17/09	  Maximum a posteriori vs max likelihood, PCA, PPCA, VAE [notes by M. Ottavy](/assets/2025_ens_genmodels/scribe_lecture02.pdf)
 - at home: LAB 1 : simple generative models: PCA, mixture of Gaussian, pretrained models, VAE
-- 18/09	[cancelled due to ENS being closed] GAN/WGAN
-- 24/09		Flow matching
+- 18/09	[postponed due to ENS being closed] GAN/WGAN
+- 24/09		Flow matching [notes by H. Martel](/assets/2025_ens_genmodels/scribe_lecture03.pdf), [blog post on Flow Matching](https://dl.heeere.com/cfm/)
 - 25/09		[Lab on Flow Matching](/assets/2025_ens_genmodels/flow_matching_lab.py)
-- 01/10		TBD
+- 01/10		GANS ([material 1](https://gauthiergidel.github.io/ift_6756_gt_ml/slides/Lecture7.pdf), [material 2](https://gauthiergidel.github.io/ift_6756_gt_ml/slides/Lecture9.pdf), [material 3](https://gauthiergidel.github.io/ift_6756_gt_ml/slides/Lecture11.pdf))
 - 02/10		TBD
 - 08/10		Diffusion + link with flow matching
 - 09/10		**Project progress evaluation**
@@ -43,6 +43,9 @@ In the wake of models like Dall-E and ChatGPT, generative models have had a mass
 - 22/10		Attention, transformers
 - 23/10		Evaluation metrics (OT + FID)
 - 12/11  Project defense
+
+### Material
+- Work in progress: [site for the class](https://generativemodels.github.io/)
 
 ### Validation
 - weekly homeworks + quizzes + 3 Labs in python

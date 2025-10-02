@@ -18,7 +18,7 @@ from torch import nn, Tensor
 import matplotlib.pyplot as plt
 
 
-target = make_moons(256, noise=0.05)
+target = make_moons(256, noise=0.05)[0]
 # %%
 
 
@@ -42,7 +42,7 @@ class FM(nn.Module):
 
 # %%
 model = FM()
-optimizer = torch.optim.Adam(FM.parameters(), 1e-2)
+optimizer = torch.optim.Adam(model.parameters(), 1e-2)
 loss_fn = nn.MSELoss()
 
 n_epochs = 1000
