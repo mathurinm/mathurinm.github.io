@@ -33,15 +33,18 @@ In the wake of models like Dall-E and ChatGPT, generative models have had a mass
 - at home: LAB 1 : simple generative models: PCA, mixture of Gaussian, pretrained models, VAE
 - 18/09	[postponed due to ENS being closed] GAN/WGAN
 - 24/09		Flow matching [notes by H. Martel](/assets/2025_ens_genmodels/scribe_lecture03.pdf), [blog post on Flow Matching](https://dl.heeere.com/cfm/)
-- 25/09		[Lab on Flow Matching](/assets/2025_ens_genmodels/flow_matching_lab.py)
+- 25/09		[Lab on Flow Matching](/assets/2025_ens_genmodels/lab_flow_matching.py)
 - 01/10		GANS ([material 1](https://gauthiergidel.github.io/ift_6756_gt_ml/slides/Lecture7.pdf), [material 2](https://gauthiergidel.github.io/ift_6756_gt_ml/slides/Lecture9.pdf), [material 3](https://gauthiergidel.github.io/ift_6756_gt_ml/slides/Lecture11.pdf))
-- 02/10		TBD
-- 08/10		Diffusion + link with flow matching
-- 09/10		**Project progress evaluation**
-- 15/10		Conditional Generative Models
+- 02/10		WGAN + Lab
+- 08/10		Diffusion 1/2
+- 09/10		Introduction to sequence modelling
+- 15/10		Diffusion 2/2 (links with flow matching, conditional generation)
 - 16/10		Intro to sequence modeling, tokenizer, base model, Autoregressive models bigrams
-- 22/10		Attention, transformers
-- 23/10		Evaluation metrics (OT + FID)
+- 17/10		**Project progress evaluation**
+- 22/10		[Lab transformers](/assets/2025_ens_genmodels/lab_transformers.py)
+- 23/10		No class (work on Lab)
+- 05/11  Discrete models
+- 06/11  Discrete models
 - 12/11  Project defense
 
 ### Material
