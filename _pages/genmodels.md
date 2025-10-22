@@ -37,15 +37,15 @@ In the wake of models like Dall-E and ChatGPT, generative models have had a mass
 - 01/10		GANS ([material 1](https://gauthiergidel.github.io/ift_6756_gt_ml/slides/Lecture7.pdf), [material 2](https://gauthiergidel.github.io/ift_6756_gt_ml/slides/Lecture9.pdf), [material 3](https://gauthiergidel.github.io/ift_6756_gt_ml/slides/Lecture11.pdf))
 - 02/10		WGAN + Lab
 - 08/10		Diffusion 1/2
-- 09/10		Introduction to sequence modelling
+- 09/10		Introduction to sequence modelling: tokenizers, bigram models, autoregressive models, Transformers
 - 15/10		Diffusion 2/2 (links with flow matching, conditional generation)
-- 16/10		Intro to sequence modeling, tokenizer, base model, Autoregressive models bigrams
+- 16/10		Metrics (FID/rec/recall/density), conditional generation, classifier/classifier-free guidance, OT, Reflow
 - 17/10		**Project progress evaluation**
 - 22/10		[Lab transformers](/assets/2025_ens_genmodels/lab_transformers.py)
 - 23/10		No class (work on Lab)
-- 05/11  Discrete models
-- 06/11  Discrete models
-- 12/11  Project defense
+- 05/11   Discrete models
+- 06/11   Discrete models
+- 12/11   Project defense
 
 ### Material
 - Work in progress: [site for the class](https://generativemodels.github.io/)
