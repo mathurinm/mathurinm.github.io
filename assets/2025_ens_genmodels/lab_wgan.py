@@ -39,20 +39,27 @@ def generate_images(generator_model, noise_dim, num_samples=1000):
     plt.show()
 
 
+class MyNeuralNet(nn.Module):
+
+    # neede for pytorch
+    def forward(self, x):
+        pass
+
+
 class Generator(nn.Module):
     def __init__(self, noise_dim=10):
         super(Generator, self).__init__()
         self.noise_dim = noise_dim
-        self.model = nn.Sequential(
+
+    def forward(self, z):
+        output = nn.Sequential(
             nn.Linear(self.noise_dim, 128),
             nn.ReLU(),
             nn.Linear(128, 64),
             nn.ReLU(),
             nn.Linear(64, 2),
         )
-
-    def forward(self, z):
-        return self.model(z)
+        return output
 
 
 class Discriminator(nn.Module):
@@ -73,6 +80,7 @@ class Discriminator(nn.Module):
 # %%
 # Initialize generator and discriminator
 noise_dim = 2
+# neural net
 generator = Generator(noise_dim=noise_dim)
 discriminator = Discriminator()
 
@@ -83,12 +91,15 @@ n_epochs = 500  # 500
 clip_value = 0.3
 n_critic = 5
 batch_size = 128
+# optimizer for G
 optimizer_G = torch.optim.Adam(generator.parameters(), lr=lr_G, betas=(0.5, 0.9))
 optimizer_D = torch.optim.Adam(discriminator.parameters(), lr=lr_D, betas=(0.5, 0.9))
 dataloader = DataLoader(X_train, batch_size, shuffle=True)
 batches_done = 0
 for epoch in range(n_epochs):
     for i, x in enumerate(dataloader):
+        # x is a batch of data:
+        # x.shape = (batch_size, data_dim)
         # Configure input
         x = x.type(torch.float32)
         # ---------------------
@@ -97,15 +108,16 @@ for epoch in range(n_epochs):
         optimizer_D.zero_grad()
 
         # Sample noise as generator input
+        # batch_size = x.shape[0]
         z =  #TODO
 
         # Generate a batch of images
-        fake_x = #TODO
+        fake_x =  #TODO
         # Adversarial loss
-        loss_D = #TODO
+        loss_D =  #TODO
 
-        loss_D.backward()
-        optimizer_D.step()
+        loss_D.backward()  # computes the gradient
+        optimizer_D.step() # do gradient step
 
         # Clip weights of discriminator
         for p in discriminator.parameters():
