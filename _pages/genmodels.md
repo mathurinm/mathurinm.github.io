@@ -35,7 +35,7 @@ In the wake of models like Dall-E and ChatGPT, generative models have had a mass
 - 24/09		Flow matching [notes by H. Martel](/assets/2025_ens_genmodels/scribe_lecture03.pdf), [blog post on Flow Matching](https://dl.heeere.com/cfm/)
 - 25/09		[Lab on Flow Matching](/assets/2025_ens_genmodels/lab_flow_matching.py)
 - 01/10		GANS ([material 1](https://gauthiergidel.github.io/ift_6756_gt_ml/slides/Lecture7.pdf), [material 2](https://gauthiergidel.github.io/ift_6756_gt_ml/slides/Lecture9.pdf), [material 3](https://gauthiergidel.github.io/ift_6756_gt_ml/slides/Lecture11.pdf))
-- 02/10		WGAN + Lab
+- 02/10		WGAN + [Lab WGAN](/assets/2025_ens_genmodels/lab_wgan.py)
 - 08/10		Diffusion 1/2
 - 09/10		Introduction to sequence modelling: tokenizers, bigram models, autoregressive models, Transformers
 - 15/10		Diffusion 2/2 (links with flow matching, conditional generation)
