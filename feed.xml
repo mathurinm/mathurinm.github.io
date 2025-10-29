@@ -1,4 +1,63 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-10-27T14:33:42+00:00</updated><id>/feed.xml</id><title type="html">Mathurin Massias’ webpage</title><subtitle>Mathurin Massias</subtitle><entry><title type="html">The Hutchinson trick</title><link href="/blog/hutchinson/" rel="alternate" type="text/html" title="The Hutchinson trick" /><published>2024-11-18T22:00:00+00:00</published><updated>2024-11-18T22:00:00+00:00</updated><id>/blog/hutchinson</id><content type="html" xml:base="/blog/hutchinson/"><![CDATA[<p>The Hutchinson trick: a cheap way to evaluate the trace of a Jacobian, without computing the Jacobian itself!</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-10-29T09:41:42+00:00</updated><id>/feed.xml</id><title type="html">Mathurin Massias’ webpage</title><subtitle>Mathurin Massias</subtitle><entry><title type="html">On the link between maximizing the likelihood and minimizing the Kullback-Leibler divergence</title><link href="/blog/kl_mle/" rel="alternate" type="text/html" title="On the link between maximizing the likelihood and minimizing the Kullback-Leibler divergence" /><published>2025-10-27T22:00:00+00:00</published><updated>2025-10-27T22:00:00+00:00</updated><id>/blog/kl_mle</id><content type="html" xml:base="/blog/kl_mle/"><![CDATA[<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+    Macros: {
+      pdata: "p_{\\mathrm{data}}",
+      pdatahat: "\\hat{p}_{\\mathrm{data}}",
+      data: ["x^{(#1)}", 1],
+      KL: "\\operatorname{KL}"
+    }
+  }
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<p>This blog post clarifies the links between the maximizing the likelihood and minimizing the Kullback-Leibler divergence between a parametric distribution \(p_\theta\) and the true distribution \(\pdata\).</p>
+
+<p><strong>TLDR</strong>: the negative log-likelihood is not the KL between \(\pdatahat\) and \(p_\theta\). Instead, it is an empirical estimate of the KL between \(\pdata\) and \(p_\theta\). Those two are not the same.</p>
+
+<h3 id="setup">Setup</h3>
+<p>Suppose that you have access to i.i.d. samples \(\data{1}, \ldots, \data{n}\) from the true data distribution \(\pdata\), the latter admitting a density with respect to the Lebesgue measure.
+Define the empirical data distribution as \(\pdatahat := \frac{1}{n}\sum_{i=1}^n \delta_{\data{i}}\), where \(\delta\) is the Dirac distribution.
+Among a family of parametric distributions \(\{p_\theta\}_\theta\), a natural approach to find the one closest to \(\pdata\), or fitting the data the best, is to maximise the likelihood of the observed samples, i.e. to solve</p>
+
+\[\max_\theta \sum_{i=1}^n \log p_\theta(\data{i})\]
+
+<h3 id="an-incorrect-interpretation">An incorrect interpretation</h3>
+<p>You can read online (e.g. <a href="http://boris-belousov.net/2017/04/23/KL-minimization-vs-ML/">here</a>) that maximizing the likelihood amounts to making \(p_\theta\) close to \(\pdatahat\), <em>because it amounts to solving \(\min_\theta \KL(\pdatahat, p_\theta)\)</em>.</p>
+
+<p>The reasoning is as follows:</p>
+
+\[\begin{align}
+ \KL(\pdatahat, p_\theta)
+ &amp;= \int \pdatahat(x) \log \frac{\pdatahat(x)}{p_\theta(x)} dx \\
+ &amp;=  \int \pdatahat(x) \log \pdatahat(x) dx  - \int \pdatahat(x) \log p_\theta(x) dx \\
+ &amp;=  constant  - \int \pdatahat(x) \log p_\theta(x) dx \\
+ &amp;=  constant  -  \frac{1}{n} \sum_{i=1}^n \log p_\theta(\data{i})
+\end{align}\]
+
+<p>but <strong>these manipulations are not correct</strong>, as \(\pdatahat\) does not admit a density: \(\int \pdatahat(x) \log \pdatahat(x) dx\) is not defined (worse, the KL itself is not defined unless \(p_\theta\) is supported only on the \(\data{i}\)’s, which is unlikely).</p>
+
+<h3 id="the-correct-interpretation">The correct interpretation</h3>
+<p>The correct intepretation is: maximizing the likelihood amounts to <em>minimizing an empirical estimate of the KL between \(\pdata\) (not \(\pdatahat\)) and \(p_\theta\)</em>.
+Indeed the latter is:</p>
+
+\[\begin{align}
+ \KL(\pdata, p_\theta)
+ &amp;= \int \pdata(x) \log \frac{\pdata(x)}{p_\theta(x)} dx \\
+ &amp;=  \int \pdata(x) \log \pdata(x) dx  - \int \pdata(x) \log p_\theta(x) dx \\
+ &amp;=  constant  - \int \pdata(x) \log p_\theta(x) dx
+\end{align}\]
+
+<p>Up to a constant, an empirical estimate of the KL divergence is therefore:</p>
+
+\[\begin{align}
+ \widehat{\KL}(\pdata, p_\theta)
+ = -\int \pdatahat(x) \log p_\theta(x) dx
+\end{align}\]
+
+<p>which is equal to the negative likelihood.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">The Hutchinson trick</title><link href="/blog/hutchinson/" rel="alternate" type="text/html" title="The Hutchinson trick" /><published>2024-11-18T22:00:00+00:00</published><updated>2024-11-18T22:00:00+00:00</updated><id>/blog/hutchinson</id><content type="html" xml:base="/blog/hutchinson/"><![CDATA[<p>The Hutchinson trick: a cheap way to evaluate the trace of a Jacobian, without computing the Jacobian itself!</p>
 
 <div class="preamble">
 $$

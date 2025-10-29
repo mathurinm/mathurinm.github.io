@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Finding equivalent for sequences: the alpha trick | Mathurin Massias' webpage</title>
+    <title>On the link between maximizing the likelihood and minimizing the Kullback-Leibler divergence | Mathurin Massias' webpage</title>
     <meta name="author" content="Mathurin  Massias">
     <meta name="description" content="Mathurin Massias">
 
@@ -30,7 +30,7 @@
     <!-- Styles -->
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="/blog/alpha_trick/">
+    <link rel="canonical" href="/blog/kl_mle/">
     
     <!-- Dark Mode -->
     
@@ -64,9 +64,9 @@
 
 <!-- <d-front-matter>
   <script async type="text/json">{
-      "title": "Finding equivalent for sequences: the alpha trick",
+      "title": "On the link between maximizing the likelihood and minimizing the Kullback-Leibler divergence",
       "description": "",
-      "published": "July 21, 2024",
+      "published": "October 27, 2025",
       "authors": [
         
       ],
@@ -138,85 +138,74 @@
   <div class="post distill">
 
     <d-title>
-      <h1>Finding equivalent for sequences: the alpha trick</h1>
+      <h1>On the link between maximizing the likelihood and minimizing the Kullback-Leibler divergence</h1>
       <p></p>
     </d-title>
 
     <d-article>
       
 
-      <p>The alpha trick is a very cute and efficient trick to find equivalent to sequences defined recursively as \(x_{k+1} = f(x_k)\).</p>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+    Macros: {
+      pdata: "p_{\\mathrm{data}}",
+      pdatahat: "\\hat{p}_{\\mathrm{data}}",
+      data: ["x^{(#1)}", 1],
+      KL: "\\operatorname{KL}"
+    }
+  }
+});
+</script>
 
-<p>When trying to find an equivalent to the sequence defined by \(x_{k+1} = f(x_k)\), proceed as follows:</p>
-<ul>
-  <li>first show that \(x_k\) converges, and find a transformation of \(x_k\) into \(u_k\) (e.g. \(u_k = 1 / x_k\), etc) such that \(u_k \to 0\)</li>
-  <li>then do a limited development of the recursive equation satisfied by \(u_k\) around 0</li>
-  <li>
-<strong>the key part</strong>: raise the limited development equation to a power \(\alpha\) such that \(u_{k+1}^\alpha - u_k^\alpha\) converges to a non zero limit, say \(\ell\):</li>
-</ul>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-\[u^\alpha_{k + 1} - u^\alpha_{k} = \ell + o(1)\]
+<p>This blog post clarifies the links between the maximizing the likelihood and minimizing the Kullback-Leibler divergence between a parametric distribution \(p_\theta\) and the true distribution \(\pdata\).</p>
 
-<ul>
-  <li>apply Cesaro to obtain that \(\frac{\sum_{k=1}^n u^\alpha_{k + 1} - u^\alpha_{k}}{n} \to \ell\), which means that \(u_{k}^\alpha \sim \ell k\).</li>
-  <li>convert this back to an equivalent in \(x_k\)</li>
-</ul>
+<p><strong>TLDR</strong>: the negative log-likelihood is not the KL between \(\pdatahat\) and \(p_\theta\). Instead, it is an empirical estimate of the KL between \(\pdata\) and \(p_\theta\). Those two are not the same.</p>
 
-<h3 id="first-example-gradient-descent-on-the-exponential">First example: gradient descent on the exponential</h3>
-<p>The best application I know of this trick is to study the iterates of gradient descent on \(F: x \mapsto \exp(-x)\).
-My motivation to to study this was that a minimizer does not exist (\(F &gt; 0\) but \(F\) goes to 0 at infinity), so the classical convergence rates results in \(\mathcal{O}(1/k)\) do not apply.
-I wondered if we could say anything about the convergence speed anyways?</p>
+<h3 id="setup">Setup</h3>
+<p>Suppose that you have access to i.i.d. samples \(\data{1}, \ldots, \data{n}\) from the true data distribution \(\pdata\), the latter admitting a density with respect to the Lebesgue measure.
+Define the empirical data distribution as \(\pdatahat := \frac{1}{n}\sum_{i=1}^n \delta_{\data{i}}\), where \(\delta\) is the Dirac distribution.
+Among a family of parametric distributions \(\{p_\theta\}_\theta\), a natural approach to find the one closest to \(\pdata\), or fitting the data the best, is to maximise the likelihood of the observed samples, i.e. to solve</p>
 
-<p>Consider gradient descent iterates on \(f\), started at 0.
-We easily see that such iterates will remain positive; when restricted to \(\mathbb{R}_+\), \(f\) is 1-smooth, so we take a stepsize of 1.
-Our iterates are thus:</p>
+\[\max_\theta \sum_{i=1}^n \log p_\theta(\data{i})\]
 
-\[x_{k+1} = x_k - \exp(-x_k) \, .\]
+<h3 id="an-incorrect-interpretation">An incorrect interpretation</h3>
+<p>You can read online (e.g. <a href="http://boris-belousov.net/2017/04/23/KL-minimization-vs-ML/" target="_blank" rel="noopener noreferrer">here</a>) that maximizing the likelihood amounts to making \(p_\theta\) close to \(\pdatahat\), <em>because it amounts to solving \(\min_\theta \KL(\pdatahat, p_\theta)\)</em>.</p>
 
-<p>Writing \(u_k = f(x_k) = \exp(-x_k)\), one obtains from the above equation:
-\(u_{k+1} = u_k \exp(-u_k)\), with \(u_0 = 1 &gt; 0\).</p>
-
-<p>The sequence \((u_k)\) remains positive, hence \(\exp(-u_k) \leq 1\) and \(u_k\) decreases.
-Being in addition lower bounded, \(u_k\) converges; the limit must be a fixed point: it is 0.
-Hence, by doing a limited development of \(u_{k} \exp(-u_k)\) around 0:</p>
-
-<p>\(\begin{align}
-    u_{k+1} &amp;= u_k (1 - u_k + o(u_k)) \\
-    u_{k+1}^\alpha &amp;= u_k^\alpha (1 - u_k + o(u_k))^\alpha \\
-        &amp;= u_k^\alpha (1 - \alpha u_k + o(u_k))\\
-        &amp;= u_k^\alpha - \alpha u_k^{\alpha + 1} + o(u_k^{\alpha + 1})
-\end{align}\)
-We see the power of the trick here: by raising the equation to the power \(\alpha\), we will be able to transform the \(-\alpha u_k^{\alpha + 1}\) into a constant!
-Indeed, picking \(\alpha=-1\) allows us to obtain \(u_{k+1}^{-1} - u_k^{-1} \to 1\).
-Hence \(\frac{\sum_0^n u_{k+1}^{-1} - u_k^{-1}}{n+1} \to 1\), and \(u_k \sim 1/k\).</p>
-
-<p>So we retain the convergence rate in \(1/k\), which I find very nice!</p>
-
-<p>One may wonder at which speed \(x_k\) goes to infinity; here \(u_k \to 0\) so it stays bounded away from 1 at infinity, and thus we can compose the equivalent by the log function: \(\log u_k \sim \log(1/k)\), and since \(\log u_k = -x_k\), the GD iterates \(x_k\) are equivalent to \(\log k\).</p>
-
-<h2 id="second-example-nesterovs-sequence">Second example: Nesterov’s sequence</h2>
-<p>Let \(t_{k+1} = \frac{1 + \sqrt{1 + 4 t_k^2}}{2}\), the infamous sequence appearing in Nesterov’s original accelerated algorithm.
-Let’s use the alpha trick to find an equivalent to \(t_k\).
-One has \(t_{k+1} \geq t_k +1/2\) so we cannot hope for convergence; consider \(u_k = 1/t_k\) instead:</p>
-
-\[u_{k+1} = \frac{2}{1 + \sqrt{1 + 4 / u_k^2}}\]
-
-<!-- This sequence is positive and decreasing, so it converges, and its limit is a fixed point, so it's 0. -->
-<p>SInce \(t_k \to + \infty\), \(u_k \to 0\), and</p>
+<p>The reasoning is as follows:</p>
 
 \[\begin{align}
-    u_{k+1} &amp;= \frac{2}{1 + \sqrt{1 + 4/u_k^2}} \\
-    &amp;= \frac{2 u_k}{u_k + 2 \sqrt{u_k^2/4 + 1}} \\
-    % &amp;= \frac{2 u_k}{u_k + 2 (1 + u_k^2/8 + o(u_k^2))} \\
-    &amp;= \frac{u_k}{1 + u_k/2 + o(u_k)} \\
-    &amp;= u_k (1 - u_k/2 + o(u_k)) \\
-    u_{k+1}^\alpha &amp;= u_k^\alpha (1 - \alpha u_k/2 + o(u_k)) \\
-    u_{k+1}^\alpha &amp;= u_k^\alpha - \alpha u_k^{\alpha + 1}/2 + o(u_k^{\alpha + 1})
+ \KL(\pdatahat, p_\theta)
+ &amp;= \int \pdatahat(x) \log \frac{\pdatahat(x)}{p_\theta(x)} dx \\
+ &amp;=  \int \pdatahat(x) \log \pdatahat(x) dx  - \int \pdatahat(x) \log p_\theta(x) dx \\
+ &amp;=  constant  - \int \pdatahat(x) \log p_\theta(x) dx \\
+ &amp;=  constant  -  \frac{1}{n} \sum_{i=1}^n \log p_\theta(\data{i})
 \end{align}\]
 
-<p>Hence picking \(\alpha = -1\), \(u_{k+1}^{-1} - u_k^{-1} \to 1/2\) and so \(u_k \sim 2/k\) and finally \(t_k \sim k/2\).</p>
+<p>but <strong>these manipulations are not correct</strong>, as \(\pdatahat\) does not admit a density: \(\int \pdatahat(x) \log \pdatahat(x) dx\) is not defined (worse, the KL itself is not defined unless \(p_\theta\) is supported only on the \(\data{i}\)’s, which is unlikely).</p>
 
-<!-- This shows why people often study the momentum in Nesterov/FISTA as $$\frac{k - 1}{k + 2}$$.  -->
+<h3 id="the-correct-interpretation">The correct interpretation</h3>
+<p>The correct intepretation is: maximizing the likelihood amounts to <em>minimizing an empirical estimate of the KL between \(\pdata\) (not \(\pdatahat\)) and \(p_\theta\)</em>.
+Indeed the latter is:</p>
+
+\[\begin{align}
+ \KL(\pdata, p_\theta)
+ &amp;= \int \pdata(x) \log \frac{\pdata(x)}{p_\theta(x)} dx \\
+ &amp;=  \int \pdata(x) \log \pdata(x) dx  - \int \pdata(x) \log p_\theta(x) dx \\
+ &amp;=  constant  - \int \pdata(x) \log p_\theta(x) dx
+\end{align}\]
+
+<p>Up to a constant, an empirical estimate of the KL divergence is therefore:</p>
+
+\[\begin{align}
+ \widehat{\KL}(\pdata, p_\theta)
+ = -\int \pdatahat(x) \log p_\theta(x) dx
+\end{align}\]
+
+<p>which is equal to the negative likelihood.</p>
+
 
     </d-article>
 
