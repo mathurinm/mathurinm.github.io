@@ -44,8 +44,9 @@ In the wake of models like Dall-E and ChatGPT, generative models have had a mass
 - 22/10		[Lab transformers](/assets/2025_ens_genmodels/lab_transformers.py)
 - 23/10		No class (work on Lab)
 - 05/11   Discrete models
-- 06/11   Discrete models
-- 12/11   Project defense
+- 06/11   Discrete models + [lab DDPM/DDIM](/assets/2025_ens_genmodels/lab_ddpm_ddim.py)
+- 12/11   Project defense 1/2
+- 13/11   Project defense 2/2
 
 ### Material
 - Work in progress: [site for the class](https://generativemodels.github.io/)
