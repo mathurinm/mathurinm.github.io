@@ -12,20 +12,22 @@ This class introduces the theoretical and numerical bases of optimal transport, 
 Mathurin Massias, Titouan Vayer, Quentin Bertrand.
 
 ## Material
-- [slides for 1st lecture (20/11/2014)](/assets/2024_ens_ot/course_intro.pdf )
-- [course notes on the Simplex algorithm](/assets/2024_ens_ot/simplex.pdf)
+- Lectures 1 and 2, 19-20/11/2025: introduction to OT. [slides](/assets/2024_ens_ot/course_intro.pdf )
+<!-- - [scribe notes for introduction lectures, maths reminders and duality](/assets/2024_ens_ot/scribe_moumard_intro_reminders_cvxity.pdf ) -->
+
+<!-- - [course notes on the Simplex algorithm](/assets/2024_ens_ot/simplex.pdf)
 - [course notes on Hungarian algorithm](/assets/2024_ens_ot/hungarian.pdf)
 - [course notes on entropic optimal transport](/assets/2024_ens_ot/entropic.pdf)
 - [slides for domain adaptation lecture (11/12/2014)](/assets/2024_ens_ot/course_da.pdf )
-- [slides for Gromov-Wasserstein lecture (19/12/2014)](/assets/2024_ens_ot/course_gromov.pdf)
+- [slides for Gromov-Wasserstein lecture (19/12/2014)](/assets/2024_ens_ot/course_gromov.pdf) -->
 
-Homeworks:
+<!-- Homeworks:
 - [1st homework](/assets/2024_ens_ot/homework1.pdf) (due 27/11/2024)
 - [2nd homework (long one)](/assets/2024_ens_ot/homework2_auction.pdf) (due 20/12/2024)
 - [3rd homework](/assets/2024_ens_ot/homework3_bregman.pdf) (due 04/12/2024)
 - [lab 1](/assets/2024_ens_ot/lab1.pdf) (done on 05/12/2024)
 - [lab 2](/assets/2024_ens_ot/lab2.pdf) (done on 12/12/2024)
-- [lab 3](/assets/2024_ens_ot/lab3.pdf) (done on 15/01/2025)
+- [lab 3](/assets/2024_ens_ot/lab3.pdf) (done on 15/01/2025) -->
 
 ## Syllabus
 - Discrete optimal transport: optimal assignment, Kantorovich problem, simplex/max flow algorithm
@@ -48,8 +50,9 @@ Homeworks:
 ## Schedule
 15 x 2 h of class/labs, oral presentation
 
-Classes on Wednesday 15 h 45 (room 029) and Thursday 15 h 45 (room B1), the following weeks:
-Nov 18 - 25, Dec 2 - 9 - 16, Jan 6 - 13 - 20 -27
+Classes on Wednesday 13 h 30 (room B1) and Thursday 15 h 45 (room B1).
+ <!-- the following weeks: -->
+<!-- Nov 18 - 25, Dec 2 - 9 - 16, Jan 6 - 13 - 20 -27 -->
 
 ## Validation
 - 50%: Homeworks (small weekly exercises + 3 labs)
