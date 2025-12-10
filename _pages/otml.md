@@ -17,7 +17,7 @@ Mathurin Massias, Titouan Vayer, Quentin Bertrand.
 - [course notes on Hungarian algorithm](/assets/2024_ens_ot/hungarian.pdf)
 - [course notes on the simplex algorithm](/assets/2024_ens_ot/simplex.pdf)
 - [course notes on Entropic OT](/assets/2024_ens_ot/entropic.pdf)
--
+
 
 <!-- - [course notes on the Simplex algorithm](/assets/2024_ens_ot/simplex.pdf)
 - [course notes on Hungarian algorithm](/assets/2024_ens_ot/hungarian.pdf)
