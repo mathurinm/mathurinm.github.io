@@ -13,7 +13,11 @@ Mathurin Massias, Titouan Vayer, Quentin Bertrand.
 
 ## Material
 - Lectures 1 and 2, 19-20/11/2025: introduction to OT. [slides](/assets/2024_ens_ot/course_intro.pdf )
-<!-- - [scribe notes for introduction lectures, maths reminders and duality](/assets/2024_ens_ot/scribe_moumard_intro_reminders_cvxity.pdf ) -->
+- [scribe notes for introduction lectures, maths reminders and duality](/assets/2024_ens_ot/scribe_moumard_intro_reminders_cvxity.pdf )
+- [course notes on Hungarian algorithm](/assets/2024_ens_ot/hungarian.pdf)
+- [course notes on the simplex algorithm](/assets/2024_ens_ot/simplex.pdf)
+- [course notes on Entropic OT](/assets/2024_ens_ot/entropic.pdf)
+-
 
 <!-- - [course notes on the Simplex algorithm](/assets/2024_ens_ot/simplex.pdf)
 - [course notes on Hungarian algorithm](/assets/2024_ens_ot/hungarian.pdf)
