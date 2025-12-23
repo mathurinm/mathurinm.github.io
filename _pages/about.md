@@ -38,8 +38,7 @@ I hold a PhD from Télécom Paris and Inria Saclay
 and [Alexandre Gramfort](http://alexandre.gramfort.net/).
 In my PhD, I improved the efficiency of brain signals reconstruction algorithms
 (more details [here](http://www.theses.fr/s163051)), which involved optimization, sparsity and high dimensional statistics. I received the PGMO PhD prize for this work.
-You can find more details on my résumé
-    ([French (01/2021)](/assets/pdf/CV_Mathurin_MASSIAS.pdf), [English (06/2025)](/assets/pdf/CV_Mathurin_MASSIAS_EN.pdf)) and my
+You can find more details on my [résumé (12/2025)](/assets/pdf/CV_Mathurin_MASSIAS_EN.pdf) and my
  [list of publications](/research).
 
 
@@ -48,7 +47,7 @@ You can find more details on my résumé
 
 ## Team and alumni
 - [Anne Gagneux](https://annegnx.github.io), PhD student from Ponts/MVA co-supervised with Emmanuel Soubies and Rémi Gribonval, since April 2023
-- [Can Pouliquen](https://perceptronium.github.io), PhD student from Polytech Montpellier cosupervised with Titouan Vayer and Paulo Gonçalves, since November 2022
+- [Can Pouliquen](https://perceptronium.github.io), PhD student from Polytech Montpellier cosupervised with Titouan Vayer and Paulo Gonçalves,  11/2022 - 12/2025.
 - [Maël Chaumette](https://www.linkedin.com/in/ma%C3%ABl-chaumette), M2 intern from ENSAI co-supervised with Rémi Gribonval, April 2024 - Sept. 2024.
 - [Florian Kozikowski](https://www.linkedin.com/in/florian-kozikowski/), M1 Intern from Polytechnique, April 2025 - Aug. 2025.
 - Ilias Bouhss, L3 Intern from ENS Paris-Saclay co-supervised with Ségolène Martin and Anne Gagneux, June 2025 - July 2025.
