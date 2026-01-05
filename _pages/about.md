@@ -45,21 +45,28 @@ You can find more details on my [résumé (12/2025)](/assets/pdf/CV_Mathurin_MAS
 ## Job offers
 - We have a Research engineer position (1 or 2 years) to work on machine learning, imaging and benchmarking in Lyon. It may be of interest for M2 students willing to try the research environment for a year before deciding to pursue a PhD, or PhD holders willing to strengthen their coding skills before moving to industry.
 
-## Team and alumni
-- [Anne Gagneux](https://annegnx.github.io), PhD student from Ponts/MVA co-supervised with Emmanuel Soubies and Rémi Gribonval, since April 2023
-- [Can Pouliquen](https://perceptronium.github.io), PhD student from Polytech Montpellier cosupervised with Titouan Vayer and Paulo Gonçalves,  11/2022 - 12/2025.
-- [Maël Chaumette](https://www.linkedin.com/in/ma%C3%ABl-chaumette), M2 intern from ENSAI co-supervised with Rémi Gribonval, April 2024 - Sept. 2024.
+## People
+Current team:
+- [Anne Gagneux](https://annegnx.github.io), PhD student from Ponts/MVA co-supervised with Emmanuel Soubies and Rémi Gribonval, since April 2023.
+
+Alumni:
+- [Can Pouliquen](https://perceptronium.github.io), PhD student from Polytech Montpellier cosupervised with Titouan Vayer and Paulo Gonçalves,  Nov. 2022 - Dec. 2025.
+- [Maël Chaumette](https://www.linkedin.com/in/ma%C3%ABl-chaumette), M2 intern from ENSAI co-supervised with Rémi Gribonval, April 2024 - Sept. 2024, now PhD student in the Ockham team.
 - [Florian Kozikowski](https://www.linkedin.com/in/florian-kozikowski/), M1 Intern from Polytechnique, April 2025 - Aug. 2025.
 - Ilias Bouhss, L3 Intern from ENS Paris-Saclay co-supervised with Ségolène Martin and Anne Gagneux, June 2025 - July 2025.
 - [Wassim Mazouz](https://www.linkedin.com/in/wassimmazouz/), M1 Intern from Centrale Lyon co-supervised with N. Pustelnik, May 2024 – Aug. 2024.
 - [Badr Moufad](https://github.com/Badr-MOUFAD/), research engineer, April 2022 - Dec. 2023. Now Phd student at Ecole Polytechnique.
-- [Pierre-Antoine Bannier](https://github.com/PABannier), Master thesis for Polytechnique/HEC, May 2022.
+- [Pierre-Antoine Bannier](https://github.com/PABannier), Master thesis for Polytechnique/HEC, May 2022. Now Research scientist at Owkin.
 - Célio Léonard-Collado, Master thesis, with D. Perrot, May 2024.
 
 
 
 ## News
-- 10/25: I will organize a 1 day workshop on [generative modelling, diffusion and flow matching](https://gdr-iasis.cnrs.fr/reunions/modeles-generatifs-diffusion-flow-matching-et-leurs-applications/) on October the 24th at ENS de Lyon, contact me if you want to present.
+- 06/26: In June 2026, with Quentin Bertrand we will organize the [Peyresq summer school on generative modelling and optimal transport](https://www.gretsi.fr/peyresq2026) (in French)
+- 02/26: In Feb. 2026, with Audrey Repetti we will organize a [one week AI hackathon for women in mathematical sciences](https://icms.ac.uk/activities/workshop/ai-hackathon/)
+- 12/25: With Rémi Gribonval we organized a [one day workshop on Optimal transport](https://notes.inria.fr/s/WNZfFTO28x) for the departure of [Titouan Vayer](https://tvayer.github.io/) from the Ockham Team. Best of luck in Rennes!
+- 12/25: Our paper on the [generalization of flow matching](https://neurips.cc/virtual/2025/loc/san-diego/poster/116378) was presented as an oral at Neurips in San Diego (top 0.3% submitted papers)
+- 10/25: I have organized a 1 day workshop on [generative modelling, diffusion and flow matching](https://gdr-iasis.cnrs.fr/reunions/modeles-generatifs-diffusion-flow-matching-et-leurs-applications/) on October the 24th at ENS de Lyon.
 - 06/25: I am now the Secretary of the MODE groupe of SMAI (which is the Optimization group of the French Society for Applied and Industrial Maths)
 - 06/25: With Quentin Bertrand we organized a [minisymposium on generative modelling, optimal transport and image restauration](https://smai2025.math.cnrs.fr/en/programme/minisymposia/) at SMAI 2025, June 2nd-6th.
 - 03/25: We organized a [thematic day on bilevel optimization](https://gdr-iasis.cnrs.fr/reunions/bilevel-optimization-and-hyperparameter-learning/) at ENS Lyon with Jordan Frécon and Quentin Bertrand
