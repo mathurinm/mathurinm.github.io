@@ -43,11 +43,13 @@ You can find more details on my [résumé (12/2025)](/assets/pdf/CV_Mathurin_MAS
 
 
 ## Job offers
-- We have a Research engineer position (1 or 2 years) to work on machine learning, imaging and benchmarking in Lyon. It may be of interest for M2 students willing to try the research environment for a year before deciding to pursue a PhD, or PhD holders willing to strengthen their coding skills before moving to industry.
+- None currently available, but contact me if interested.
 
 ## People
 Current team:
 - [Anne Gagneux](https://annegnx.github.io), PhD student from Ponts/MVA co-supervised with Emmanuel Soubies and Rémi Gribonval, since April 2023.
+- [Orel Mazor](https://www.linkedin.com/in/orel-mazor-415a962a6/), M1 intern from Mines Paris, co-supervised with Quentin Bertrand and Rémi Emonet, since January 2026.
+- [Alexandre Lagier](https://www.linkedin.com/in/alexandre-lagier-168558212/), M2 intern from ENS Lyon, co-supervised with Ségolène Martin and Anne Gagneux, since February 2026.
 
 Alumni:
 - [Can Pouliquen](https://perceptronium.github.io), PhD student from Polytech Montpellier cosupervised with Titouan Vayer and Paulo Gonçalves,  Nov. 2022 - Dec. 2025.
