@@ -6,6 +6,10 @@ nav: true
 nav_order: 3
 ---
 
+### ICMS tutorial on generative models, 2026
+
+Material is [here](/assets/2026_icms/icms.zip).
+
 ### Generative models, M2 ENS 2025-2027
 
 Class details are [here](/genmodels).
