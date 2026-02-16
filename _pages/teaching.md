@@ -8,7 +8,7 @@ nav_order: 3
 
 ### ICMS tutorial on generative models, 2026
 
-Material is [here](/assets/2026_icms/icms.zip).
+Lab material is [here](/assets/2026_icms/icms.zip); [slides](/assets/2026_icms/fm_icms.pdf)
 
 ### Generative models, M2 ENS 2025-2027
 
