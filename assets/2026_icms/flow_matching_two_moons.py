@@ -21,22 +21,24 @@ class Flow(nn.Module):
         """This computes u(xt, t)."""
         return self.net(torch.cat((t, x_t), -1))
 
-    def step(self, x_t, t_start, t_end):
-        """Euler ODE solver"""
-        t_start = t_start.view(1, 1).expand(x_t.shape[0], 1)
-        delta = t_end - t_start
-        return x_t + delta * self(x_t, t_start)
+    def euler_step(self, x_t, t, stepsize):
+        """One step of Euler method at time `t`, with stepsize `stepsize`.
+        This is used at generation time only.
+        """
+        t = t.view(1, 1).expand(x_t.shape[0], 1)
+        return x_t + stepsize * self(x_t, t)
 
 
 # %% network training
 flow = Flow()
 optimizer = torch.optim.Adam(flow.parameters(), 1e-2)
 loss_fn = nn.MSELoss()  # squared L2 loss for network training
+batch_size = 256
 
 for it in range(10_000):
     if it % 500 == 0:
         print(it)
-    x_1 = Tensor(make_moons(256, noise=0.05)[0])
+    x_1 = Tensor(make_moons(batch_size, noise=0.05)[0])
     x_0 = torch.randn_like(x_1)
     t = torch.rand(len(x_1), 1)
     x_t = (1 - t) * x_0 + t * x_1
@@ -48,10 +50,10 @@ for it in range(10_000):
 
 
 # %% data generation
-x = torch.randn(300, 2)
+x = torch.randn(300, 2)  # we will generate 300 points
 n_steps = 100
 time_steps = torch.linspace(0, 1, n_steps)
-xt = torch.zeros((n_steps, 300, 2))
+xt = torch.zeros((n_steps, x.shape[0], x.shape[1]))
 xt[0] = x
 for i in range(n_steps-1):
     x = flow.step(x, time_steps[i], time_steps[i+1])

@@ -8,7 +8,7 @@ nav_order: 3
 
 ### ICMS tutorial on generative models, 2026
 
-Lab material is [here](/assets/2026_icms/icms.zip); [slides](/assets/2026_icms/fm_icms.pdf)
+[Slides](/assets/2026_icms/fm_icms.pdf), [lab to complete](/assets/2026_icms/flow_matching_two_moons_todo.py), [complete training part only](/assets/2026_icms/flow_matching_two_moons_mid.py), [completed version](/assets/2026_icms/flow_matching_two_moons.py)
 
 ### Generative models, M2 ENS 2025-2027
 
