@@ -21,10 +21,11 @@ class Flow(nn.Module):
     def forward(self, x_t, t):
         return self.net(torch.cat((t, x_t), -1))
 
-    def step(self, x_t, t_start, t_end):
-        """Euler ODE solver"""
-        t_start = t_start.view(1, 1).expand(x_t.shape[0], 1)
-        delta = t_end - t_start
+    def euler_step(self, x_t, t, stepsize):
+        """One step of Euler method at time `t`, with stepsize `stepsize`.
+        This is used at generation time only.
+        """
+        t = t.view(1, 1).expand(x_t.shape[0], 1)
         return ...  # TODO
 
 
@@ -32,13 +33,14 @@ class Flow(nn.Module):
 flow = Flow()
 optimizer = torch.optim.Adam(flow.parameters(), 1e-2)
 loss_fn = nn.MSELoss()
+batch_size = 256
 
 for it in range(10_000):
     if it % 500 == 0:
         print(it)
     x_1 = ...  # TODO
     x_0 = ...  # TODO
-    t = ...  # TODO (must be of shape (256, 1))
+    t = ...  # TODO (must be of shape (batch_size, 1))
 
     x_t = ...  # TODO
     u_true = ...  # TODO
