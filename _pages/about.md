@@ -24,12 +24,12 @@ I am a tenured researcher (*Chargé de recherche*) in Inria Lyon, in the OCKHAM 
 
 I have a keen interest in the Python programming language: I am the lead developer of [skglm](https://contrib.scikit-learn.org/skglm) (fast and flexible sklearn GLMs) and [celer](https://mathurinm.github.io/celer/) (fastest Lasso solver).
 I am also a core developer of [benchopt](https://github.com/benchopt/benchopt), a benchmarking framework that makes optimization benchmarks easy, transparent and reproducible.
-<!-- To foster scientific reproducibility, my papers usually come with Python packages to reproduce my experiments and make my code available to the community (e.g. [Anderson acceleration for coordinate descent](https://mathurinm.github.io/andersoncd/auto_examples/index.html) or [Iterative regularization for convex regularizers](https://LCSL.github.io/iterreg/auto_examples/index.html)) -->
 
 I am an Area Chair for NeurIPS and ICML, and an associate editor for TMLR; I was previously involved as associated editor for [Computo](https://computo.sfds.asso.fr/), a journal promoting reproducibility through a novel publication format.
 
 I co-organize the [Machine Learning and Signal Processing seminar](https://www.ens-lyon.fr/PHYSIQUE/seminars/machine-learning-and-signal-processing) at ENS Lyon, send me a message if you want to present your work there!
 
+I wrote a series of posts summarizing advices on [permanent positions at CNRS/INRIA](/cnrs_inria_advice/), [avoiding pitfalls in scientific presentations](/presentation_advice/) and [finding undergraduate internships](/finding_internship).
 
 **Short bio**: From January 2020 to October 2021, I was a post-doc at University of Genova, where I worked with [Lorenzo Rosasco](http://web.mit.edu/lrosasco/www/) and [Silvia Villa](http://www.dima.unige.it/~villa/) to develop new algorithms for implicit regularization.
 I hold a PhD from Télécom Paris and Inria Saclay
@@ -59,13 +59,13 @@ Alumni:
 - [Wassim Mazouz](https://www.linkedin.com/in/wassimmazouz/), M1 Intern from Centrale Lyon co-supervised with N. Pustelnik, May 2024 – Aug. 2024.
 - [Badr Moufad](https://github.com/Badr-MOUFAD/), research engineer, April 2022 - Dec. 2023. Now Phd student at Ecole Polytechnique.
 - [Pierre-Antoine Bannier](https://github.com/PABannier), Master thesis for Polytechnique/HEC, May 2022. Now Research scientist at Owkin.
-- Célio Léonard-Collado, Master thesis, with D. Perrot, May 2024.
+<!-- - Célio Léonard-Collado, Master thesis, with D. Perrot, May 2024. -->
 
 
 
 ## News
 - 06/26: In June 2026, with Quentin Bertrand we will organize the [Peyresq summer school on generative modelling and optimal transport](https://www.gretsi.fr/peyresq2026) (in French)
-- 02/26: In Feb. 2026, with Audrey Repetti we will organize a [one week AI hackathon for women in mathematical sciences](https://icms.ac.uk/activities/workshop/ai-hackathon/)
+- 02/26: In Feb. 2026, with Audrey Repetti and Carola-Bibiane Schonlieb, we organized a [one week AI hackathon for women in mathematical sciences](https://icms.ac.uk/activities/workshop/ai-hackathon/), during which I gave a 3 h tutorial on generative models (material [here](/teaching)).
 - 12/25: With Rémi Gribonval we organized a [one day workshop on Optimal transport](https://notes.inria.fr/s/WNZfFTO28x) for the departure of [Titouan Vayer](https://tvayer.github.io/) from the Ockham Team. Best of luck in Rennes!
 - 12/25: Our paper on the [generalization of flow matching](https://neurips.cc/virtual/2025/loc/san-diego/poster/116378) was presented as an oral at Neurips in San Diego (top 0.3% submitted papers)
 - 10/25: I have organized a 1 day workshop on [generative modelling, diffusion and flow matching](https://gdr-iasis.cnrs.fr/reunions/modeles-generatifs-diffusion-flow-matching-et-leurs-applications/) on October the 24th at ENS de Lyon.

@@ -5,7 +5,6 @@ date:   2024-09-05 00:00:00 +0200
 permalink:  /:title/
 ---
 
-Summary advice given after attending one day of M1 internship presentations at ENS.
 
 
 **TLDR**: Never underestimate how easily and quickly you can lose the audience, and how hard it is for them to catch up afterwards.
