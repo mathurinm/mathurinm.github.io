@@ -10,6 +10,8 @@ nav_order: 3
 
 [Slides](/assets/2026_icms/fm_icms.pdf), [lab to complete](/assets/2026_icms/flow_matching_two_moons_todo.py), [complete training part only](/assets/2026_icms/flow_matching_two_moons_mid.py), [completed version](/assets/2026_icms/flow_matching_two_moons.py)
 
+[Slides for the benchopt tutorial](/assets/2026_icms/benchopt.pdf)
+
 ### Generative models, M2 ENS 2025-2027
 
 Class details are [here](/genmodels).
