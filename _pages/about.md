@@ -51,6 +51,9 @@ Current team:
 - [Anne Gagneux](https://annegnx.github.io), PhD student from Ponts/MVA co-supervised with Emmanuel Soubies and Rémi Gribonval, since April 2023 (defense Dec. 2026)
 - [Orel Mazor](https://www.linkedin.com/in/orel-mazor-415a962a6/), M1 intern from Mines Paris, co-supervised with Quentin Bertrand and Rémi Emonet, since January 2026.
 - [Alexandre Lagier](https://www.linkedin.com/in/alexandre-lagier-168558212/), M2 intern from ENS Lyon, co-supervised with Ségolène Martin and Anne Gagneux, since February 2026.
+- [Ishan Nath](https://uk.linkedin.com/in/ishan-nath/), M2 intern from ENS Lyon, co-supervised with Quentin Bertrand, since April 2026.
+- [Tom de Oliveira](https://fr.linkedin.com/in/tom-de-oliveira), M2 intern from Sorbonne Université, co-supervised with Quentin Bertrand and Rémi Emonet, since April 2026.
+
 
 Alumni:
 - [Can Pouliquen](https://perceptronium.github.io), PhD student from Polytech Montpellier cosupervised with Titouan Vayer and Paulo Gonçalves,  Nov. 2022 - Dec. 2025.
@@ -65,6 +68,9 @@ Alumni:
 
 
 ## News
+- 07/26: I will give a [tutorial on Memorization and generalization of flow matching and diffusion](https://blog.icml.cc/2026/04/02/announcing-the-icml-2026-tutorials/) at ICML 2026 in Seoul, with Quentin Bertrand
+- 06/26: Happy to have been a jury member for [Inria's ISFP positions](https://www.inria.fr/fr/inria-starting-faculty-position-isfp), on benchmark and safety of AI.
+- 06/26: With Kimia Nadjahi, Elsa Cazelles and Hadrien Hendrikx we organize the 4th edition of [Learning and Optimization in Luminy](https://conferences.cirm-math.fr/3630.html) (LOL) in CIRM (Marseille). This edition's themes are Generative modelling, optimization for deep learning, and trustworthy ML.
 - 06/26: In June 2026, with Quentin Bertrand we will organize the [Peyresq summer school on generative modelling and optimal transport](https://www.gretsi.fr/peyresq2026) (in French)
 - 02/26: In Feb. 2026, with Audrey Repetti and Carola-Bibiane Schonlieb, we organized a [one week AI hackathon for women in mathematical sciences](https://icms.ac.uk/activities/workshop/ai-hackathon/), during which I gave a 3 h tutorial on generative models (material [here](/teaching)).
 - 12/25: With Rémi Gribonval we organized a [one day workshop on Optimal transport](https://notes.inria.fr/s/WNZfFTO28x) for the departure of [Titouan Vayer](https://tvayer.github.io/) from the Ockham Team. Best of luck in Rennes!

@@ -8,7 +8,7 @@ nav_order: 2
 
 ## Publications
 - 2026
-    - A. Gagneux, S. Martin, R. Gribonval, M. Massias, [Training Flow Matching: The Role of Weighting and Parameterization](https://arxiv.org/abs/2603.06454), ICLR 2026 2nd Workshop on Deep Generative Model in Machine Learning: Theory, Principle and Efficacy
+    - A. Gagneux, S. Martin, R. Gribonval, M. Massias, [Training Flow Matching: The Role of Weighting and Parameterization](https://arxiv.org/abs/2603.06454), ICLR 2026 2nd Workshop on Deep Generative Model in Machine Learning: Theory, Principle and Efficacy.
 - 2025
     - A. Gagneux, S. Martin, R. Gribonval, M. Massias, [The Generation Phases of Flow Matching: a Denoising Perspective](https://arxiv.org/abs/2510.24830)
     - Q. Bertrand, A. Gagneux, M. Massias, R. Emonet, [On the Closed-Form of Flow Matching: Generalization Does Not Arise from Target Stochasticity](https://www.arxiv.org/abs/2506.03719), Neurips 2025 (oral).
