@@ -30,7 +30,7 @@ $$
 </div>
 
 
-Continuous normalizing flows (more in a blog post to come) heavily rely on the computation of the divergence of a network $$f: \bbR^d \to \bbR^d$$, aka the trace of its Jacobian:
+Continuous normalizing flows (more in [this blog post](https://dl.heeere.com/cfm/), in particular its Equation 6) heavily rely on the computation of the divergence of a network $$f: \bbR^d \to \bbR^d$$, aka the trace of its Jacobian:
 
 $$
 \begin{equation}
