@@ -7,7 +7,7 @@ permalink:  /:title/
 
 INRIA and CNRS "chargé de recherche" positions offer unique conditions of freedom to do first-grade research: lifelong contract, no teaching involved. The application process is  challenging, but it's definitely worth it! The goal of this guide is to make the application process as easy as possible.
 
-It only reflects my particular opinion and limited experience of going through it, and helping people with it for the last 3 years.
+It only reflects my particular opinion and limited experience of going through it, and helping people with it since 2022.
 Feedback is most welcome!
 
 INRIA has issued a very useful guide: [Advice for Applicants for a Young Graduate Scientist Position at INRIA](https://www.inria.fr/sites/default/files/2021-01/CE_guide-applicant-CRCN.pdf).
