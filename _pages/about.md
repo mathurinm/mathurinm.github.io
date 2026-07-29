@@ -38,24 +38,24 @@ I hold a PhD from Télécom Paris and Inria Saclay
 and [Alexandre Gramfort](http://alexandre.gramfort.net/).
 In my PhD, I improved the efficiency of brain signals reconstruction algorithms
 (more details [here](http://www.theses.fr/s163051)), which involved optimization, sparsity and high dimensional statistics. I received the PGMO PhD prize for this work.
-You can find more details on my [résumé (12/2025)](/assets/pdf/CV_Mathurin_MASSIAS_EN.pdf) and my
+You can find more details on my [résumé (07/2026)](/assets/pdf/CV_Mathurin_MASSIAS_EN.pdf) and my
  [list of publications](/research).
 
 
 ## Job offers
-- None currently available, but contact me if interested.
+- None currently available, but contact me if interested: I have available funding from ANR.
 
 ## People
 Current team:
 - [Georges Le Bellier](https://lebellig.github.io), Postdoc/RE, since May 2026.
 - [Anne Gagneux](https://annegnx.github.io), PhD student from Ponts/MVA co-supervised with Emmanuel Soubies and Rémi Gribonval, since April 2023 (defense Dec. 2026).
 - [Orel Mazor](https://www.linkedin.com/in/orel-mazor-415a962a6/), M1 intern from Mines Paris, co-supervised with Quentin Bertrand and Rémi Emonet, since January 2026.
-- [Alexandre Lagier](https://www.linkedin.com/in/alexandre-lagier-168558212/), M2 intern from ENS Lyon, co-supervised with Ségolène Martin and Anne Gagneux, since February 2026.
 - [Ishan Nath](https://uk.linkedin.com/in/ishan-nath/), M2 intern from ENS Lyon, co-supervised with Quentin Bertrand, since April 2026.
 - [Tom de Oliveira](https://fr.linkedin.com/in/tom-de-oliveira), M2 intern from Sorbonne Université, co-supervised with Quentin Bertrand and Rémi Emonet, since April 2026.
 
 
 Alumni:
+- [Alexandre Lagier](https://www.linkedin.com/in/alexandre-lagier-168558212/), M2 intern from ENS Lyon, co-supervised with Ségolène Martin and Anne Gagneux, Feb. 2026 - July 2026.
 - [Can Pouliquen](https://perceptronium.github.io), PhD student from Polytech Montpellier cosupervised with Titouan Vayer and Paulo Gonçalves,  Nov. 2022 - Dec. 2025.
 - [Maël Chaumette](https://www.linkedin.com/in/ma%C3%ABl-chaumette), M2 intern from ENSAI co-supervised with Rémi Gribonval, April 2024 - Sept. 2024, now PhD student in the Ockham team.
 - [Florian Kozikowski](https://www.linkedin.com/in/florian-kozikowski/), M1 Intern from Polytechnique, April 2025 - Aug. 2025.
@@ -68,6 +68,7 @@ Alumni:
 
 
 ## News
+- 07/26: My JCJC project, GenGen (Generalization of Generative models), was funded by the ANR. I will be recruiting interns, a PhD and a postdoc!
 - 07/26: We gave a [tutorial on memorization and generalization of flow matching and diffusion](https://blog.icml.cc/2026/04/02/announcing-the-icml-2026-tutorials/) at ICML 2026 in Seoul, with Quentin Bertrand. The material is available [here](https://memorization-generalization.github.io) and the [replay](https://icml.cc/virtual/2026/75374) should be available soon
 - 06/26: Happy to have been a jury member for [Inria's ISFP positions](https://www.inria.fr/fr/inria-starting-faculty-position-isfp), on benchmark and safety of AI.
 - 06/26: With Kimia Nadjahi, Elsa Cazelles and Hadrien Hendrikx we organized the 4th edition of [Learning and Optimization in Luminy](https://conferences.cirm-math.fr/3630.html) (LOL) in CIRM (Marseille). This edition's themes were Generative modelling, optimization for deep learning, and trustworthy ML.
