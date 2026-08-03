@@ -6,6 +6,8 @@ nav: true
 nav_order: 3
 ---
 
+[Mathematical background for Machine Learning](/assets/pdf/math_background.pdf)
+
 ### ICMS tutorial on generative models, 2026
 
 [Slides](/assets/2026_icms/fm_icms.pdf), [lab to complete](/assets/2026_icms/flow_matching_two_moons_todo.py), [complete training part only](/assets/2026_icms/flow_matching_two_moons_mid.py), [completed version](/assets/2026_icms/flow_matching_two_moons.py)
@@ -19,10 +21,6 @@ Class details are [here](/genmodels).
 ### Computational Optimal Transport for Machine and Deep Learning, M2 ENS 2024-2026
 
 Class details are [here](/otml).
-
-### Fundamentals of Machine Learning, M1 ENS 2024-2025
-
-- Material for the *Ensemble method* class (26/02/2025) is [here](/assets/2025_ens_fml/ensemble_methods.zip).
 
 
 ### Optimization for large scale Machine Learning, M2 ENS 2022-2024
