@@ -10,6 +10,8 @@ permalink: /genmodels/
 In the wake of models like Dall-E and ChatGPT, generative models have had a massive impact on text and image applications. The goal of this class is to present their mathematical and algorithmical foundations.
 
 
+
+
 <figure>
   <div class="l-page" style="--ar: calc(218 / 161)">
     <iframe style="aspect-ratio: 1; width: calc(100% / ( 1 + 2 * var(--ar)));" src="{{ 'assets/2025_ens_genmodels/ot-flow-1d.html#loop9' | relative_url }}" frameborder="0" scrolling="no"></iframe>
@@ -18,40 +20,38 @@ In the wake of models like Dall-E and ChatGPT, generative models have had a mass
   </div>
 </figure>
 
+### New site for the class
 
-### Teachers:
-- Quentin Bertrand (CR Inria, MALICE team)
-- Rémi Emonet (IUF, Associate professor, Jean Monnet University, MALICE Team)
-- Mathurin Massias (CR Inria, OCKHAM team)
+[site for the class](https://generativemodels.github.io/)
 
-### Tentative program
+
+
+### Program for 2025
 <!-- - Intro, analysis reminder, supervised vs generative modeling perspective-->
 
-- 10/09 Class cancelled
-- 11/09		Introduction to GenAI, MLE, Bayes + Base Models, Mixtures of Gaussian, EM ([notes by Y. Dziki](/assets/2025_ens_genmodels/scribe_lecture01.pdf))
-- 17/09	  Maximum a posteriori vs max likelihood, PCA, PPCA, VAE [notes by M. Ottavy](/assets/2025_ens_genmodels/scribe_lecture02.pdf)
+- 10/09/25 Class cancelled
+- 11/09/25		Introduction to GenAI, MLE, Bayes + Base Models, Mixtures of Gaussian, EM ([notes by Y. Dziki](/assets/2025_ens_genmodels/scribe_lecture01.pdf))
+- 17/09/25	  Maximum a posteriori vs max likelihood, PCA, PPCA, VAE [notes by M. Ottavy](/assets/2025_ens_genmodels/scribe_lecture02.pdf)
 - at home: LAB 1 : simple generative models: PCA, mixture of Gaussian, pretrained models, VAE
-- 18/09	[postponed due to ENS being closed] GAN/WGAN
-- 24/09		Flow matching [notes by H. Martel](/assets/2025_ens_genmodels/scribe_lecture03.pdf), [blog post on Flow Matching](https://dl.heeere.com/cfm/)
-- 25/09		[Lab on Flow Matching](/assets/2025_ens_genmodels/lab_flow_matching.py)
-- 01/10		GANS ([material 1](https://gauthiergidel.github.io/ift_6756_gt_ml/slides/Lecture7.pdf), [material 2](https://gauthiergidel.github.io/ift_6756_gt_ml/slides/Lecture9.pdf), [material 3](https://gauthiergidel.github.io/ift_6756_gt_ml/slides/Lecture11.pdf))
-- 02/10		WGAN + [Lab WGAN](/assets/2025_ens_genmodels/lab_wgan.py)
-- 08/10		Diffusion 1/2
-- 09/10		Introduction to sequence modelling: tokenizers, bigram models, autoregressive models, Transformers
-- 15/10		Diffusion 2/2 (links with flow matching, conditional generation)
-- 16/10		Metrics (FID/rec/recall/density), conditional generation, classifier/classifier-free guidance, OT, Reflow
-- 17/10		**Project progress evaluation**
-- 22/10		[Lab transformers](/assets/2025_ens_genmodels/lab_transformers.py)
-- 23/10		No class (work on Lab)
-- 05/11   Discrete models
-- 06/11   Discrete models + [lab DDPM/DDIM](/assets/2025_ens_genmodels/lab_ddpm_ddim.py)
-- 12/11   Project defense 1/2
-- 13/11   Project defense 2/2
+- 18/09/25	[postponed due to ENS being closed] GAN/WGAN
+- 24/09/25		Flow matching [notes by H. Martel](/assets/2025_ens_genmodels/scribe_lecture03.pdf), [blog post on Flow Matching](https://dl.heeere.com/cfm/)
+- 25/09/25		[Lab on Flow Matching](/assets/2025_ens_genmodels/lab_flow_matching.py)
+- 01/10/25		GANS ([material 1](https://gauthiergidel.github.io/ift_6756_gt_ml/slides/Lecture7.pdf), [material 2](https://gauthiergidel.github.io/ift_6756_gt_ml/slides/Lecture9.pdf), [material 3](https://gauthiergidel.github.io/ift_6756_gt_ml/slides/Lecture11.pdf))
+- 02/10/25		WGAN + [Lab WGAN](/assets/2025_ens_genmodels/lab_wgan.py)
+- 08/10/25		Diffusion 1/2
+- 09/10/25		Introduction to sequence modelling: tokenizers, bigram models, autoregressive models, Transformers
+- 15/10/25		Diffusion 2/2 (links with flow matching, conditional generation)
+- 16/10/25		Metrics (FID/rec/recall/density), conditional generation, classifier/classifier-free guidance, OT, Reflow
+- 17/10/25		**Project progress evaluation**
+- 22/10/25		[Lab transformers](/assets/2025_ens_genmodels/lab_transformers.py)
+- 23/10/25		No class (work on Lab)
+- 05/11/25		   Discrete models
+- 06/11/25   Discrete models + [lab DDPM/DDIM](/assets/2025_ens_genmodels/lab_ddpm_ddim.py)
+- 12/11/25   Project defense 1/2
+- 13/11/25   Project defense 2/2
 
-### Material
-- Work in progress: [site for the class](https://generativemodels.github.io/)
 
-### Validation
+### Validation in 2025
 - weekly homeworks + quizzes + 3 Labs in python
 - paper presentation and extension of a selected research article and the associated code applied on real data.
 
