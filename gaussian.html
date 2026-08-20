@@ -282,7 +282,7 @@ permalink: /gaussian/
 
     <div class="layout">
       <div class="panel">
-        <h2>Mean vector</h2>
+        <h2>Mean</h2>
         <div class="row2">
           <div class="field">
             <label>\( \mu_1 \)</label>
@@ -312,13 +312,6 @@ permalink: /gaussian/
           </div>
         </div>
 
-        <hr class="sep">
-
-        <h2>View</h2>
-        <div class="field">
-          <label>Fixed axis half-range (both axes always span \(\pm\) this)</label>
-          <input type="number" id="axisRange" value="8" step="0.5" min="1">
-        </div>
 
         <hr class="sep">
 
@@ -455,20 +448,12 @@ permalink: /gaussian/
         const sxy = parseFloat($('sxy').value);
         const syy = parseFloat($('syy').value);
         const n = parseInt($('nsamples').value, 10);
-        const axisRange = parseFloat($('axisRange').value);
-        // const levels = $('levels').value
-        //   .split(',')
-        //   .map(s => parseFloat(s.trim()))
-        //   .filter(v => !isNaN(v) && v > 0);
-        return { mx, my, sxx, sxy, syy, n, axisRange };
+        return { mx, my, sxx, sxy, syy, n };
       }
 
-      function validate({ sxx, sxy, syy, axisRange }) {
+      function validate({ sxx, sxy, syy }) {
         if ([sxx, sxy, syy].some(v => isNaN(v))) {
           return 'Fill in all covariance entries with numbers.';
-        }
-        if (isNaN(axisRange) || axisRange <= 0) {
-          return 'Axis half-range must be a positive number.';
         }
         const { lambda1, lambda2 } = eig2x2Sym(sxx, sxy, syy);
         if (lambda1 < -1e-8 || lambda2 < -1e-8) {
@@ -550,7 +535,7 @@ permalink: /gaussian/
         }
         setStatus('', null);
 
-        const { mx, my, sxx, sxy, syy, axisRange } = inputs;
+        const { mx, my, sxx, sxy, syy } = inputs;
         const eig = eig2x2Sym(sxx, sxy, syy);
         renderDecomposition(eig);
 
@@ -562,6 +547,7 @@ permalink: /gaussian/
           return [x, y];
         });
 
+        const axisRange = 8;
         const xMin = -axisRange, xMax = axisRange;
         const yMin = -axisRange, yMax = axisRange;
         renderMainPlot(mx, my, eig, pts, xMin, xMax, yMin, yMax);
@@ -794,7 +780,7 @@ permalink: /gaussian/
         draw();
       }
 
-      ['mx', 'my', 'sxx', 'sxy', 'syy', 'axisRange'].forEach(id => {
+      ['mx', 'my', 'sxx', 'sxy', 'syy'].forEach(id => {
         $(id).addEventListener('input', onParamChange);
       });
       $('nsamples').addEventListener('input', onCountChange);
