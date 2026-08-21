@@ -24,7 +24,7 @@
       --warn: #d62728;
       /* tab10 red */
       --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
-      --marg: 130px;
+      --marg: 60px;
     }
 
     * {
@@ -86,6 +86,7 @@
       grid-template-columns: 300px 1fr;
       gap: 20px;
       align-items: start;
+      justify-content: center;
     }
 
     @media (max-width: 820px) {
@@ -251,6 +252,10 @@
       height: 12px;
       border-radius: 3px;
       display: inline-block;
+    }
+
+    .panel:has(#plot) {
+      max-width: 500px;
     }
 
     .swatch.viridis {
