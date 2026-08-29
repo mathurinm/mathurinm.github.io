@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Peaks Function</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.26.0/plotly.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            text-align: center;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        #plot {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .controls {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 18px 24px;
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .controls>label {
+            color: #333;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .controls input[type="range"] {
+            flex: 1;
+            accent-color: #d62728;
+        }
+
+        .value-box {
+            font-family: monospace;
+            font-size: 16px;
+            color: #d62728;
+            min-width: 70px;
+            text-align: right;
+        }
+
+        .bounds {
+            font-family: monospace;
+            font-size: 12px;
+            color: #999;
+        }
+
+        .toggle {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 14px;
+            color: #555;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>3D Surface Plot: Peaks Function</h1>
+        <p class="description">Interactive 3D visualization of the matplotlib peaks function</p>
+        <div id="plot"></div>
+
+        <div class="controls">
+            <label for="levelSlider">Level</label>
+            <span class="bounds" id="minLabel"></span>
+            <input type="range" id="levelSlider" min="0" max="1" step="0.01" value="0.5">
+            <span class="bounds" id="maxLabel"></span>
+            <span class="value-box" id="levelValue">0.00</span>
+            <span class="toggle">
+                <input type="checkbox" id="showLine" checked>
+                <label for="showLine">level line</label>
+            </span>
+            <span class="toggle">
+                <input type="checkbox" id="showGrid" checked>
+                <label for="showGrid">contour map</label>
+            </span>
+        </div>
+    </div>
+
+    <script>
+        // ---- Peaks function -------------------------------------------------
+        function peaksFunction(x, y) {
+            const term1 = 3 * Math.pow(1 - x, 2) * Math.exp(-(x * x) - Math.pow(y + 1, 2));
+            const term2 = -10 * (x / 5 - Math.pow(x, 3) - Math.pow(y, 5)) * Math.exp(-(x * x) - (y * y));
+            const term3 = -(1 / 3) * Math.exp(-Math.pow(x + 1, 2) - (y * y));
+            return term1 + term2 + term3;
+        }
+
+        // ---- Grid (z[row][col] -> row = y index, col = x index) -------------
+        const RES = 120;
+        const MIN = -3, MAX = 3;
+
+        function generatePeaksData(resolution) {
+            const step = (MAX - MIN) / (resolution - 1);
+            const x = [], y = [], z = [];
+            for (let i = 0; i < resolution; i++) x.push(MIN + i * step);
+            for (let j = 0; j < resolution; j++) y.push(MIN + j * step);
+            for (let j = 0; j < resolution; j++) {
+                const row = [];
+                for (let i = 0; i < resolution; i++) row.push(peaksFunction(x[i], y[j]));
+                z.push(row);
+            }
+            return { x, y, z };
+        }
+
+        const grid = generatePeaksData(RES);
+
+        // Geometry is lifted by SHIFT so the surface floats above the base
+        // plane. grid.z keeps the true function values (used for colour,
+        // contours and the slider); zPlot is what actually gets drawn.
+        const SHIFT = 18;
+        const FLOOR_Z = 0;
+        const zPlot = grid.z.map(row => row.map(v => v + SHIFT));
+
+        let zMin = Infinity, zMax = -Infinity;
+        for (const row of grid.z) for (const v of row) {
+            if (v < zMin) zMin = v;
+            if (v > zMax) zMax = v;
+        }
+
+        // ---- Marching squares -> raw segments -------------------------------
+        function segmentsAtLevel(level) {
+            const { x, y, z } = grid;
+            const segs = [];
+            const interp = (va, vb, a, b) => a + (b - a) * ((level - va) / (vb - va));
+
+            for (let j = 0; j < RES - 1; j++) {
+                for (let i = 0; i < RES - 1; i++) {
+                    const v00 = z[j][i], v10 = z[j][i + 1];
+                    const v11 = z[j + 1][i + 1], v01 = z[j + 1][i];
+
+                    if (level < Math.min(v00, v10, v11, v01)) continue;
+                    if (level > Math.max(v00, v10, v11, v01)) continue;
+
+                    const pts = [];
+                    if ((v00 - level) * (v10 - level) < 0) pts.push([interp(v00, v10, x[i], x[i + 1]), y[j]]);
+                    if ((v10 - level) * (v11 - level) < 0) pts.push([x[i + 1], interp(v10, v11, y[j], y[j + 1])]);
+                    if ((v11 - level) * (v01 - level) < 0) pts.push([interp(v11, v01, x[i + 1], x[i]), y[j + 1]]);
+                    if ((v01 - level) * (v00 - level) < 0) pts.push([x[i], interp(v01, v00, y[j + 1], y[j])]);
+
+                    for (let k = 0; k + 1 < pts.length; k += 2) segs.push([pts[k], pts[k + 1]]);
+                }
+            }
+            return segs;
+        }
+
+        // ---- Join segments end-to-end into ordered polylines -----------------
+        const ptKey = p => Math.round(p[0] * 1e7) + ',' + Math.round(p[1] * 1e7);
+
+        function chainSegments(segs) {
+            const map = new Map();
+            segs.forEach((s, idx) => {
+                for (const p of s) {
+                    const k = ptKey(p);
+                    if (!map.has(k)) map.set(k, []);
+                    map.get(k).push(idx);
+                }
+            });
+
+            const used = new Array(segs.length).fill(false);
+            const polys = [];
+
+            for (let i = 0; i < segs.length; i++) {
+                if (used[i]) continue;
+                used[i] = true;
+                let poly = [segs[i][0], segs[i][1]];
+
+                for (let dir = 0; dir < 2; dir++) {
+                    while (true) {
+                        const end = poly[poly.length - 1];
+                        const cands = map.get(ptKey(end)) || [];
+                        const nxt = cands.find(j => !used[j]);
+                        if (nxt === undefined) break;
+                        used[nxt] = true;
+                        const s = segs[nxt];
+                        poly.push(ptKey(s[0]) === ptKey(end) ? s[1] : s[0]);
+                    }
+                    poly.reverse();
+                }
+                polys.push(poly);
+            }
+            return polys;
+        }
+
+        // ---- Split a polyline into dashes by arc length ----------------------
+        function dashPolyline(poly, dashLen, gapLen) {
+            const out = [];
+            let on = true, remaining = dashLen, cur = [poly[0]];
+
+            for (let k = 0; k + 1 < poly.length; k++) {
+                const a = poly[k], b = poly[k + 1];
+                const len = Math.hypot(b[0] - a[0], b[1] - a[1]);
+                if (len === 0) continue;
+                let t = 0;
+                while (len - t > remaining) {
+                    t += remaining;
+                    const f = t / len;
+                    const p = [a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f];
+                    if (on) { cur.push(p); out.push(cur); cur = []; }
+                    else { cur = [p]; }
+                    on = !on;
+                    remaining = on ? dashLen : gapLen;
+                }
+                remaining -= (len - t);
+                if (on) cur.push(b);
+            }
+            if (on && cur.length > 1) out.push(cur);
+            return out;
+        }
+
+        // ---- Flatten polylines into one trace (nulls separate pieces) -------
+        function flatten(polys, zVal) {
+            const cx = [], cy = [], cz = [];
+            for (const poly of polys) {
+                for (const p of poly) { cx.push(p[0]); cy.push(p[1]); cz.push(zVal); }
+                cx.push(null); cy.push(null); cz.push(null);
+            }
+            return { cx, cy, cz };
+        }
+
+        const LIFT = (zMax - zMin) * 0.006;
+        const DASH = 0.16, GAP = 0.11;
+
+        function buildLevel(level) {
+            const polys = chainSegments(segmentsAtLevel(level));
+            const dashed = [];
+            for (const poly of polys) dashed.push(...dashPolyline(poly, DASH, GAP));
+            return {
+                surface: flatten(dashed, level + SHIFT + LIFT),
+                floor: flatten(polys, FLOOR_Z + 0.02)
+            };
+        }
+
+        // ---- Full contour map drawn flat on the base plane ------------------
+        const GRID_STEP = 0.5;
+
+        function buildContourGrid(step) {
+            const cx = [], cy = [], cz = [];
+            const first = Math.ceil(zMin / step);
+            const last = Math.floor(zMax / step);
+            let count = 0;
+            for (let n = first; n <= last; n++) {
+                const level = n * step;
+                const polys = chainSegments(segmentsAtLevel(level));
+                if (polys.length) count++;
+                for (const poly of polys) {
+                    for (const p of poly) { cx.push(p[0]); cy.push(p[1]); cz.push(FLOOR_Z + 0.01); }
+                    cx.push(null); cy.push(null); cz.push(null);
+                }
+            }
+            return { cx, cy, cz, count };
+        }
+
+        const contourGrid = buildContourGrid(GRID_STEP);
+
+        // ---- Traces ---------------------------------------------------------
+        const startLevel = 0;
+        const built = buildLevel(startLevel);
+
+        const surfaceTrace = {
+            x: grid.x, y: grid.y, z: zPlot,
+            surfacecolor: grid.z,          // colour by the unshifted values
+            type: 'surface',
+            colorscale: 'Viridis',
+            opacity: 0.7,                  // matplotlib's alpha
+            hoverinfo: 'skip',
+            showscale: true,
+            colorbar: { title: 'function values' },
+            // kills the lines Plotly traces across the surface under the cursor
+            contours: {
+                x: { highlight: false },
+                y: { highlight: false },
+                z: { highlight: false }
+            }
+        };
+
+        const lineOnSurface = {
+            x: built.surface.cx, y: built.surface.cy, z: built.surface.cz,
+            type: 'scatter3d', mode: 'lines',
+            line: { color: '#d62728', width: 6 },
+            hoverinfo: 'skip', showlegend: false, connectgaps: false
+        };
+
+        const lineOnFloor = {
+            x: built.floor.cx, y: built.floor.cy, z: built.floor.cz,
+            type: 'scatter3d', mode: 'lines',
+            line: { color: '#000000', width: 8 },
+            hoverinfo: 'skip', showlegend: false, connectgaps: false
+        };
+
+        const contourGridTrace = {
+            x: contourGrid.cx, y: contourGrid.cy, z: contourGrid.cz,
+            type: 'scatter3d', mode: 'lines',
+            line: { color: 'rgba(0,0,0,0.55)', width: 1 },
+            hoverinfo: 'skip', showlegend: false, connectgaps: false
+        };
+
+        const layout = {
+            title: 'Peaks Surface',
+            autosize: true,
+            hovermode: false,
+            margin: { l: 0, r: 0, b: 0, t: 40 },
+            scene: {
+                xaxis: { title: '$x_1$', range: [-3, 3], showspikes: false },
+                yaxis: { title: '$x_2$', range: [-3, 3], showspikes: false },
+                zaxis: {
+                    title: '', range: [FLOOR_Z, zMax + SHIFT + 1.5],
+                    showspikes: false, showticklabels: false
+                },
+                aspectmode: 'manual',
+                aspectratio: { x: 1.4, y: 1.4, z: 0.65 },
+                camera: { eye: { x: 1.5, y: 1.5, z: 1.2 } }
+            },
+            paper_bgcolor: 'white',
+            plot_bgcolor: '#f8f8f8'
+        };
+
+        const config = { responsive: true, displayModeBar: true, displaylogo: false };
+
+        Plotly.newPlot('plot', [surfaceTrace, lineOnSurface, lineOnFloor, contourGridTrace], layout, config);
+
+        // ---- Slider ---------------------------------------------------------
+        const slider = document.getElementById('levelSlider');
+        const valueBox = document.getElementById('levelValue');
+        const showBox = document.getElementById('showLine');
+
+        slider.min = zMin.toFixed(2);
+        slider.max = zMax.toFixed(2);
+        slider.step = 0.02;
+        slider.value = startLevel;
+
+        document.getElementById('minLabel').textContent = zMin.toFixed(2);
+        document.getElementById('maxLabel').textContent = zMax.toFixed(2);
+        valueBox.textContent = Number(startLevel).toFixed(2);
+
+        function updateContour() {
+            const level = parseFloat(slider.value);
+            valueBox.textContent = level.toFixed(2);
+            if (!showBox.checked) {
+                Plotly.restyle('plot', { x: [[], []], y: [[], []], z: [[], []] }, [1, 2]);
+                return;
+            }
+            const b = buildLevel(level);
+            Plotly.restyle('plot', {
+                x: [b.surface.cx, b.floor.cx],
+                y: [b.surface.cy, b.floor.cy],
+                z: [b.surface.cz, b.floor.cz]
+            }, [1, 2]);
+        }
+
+        slider.addEventListener('input', updateContour);
+        showBox.addEventListener('change', updateContour);
+
+        const gridBox = document.getElementById('showGrid');
+        gridBox.addEventListener('change', () => {
+            Plotly.restyle('plot', { visible: gridBox.checked ? true : 'legendonly' }, [3]);
+        });
+    </script>
+</body>
+
+</html>
