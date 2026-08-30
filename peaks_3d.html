@@ -222,24 +222,16 @@ permalink: /levellines/
         <div class="controls">
             <label class="slider-label" for="levelSlider">\(\tau\)</label>
             <span class="bounds" id="minLabel"></span>
-            <input type="range" id="levelSlider" min="0" max="1" step="0.02" value="0">
+            <input type="range" id="levelSlider" min="0" max="1" step="0.02" value="2">
             <span class="bounds" id="maxLabel"></span>
-            <span class="value-box" id="levelValue">0.00</span>
+            <span class="value-box" id="levelValue">2.00</span>
             <span class="toggle">
-                <input type="checkbox" id="showLine" checked>
-                <label for="showLine">level line</label>
-            </span>
-            <span class="toggle">
-                <input type="checkbox" id="showGrid" checked>
-                <label for="showGrid">contour map</label>
+                <input type="checkbox" id="showPlane" checked>
+                <label for="showPlane">horizontal plane</label>
             </span>
         </div>
 
     </div>
-
-    <footer>
-        Contours computed by marching squares on a 120&times;120 grid, joined into polylines and dashed by arc length.
-    </footer>
 
     <script>
         // ---- Peaks function -------------------------------------------------
@@ -282,8 +274,28 @@ permalink: /levellines/
         // lowest point of the surface — change this one number to tune it.
         const FLOOR_Z = 0;
         const FLOOR_GAP = 22.9;              // doubled from 11.45
-        const SHIFT = FLOOR_GAP - zMin;      // zMin is negative
-        const zPlot = grid.z.map(row => row.map(v => v + SHIFT));
+        // Vertical exaggeration, display only. The true function values are
+        // untouched, so the slider, contours and colour mapping are unaffected.
+        const Z_SCALE = 3;
+        const SHIFT = FLOOR_GAP - zMin * Z_SCALE;   // zMin is negative
+        const zPlot = grid.z.map(row => row.map(v => v * Z_SCALE + SHIFT));
+
+        // ---- Vertical sizing -------------------------------------------------
+        // aspectratio.z must NOT be a fixed number: the scene box is drawn at a
+        // fixed visual height, so a constant here means extra FLOOR_GAP is just
+        // compressed away and nothing changes on screen. Instead a data unit is
+        // pinned to a fixed amount of aspect, and the container grows to match,
+        // so added gap turns into actual pixels.
+        const HEADROOM = 1.5;                       // clearance above the peaks
+        const Z_TOP = zMax * Z_SCALE + SHIFT + HEADROOM;
+        const Z_RANGE = Z_TOP - FLOOR_Z;
+
+        const Z_ASPECT_PER_UNIT = 0.0095;           // aspect units per data unit
+        const Z_ASPECT = Z_RANGE * Z_ASPECT_PER_UNIT;
+
+        // Container must grow with the box, or Plotly zooms out to fit and the
+        // extra height is cancelled out again.
+        const PLOT_HEIGHT = Math.round(450 * Z_ASPECT / 0.65);
 
         // ---- Marching squares -> raw segments -------------------------------
         function segmentsAtLevel(level) {
@@ -385,7 +397,7 @@ permalink: /levellines/
             return { cx, cy, cz };
         }
 
-        const LIFT = (zMax - zMin) * 0.006;
+        const LIFT = (zMax - zMin) * 0.006 * Z_SCALE;
         const DASH = 0.16, GAP = 0.11;
 
         function buildLevel(level) {
@@ -393,7 +405,7 @@ permalink: /levellines/
             const dashed = [];
             for (const poly of polys) dashed.push(...dashPolyline(poly, DASH, GAP));
             return {
-                surface: flatten(dashed, level + SHIFT + LIFT),
+                surface: flatten(dashed, level * Z_SCALE + SHIFT + LIFT),
                 floor: flatten(polys, FLOOR_Z + 0.02)
             };
         }
@@ -426,7 +438,7 @@ permalink: /levellines/
             surfacecolor: grid.z,          // colour by the unshifted values
             type: 'surface',
             colorscale: 'Viridis',
-            opacity: 0.7,                  // matplotlib's alpha
+            opacity: 1,                    // matplotlib's alpha
             hoverinfo: 'skip',
             showscale: false,              // colourbar removed
             contours: {                    // no cursor-following highlight lines
@@ -436,7 +448,7 @@ permalink: /levellines/
             }
         };
 
-        const startLevel = 0;
+        const startLevel = 2;
         const built = buildLevel(startLevel);
 
         const lineOnSurface = {
@@ -464,18 +476,18 @@ permalink: /levellines/
         // reach them. Unicode subscripts are used instead of $x_1$.
         const layout = {
             autosize: true,
-            height: 450,
+            height: PLOT_HEIGHT,
             hovermode: false,
             margin: { l: 0, r: 0, b: 0, t: 10 },
             scene: {
                 xaxis: { title: 'x₁', range: [3, -3], showspikes: false },
                 yaxis: { title: 'x₂', range: [3, -3], showspikes: false },
                 zaxis: {
-                    title: '', range: [FLOOR_Z, zMax + SHIFT + 1.5],
+                    title: '', range: [FLOOR_Z, Z_TOP],
                     showspikes: false, showticklabels: false
                 },
                 aspectmode: 'manual',
-                aspectratio: { x: 1.4, y: 1.4, z: 0.65 },
+                aspectratio: { x: 1.4, y: 1.4, z: 1.65 },
                 camera: { eye: { x: 1.5, y: 1.5, z: 1.2 } }
             },
             paper_bgcolor: 'white',
@@ -484,8 +496,34 @@ permalink: /levellines/
 
         const config = { responsive: true, displayModeBar: true, displaylogo: false };
 
+        // Horizontal plane at tau, in drawn coordinates, so it slices the
+        // surface exactly where the dashed level line runs.
+        function planeZ(level) {
+            const h = level * Z_SCALE + SHIFT;
+            return [[h, h], [h, h]];
+        }
+
+        const planeTrace = {
+            x: [-3, 3], y: [-3, 3],
+            z: planeZ(startLevel),
+            type: 'surface',
+            colorscale: [[0, '#d62728'], [1, '#d62728']],
+            showscale: false,
+            opacity: 0.22,
+            hoverinfo: 'skip',
+            contours: {
+                x: { highlight: false },
+                y: { highlight: false },
+                z: { highlight: false }
+            }
+        };
+
+        // CSS gives #plot a fixed height; override it so the container tracks
+        // the computed box height (resizeAll measures the container).
+        document.getElementById('plot').style.height = PLOT_HEIGHT + 'px';
+
         Plotly.newPlot('plot',
-            [surfaceTrace, lineOnSurface, lineOnFloor, contourGridTrace],
+            [surfaceTrace, lineOnSurface, lineOnFloor, contourGridTrace, planeTrace],
             layout, config);
 
         // ---- Reference panels ------------------------------------------------
@@ -557,8 +595,7 @@ permalink: /levellines/
         const slider = document.getElementById('levelSlider');
         const valueBox = document.getElementById('levelValue');
         const tauReadout = document.getElementById('tauReadout');
-        const showBox = document.getElementById('showLine');
-        const gridBox = document.getElementById('showGrid');
+        const planeBox = document.getElementById('showPlane');
 
         slider.min = zMin.toFixed(2);
         slider.max = zMax.toFixed(2);
@@ -568,27 +605,24 @@ permalink: /levellines/
         document.getElementById('minLabel').textContent = zMin.toFixed(2);
         document.getElementById('maxLabel').textContent = zMax.toFixed(2);
         valueBox.textContent = Number(startLevel).toFixed(2);
+        tauReadout.textContent = Number(startLevel).toFixed(2);
 
         function updateContour() {
             const level = parseFloat(slider.value);
             valueBox.textContent = level.toFixed(2);
             tauReadout.textContent = level.toFixed(2);
-            if (!showBox.checked) {
-                Plotly.restyle('plot', { x: [[], []], y: [[], []], z: [[], []] }, [1, 2]);
-                return;
-            }
             const b = buildLevel(level);
             Plotly.restyle('plot', {
                 x: [b.surface.cx, b.floor.cx],
                 y: [b.surface.cy, b.floor.cy],
                 z: [b.surface.cz, b.floor.cz]
             }, [1, 2]);
+            Plotly.restyle('plot', { z: [planeZ(level)] }, [4]);
         }
 
         slider.addEventListener('input', updateContour);
-        showBox.addEventListener('change', updateContour);
-        gridBox.addEventListener('change', () => {
-            Plotly.restyle('plot', { visible: gridBox.checked ? true : 'legendonly' }, [3]);
+        planeBox.addEventListener('change', () => {
+            Plotly.restyle('plot', { visible: planeBox.checked }, [4]);
         });
 
         // ---- Keep plots matched to their containers -------------------------
