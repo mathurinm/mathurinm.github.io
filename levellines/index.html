@@ -5,42 +5,90 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Peaks Function</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <title>Level lines illustration</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_SVG"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.26.0/plotly.min.js"></script>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-            font-family: Arial, sans-serif;
+            padding: 0 0 60px 0;
+            background-color: #f0f1f3;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            color: #2b2b2b;
+        }
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 32px 20px 24px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 8px;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        header p {
+            margin: 0;
+            color: #666;
+            font-size: 15px;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 20px;
         }
 
-        h1 {
+        .equation-box {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-left: 4px solid #d62728;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            margin: 28px auto 24px;
+            padding: 18px 32px;
+            max-width: 620px;
             text-align: center;
-            color: #333;
-            margin-bottom: 10px;
         }
 
-        .description {
-            text-align: center;
-            color: #666;
-            margin-bottom: 20px;
+        .equation-box .caption {
+            font-size: 13px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 4px;
         }
 
-        #plot {
-            background-color: white;
+        .equation-box .tau-readout {
+            font-family: ui-monospace, Menlo, Consolas, monospace;
+            font-size: 14px;
+            color: #d62728;
+            margin-top: 6px;
+        }
+
+        .panel {
+            background: #ffffff;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            min-width: 0;
+        }
+
+        /* Responsive Plotly containers need a defined height: resize()
+           measures the container, so an auto height collapses the plot. */
+        #plot {
+            height: 450px;
         }
 
         .controls {
-            background-color: white;
+            background: #ffffff;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             padding: 18px 24px;
@@ -48,21 +96,23 @@
             display: flex;
             align-items: center;
             gap: 16px;
+            flex-wrap: wrap;
         }
 
-        .controls>label {
-            color: #333;
-            font-weight: bold;
+        .controls>label.slider-label {
+            font-weight: 600;
             white-space: nowrap;
+            font-size: 16px;
         }
 
         .controls input[type="range"] {
             flex: 1;
+            min-width: 220px;
             accent-color: #d62728;
         }
 
         .value-box {
-            font-family: monospace;
+            font-family: ui-monospace, Menlo, Consolas, monospace;
             font-size: 16px;
             color: #d62728;
             min-width: 70px;
@@ -70,7 +120,7 @@
         }
 
         .bounds {
-            font-family: monospace;
+            font-family: ui-monospace, Menlo, Consolas, monospace;
             font-size: 12px;
             color: #999;
         }
@@ -83,19 +133,93 @@
             color: #555;
             white-space: nowrap;
         }
+
+        h2.section {
+            font-size: 19px;
+            font-weight: 600;
+            margin: 44px 0 6px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #dcdcdc;
+        }
+
+        .section-note {
+            margin: 0 0 18px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        .subplots {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .subplots>div {
+            flex: 1 1 320px;
+            min-width: 0;
+            /* without this, flex children refuse to
+                                      shrink and the plots overflow the box */
+            height: 396px;
+            /* 380 layout + 2*8 padding; must be
+                                      explicit or resize() collapses it */
+            overflow: hidden;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 8px;
+        }
+
+        /* side by side is too cramped below this width */
+        @media (max-width: 900px) {
+            .subplots {
+                flex-direction: column;
+            }
+        }
+
+        footer {
+            max-width: 1200px;
+            margin: 40px auto 0;
+            padding: 0 20px;
+            color: #999;
+            font-size: 13px;
+        }
     </style>
 </head>
 
 <body>
+
+    <header>
+        <h1>Visualization of level lines of a function</h1>
+    </header>
+
     <div class="container">
-        <h1>3D Surface Plot: Peaks Function</h1>
-        <p class="description">Interactive 3D visualization of the matplotlib peaks function</p>
-        <div id="plot"></div>
+        <br>
+        <!-- <p class="section-note">
+            Left is a fixed plot of the function, right is the plot of its level lines.
+        </p> -->
+        <div class="subplots">
+            <div id="staticSurface"></div>
+            <div id="staticContour"></div>
+        </div>
+
+        <div class="equation-box">
+            <div class="caption">Level set</div>
+            <div id="equation">$$\{\, \mathbf{x} \in \mathbb{R}^d \;:\; f(\mathbf{x}) = \tau \,\}$$</div>
+            <div class="tau-readout">\(\tau\) = <span id="tauReadout">0.00</span>
+</div>
+        </div>
+
+        <!-- <h2 class="section">Interactive level set</h2> -->
+        <!-- <p class="section-note">
+            Drag the slider to sweep \(\tau\); the dashed red curve is the level set on the surface,
+            the thick black curve its projection onto the base plane.
+        </p> -->
+        <div class="panel" id="plot"></div>
 
         <div class="controls">
-            <label for="levelSlider">Level</label>
+            <label class="slider-label" for="levelSlider">\(\tau\)</label>
             <span class="bounds" id="minLabel"></span>
-            <input type="range" id="levelSlider" min="0" max="1" step="0.01" value="0.5">
+            <input type="range" id="levelSlider" min="0" max="1" step="0.02" value="0">
             <span class="bounds" id="maxLabel"></span>
             <span class="value-box" id="levelValue">0.00</span>
             <span class="toggle">
@@ -107,7 +231,12 @@
                 <label for="showGrid">contour map</label>
             </span>
         </div>
+
     </div>
+
+    <footer>
+        Contours computed by marching squares on a 120×120 grid, joined into polylines and dashed by arc length.
+    </footer>
 
     <script>
         // ---- Peaks function -------------------------------------------------
@@ -137,18 +266,21 @@
 
         const grid = generatePeaksData(RES);
 
-        // Geometry is lifted by SHIFT so the surface floats above the base
-        // plane. grid.z keeps the true function values (used for colour,
-        // contours and the slider); zPlot is what actually gets drawn.
-        const SHIFT = 18;
-        const FLOOR_Z = 0;
-        const zPlot = grid.z.map(row => row.map(v => v + SHIFT));
-
         let zMin = Infinity, zMax = -Infinity;
         for (const row of grid.z) for (const v of row) {
             if (v < zMin) zMin = v;
             if (v > zMax) zMax = v;
         }
+
+        // Geometry is lifted so the surface floats above the base plane.
+        // grid.z keeps the true function values (colour, contours, slider);
+        // zPlot is what actually gets drawn.
+        // FLOOR_GAP is the clear vertical space between the base plane and the
+        // lowest point of the surface — change this one number to tune it.
+        const FLOOR_Z = 0;
+        const FLOOR_GAP = 22.9;              // doubled from 11.45
+        const SHIFT = FLOOR_GAP - zMin;      // zMin is negative
+        const zPlot = grid.z.map(row => row.map(v => v + SHIFT));
 
         // ---- Marching squares -> raw segments -------------------------------
         function segmentsAtLevel(level) {
@@ -285,10 +417,7 @@
 
         const contourGrid = buildContourGrid(GRID_STEP);
 
-        // ---- Traces ---------------------------------------------------------
-        const startLevel = 0;
-        const built = buildLevel(startLevel);
-
+        // ---- Main interactive figure ----------------------------------------
         const surfaceTrace = {
             x: grid.x, y: grid.y, z: zPlot,
             surfacecolor: grid.z,          // colour by the unshifted values
@@ -296,15 +425,16 @@
             colorscale: 'Viridis',
             opacity: 0.7,                  // matplotlib's alpha
             hoverinfo: 'skip',
-            showscale: true,
-            colorbar: { title: 'function values' },
-            // kills the lines Plotly traces across the surface under the cursor
-            contours: {
+            showscale: false,              // colourbar removed
+            contours: {                    // no cursor-following highlight lines
                 x: { highlight: false },
                 y: { highlight: false },
                 z: { highlight: false }
             }
         };
+
+        const startLevel = 0;
+        const built = buildLevel(startLevel);
 
         const lineOnSurface = {
             x: built.surface.cx, y: built.surface.cy, z: built.surface.cz,
@@ -327,14 +457,16 @@
             hoverinfo: 'skip', showlegend: false, connectgaps: false
         };
 
+        // NOTE: gl3d axis titles are WebGL text, not SVG, so MathJax cannot
+        // reach them. Unicode subscripts are used instead of $x_1$.
         const layout = {
-            title: 'Peaks Surface',
             autosize: true,
+            height: 450,
             hovermode: false,
-            margin: { l: 0, r: 0, b: 0, t: 40 },
+            margin: { l: 0, r: 0, b: 0, t: 10 },
             scene: {
-                xaxis: { title: '$x_1$', range: [-3, 3], showspikes: false },
-                yaxis: { title: '$x_2$', range: [-3, 3], showspikes: false },
+                xaxis: { title: 'x₁', range: [3, -3], showspikes: false },
+                yaxis: { title: 'x₂', range: [3, -3], showspikes: false },
                 zaxis: {
                     title: '', range: [FLOOR_Z, zMax + SHIFT + 1.5],
                     showspikes: false, showticklabels: false
@@ -349,12 +481,81 @@
 
         const config = { responsive: true, displayModeBar: true, displaylogo: false };
 
-        Plotly.newPlot('plot', [surfaceTrace, lineOnSurface, lineOnFloor, contourGridTrace], layout, config);
+        Plotly.newPlot('plot',
+            [surfaceTrace, lineOnSurface, lineOnFloor, contourGridTrace],
+            layout, config);
+
+        // ---- Static reference panels ----------------------------------------
+        // staticPlot:true suppresses gl3d scene setup and leaves a WebGL plot
+        // blank, so the 3D panel is frozen with dragmode/hover instead.
+        const static3dConfig = { displayModeBar: false, scrollZoom: false, responsive: true };
+        const static2dConfig = { displayModeBar: false, staticPlot: true, responsive: true };
+
+        Plotly.newPlot('staticSurface', [{
+            x: grid.x, y: grid.y, z: grid.z,
+            type: 'surface',
+            colorscale: 'Viridis',
+            showscale: false,
+            hoverinfo: 'skip',
+            contours: { x: { highlight: false }, y: { highlight: false }, z: { highlight: false } }
+        }], {
+            title: { text: 'f(x₁, x₂)', font: { size: 15 } },
+            height: 380,
+            hovermode: false,
+            margin: { l: 0, r: 0, b: 0, t: 40 },
+            scene: {
+                dragmode: false,
+                // visible:false removes ticks, labels, title, grid and backdrop
+                xaxis: { visible: false, range: [3, -3] },
+                yaxis: { visible: false, range: [3, -3] },
+                zaxis: { visible: false },
+                aspectmode: 'manual',
+                aspectratio: { x: 1.3, y: 1.3, z: 0.7 },
+                camera: { eye: { x: 1.5, y: 1.5, z: 1.1 } }
+            },
+            paper_bgcolor: 'white'
+        }, static3dConfig).then(function () {
+            // Applying this camera in the initial layout leaves the panel blank:
+            // the gl3d scene has to exist before it will accept it. Doing it here
+            // also fails safe — if the call does not take, the panel still shows
+            // the default corner view rather than nothing.
+            // eye.x is 0.05 rather than 0 so the eye is not exactly on the axis.
+            return Plotly.relayout('staticSurface', {
+                'scene.camera.eye': { x: 0.05, y: 2.121, z: 1.1 }
+            });
+        });
+
+        // 30 levels: start + k*size for k = 0..29
+        const N_LEVELS = 30;
+        Plotly.newPlot('staticContour', [{
+            x: grid.x, y: grid.y, z: grid.z,
+            type: 'contour',
+            colorscale: 'Viridis',
+            contours: {
+                coloring: 'lines',
+                start: zMin,
+                end: zMax,
+                size: (zMax - zMin) / (N_LEVELS - 1)
+            },
+            line: { width: 1.6 },
+            showscale: true,
+            colorbar: { title: { text: 'function value', side: 'right' }, thickness: 14 }
+        }], {
+            title: { text: 'level lines of f', font: { size: 15 } },
+            height: 380,
+            margin: { l: 55, r: 10, b: 50, t: 40 },
+            xaxis: { title: '$x_1$', scaleanchor: 'y', constrain: 'domain' },
+            yaxis: { title: '$x_2$' },
+            paper_bgcolor: 'white',
+            plot_bgcolor: 'white'
+        }, static2dConfig);
 
         // ---- Slider ---------------------------------------------------------
         const slider = document.getElementById('levelSlider');
         const valueBox = document.getElementById('levelValue');
+        const tauReadout = document.getElementById('tauReadout');
         const showBox = document.getElementById('showLine');
+        const gridBox = document.getElementById('showGrid');
 
         slider.min = zMin.toFixed(2);
         slider.max = zMax.toFixed(2);
@@ -368,6 +569,7 @@
         function updateContour() {
             const level = parseFloat(slider.value);
             valueBox.textContent = level.toFixed(2);
+            tauReadout.textContent = level.toFixed(2);
             if (!showBox.checked) {
                 Plotly.restyle('plot', { x: [[], []], y: [[], []], z: [[], []] }, [1, 2]);
                 return;
@@ -382,11 +584,25 @@
 
         slider.addEventListener('input', updateContour);
         showBox.addEventListener('change', updateContour);
-
-        const gridBox = document.getElementById('showGrid');
         gridBox.addEventListener('change', () => {
             Plotly.restyle('plot', { visible: gridBox.checked ? true : 'legendonly' }, [3]);
         });
+
+        // ---- Keep plots matched to their containers -------------------------
+        // MathJax typesets asynchronously and shifts the layout after Plotly has
+        // already measured, so the plots need a re-measure once things settle.
+        function resizeAll() {
+            ['plot', 'staticSurface', 'staticContour'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el && el.data) Plotly.Plots.resize(el);
+            });
+        }
+
+        window.addEventListener('load', resizeAll);
+        window.addEventListener('resize', resizeAll);
+        if (window.MathJax && window.MathJax.Hub) {
+            MathJax.Hub.Queue(resizeAll);
+        }
     </script>
 </body>
 
