@@ -9,7 +9,7 @@ permalink: /levellines/
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level lines illustration</title>
+    <title>Level lines</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_SVG"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.26.0/plotly.min.js"></script>
     <style>
@@ -193,7 +193,7 @@ permalink: /levellines/
 <body>
 
     <header>
-        <h1>Visualization of level lines of a function</h1>
+        <h1>Visualizing the level lines of a function</h1>
     </header>
 
     <div class="container">
@@ -488,10 +488,10 @@ permalink: /levellines/
             [surfaceTrace, lineOnSurface, lineOnFloor, contourGridTrace],
             layout, config);
 
-        // ---- Static reference panels ----------------------------------------
+        // ---- Reference panels ------------------------------------------------
         // staticPlot:true suppresses gl3d scene setup and leaves a WebGL plot
-        // blank, so the 3D panel is frozen with dragmode/hover instead.
-        const static3dConfig = { displayModeBar: false, scrollZoom: false, responsive: true };
+        // blank, so it is only used on the 2D panel.
+        const surface3dConfig = { displayModeBar: true, displaylogo: false, responsive: true };
         const static2dConfig = { displayModeBar: false, staticPlot: true, responsive: true };
 
         Plotly.newPlot('staticSurface', [{
@@ -507,7 +507,7 @@ permalink: /levellines/
             hovermode: false,
             margin: { l: 0, r: 0, b: 0, t: 40 },
             scene: {
-                dragmode: false,
+                dragmode: 'orbit',
                 // visible:false removes ticks, labels, title, grid and backdrop
                 xaxis: { visible: false, range: [3, -3] },
                 yaxis: { visible: false, range: [3, -3] },
@@ -517,7 +517,7 @@ permalink: /levellines/
                 camera: { eye: { x: 1.5, y: 1.5, z: 1.1 } }
             },
             paper_bgcolor: 'white'
-        }, static3dConfig).then(function () {
+        }, surface3dConfig).then(function () {
             // Applying this camera in the initial layout leaves the panel blank:
             // the gl3d scene has to exist before it will accept it. Doing it here
             // also fails safe — if the call does not take, the panel still shows
@@ -546,8 +546,8 @@ permalink: /levellines/
         }], {
             title: { text: 'level lines of f', font: { size: 15 } },
             height: 380,
-            margin: { l: 55, r: 10, b: 50, t: 40 },
-            xaxis: { title: '$x_1$', scaleanchor: 'y', constrain: 'domain' },
+            margin: { l: 55, r: 10, b: 80, t: 40 },
+            xaxis: { title: { text: '$x_1$', standoff: 12 }, scaleanchor: 'y', constrain: 'domain' },
             yaxis: { title: '$x_2$' },
             paper_bgcolor: 'white',
             plot_bgcolor: 'white'
