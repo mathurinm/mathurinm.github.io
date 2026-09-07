@@ -22,7 +22,7 @@ The call for submissions (20 min oral or poster) is open, send your title+abstra
 ### Practical info
 
 - Location: **Amphi D2, ENS de Lyon** (Descartes site, 15 parvis René Descartes, 69007 Lyon - Debourg metro station)
-- Date: **October 9th 2026, from 09:00 to 17:30**. lunch break 12 h 15 - 13 h 45, poster session 13 h 45 - 15 h 15
+- Date: **October 9th 2026, from 09:00 to 17:30**. lunch break on you own 12 h 15 - 13 h 45, poster session 13 h 45 - 15 h 15
 - For remote participants, a zoom link will be made available a few days before the workshop
 - Organizers: Ségolène Martin and Mathurin Massias
 
@@ -47,3 +47,6 @@ Invited speaker (50 min talks):
 - Anna Korba -- TBA
 - Vicky Kalogeiton (LIX, Ecole Polytechnique) -- Scale is religion?
 - Umut Simsekli (SIERRA, INRIA) -- TBA
+
+
+This event benefits from the support of the [Institut Rhonalpin des Systèmes complexes (IXXI)](https://www.ens-lyon.fr/en/research/research-units/laboratories/institut-rhonalpin-des-systemes-complexes)
