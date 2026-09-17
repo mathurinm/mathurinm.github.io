@@ -9,9 +9,12 @@ nav_order: 3
 
 # GDR IASIS workshop on flow matching and diffusion
 
-Due to the GDR IASIS website being down until Sept 17th, this is a temporary page to host the workshop's info.
 
-**Registration (in-person or remote) is free but mandatory here**: [https://forms.gle/Sz4F2sXBjzFzs2wo9](https://forms.gle/Sz4F2sXBjzFzs2wo9)
+**The GDR IASIS is back online, you can register here for the workshop**: [https://gdr-iasis.cnrs.fr/reunions/modeles-generatifs-diffusion-flow-matching/](https://gdr-iasis.cnrs.fr/reunions/modeles-generatifs-diffusion-flow-matching/)
+
+~~Due to the GDR IASIS website being down until Sept 17th, this is a temporary page to host the workshop's info.~~
+
+~~**Registration (in-person or remote) is free but mandatory here**: [https://forms.gle/Sz4F2sXBjzFzs2wo9](https://forms.gle/Sz4F2sXBjzFzs2wo9)~~
 
 
 ### Call for submissions
