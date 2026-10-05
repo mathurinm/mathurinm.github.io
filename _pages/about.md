@@ -49,19 +49,19 @@ You can find more details on my [résumé (07/2026)](/assets/pdf/CV_Mathurin_MAS
 Current team:
 - [Georges Le Bellier](https://lebellig.github.io), Postdoc/RE, since May 2026.
 - [Anne Gagneux](https://annegnx.github.io), PhD student from Ponts/MVA co-supervised with Emmanuel Soubies and Rémi Gribonval, since April 2023 (defense Dec. 2026).
-- [Orel Mazor](https://www.linkedin.com/in/orel-mazor-415a962a6/), M1 intern from Mines Paris, co-supervised with Quentin Bertrand and Rémi Emonet, since January 2026.
-- [Ishan Nath](https://uk.linkedin.com/in/ishan-nath/), M2 intern from ENS Lyon, co-supervised with Quentin Bertrand, since April 2026.
-- [Tom de Oliveira](https://fr.linkedin.com/in/tom-de-oliveira), M2 intern from Sorbonne Université, co-supervised with Quentin Bertrand and Rémi Emonet, since April 2026.
 
 
 Alumni:
 - [Alexandre Lagier](https://www.linkedin.com/in/alexandre-lagier-168558212/), M2 intern from ENS Lyon, co-supervised with Ségolène Martin and Anne Gagneux, Feb. 2026 - July 2026.
+- [Orel Mazor](https://www.linkedin.com/in/orel-mazor-415a962a6/), M1 intern from Mines Paris, co-supervised with Quentin Bertrand and Rémi Emonet, Jan. 2026 -- Aug. 2026.
+- [Ishan Nath](https://uk.linkedin.com/in/ishan-nath/), M2 intern from ENS Lyon, co-supervised with Quentin Bertrand, Apr. 2026 -- Aug. 2026. Now PhD student at Oxford.
+- [Tom de Oliveira](https://fr.linkedin.com/in/tom-de-oliveira), M2 intern from Sorbonne Université, co-supervised with Quentin Bertrand and Rémi Emonet, Apr. 2026 -- Sept. 2026.
 - [Can Pouliquen](https://perceptronium.github.io), PhD student from Polytech Montpellier cosupervised with Titouan Vayer and Paulo Gonçalves,  Nov. 2022 - Dec. 2025.
 - [Maël Chaumette](https://www.linkedin.com/in/ma%C3%ABl-chaumette), M2 intern from ENSAI co-supervised with Rémi Gribonval, April 2024 - Sept. 2024, now PhD student in the Ockham team.
 - [Florian Kozikowski](https://www.linkedin.com/in/florian-kozikowski/), M1 Intern from Polytechnique, April 2025 - Aug. 2025.
 - Ilias Bouhss, L3 Intern from ENS Paris-Saclay co-supervised with Ségolène Martin and Anne Gagneux, June 2025 - July 2025.
 - [Wassim Mazouz](https://www.linkedin.com/in/wassimmazouz/), M1 Intern from Centrale Lyon co-supervised with N. Pustelnik, May 2024 – Aug. 2024.
-- [Badr Moufad](https://badr-moufad.github.io), research engineer, April 2022 - Dec. 2023. Now Phd student at Ecole Polytechnique.
+- [Badr Moufad](https://badr-moufad.github.io), research engineer, April 2022 - Dec. 2023. Now PhD student at Ecole Polytechnique.
 - [Pierre-Antoine Bannier](https://pab.me), Master thesis for Polytechnique/HEC, May 2022. Now Research scientist at Owkin.
 <!-- - Célio Léonard-Collado, Master thesis, with D. Perrot, May 2024. -->
 
