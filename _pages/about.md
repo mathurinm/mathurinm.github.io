@@ -50,7 +50,7 @@ Current team:
 - [Georges Le Bellier](https://lebellig.github.io), Postdoc/RE, since May 2026.
 - [Anne Gagneux](https://annegnx.github.io), PhD student from Ponts/MVA co-supervised with Emmanuel Soubies and Rémi Gribonval, since April 2023 (defense Dec. 2026).
 - Octave Leroy, PhD student co-supervised with Quentin Bertrand and Rémi Gribonval, since Nov. 2026.
-- Richard Gozan, PhD student from Ponts/MVA co-supervised with Quentin Bertrand and Paulo Goncalves, since Nov. 2026.
+- Richard Gozan, PhD student co-supervised with Quentin Bertrand and Paulo Goncalves, since Nov. 2026.
 
 
 Alumni:
