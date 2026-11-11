@@ -70,6 +70,7 @@ Alumni:
 
 
 ## News
+- 11/26: I gave an introductory talk on LLMs and Transformers at Institut Camille Jordan. Slides are [here](/assets/pdf/slides_icj.pdf)
 - 10/26: With Ségolène Martin we organized a GDR IASIS [one day workshop on diffusion and flow matching](https://gdr-iasis.cnrs.fr/reunions/modeles-generatifs-diffusion-flow-matching) on October 9th at ENS Lyon
 - 07/26: My JCJC project, GenGen (Generalization of Generative models), was funded by the ANR. I will be recruiting interns, a PhD and a postdoc!
 - 07/26: We gave a [tutorial on memorization and generalization of flow matching and diffusion](https://blog.icml.cc/2026/04/02/announcing-the-icml-2026-tutorials/) at ICML 2026 in Seoul, with Quentin Bertrand. The material is available [here](https://memorization-generalization.github.io) and the [replay](https://icml.cc/virtual/2026/75374) is now available too
